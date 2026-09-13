@@ -1,28 +1,26 @@
 # guide
 
-> 把“什么成立、凭什么成立、谁可以行动，以及如何确认结果”说清楚。
+> Make clear what holds, why it holds, who may act, and how results are confirmed.
 
-一份围绕认识、语义、互动、制度与行动可靠性的思考与方法论索引。
-文档关注不同层次之间的边界：差异不自动成为资格，判断不自动成为授权，
-执行结果也不自动等于现实完成。
+An index of ideas and methods about knowledge, semantics, interaction, institutions, and reliable action.
+The documents focus on boundaries between layers: a difference does not automatically become a qualification, a judgment does not automatically become an authorization, and an execution result does not automatically mean that reality has reached the intended state.
 
-## 内容导航
+## Contents
 
-| 顺序 | 文档 | 关注的问题 |
+| Order | Document | Core question |
 | --- | --- | --- |
-| 01 | [从差异到资格](./从差异到资格.md) | 一个候选、判断、规则或行动，凭什么进入下一状态？ |
-| 02 | [认识与判断](./认识与判断.md) | 如何区分现实、表示、证据、未知与判断？ |
-| 03 | [互动、价值与制度](./互动、价值与制度.md) | 多主体如何形成价值、承诺、权威与制度？ |
-| 04 | [行动、授权与可靠性](./行动、授权与可靠性.md) | 知道怎么做之后，如何安全、可验证地行动？ |
-| 05 | [精确语义](./精确语义.md) | 如何让事实、权限、决策、执行与验证各归其位？ |
+| 01 | [From Difference to Qualification](./from-difference-to-qualification.md) | What allows a candidate, judgment, rule, or action to enter the next state? |
+| 02 | [Knowledge and Judgment](./knowledge-and-judgment.md) | How should reality, representation, evidence, unknowns, and judgment be distinguished? |
+| 03 | [Interaction, Value, and Institutions](./interaction-value-and-institutions.md) | How do multiple agents form value, commitments, authority, and institutions? |
+| 04 | [Action, Authorization, and Reliability](./action-authorization-and-reliability.md) | Once we know how to act, how can action be safe and verifiable? |
+| 05 | [Precise Semantics](./precise-semantics.md) | How can facts, permissions, decisions, execution, and verification remain semantically distinct? |
 
-## 建议阅读方式
+## Suggested reading order
 
-按上面的顺序阅读，可以从“差异如何获得资格”一路读到“资格如何落到精确的行动与记录”。
-如果更关心工程落地，也可以先读[精确语义](./精确语义.md)和[行动、授权与可靠性](./行动、授权与可靠性.md)，
-再回看认识、互动与制度层面的基础。
+Reading in the order above moves from how differences acquire qualification to how qualification becomes precise action and durable records.
+For a more engineering-oriented path, start with [Precise Semantics](./precise-semantics.md) and [Action, Authorization, and Reliability](./action-authorization-and-reliability.md), then return to the foundations in knowledge, interaction, and institutions.
 
-## 关于这份索引
+## About this index
 
-这里收录的是持续整理中的概念、边界和判断框架。文档中的英文术语主要用于保持精确，
-并不要求读者预先掌握特定理论体系。
+This repository is a continuously refined collection of concepts, boundaries, and judgment frameworks.
+Technical terms are used where they preserve precision; no prior commitment to a specific theoretical system is assumed.
