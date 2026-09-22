@@ -14,6 +14,7 @@ The documents focus on boundaries between layers: a difference does not automati
 | 03 | [Interaction, Value, and Institutions](./interaction-value-and-institutions.md) | How do multiple agents form value, commitments, authority, and institutions? |
 | 04 | [Action, Authorization, and Reliability](./action-authorization-and-reliability.md) | Once we know how to act, how can action be safe and verifiable? |
 | 05 | [Precise Semantics](./precise-semantics.md) | How can facts, permissions, decisions, execution, and verification remain semantically distinct? |
+| 06 | [Personal AI OS Architecture](./personal-ai-os-architecture.md) | How do human control, personal context, cognition, durable agency, domain realization, and reality form one governed closed loop? |
 
 ## Suggested reading order
 
