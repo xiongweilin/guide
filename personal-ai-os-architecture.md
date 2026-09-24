@@ -3,20 +3,21 @@
 ## System shape
 
 ```text
-Human
+Human / Operator
   │
   │ intent / correction / approval / intervention
   ▼
-Agency Console
+Operator Interface
+(API / CLI / automation adapter)
   │
   ├──────────────► Personal World
   │                  │
   │                  │ purpose-limited context
   │                  │ provenance / revision / freshness
   │                  ▼
-  │                Codex
+  │              Agent / Executor
   │                  │
-  │                  │ analysis / implementation candidate / evidence request
+  │                  │ analysis / candidate / evidence request
   │                  ▼
   └──────────────► Domain Controller
                      │
@@ -31,8 +32,8 @@ Agency Console
                      │
                      │ provider-specific execution
                      ▼
-            APIs / Apps / Git / Docker /
-            Infrastructure / Devices / Humans
+          APIs / Apps / Git / Infrastructure /
+             Devices / External Systems / Humans
                      │
                      ▼
                    Reality
@@ -48,35 +49,34 @@ Agency Console
                      │ qualification / responsibility assessment
                      │ decision / reconciliation / historical continuity
                      ▼
-                 Agency Console
+             Operator Interface
                      │
                      │ explanation / projection / remaining uncertainty
                      ▼
-                   Human
+                 Human / Operator
 ```
 
 `semantic-language` supplies cross-domain semantic distinctions across the architecture.
 
 `guide` holds doctrine, qualification rules, failure distinctions, and architectural invariants.
 
-`Codex` is the current single cognitive executor. `litellm-gateway` supplies model protocol ingress and model routing beneath Codex.
+Agent implementations, model providers, model-routing gateways, monitoring systems, and deployment runtimes are replaceable integrations. None becomes a durable semantic owner merely because a deployment uses it.
 
 ## Architectural regions
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────┐
-│ HUMAN BOUNDARY                                                       │
+│ HUMAN / OPERATOR BOUNDARY                                            │
 │                                                                      │
-│ Human ⇄ Agency Console                                               │
-│ intent / clarification / approval gesture / intervention /           │
-│ explanation / projection / Personal World correction                 │
+│ Human ⇄ API / CLI / automation adapter                               │
+│ intent / clarification / approval / intervention / projection         │
 └──────────────────────────────┬───────────────────────────────────────┘
                                │
                                ▼
 ┌──────────────────────────────────────────────────────────────────────┐
 │ PERSONAL CONTEXT AND COGNITION                                       │
 │                                                                      │
-│ Personal World ──purpose-limited projection──► Codex                 │
+│ Personal World ──purpose-limited projection──► Agent / Executor       │
 │      ▲                                      │                        │
 │      │ provenance / correction              │ analysis / candidate  │
 │      │                                      ▼                        │
@@ -114,22 +114,26 @@ Agency Console
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
+The architecture does not require a graphical UI. Human/operator interaction is a replaceable boundary and may be exposed through API, CLI, or another adapter.
+
 ## Repository topology
 
 | Repository / component | Ownership |
 | --- | --- |
 | [guide](https://github.com/xiongweilin/guide) | doctrine, qualification, distinctions, architectural invariants |
-| [semantic-language](https://github.com/xiongweilin/semantic-language) | cross-domain meanings and non-substitution rules |
-| [agency-console](https://github.com/xiongweilin/agency-console) | human interaction, intent candidates, clarification, approval gestures, intervention requests, explanations, human-facing projections |
-| [personal-world](https://github.com/xiongweilin/personal-world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
-| Codex | current cognitive executor for interpretation, analysis, implementation, testing, review, and bounded reasoning |
-| [litellm-gateway](https://github.com/xiongweilin/litellm-gateway) | model protocol ingress, model routing, upstream transport compatibility |
-| [world-runtime](https://github.com/xiongweilin/world-runtime) | durable agency state, responsibility, authority, decisions, strategy, qualification, generic execution identity, recovery, reconciliation, history |
-| [control-plane](https://github.com/xiongweilin/control-plane) | operational incidents, bounded repair, monitoring, operational providers, operational outcome evidence |
-| [administrative-orchestrator](https://github.com/xiongweilin/administrative-orchestrator) | administrative cases, obligations, governance basis, administrative effects, business outcome and completion semantics |
-| [autonomous-development](https://github.com/xiongweilin/autonomous-development) | software-development lifecycle, requirements, source/build/test/deploy/canary/promotion/rollback semantics, Codex engineering execution boundary |
+| [aios](https://github.com/xiongweilin/aios) | monorepo and Git owner for AIOS source components |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/semantic-language) | cross-domain meanings and non-substitution rules |
+| [personal-world](https://github.com/xiongweilin/aios/tree/main/personal-world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
+| [world-runtime](https://github.com/xiongweilin/aios/tree/main/world-runtime) | durable agency state, responsibility, authority, decisions, qualification, execution identity, recovery, reconciliation, history |
+| [control-plane](https://github.com/xiongweilin/aios/tree/main/control-plane) | operational incidents, bounded repair, monitoring, operational providers, operational outcome evidence |
+| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/administrative-orchestrator) | administrative cases, obligations, governance basis, administrative effects, business outcome and completion semantics |
+| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/autonomous-development) | software-development lifecycle, requirements, source/build/test/deploy/canary/promotion/rollback semantics |
+| Agent / executor adapters | replaceable cognition or engineering execution implementations |
+| Model providers / routing adapters | replaceable model access and protocol transport |
 | Providers and external systems | concrete effects and authoritative external state |
 | Reality | the state that execution attempts to change and observation attempts to establish |
+
+A component directory may remain a distinct semantic owner without being a distinct Git repository.
 
 ## Cross-cutting semantic constitution
 
@@ -158,11 +162,11 @@ Runtime lifecycle meanings remain Runtime-owned.
 
 Personal meanings remain Personal World-owned.
 
-Human interaction state remains Agency Console-owned.
+Human interaction/session state belongs to the active operator-interface layer and does not become durable authority.
 
 ## Human boundary
 
-`agency-console` owns the Human ⇄ Agency boundary.
+The Human ⇄ Agency boundary is interface-neutral.
 
 ```text
 Human input
@@ -178,25 +182,9 @@ HumanApprovalGesture / rejection / intervention
 authoritative owner admission
 ```
 
-Agency Console state is limited to:
+Operator-interface state is limited to ephemeral interaction state and projections of authoritative owners.
 
-```text
-ephemeral UI state
-interaction-session state
-external authoritative projections
-```
-
-Agency Console does not own:
-
-```text
-durable authority
-durable responsibility
-Personal World truth
-domain lifecycle truth
-domain outcome
-model routing
-agent execution
-```
+The interface does not own durable authority, durable responsibility, Personal World truth, domain lifecycle truth, domain outcome, model routing, or agent execution.
 
 A command changes state only through the authoritative owner.
 
@@ -223,7 +211,7 @@ Current lineage head
   ↓
 Purpose-limited ContextProjection
   ↓
-Codex / authorized consumer
+Agent / authorized consumer
 ```
 
 Public personal record kinds remain:
@@ -259,7 +247,7 @@ A ContextProjection does not become canonical Personal World state.
 
 ## Cognitive execution
 
-Codex is the current single agent and cognitive executor.
+Cognitive execution is a replaceable boundary.
 
 ```text
 Human intent
@@ -270,34 +258,16 @@ Domain state
   +
 Runtime constraints
   ↓
-Codex
+Agent / Executor
   ↓
 analysis / proposal / implementation candidate / test / review
 ```
 
-Codex does not own durable authority, durable responsibility, Personal World truth, or domain completion.
+The executor does not own durable authority, durable responsibility, Personal World truth, or domain completion.
 
-Codex output remains evidence, interpretation, proposal, implementation candidate, or review result according to the receiving boundary.
+Executor output remains evidence, interpretation, proposal, implementation candidate, or review result according to the receiving boundary.
 
-No separate agent-router is required while Codex is the only agent.
-
-`litellm-gateway` remains beneath Codex:
-
-```text
-Codex
-  ↓
-OpenAI-compatible protocol
-  ↓
-litellm-gateway
-  ↓
-model route
-  ↓
-upstream model provider
-```
-
-Model routing does not widen authority or effect scope.
-
-Replacing a model route does not replace Personal World, Runtime state, Domain state, responsibility, or history.
+Model selection and model routing are transport/configuration concerns beneath the executor boundary. They do not widen authority or effect scope, and changing them does not replace Personal World, Runtime state, Domain state, responsibility, or history.
 
 ## Durable agency
 
@@ -433,13 +403,13 @@ DevelopmentRequest
   ↓
 Personal World context projection
   ↓
-Codex requirement analysis
+engineering executor requirement analysis
   ↓
 ChangeProposal
   ↓
 isolated implementation
   ↓
-deterministic verification + Codex review
+deterministic verification + independent review
   ↓
 immutable build
   ↓
@@ -476,7 +446,7 @@ rollback
 ReleasedVersion
 ```
 
-Codex owns engineering execution inside the bounded development workspace.
+The configured engineering executor performs bounded implementation work; Autonomous Development retains lifecycle and release authority.
 
 World Runtime owns generic responsibility, authority, durable effect identity, and reality-effect admission.
 
@@ -495,7 +465,7 @@ Canary completion is not release finalization.
 ```text
 Human
   ↓
-Agency Console
+Operator Interface
   ↓
 IntentCandidate
   ↓
@@ -505,7 +475,7 @@ Personal World
   ↓
 purpose-limited context + basis revisions
   ↓
-Codex requirement analysis
+engineering executor requirement analysis
   ↓
 RequirementAnalysis / ChangeProposal
   ↓
@@ -515,7 +485,7 @@ World Runtime
   ↓
 governed reality-changing dispatch
   ↓
-Git / build / Docker / traffic
+Git / build / deployment / traffic
   ↓
 Reality
   ↓
@@ -529,7 +499,7 @@ World Runtime
   ↓
 qualification / responsibility assessment / reconciliation
   ↓
-Agency Console
+Operator Interface
   ↓
 human-facing projection
   ↓
@@ -575,7 +545,7 @@ Responsibility assessment
   ↓
 human-facing projection
   ↓
-Agency Console
+Operator Interface
   ↓
 Human
 ```
@@ -590,7 +560,7 @@ Unknown remains a first-class state.
 
 ## Continuity model
 
-The architecture carries four distinct continuities.
+The architecture carries three durable continuities.
 
 ```text
 Personal continuity
@@ -601,16 +571,15 @@ Agency continuity
 
 Domain continuity
   = Domain Controllers
-
-Human-control continuity
-  = Agency Console reconstructed from authoritative owners
 ```
 
-`semantic-language` preserves distinctions across all four.
+`semantic-language` preserves distinctions across all three.
 
-Codex may be replaced without replacing any of the four durable continuities.
+Operator-facing projections are reconstructed from authoritative owners and are not a fourth durable authority store.
 
-The Console may be replaced without replacing Personal World, World Runtime, or Domain state.
+An Agent may be replaced without replacing any durable continuity.
+
+An operator interface may be replaced without replacing Personal World, World Runtime, or Domain state.
 
 A Domain Controller may evolve without moving its professional lifecycle into World Runtime.
 
@@ -684,29 +653,29 @@ A new durable cross-domain agency invariant belongs in `world-runtime`.
 
 A new personal fact, preference, relationship, resource reference, or personal-context lineage belongs in `personal-world`.
 
-A new human interaction, explanation, approval gesture, or intervention surface belongs in `agency-console`.
-
-A new model route or model transport concern belongs in `litellm-gateway`.
-
 A new professional lifecycle belongs in a Domain Controller.
 
 A provider-specific implementation remains below its owning Domain Controller.
 
-A new cognitive executor remains replaceable and does not become a durable state owner by default.
+Operator interaction and projection logic belongs at the replaceable operator-interface boundary and must not become authoritative durable state.
 
-A new domain repository connects through explicit Runtime and Personal World boundaries rather than copying either substrate.
+Agent/executor logic remains replaceable and does not become a durable state owner by default.
+
+Model routing and model transport remain replaceable integration concerns.
+
+New components connect through explicit Runtime and Personal World boundaries rather than copying either substrate.
 
 ## Extension topology
 
-Additional agents attach to the cognitive execution boundary.
+Additional executors attach to the cognitive execution boundary.
 
 ```text
 Agency / Domain request
   ↓
-cognitive executor selection
-  ├─ Codex
-  ├─ future agent
-  └─ future specialized executor
+executor selection
+  ├─ Agent adapter
+  ├─ engineering executor
+  └─ specialized executor
 ```
 
 Additional Domain Controllers attach below World Runtime.
@@ -739,6 +708,50 @@ New model intelligence does not imply new durable authority.
 New domain breadth does not imply a universal domain ontology.
 
 ## Stable architecture
+
+```text
+guide
+    doctrine / qualification / distinctions
+                     │
+                     ▼
+aios/semantic-language
+    cross-domain semantic constitution
+
+Human ⇄ Operator Interface
+             │
+             ├────────⇄ personal-world
+             │               │
+             │               ▼
+             │        Agent / Executor
+             │               │
+             │               ▼
+             └────────► domain admission
+                             │
+                             ▼
+                       world-runtime
+                             │
+              ┌──────────────┼─────────────────┐
+              ▼              ▼                 ▼
+        control-plane   administrative   autonomous-development
+              │              │                 │
+              ▼              ▼                 ▼
+           providers      providers          providers
+              │              │                 │
+              └──────────────┼─────────────────┘
+                             ▼
+                           Reality
+                             │
+                             └──── evidence / outcome / unknown ────►
+                                   domains ─► runtime ─► operator ─► Human
+
+Agent / Executor
+  ↓
+model provider / routing adapter
+  ↓
+model provider
+```
+
+
 
 ```text
 guide
