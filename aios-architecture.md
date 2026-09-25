@@ -1,59 +1,59 @@
-# Personal AI OS Architecture
+# AIOS Architecture
 
-## System shape
+## Long-running autonomous runtime
 
 ```text
-Human / Operator
-  │
-  │ intent / correction / approval / intervention
+Long-running, unattended loop:
+
+┌────────────────────────────────────┐       bounded effects       ┌─────────┐
+│ AIOS Runtime                       ├─────────────────────────────►│ Reality │
+│ observe → qualify → decide         │◄─────────────────────────────┤         │
+│ → authorize → act → verify         │ authoritative read-back /    └─────────┘
+│ Personal World / Runtime / Domains │ evidence / outcomes / unknowns
+│ replaceable internal Agent/Executor│
+└────────────────────────────────────┘
+```
+
+AIOS is a long-running AI runtime, designed for unattended operation with low
+visibility. Its primary loop is AIOS acting on reality and incorporating
+authoritative observations, read-back, and outcome evidence. Routine operation
+does not depend on a person being present.
+
+## Temporary external intervention
+
+```text
+Human
+  │ query / request / approval when needed
   ▼
-Operator Interface
-(API / CLI / automation adapter)
+Existing Agent product
+(short-lived client session)
+  │ authoritative inspection / explanation / bounded authorized repair / verification
+  ▼
+AIOS integration boundary ─────────────► Reality, when an authorized effect is needed
   │
-  ├──────────────► Personal World
-  │                  │
-  │                  │ purpose-limited context
-  │                  │ provenance / revision / freshness
-  │                  ▼
-  │              Agent / Executor
-  │                  │
-  │                  │ analysis / candidate / evidence request
-  │                  ▼
-  └──────────────► Domain Controller
-                     │
-                     │ governed agency request
-                     ▼
-                 World Runtime
-                     │
-                     │ authority / responsibility / execution identity
-                     │ effect admission / recovery / reconciliation
-                     ▼
-                 Domain Controller
-                     │
-                     │ provider-specific execution
-                     ▼
-          APIs / Apps / Git / Infrastructure /
-             Devices / External Systems / Humans
-                     │
-                     ▼
-                   Reality
-                     │
-                     │ observation / read-back / telemetry / receipts
-                     ▼
-                 Domain Controller
-                     │
-                     │ evidence / outcome / unknown
-                     ▼
-                 World Runtime
-                     │
-                     │ qualification / responsibility assessment
-                     │ decision / reconciliation / historical continuity
-                     ▼
-             Operator Interface
-                     │
-                     │ explanation / projection / remaining uncertainty
-                     ▼
-                 Human / Operator
+  └── report verified state to the Human, then disconnect
+```
+
+The user does not directly operate AIOS as an interactive assistant product.
+When inspection, explanation, or maintenance is needed, the user may use an
+existing Agent product as a temporary intervention adapter. The Agent reads
+authoritative state, explains conditions, performs only bounded authorized
+changes, verifies read-back and recovery, reports the result, and exits. AIOS
+continues operating after the session ends.
+
+This external Agent is not part of the AIOS runtime, is not a durable state or
+authority owner, and is not a required runtime dependency. API/CLI boundaries
+are machine integration and maintenance boundaries, not AIOS's primary human
+management interface.
+
+```text
+Human presence != system operation
+Human absence != suspended agency
+Intervention session != durable agency
+External Agent != AIOS authority owner
+Agent explanation != authoritative state
+Agent repair != successful recovery
+Successful recovery = authoritative state + reality read-back + required verification
 ```
 
 `semantic-language` supplies cross-domain semantic distinctions across the architecture.
@@ -66,57 +66,34 @@ Agent implementations, model providers, model-routing gateways, monitoring syste
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────┐
-│ HUMAN / OPERATOR BOUNDARY                                            │
+│ AIOS — LONG-LIVED AUTONOMOUS RUNTIME                                 │
 │                                                                      │
-│ Human ⇄ API / CLI / automation adapter                               │
-│ intent / clarification / approval / intervention / projection         │
-└──────────────────────────────┬───────────────────────────────────────┘
-                               │
-                               ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│ PERSONAL CONTEXT AND COGNITION                                       │
-│                                                                      │
-│ Personal World ──purpose-limited projection──► Agent / Executor       │
-│      ▲                                      │                        │
-│      │ provenance / correction              │ analysis / candidate  │
-│      │                                      ▼                        │
-│      └──────────────────────────── Agency / Domain admission          │
-└──────────────────────────────┬───────────────────────────────────────┘
-                               │
-                               ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│ DURABLE AGENCY                                                       │
-│                                                                      │
-│ semantic-language                                                    │
-│ world-runtime                                                        │
-│                                                                      │
-│ meaning / identity / responsibility / authority / decision /         │
-│ strategy / qualification / execution identity / recovery / history   │
-└──────────────────────────────┬───────────────────────────────────────┘
-                               │
-                               ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│ DOMAIN REALIZATION                                                   │
-│                                                                      │
-│ control-plane                                                        │
-│ administrative-orchestrator                                          │
-│ autonomous-development                                               │
-│                                                                      │
-│ domain lifecycle / professional semantics / providers / read-back    │
-└──────────────────────────────┬───────────────────────────────────────┘
-                               │
-                               ▼
+│ Personal World ──purpose-limited context───► internal Agent/Executor│
+│       ▲                                     │                        │
+│       │ provenance / revision                │ analysis / candidate  │
+│       │                                     ▼                        │
+│       └──────────────────────────► domain admission                  │
+│                         │                                            │
+│ semantic-language / World Runtime / Domain Controllers              │
+│ responsibility / authority / work / effects / recovery / read-back   │
+└─────────────────────────┬────────────────────────────────────────────┘
+                          │ governed effect / evidence return
+                          ▼
 ┌──────────────────────────────────────────────────────────────────────┐
 │ REALITY                                                              │
-│                                                                      │
 │ external systems / source repositories / builds / deployments /      │
-│ traffic / infrastructure / organizational systems / human actions    │
+│ traffic / infrastructure / organizational systems                    │
 └──────────────────────────────────────────────────────────────────────┘
+
+OUT-OF-BAND, ONLY WHEN NEEDED
+Human ⇄ existing short-lived Agent product ⇄ AIOS machine boundary
 ```
 
-The architecture does not require a graphical UI. Human/operator interaction is a replaceable boundary and may be exposed through API, CLI, or another adapter.
-
-The current AIOS product topology is headless and container-only. Containers are a deployment boundary, not a durable semantic owner; Agent implementations, model providers, monitoring systems, and other integrations remain replaceable.
+AIOS is headless and container-only at runtime. The containers are a
+deployment boundary, not a durable semantic owner. Internal Agent/executor
+implementations, model providers, monitoring systems, and external Agent
+clients remain replaceable; none is required for the runtime's autonomous
+continuity.
 
 ## Repository topology
 
@@ -164,35 +141,45 @@ Runtime lifecycle meanings remain Runtime-owned.
 
 Personal meanings remain Personal World-owned.
 
-Human interaction/session state belongs to the active operator-interface layer and does not become durable authority.
+External Agent session state is ephemeral; it does not become durable authority, responsibility, or agency state.
 
-## Human boundary
+## Temporary intervention boundary
 
-The Human ⇄ Agency boundary is interface-neutral.
+Human intervention is out-of-band from the AIOS operating loop. When a query or
+maintenance need arises, the user connects through an existing, replaceable
+Agent product rather than directly operating AIOS.
 
 ```text
-Human input
+Human request / approval when needed
   ↓
-IntentCandidate
+short-lived external Agent session
   ↓
-context-limited interpretation
+authenticated read of authoritative state
   ↓
-Proposal / Development requirement candidate
+explanation / diagnosis / bounded repair proposal
   ↓
-HumanApprovalGesture / rejection / intervention
+explicit authorization when a state-changing action is required
   ↓
-authoritative owner admission
+authoritative owner admission / effect
+  ↓
+reality read-back / recovery verification
+  ↓
+report to the Human, then disconnect
 ```
 
-Operator-interface state is limited to ephemeral interaction state and projections of authoritative owners.
+The external Agent owns only ephemeral session state and disposable
+projections. It does not own durable authority, responsibility, Personal
+World truth, domain lifecycle truth, domain outcomes, or runtime execution.
 
-The interface does not own durable authority, durable responsibility, Personal World truth, domain lifecycle truth, domain outcome, model routing, or agent execution.
+An API or CLI may serve as a machine integration or maintenance boundary. It
+is not the primary human management interface and does not put the Human in the
+long-term operating loop.
 
 A command changes state only through the authoritative owner.
 
 A projection remains read-only and disposable.
 
-Ambiguous command transport remains `pending-reconciliation` until authoritative read-back resolves it.
+Ambiguous command transport remains `pending-reconciliation` until authoritative read-back resolves it. Ending an intervention session does not suspend or terminate AIOS agency.
 
 ## Personal continuity
 
@@ -252,7 +239,9 @@ A ContextProjection does not become canonical Personal World state.
 Cognitive execution is a replaceable boundary.
 
 ```text
-Human intent
+autonomous domain trigger / standing mandate
+  or
+authorized request admitted through a temporary Agent session
   +
 Purpose-limited Personal World context
   +
@@ -276,7 +265,7 @@ Model selection and model routing are transport/configuration concerns beneath t
 `world-runtime` is the agency continuity membrane between interpreted intent and domain realization.
 
 ```text
-Human-side interpretation
+qualified work trigger / authorized request
         │
         ▼
    governed agency
@@ -399,7 +388,7 @@ Case completion is not automatic Runtime responsibility discharge.
 `autonomous-development` owns software-development reality.
 
 ```text
-Human requirement
+qualified development objective / admitted request
   ↓
 DevelopmentRequest
   ↓
@@ -465,13 +454,11 @@ Canary completion is not release finalization.
 ## Autonomous Development vertical slice
 
 ```text
-Human
+autonomous development trigger
+  or
+authorized request via temporary external Agent
   ↓
-Operator Interface
-  ↓
-IntentCandidate
-  ↓
-DevelopmentRequest
+DevelopmentRequest admission
   ↓
 Personal World
   ↓
@@ -501,12 +488,13 @@ World Runtime
   ↓
 qualification / responsibility assessment / reconciliation
   ↓
-Operator Interface
-  ↓
-human-facing projection
-  ↓
-Human
+autonomous continuation / next work cycle
 ```
+
+If a person needs an explanation or an intervention, an external Agent can
+temporarily read the resulting authoritative state, carry out only an
+authorized bounded repair, verify it, and exit. This is an exceptional access
+path, not a required stage of the software lifecycle.
 
 Personal World basis used by requirement analysis is revision-bound.
 
@@ -521,7 +509,7 @@ basis revalidation fails
   ↓
 old analysis cannot silently continue
   ↓
-revalidation / new analysis / human intervention
+revalidation / new analysis / temporary external intervention if needed
 ```
 
 Personal context changes do not rewrite historical analysis.
@@ -545,12 +533,11 @@ World Runtime reconciliation and qualification
   ↓
 Responsibility assessment
   ↓
-human-facing projection
-  ↓
-Operator Interface
-  ↓
-Human
+current agency state / next autonomous cycle
 ```
+
+Only when an exception requires human attention does a separate short-lived
+Agent session project this state to the user.
 
 Provider acknowledgement alone cannot terminate the loop.
 
@@ -577,11 +564,11 @@ Domain continuity
 
 `semantic-language` preserves distinctions across all three.
 
-Operator-facing projections are reconstructed from authoritative owners and are not a fourth durable authority store.
+External-Agent projections are reconstructed from authoritative owners and are not a fourth durable authority store.
 
-An Agent may be replaced without replacing any durable continuity.
+An internal Agent/executor may be replaced without replacing any durable continuity.
 
-An operator interface may be replaced without replacing Personal World, World Runtime, or Domain state.
+A short-lived external Agent client may be replaced or disconnected without replacing Personal World, World Runtime, Domain state, or AIOS operation.
 
 A Domain Controller may evolve without moving its professional lifecycle into World Runtime.
 
@@ -659,7 +646,7 @@ A new professional lifecycle belongs in a Domain Controller.
 
 A provider-specific implementation remains below its owning Domain Controller.
 
-Operator interaction and projection logic belongs at the replaceable operator-interface boundary and must not become authoritative durable state.
+Short-lived external Agent interaction and projection logic remain outside AIOS; any AIOS API/CLI integration must not become an authoritative durable state owner.
 
 Agent/executor logic remains replaceable and does not become a durable state owner by default.
 
@@ -719,36 +706,35 @@ guide
 aios/semantic-language
     cross-domain semantic constitution
 
-Human ⇄ Operator Interface
-             │
-             ├────────⇄ personal-world
-             │               │
-             │               ▼
-             │        Agent / Executor
-             │               │
-             │               ▼
-             └────────► domain admission
-                             │
-                             ▼
-                       world-runtime
-                             │
-              ┌──────────────┼─────────────────┐
-              ▼              ▼                 ▼
-        control-plane   administrative   autonomous-development
-              │              │                 │
-              ▼              ▼                 ▼
-           providers      providers          providers
-              │              │                 │
-              └──────────────┼─────────────────┘
-                             ▼
-                           Reality
-                             │
-                             └──── evidence / outcome / unknown ────►
-                                   domains ─► runtime ─► operator ─► Human
+AIOS — long-lived, headless runtime
+    personal-world ──► internal Agent / Executor
+           ▲                         │
+           │                         ▼
+           └────────────── domain admission
+                                     │
+                                     ▼
+                               world-runtime
+                                     │
+                    ┌────────────────┼─────────────────┐
+                    ▼                ▼                 ▼
+              control-plane   administrative   autonomous-development
+                    │                │                 │
+                    ▼                ▼                 ▼
+                 providers       providers          providers
+                    │                │                 │
+                    └────────────────┼─────────────────┘
+                                     ▼ effects
+                                  Reality
+                                     │
+                                     └── evidence / read-back / outcome / unknown
+                                         ───────────────────────────────► AIOS
 
-Agent / Executor
-  ↓
-model provider / routing adapter
-  ↓
-model provider
+Out-of-band, only when needed:
+Human ─► existing Agent product (short-lived session) ─► AIOS machine boundary
+                 inspect / explain / bounded authorized repair / verify
+                 ─► report ─► disconnect; AIOS continues
+
+External Agent products, model providers, and routing adapters remain
+replaceable integrations. The external intervention session is not a stage in
+the continuous AIOS–Reality operating loop.
 ```
