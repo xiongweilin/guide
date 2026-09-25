@@ -116,18 +116,20 @@ Agent implementations, model providers, model-routing gateways, monitoring syste
 
 The architecture does not require a graphical UI. Human/operator interaction is a replaceable boundary and may be exposed through API, CLI, or another adapter.
 
+The current AIOS product topology is headless and container-only. Containers are a deployment boundary, not a durable semantic owner; Agent implementations, model providers, monitoring systems, and other integrations remain replaceable.
+
 ## Repository topology
 
 | Repository / component | Ownership |
 | --- | --- |
 | [guide](https://github.com/xiongweilin/guide) | doctrine, qualification, distinctions, architectural invariants |
 | [aios](https://github.com/xiongweilin/aios) | monorepo and Git owner for AIOS source components |
-| [semantic-language](https://github.com/xiongweilin/aios/tree/main/semantic-language) | cross-domain meanings and non-substitution rules |
-| [personal-world](https://github.com/xiongweilin/aios/tree/main/personal-world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
-| [world-runtime](https://github.com/xiongweilin/aios/tree/main/world-runtime) | durable agency state, responsibility, authority, decisions, qualification, execution identity, recovery, reconciliation, history |
-| [control-plane](https://github.com/xiongweilin/aios/tree/main/control-plane) | operational incidents, bounded repair, monitoring, operational providers, operational outcome evidence |
-| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/administrative-orchestrator) | administrative cases, obligations, governance basis, administrative effects, business outcome and completion semantics |
-| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/autonomous-development) | software-development lifecycle, requirements, source/build/test/deploy/canary/promotion/rollback semantics |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | cross-domain meanings and non-substitution rules |
+| [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
+| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | durable agency state, responsibility, authority, decisions, qualification, execution identity, recovery, reconciliation, history |
+| [control-plane](https://github.com/xiongweilin/aios/tree/main/src/domains/control_plane) | operational incidents, bounded repair, monitoring, operational providers, operational outcome evidence |
+| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/domains/administrative_orchestrator) | administrative cases, obligations, governance basis, administrative effects, business outcome and completion semantics |
+| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/domains/autonomous_development) | software-development lifecycle, requirements, source/build/test/deploy/canary/promotion/rollback semantics |
 | Agent / executor adapters | replaceable cognition or engineering execution implementations |
 | Model providers / routing adapters | replaceable model access and protocol transport |
 | Providers and external systems | concrete effects and authoritative external state |
