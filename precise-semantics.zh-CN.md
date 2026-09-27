@@ -39,7 +39,7 @@ QuestionCandidate
 
 QuestionQualification
 - question_ref
-- qualification_regime: interpretive | specified | hybrid
+- primitive_regimes: [interpretive] | [specified] | [interpretive, specified]
 - presuppositions
 - default_distinctions
 - competing_framings
@@ -66,7 +66,7 @@ QuestionQualification
 ```text
 QualificationBasis
 - qualification_id
-- regime: interpretive | specified | hybrid
+- primitive_regimes: [interpretive] | [specified] | [interpretive, specified]
 - subject / target_transition
 - scope / purpose / time_scale
 - accountable_owner
