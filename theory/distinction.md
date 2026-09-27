@@ -79,6 +79,27 @@ and
 
 The second cannot be flattened into the first.
 
+## Two kinds of unknown and structural tension
+
+At least two kinds of unknown should remain distinct:
+
+1. **Unknown within the current representation**: the relevant object, variable, category, or relation has already been formed, but its value or state is missing.
+2. **Incomplete candidate space**: the relevant variable, object type, boundary, classification, scale, mechanism, participant, acquisition method, verification method, or problem framing may not yet have been generated at all.
+
+The second is where many unknown unknowns live.
+
+So:
+
+`missing value != missing candidate`
+
+`candidate not generated / searched / found != impossible`
+
+A persistent **structural tension** can indicate that the current representation is no longer sufficient for its purpose. Typical signals include repeated residuals, counterexamples, boundary failures, cross-context mismatch, or a growing number of exceptions.
+
+Structural tension does not prove which replacement is correct. It can justify a weaker but still useful conclusion: narrow the scope, reduce claim strength, preserve `unknown`, change acquisition, or reopen distinctions and candidate space.
+
+`current structure is insufficient != correct replacement is already known`
+
 ## Distinction among multiple people
 
 Different people can inhabit the same World while having different distinguishable ranges, distinguished ranges, languages, and default classifications.
