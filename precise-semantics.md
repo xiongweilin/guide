@@ -449,6 +449,16 @@ Fail closed means only "the system cannot continue now." It must not fabricate t
 
 One process may implement multiple roles, but contracts and records must preserve the distinctions among those roles.
 
+Role separation is not the same as failure independence. Two verifiers, reviewers, models, or control paths may have different semantic roles yet still fail together when they share the same data, model family, metric, training source, identity infrastructure, authority source, technical root, or incentive structure.
+
+Keep separate:
+
+`role separation != failure independence`
+
+`multiple evaluators != independent evidence`
+
+Redundancy improves reliability only when the added roles materially reduce failure correlation. High-impact paths should make important common failure sources inspectable rather than merely counting roles.
+
 ## 21. Compatibility has multiple version axes
 
 Consider at least these axes independently:
@@ -508,6 +518,7 @@ Storage may be consolidated; semantics must not be.
 17. Interpretive qualification and specified qualification are not interchangeable; the qualification regime and its basis remain traceable.
 18. A specified rule evaluating true does not establish the rule's applicability, authority, freshness, or normative validity unless those prerequisites are independently established.
 19. An interpretive judgment does not become a deterministic rule without explicit rule-making, versioning, and authority.
+20. Role separation does not establish failure independence; multiple reviewers / verifiers / models count as reliability gain only when common failure correlation is materially reduced.
 
 ## 24. Minimum conformance tests
 
@@ -522,6 +533,7 @@ At minimum, test that:
 - when no feasible path has been distinguished but the candidate space is not qualified as sufficiently bounded, capability remains `unknown` rather than becoming `cannot`;
 - a change in tools, interfaces, permissions, capability, or coordination can reopen or revise the distinguishable range instead of being flattened into a field update inside the old range;
 - a high-confidence model claim cannot enter authoritative facts directly;
+- multiple reviewers / verifiers / models are not treated as independent evidence or redundancy when they share a material common failure source;
 - stale facts / policies / Decisions / authority are rejected;
 - an operation cannot exceed authorization scope;
 - an illegal transition is rejected even when its endpoint is otherwise legitimate;
