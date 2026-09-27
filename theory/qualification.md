@@ -148,6 +148,67 @@ Keep separate:
 
 A role can own a judgment without being entitled to fabricate its evidence or prerequisites. Conversely, a basis can be sufficient while the relevant authority still belongs to someone else.
 
+## No-shortcut rule
+
+Non-substitution can be stated more generally.
+
+If moving from `X` to `Y` requires an intermediate responsibility, basis, or qualification `R`:
+
+`X → R → Y`
+
+then the framework must not silently compress it into:
+
+`X → Y`
+
+When a material responsibility is missing, the legitimate responses are limited to four broad forms:
+
+1. **add the missing responsibility position** when the structure truly lacks a necessary distinction;
+2. **handoff explicitly** when another domain, authority, procedure, or theory owns that responsibility;
+3. **keep the question open** while more basis, candidates, or evidence are obtained;
+4. **stop specifying** when there is no current qualification to make a stronger claim.
+
+This rule does not guarantee that the eventual conclusion is correct. It prevents an easier conclusion from occupying the semantic position of a harder question whose responsibility has not yet been discharged.
+
+## Composition qualification
+
+Qualification is not automatically compositional.
+
+`qualified(C1) + qualified(C2) + ... != qualified(C1 ∘ C2 ∘ ...)`
+
+Individually qualified components, claims, rules, actions, or subsystems may fail when combined because their assumptions, scopes, timing, resources, permissions, interfaces, effects, or failure dependencies interact.
+
+Keep at least three questions distinct:
+
+- is each local component sufficiently qualified in its own slice?
+- are the local qualifications mutually compatible when combined?
+- do the local descriptions contain enough information to qualify the joint structure itself?
+
+So:
+
+`locally qualified != jointly compatible != composition qualified`
+
+A composition therefore needs its own basis whenever the interaction can create new constraints, side effects, feedback, authority expansion, dependency, or failure propagation.
+
+## Handoff completeness
+
+A handoff can lose responsibility even when both modules are internally well-formed.
+
+A materially important handoff should preserve enough context for the receiver to know what is being transferred and what is **not** being claimed. Depending on the domain, this includes:
+
+- current conclusion or state;
+- object, scope, purpose, and time scale;
+- supporting basis and source provenance;
+- key assumptions;
+- major residual unknowns;
+- live alternatives that remain qualified for consideration;
+- counterevidence, falsification, or invalidation conditions;
+- current closure status;
+- review, revalidation, and reopening triggers.
+
+`handoff != downstream requalification`
+
+The receiver may rely on the transferred material only within the qualification actually preserved by the handoff. Transfer does not silently create new authority, broader scope, stronger evidence, or permanent validity.
+
 ## Qualification does not silently inherit
 
 The central rule is:
