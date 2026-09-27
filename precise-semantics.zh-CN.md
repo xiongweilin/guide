@@ -59,7 +59,7 @@ QuestionQualification
 
 - **解释型资格**：通过对语境、证据、反证、假设、竞争 framing 和剩余未知的可追责判断形成“足够”；
 - **规定型资格**：按照显式且带版本的规则、predicate、threshold、guard、test、approval set 或 contract 计算“足够”；
-- **混合资格**：一个 transition 显式依赖两者，例如先解释判断某条规则是否适用，再执行规定型 evaluation。
+- **混合资格**：两种原始机制的显式组合，例如先解释判断某条规则是否适用，再执行规定型 evaluation。混合资格是组合，不是第三种原始机制。
 
 可以存在共同 envelope，但必须保留各机制自己的依据：
 
