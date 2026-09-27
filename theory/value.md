@@ -2,6 +2,8 @@
 
 [English](./value.md) | [简体中文](./value.zh-CN.md)
 
+> Inspiration: the tension between what one wants to do and what one ought to do.
+
 Value asks: **what is worth pursuing, avoiding, maintaining, committing to, or refusing?**
 
 Facts describe what is. Value gives direction. Knowing how the world is does not automatically determine where activity should go.

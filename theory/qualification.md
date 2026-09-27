@@ -2,6 +2,8 @@
 
 [English](./qualification.md) | [简体中文](./qualification.zh-CN.md)
 
+> Inspiration: the tension between rule by people and rule of law.
+
 Qualification asks: **what conditions are sufficient for a candidate or state to enter the next state?**
 
 It is not a universal score. It is the structure of grounds required for a state transition.

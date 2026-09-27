@@ -2,6 +2,8 @@
 
 [English](./others.md) | [简体中文](./others.zh-CN.md)
 
+> Inspiration: the tension between alignment and conflict.
+
 Others asks: **who affects whom, and in which dimensions are they aligned or in conflict?**
 
 Human activity is not an isolated internal process. Individuals, families, teams, organizations, institutions, and technical systems can change one another's information, costs, values, capabilities, and reachable paths.

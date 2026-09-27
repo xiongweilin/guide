@@ -2,6 +2,8 @@
 
 [English](./change.md) | [简体中文](./change.zh-CN.md)
 
+> Inspiration: the tension between stability and instability.
+
 Change asks: **are we facing a persistent structure, a transition process, or a situation with no stable structure yet?**
 
 Time itself is not the central issue. The issue is how structure persists, fails, and reorganizes at a relevant scale.

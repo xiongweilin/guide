@@ -2,6 +2,8 @@
 
 [English](./capability.md) | [简体中文](./capability.zh-CN.md)
 
+> Inspiration: the tension between doing something oneself and achieving it by leveraging external structures.
+
 Capability asks: **which outcomes are currently realizable, and through what causal structures?**
 
 Capability is not the sum of skills stored inside a person. It is the set of reachable paths that can actually be invoked under current conditions.
