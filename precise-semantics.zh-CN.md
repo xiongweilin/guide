@@ -449,6 +449,16 @@ Fail closed 只意味着“系统现在不能继续”，绝不能伪造相反�
 
 一个进程可以实现多个 role，但 contract 和 record 必须保留这些 role 的区别。
 
+角色分离还不等于故障独立。两个 verifier、reviewer、model 或 control path 即使语义角色不同，只要共享相同的数据、模型、指标、训练来源、identity infrastructure、authority source、技术根或利益结构，仍可能因为同一原因一起失败。
+
+因此至少保持：
+
+`role separation ≠ failure independence`
+
+`multiple evaluators ≠ independent evidence`
+
+只有当额外角色真实降低了 failure correlation，冗余才增加可靠性。高影响路径应显式记录或检查关键共同失败源，而不是只统计角色数量。
+
 ## 21. Compatibility 有多个版本轴
 
 至少独立考虑：
@@ -508,6 +518,7 @@ AuditRecord
 17. 解释型资格和规定型资格不能互相冒充；qualification regime 及其 basis 必须保持可追踪。
 18. 规定规则 evaluation 为真，不能自动建立该规则的 applicability、authority、freshness 或规范有效性；这些前提必须独立成立。
 19. 解释型判断不能在没有显式 rule-making、versioning 和 authority 的情况下变成确定性规则。
+20. 角色分离不自动产生故障独立；只有共同失败相关性实际下降时，多 reviewer / verifier / model 才能被当作可靠性增益。
 
 ## 24. 最小 conformance test
 
@@ -522,6 +533,7 @@ AuditRecord
 - 尚未区分出可行路径、且候选空间尚未获得足够有界资格时，能力必须保持 `unknown`，不能直接标记为 `cannot`；
 - 工具、接口、权限、能力或协作方式变化时，可以触发可区分范围的 reopening / revision，而不能只在旧范围内修改一个字段；
 - 高置信度 model claim 不能直接进入 authoritative fact；
+- 多个 reviewer / verifier / model 即使角色不同，只要共享关键共同失败源，就不能被测试当作独立证据或独立冗余；
 - stale fact / policy / Decision / authority 被拒绝；
 - operation 不能超出 authorization scope；
 - 即使 endpoint 本身合法，illegal transition 也会被拒绝；
