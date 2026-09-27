@@ -4,6 +4,8 @@
 
 工程目标不是实现一个 `qualified = true`，而是保存每个 qualification slice 的独立条件，使系统不能把某一层的有效性自动提升为下一层的有效性。
 
+六维是分析区分，不要求实现成六个独立字段、服务或层级，也不要求处在同一逻辑层级。资格是跨维度的状态转换语义；区分则可以与能力、工具、接口和他者形成反馈。工程上的要求是保存这些语义边界和依赖，而不是强迫它们一一对应某种物理拆分。
+
 核心链：
 
 `request / trigger → problem framing / question qualification（需要解释时） → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
@@ -14,7 +16,7 @@
 
 - **世界（认知边界）**不是一个等待被完整序列化的对象。系统不应声称某个 schema、ontology、embedding space 或 knowledge graph 已经穷尽世界。
 - 本文中的 **Reality / 现实** 指当前任务中可以由来源、observation、read-back 或 reconciliation 建立的外部状态。它属于可区分世界中的操作切片，不等于世界本身。
-- **可区分范围**由当前 source、sensor、API、语言、工具和权限共同限制；**已区分范围**是系统实际形成并可调用的 distinctions。
+- **可区分范围**由当前 source、sensor、API、语言、工具、权限和能力共同限制；**已区分范围**是系统实际形成并可调用的 distinctions。两者都是带版本的操作条件，不是固定边界：新的区分、工具、接口、权限或协作方式都可能使后续可区分范围扩大或收缩。
 - schema、enum、label、policy category 和 model taxonomy 都可能只是**默认区分**。存在于 schema 中不等于它具有世界本体论上的优先地位。
 
 当系统需要解释开放式请求、自己生成问题或重构任务 framing 时，还应显式保留 problem semantics：
@@ -440,6 +442,8 @@ AuditRecord
 12. Completion 不自动等于长期 responsibility discharge。
 13. 当前已区分范围不自动等于全部可区分范围；schema 中缺失的候选不能仅因此被标记为 impossible。
 14. 能够解析或提出一个问题不等于问题已经获得资格；当 framing 影响后续 scope 或 authority 时，必须先 qualification。
+15. 没有区分出可行路径时，能力状态应保持 `unknown`，不能直接变成 `cannot`；只有在明确有界的能力判断获得充分资格后，才能形成 `cannot`。
+16. 六个分析维度不要求一一对应存储字段、服务或 runtime layer；实现可以合并存储，但不能合并语义边界。
 
 ## 24. 最小 conformance test
 
@@ -447,6 +451,8 @@ AuditRecord
 
 - 默认 schema/category 不能在缺少依据时被当作世界本身的唯一边界；
 - 当问题 framing 会改变 scope、authority 或完成条件时，未获得资格的问题不能直接进入 Decision / execution；
+- 尚未区分出可行路径、且候选空间尚未获得足够有界资格时，能力必须保持 `unknown`，不能直接标记为 `cannot`；
+- 工具、接口、权限、能力或协作方式变化时，可以触发可区分范围的 reopening / revision，而不能只在旧范围内修改一个字段；
 - 高置信度 model claim 不能直接进入 authoritative fact；
 - stale fact / policy / Decision / authority 被拒绝；
 - operation 不能超出 authorization scope；
