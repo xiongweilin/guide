@@ -1,5 +1,7 @@
 # Precise Semantics
 
+> **Six-dimension position: semantic boundaries across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) for the shared framework.
+
 The engineering objective is not to implement a single `qualified = true`. It is to preserve the independent conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
 
 Core chain:
