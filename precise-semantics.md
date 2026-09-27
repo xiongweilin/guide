@@ -59,7 +59,7 @@ At minimum distinguish:
 
 - **interpretive qualification**: sufficiency is formed through accountable judgment over context, evidence, counterevidence, assumptions, competing framings, and residual unknowns;
 - **specified qualification**: sufficiency is evaluated against an explicit versioned rule, predicate, threshold, guard, test, approval set, or contract;
-- **hybrid qualification**: a transition explicitly depends on both, for example an interpretive applicability judgment followed by a specified rule evaluation.
+- **hybrid qualification**: an explicit composition of the two primitive regimes, for example an interpretive applicability judgment followed by a specified rule evaluation. Hybrid is composition, not a third primitive regime.
 
 A common envelope may exist, but it must preserve regime-specific basis:
 
