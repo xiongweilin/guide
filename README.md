@@ -88,6 +88,30 @@ Typical boundaries include:
 
 The theory explains these boundaries through the six dimensions. Precise Semantics and AIOS preserve them in engineering systems.
 
+## Framework completeness and self-challenge
+
+This framework does not define completeness as “all final questions already have answers.”
+
+A more useful standard is:
+
+`unknown is not disguised as known`
+
+`missing responsibility is not silently substituted`
+
+`a boundary knows how to hand off, reopen, or stop`
+
+A framework can therefore remain incomplete in capability while still being responsible about where its current claims end.
+
+The framework itself is not exempt from these rules. A competing framing or theory does not need to translate itself into the current six-dimensional vocabulary before it can expose a blind spot or failure. Semantic mapping becomes necessary when integrating, federating, or migrating between frameworks, not as a precondition for challenge.
+
+Core structure should be reopened when repeated real problems cannot be located or handed off, when “keep open / unknown” stops producing new distinctions or useful stopping conditions, when maintaining the framework requires growing special cases without proportional value, or when the framework demands revisability from its objects while exempting itself.
+
+The default maintenance cycle is therefore:
+
+`use → accumulate failure cases → revise when necessary`
+
+not continuous expansion of the core.
+
 ## Document structure
 
 The repository root keeps only three conceptual documents:
