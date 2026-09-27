@@ -2,6 +2,25 @@
 
 Between "knowing what is true" and "changing reality," we must distinguish at least judgment, technical capability, formal authorization, execution, real-world effect, verification, and long-term responsibility.
 
+## 0. Qualify the problem and reality boundary before action
+
+“Reality” in this document means task-relevant state that can be established operationally through sources, observations, or read-back. It is not a complete description of the World itself. An action system can form goals, plans, and verification conditions only within its distinguishable and distinguished ranges.
+
+Before “knowing how to act,” there is therefore another qualification layer that is often hidden: **what problem is actually being solved?**
+
+Keep at least:
+
+`request / trigger → question or task candidate → problem qualification → goal and completion conditions → judgment → authorization → execution → verification`
+
+In particular:
+
+- a request from a user or upstream system does not establish that its objects, scope, and presuppositions already hold;
+- classifications supplied by schemas, forms, and API fields are default distinctions, not automatically the only classifications present in reality;
+- an option being absent from the current representation does not make it impossible;
+- a mistaken framing can be executed and verified perfectly while still proving only that the system completed the wrong task as defined.
+
+When framing materially changes the goal, impact scope, irreversibility, authority requirements, or completion criteria, problem qualification must be established before action qualification.
+
 ## 1. Knowing how to act does not mean having authority to act
 
 Distinguish:
@@ -29,7 +48,7 @@ The higher the risk, the stronger the procedure should be. Safety, privacy, righ
 
 ## 3. Action has at least six slices
 
-1. **Reality and purpose**: what the current facts are and what should change;
+1. **Problem, reality, and purpose**: whether the current problem is qualified, which facts are established, and what should change;
 2. **Conditions and authority**: whether preconditions, rules, authority basis, and scope hold;
 3. **Plan and exposure**: how to act, how large the impact surface is, and when to stop;
 4. **Execution and records**: what was actually sent and which side effects occurred;
@@ -102,7 +121,7 @@ Even when the final state becomes acceptable, residual responsibilities may rema
 
 For an important change, it should be possible to reconstruct at least:
 
-- object, scope, purpose, and completion conditions;
+- problem framing, object, scope, purpose, and completion conditions;
 - evidence, assumptions, and unknowns;
 - roles, authority basis, and approvals;
 - plan, exposure, and stop conditions;
