@@ -1,5 +1,23 @@
 # AIOS Architecture
 
+## Cognitive boundary and Reality in the architecture
+
+AIOS does not implement “the World itself” as one total ontology.
+
+- **World (cognitive boundary)**: current observations, schemas, models, and stores are not entitled by default to count as the complete structure of the World; the World is not a durable runtime object.
+- **Distinguishable world / distinguishable range**: determined by current sources, sensors, providers, APIs, language, tools, permissions, and domain interfaces; these describe aspects of reality that can in principle enter system distinction and verification.
+- **Distinguished range**: distinctions AIOS has actually acquired, formed, and can currently invoke, including established facts, categories, relationships, problem framings, and domain states.
+- **Reality** in the architecture diagrams: domain-scoped state that can be established through authoritative observation, read-back, or reconciliation. It is an operational slice inside the distinguishable world, not “the World itself.”
+- **Personal World**: durable, qualified, traceable personal context for one person and therefore part of the distinguished range. Its name does not mean it owns the person's complete distinguishable world or a metaphysical model of the World.
+
+AIOS must therefore support two kinds of revision: updating values inside existing distinctions, and reopening current distinctions, classifications, problem framings, and candidate spaces. The second kind cannot be flattened into “a field value changed.”
+
+When a request, standing mandate, or autonomous trigger requires interpretation, the admission path may be:
+
+`trigger / request → distinction context → question / task candidate → question qualification → domain admission → judgment / decision / authorization`
+
+A fixed machine contract whose framing is already qualified need not persist the question again. But framing that changes the goal, scope, authority, irreversibility, or completion semantics must be requalified first.
+
 ## Long-running autonomous runtime
 
 ```text
@@ -7,17 +25,18 @@ Long-running, unattended loop:
 
 ┌────────────────────────────────────┐       bounded effects       ┌─────────┐
 │ AIOS Runtime                       ├─────────────────────────────►│ Reality │
-│ observe → qualify → decide         │◄─────────────────────────────┤         │
-│ → authorize → act → verify         │ authoritative read-back /    └─────────┘
+│ observe → distinguish / qualify    │◄─────────────────────────────┤         │
+│ → frame / decide → authorize       │ authoritative read-back /    └─────────┘
 │ Personal World / Runtime / Domains │ evidence / outcomes / unknowns
 │ replaceable internal Agent/Executor│
 └────────────────────────────────────┘
 ```
 
 AIOS is a long-running AI runtime, designed for unattended operation with low
-visibility. Its primary loop is AIOS acting on reality and incorporating
-authoritative observations, read-back, and outcome evidence. Routine operation
-does not depend on a person being present.
+visibility. Its primary loop acquires reality-side evidence, checks distinction
+and framing qualification when needed, forms Decisions / Authorization, performs
+bounded action, and incorporates authoritative observations, read-back, and
+outcome evidence. Routine operation does not depend on a person being present.
 
 ## Temporary external intervention
 
@@ -119,6 +138,11 @@ A component directory may remain a distinct semantic owner without being a disti
 `semantic-language` remains small and cross-domain.
 
 ```text
+World != current representation
+Distinguishable range != distinguished range
+Default distinction != qualified distinction
+QuestionCandidate != qualified question
+Qualified question != Decision
 Evidence != Belief
 Observation != Claim
 Claim != current qualified state
@@ -183,7 +207,7 @@ Ambiguous command transport remains `pending-reconciliation` until authoritative
 
 ## Personal continuity
 
-`personal-world` owns one person's durable evolving context.
+`personal-world` owns one person's durable, evolving, qualified context. It records personal context that is currently distinguished and accepted, not the person's complete distinguishable range; record absence cannot automatically be interpreted as absence in reality.
 
 ```text
 Source
@@ -251,12 +275,16 @@ Runtime constraints
   ↓
 Agent / Executor
   ↓
+distinction review / question or task framing
+  ↓
+question qualification when framing is material
+  ↓
 analysis / proposal / implementation candidate / test / review
 ```
 
 The executor does not own durable authority, durable responsibility, Personal World truth, or domain completion.
 
-Executor output remains evidence, interpretation, proposal, implementation candidate, or review result according to the receiving boundary.
+Executor output remains a distinction candidate, question/task candidate, evidence, interpretation, proposal, implementation candidate, or review result according to the receiving boundary. Generating a new framing does not automatically grant domain admission; when framing changes scope, authority, or completion semantics, it requires independent question / task qualification.
 
 Model selection and model routing are transport/configuration concerns beneath the executor boundary. They do not widen authority or effect scope, and changing them does not replace Personal World, Runtime state, Domain state, responsibility, or history.
 
