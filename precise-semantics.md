@@ -4,12 +4,54 @@ The engineering objective is not to implement a single `qualified = true`. It is
 
 Core chain:
 
-`request → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
+`request / trigger → problem framing / question qualification (when interpretation is required) → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
+
+## 0. A cognitive boundary is not a database field
+
+Engineering systems must separate cognitive boundaries from operational semantics.
+
+- The **World (cognitive boundary)** is not an object waiting to be serialized completely. A system should not claim that a schema, ontology, embedding space, or knowledge graph exhausts the World.
+- **Reality** in this document means external task-relevant state that can be established through sources, observations, read-back, or reconciliation. It is an operational slice inside the distinguishable world, not the World itself.
+- The **distinguishable range** is constrained by current sources, sensors, APIs, language, tools, and permissions; the **distinguished range** is the set of distinctions the system has actually formed and can invoke.
+- Schemas, enums, labels, policy categories, and model taxonomies may be only **default distinctions**. Presence in a schema does not give them ontological priority.
+
+When a system interprets open-ended requests, generates its own questions, or restructures task framing, it should also preserve explicit problem semantics:
+
+```text
+DistinctionContext
+- scope / purpose
+- distinguishable_sources / interfaces
+- currently_distinguished_categories
+- default_distinctions / assumptions
+- unknown_or_excluded_space
+- version / provenance
+
+QuestionCandidate
+- text / structured_form
+- objects / predicates / relations
+- scope / time_scale / principals
+- expected_answer_type
+- source
+
+QuestionQualification
+- question_ref
+- presuppositions
+- default_distinctions
+- competing_framings
+- unsupported_boundaries
+- disposition: qualified | needs_refinement | reframed | rejected | unknown
+- reasons
+- qualified_at
+```
+
+Not every fixed API call needs these objects persisted separately. But when framing materially changes the goal, scope, authority, irreversibility, or completion conditions, “a request was received” cannot be flattened into “the problem is established.”
 
 ## 1. Prohibit semantic shortcuts first
 
 | What already holds | What it cannot automatically imply | Additional condition |
 | --- | --- | --- |
+| Request / text has been received | problem structure is established | problem framing, presupposition check, question qualification |
+| A category exists in the schema | the category is a true boundary of the World | source evidence, boundary validation, alternative framing |
 | Data has been received | Content is true | source, provenance, validation |
 | Model confidence is high | authoritative fact | authority, evidence |
 | fact is usable | policy is satisfied | policy version, evaluation input |
@@ -306,7 +348,7 @@ Long-term responsibility may also require handoff, a successor, compensation, co
 
 Do not flatten record type, epistemic state, and lifecycle into one enumeration.
 
-A record can be Evidence, Observation, Assertion, Derivation, Goal, Constraint, Experiment, Decision, Action, Policy, Outcome, Revision, or ChangeObject.
+A record can be DistinctionContext, QuestionCandidate, QuestionQualification, Evidence, Observation, Assertion, Derivation, Goal, Constraint, Experiment, Decision, Action, Policy, Outcome, Revision, or ChangeObject.
 
 The same record can simultaneously be unverified, supported, contested, refuted, unknown, or revalidation_required.
 
@@ -360,7 +402,7 @@ During upgrades, check whether field meaning, default behavior, permission, scop
 
 ## 22. Minimum deployable contract
 
-A system that produces real side effects needs at least these objects or equivalent semantics:
+A system that produces real side effects needs at least these objects or equivalent semantics. If the system also owns open-ended problem framing, it should preserve DistinctionContext / QuestionCandidate / QuestionQualification or equivalent semantics before entering these objects:
 
 ```text
 FactClaim
@@ -394,11 +436,15 @@ Storage may be consolidated; semantics must not be.
 10. Changes to source, policy, authority, scope, or critical dependencies enter review / revalidation.
 11. Revalidation does not automatically renew authority; reopening does not automatically authorize action.
 12. Completion does not automatically equal long-term responsibility discharge.
+13. The current distinguished range does not automatically equal the entire distinguishable range; a candidate absent from the schema cannot be marked impossible for that reason alone.
+14. Being able to parse or formulate a question does not mean the question is qualified; when framing affects downstream scope or authority, qualification must come first.
 
 ## 24. Minimum conformance tests
 
 At minimum, test that:
 
+- a default schema/category cannot be treated as the unique boundary of the World without supporting basis;
+- when problem framing changes scope, authority, or completion conditions, an unqualified question cannot directly enter Decision / execution;
 - a high-confidence model claim cannot enter authoritative facts directly;
 - stale facts / policies / Decisions / authority are rejected;
 - an operation cannot exceed authorization scope;

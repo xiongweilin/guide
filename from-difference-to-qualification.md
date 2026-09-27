@@ -1,24 +1,50 @@
 # From Difference to Qualification
 
-Reality contains differences, persistence, and change. Without agents, these unfold through causal relations, boundary conditions, and natural constraints; they do not first need to prove that they are "qualified" to occur.
+This guide does not begin by asserting that the World itself is ultimately composed of differences, relations, or change. The **World** is first kept as a cognitive boundary: current observation, language, models, and classifications do not exhaust it, and the structure of a representation cannot be projected backward as the final structure of the World itself.
 
-Once agents appear that can observe, judge, choose, commit, and act, an additional question emerges: **why is this observation, interpretation, judgment, rule, action, or state sufficient to continue to hold or move to the next step?**
+Qualification is an Agent-side problem. Once an Agent can observe, distinguish, ask, judge, choose, commit, and act, an additional question emerges: **why is this distinction, question, interpretation, judgment, rule, action, or state sufficient to continue to hold or move to the next step?**
 
 This guide calls that shared question the **qualification problem**.
 
 Qualification is neither a universal score nor an automatically granted right. Each domain must answer it with its own evidence, preconditions, authority, verification, and reassessment rules.
 
+## 0. World boundary, distinguishable range, and question qualification
+
+Before beginning with “difference,” separate several layers:
+
+- **World (cognitive boundary)**: points to what remains beyond the current representation; this guide makes no claim about its final ontological structure.
+- **Distinguishable world**: aspects of reality that can enter distinction, comparison, relation, and verification under some sensing, language, tool, interaction, and capability conditions.
+- **Distinguishable range**: distinctions that could in principle be formed under current conditions, including candidates not yet actually formed.
+- **Distinguished range**: distinctions the Agent has actually acquired, formed, and can invoke; it can be incomplete and can contain mistaken distinctions.
+- **Default distinctions**: classifications and boundaries silently inherited from language, interfaces, culture, institutions, historical models, or existing workflows. Being default does not make them correct, and does not imply that the World itself has the same boundaries.
+
+An Agent therefore does not move from “complete World” to “complete problem.” It moves through a narrowing and constructive chain:
+
+`World (cognitive boundary) → distinguishable world / distinguishable range → acquisition and distinguished range → concepts, relations, and structure → question candidate → question qualification → answer or model candidate → judgment qualification`
+
+**Question qualification** comes before answer search. A language system being able to formulate a sentence proves only that it is a question candidate, not that the question structure already holds. At minimum inspect:
+
+- whether the objects in the question have sufficiently clear boundaries;
+- whether the predicate or relation actually applies to those objects;
+- whether scope, time scale, and relevant Agent are explicit;
+- which presuppositions and default distinctions were silently imported;
+- whether “not yet distinguished” has been flattened into “nonexistent” or “impossible”;
+- whether the expected output is a fact, explanation, value commitment, institutional decision, or personal choice;
+- whether competing question structures would materially change the answer space.
+
+Question qualification does not require a philosophical proof before every query. It prevents an unchecked framing from being silently treated as a structure already given by the World.
+
 ## 1. Difference, persistence, and distinction
 
-A difference in reality does not mean that a system has acquired and correctly represented that difference.
+Even when some aspect of reality lies within the distinguishable range, that does not mean the system has acquired and correctly represented the corresponding distinction.
 
 At minimum, distinguish:
 
-`difference in reality → information acquisition → distinction → factors → relations and organization → structure → current direction or judgment`
+`distinguishable range → information acquisition / interaction → distinguished range → factors → relations and organization → structure → questions and current judgment`
 
 Failure can occur at every layer:
 
-- reality contains a difference, but the system does not acquire it;
+- some aspect of reality is in principle distinguishable, but the system has not acquired the information needed to form that distinction;
 - a signal is acquired, but not correctly distinguished;
 - noise is mistaken for a stable difference;
 - the classification scheme is wrong;

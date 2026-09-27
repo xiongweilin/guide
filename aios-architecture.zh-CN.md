@@ -1,5 +1,23 @@
 # AIOS 架构
 
+## 认知边界与架构中的 Reality
+
+AIOS 不把“世界本身”实现成一个总 ontology。
+
+- **世界（认知边界）**：表示当前 observation、schema、模型和存储都不能被默认视为世界本身的完整结构；它不是 runtime 中的 durable object。
+- **可区分世界 / 可区分范围**：由当前 source、sensor、provider、API、语言、工具、权限和 domain interface 共同决定，表示原则上能够进入系统区分与验证的现实侧面。
+- **已区分范围**：AIOS 当前实际获得、形成并能够调用的 distinctions，包括已建立的 facts、categories、relationships、problem framings 和 domain states。
+- 架构图中的 **Reality**：特指某个 domain 中可通过 authoritative observation、read-back 或 reconciliation 建立的现实状态，是可区分世界中的任务切片，不等于“世界本身”。
+- **Personal World**：只持有一个人的 durable、qualified、可追踪的个人上下文，是已区分范围的一部分；名称不表示它拥有这个人的全部可区分世界，更不表示它是世界本体模型。
+
+因此，AIOS 必须同时允许两种 revision：一是更新已知值，二是重新打开当前的区分、分类、问题 framing 和候选空间。后者不能被简化成“某个字段值变了”。
+
+当一个 request、standing mandate 或 autonomous trigger 需要解释时，入口链应允许：
+
+`trigger / request → distinction context → question / task candidate → question qualification → domain admission → judgment / decision / authorization`
+
+固定且已 qualification 的 machine contract 可以跳过重复的问题持久化；但任何会改变 goal、scope、authority、irreversibility 或 completion semantics 的 framing 都必须先重新获得资格。
+
 ## 长期自主运行时
 
 ```text
@@ -7,14 +25,15 @@
 
 ┌────────────────────────────────────┐       有边界的 effect      ┌─────────┐
 │ AIOS Runtime                       ├─────────────────────────────►│ Reality │
-│ observe → qualify → decide         │◄─────────────────────────────┤         │
-│ → authorize → act → verify         │ 权威 read-back /            └─────────┘
-│ Personal World / Runtime / Domains │ evidence / outcome / unknown
+│ observe → distinguish / qualify    │◄─────────────────────────────┤         │
+│ → frame / decide → authorize       │ 权威 read-back /            └─────────┘
+│ → act → verify                     │ evidence / outcome / unknown
+│ Personal World / Runtime / Domains │
 │ 可替换的内部 Agent/Executor        │
 └────────────────────────────────────┘
 ```
 
-AIOS 是一个长期运行的 AI runtime，面向低可见度、无人值守运行。它的主闭环是：AIOS 对现实采取行动，并吸收权威 observation、read-back 和 outcome evidence。日常运行不依赖人在场。
+AIOS 是一个长期运行的 AI runtime，面向低可见度、无人值守运行。它的主闭环是：AIOS 获取现实侧 evidence，必要时检查 distinctions 与 framing 的资格，形成 Decision / Authorization，执行有边界的 action，再吸收权威 observation、read-back 和 outcome evidence。日常运行不依赖人在场。
 
 ## 临时外部介入
 
@@ -104,6 +123,11 @@ AIOS runtime 是 headless 且仅容器运行。容器只是部署边界，不是
 `semantic-language` 保持小而跨领域。
 
 ```text
+World != current representation
+Distinguishable range != distinguished range
+Default distinction != qualified distinction
+QuestionCandidate != qualified question
+Qualified question != Decision
 Evidence != Belief
 Observation != Claim
 Claim != current qualified state
@@ -162,7 +186,7 @@ Projection 保持 read-only 且 disposable。
 
 ## 个人连续性
 
-`personal-world` 持有一个人的 durable、持续演化的 context。
+`personal-world` 持有一个人的 durable、持续演化且已 qualification 的 context。它记录的是当前已区分并被接受的 personal context，不是人的完整可区分范围；record absence 也不能自动解释为现实中的 absence。
 
 ```text
 Source
@@ -230,12 +254,16 @@ Runtime constraints
   ↓
 Agent / Executor
   ↓
+distinction review / question or task framing
+  ↓
+question qualification when framing is material
+  ↓
 analysis / proposal / implementation candidate / test / review
 ```
 
 Executor 不拥有 durable authority、durable responsibility、Personal World truth 或 domain completion。
 
-根据接收边界，Executor output 仍然只是 evidence、interpretation、proposal、implementation candidate 或 review result。
+根据接收边界，Executor output 仍然只是 distinction candidate、question/task candidate、evidence、interpretation、proposal、implementation candidate 或 review result。生成新的 framing 不会自动使它获得 domain admission；当 framing 改变 scope、authority 或 completion semantics 时，需要独立的 question / task qualification。
 
 Model selection 和 model routing 是 executor 边界之下的 transport/configuration concern。它们不会扩大 authority 或 effect scope；改变它们也不会替代 Personal World、Runtime state、Domain state、responsibility 或 history。
 
