@@ -20,6 +20,13 @@ When a request, standing mandate, or autonomous trigger requires interpretation,
 
 A fixed machine contract whose framing is already qualified need not persist the question again. But framing that changes the goal, scope, authority, irreversibility, or completion semantics must be requalified first.
 
+AIOS preserves two qualification regimes rather than flattening both into one `qualified` flag:
+
+- open-ended framing, diagnosis, exception handling, and ambiguous applicability normally enter **interpretive qualification**, which must retain reasons, evidence, residual unknowns, and an accountable judgment boundary;
+- fixed contracts, policy predicates, state-machine guards, verification gates, and explicit approval conditions normally enter **specified qualification**, which must bind the exact rule/version and input versions being evaluated.
+
+A single flow may combine them. In particular, a specified rule cannot evaluate its own applicability when scope, meaning, exception handling, or current validity is materially ambiguous; that ambiguity returns to interpretive qualification first. Conversely, repeated interpretive outcomes do not become a machine contract until a new explicit rule/version is created through an authorized rule-making path.
+
 ## Long-running autonomous runtime
 
 ```text
@@ -145,6 +152,9 @@ World != current representation
 Distinguishable range != distinguished range
 Default distinction != qualified distinction
 QuestionCandidate != qualified question
+Interpretive qualification != specified qualification
+Specified rule satisfied != rule applicable / current / authoritative
+Interpretive judgment != machine contract
 Qualified question != Decision
 Evidence != Belief
 Observation != Claim
