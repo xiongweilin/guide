@@ -20,6 +20,13 @@ AIOS 不把“世界本身”实现成一个总 ontology。
 
 固定且已 qualification 的 machine contract 可以跳过重复的问题持久化；但任何会改变 goal、scope、authority、irreversibility 或 completion semantics 的 framing 都必须先重新获得资格。
 
+AIOS 必须保留两种资格机制，而不能把它们压成一个 `qualified` flag：
+
+- 开放式 framing、诊断、例外处理和 applicability 含糊的情况，通常进入**解释型资格**，并保留 reasons、evidence、剩余未知和可追责的判断边界；
+- 固定 contract、policy predicate、状态机 guard、verification gate 和明确 approval condition，通常进入**规定型资格**，并绑定被检查的准确 rule/version 与 input versions。
+
+同一条 flow 可以组合两者。特别是，当 scope、含义、exception handling 或 current validity 存在实质含糊时，规定规则不能自行证明自己的 applicability，而必须先回到解释型资格。反过来，反复出现的解释结果也不能自动成为 machine contract；只有经过有 authority 的 rule-making 路径显式建立新 rule/version 后，才能进入规定型资格。
+
 ## 长期自主运行时
 
 ```text
@@ -129,6 +136,9 @@ World != current representation
 Distinguishable range != distinguished range
 Default distinction != qualified distinction
 QuestionCandidate != qualified question
+Interpretive qualification != specified qualification
+Specified rule satisfied != rule applicable / current / authoritative
+Interpretive judgment != machine contract
 Qualified question != Decision
 Evidence != Belief
 Observation != Claim

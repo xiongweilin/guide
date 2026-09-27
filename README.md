@@ -36,7 +36,7 @@ The same activity should retain at least six analytical dimensions that cannot s
 | Dimension | Minimal structure | Core question |
 | --- | --- | --- |
 | [**Distinction**](./theory/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What can become distinguishable, what has been distinguished, and what remains outside the current representation? |
-| [**Qualification**](./theory/qualification.md) | `unmet → accumulating → sufficient → enter` | What conditions are sufficient for a candidate or state to advance? |
+| [**Qualification**](./theory/qualification.md) | `interpretive / specified` + `unmet → accumulating → sufficient → enter` | What conditions are sufficient, and is sufficiency being interpreted or checked against a specified rule? |
 | [**Value**](./theory/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
 | [**Capability**](./theory/capability.md) | `unknown / cannot / capable` + `self / assisted / leverage` | Which outcomes are currently realizable, how is that known, and through what means? |
 | [**Change**](./theory/change.md) | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
@@ -44,7 +44,7 @@ The same activity should retain at least six analytical dimensions that cannot s
 
 The six dimensions are not six kinds of object and not six independent axes. They are non-substitutable analytical dimensions of the same activity. They can constrain one another and form feedback loops.
 
-Qualification is cross-cutting transition semantics: it governs when candidates or states in the other dimensions may advance without replacing their content. Distinction and capability form a feedback loop in activity: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. The reading order is therefore not an ontological derivation or a one-way causal stack.
+Qualification is cross-cutting transition semantics: it governs when candidates or states in the other dimensions may advance without replacing their content. It has two basic regimes in tension: **interpretive qualification**, where sufficiency is established through accountable judgment over context and evidence, and **specified qualification**, where sufficiency is checked against an explicit rule, predicate, threshold, or contract. Real activities can combine both, but they cannot silently substitute for one another. Distinction and capability form a feedback loop in activity: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. The reading order is therefore not an ontological derivation or a one-way causal stack.
 
 For example:
 
@@ -67,6 +67,10 @@ Typical boundaries include:
 `question can be asked != question is qualified`
 
 `question is qualified != answer is reliable`
+
+`interpretive qualification != specified qualification`
+
+`specified rule satisfied != rule is applicable / current / authoritative`
 
 `judgment is sufficient != goal is worth committing to`
 
@@ -111,4 +115,4 @@ For the engineering expression, read this page and then [Precise Semantics](./pr
 
 For one concrete implementation, continue to [AIOS Architecture](./aios-architecture.md).
 
-The six dimensions are basic coordinates of human activity. AIOS is one engineering application of them.
+The six dimensions are basic analytical dimensions of human activity. AIOS is one engineering application of them.

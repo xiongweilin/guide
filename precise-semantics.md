@@ -39,6 +39,7 @@ QuestionCandidate
 
 QuestionQualification
 - question_ref
+- primitive_regimes: [interpretive] | [specified] | [interpretive, specified]
 - presuppositions
 - default_distinctions
 - competing_framings
@@ -49,6 +50,65 @@ QuestionQualification
 ```
 
 Not every fixed API call needs these objects persisted separately. But when framing materially changes the goal, scope, authority, irreversibility, or completion conditions, “a request was received” cannot be flattened into “the problem is established.”
+
+### Qualification regime is part of the semantics
+
+Engineering must preserve how sufficiency was established, not only the final status.
+
+At minimum distinguish:
+
+- **interpretive qualification**: sufficiency is formed through accountable judgment over context, evidence, counterevidence, assumptions, competing framings, and residual unknowns;
+- **specified qualification**: sufficiency is evaluated against an explicit versioned rule, predicate, threshold, guard, test, approval set, or contract;
+- **hybrid qualification**: an explicit composition of the two primitive regimes, for example an interpretive applicability judgment followed by a specified rule evaluation. Hybrid is composition, not a third primitive regime.
+
+A common envelope may exist, but it must preserve regime-specific basis:
+
+```text
+QualificationBasis
+- qualification_id
+- primitive_regimes: [interpretive] | [specified] | [interpretive, specified]
+- subject / target_transition
+- scope / purpose / time_scale
+- accountable_owner
+- basis_version
+- review / reopen conditions
+
+InterpretiveQualificationAssessment
+- qualification_ref
+- evidence / counterevidence
+- assumptions / default_distinctions
+- competing_interpretations
+- residual_unknowns / accepted_risk
+- reasons
+- accountable_judge
+- disposition
+- assessed_at
+
+SpecifiedQualificationRule
+- qualification_ref
+- rule_id / version
+- authority_source
+- applicability_scope / effective_period
+- required_inputs
+- predicates / thresholds / required_conditions
+- exceptions / override_conditions
+
+SpecifiedQualificationEvaluation
+- rule_ref
+- input_versions
+- result
+- unmet_conditions
+- evaluator
+- evaluated_at
+```
+
+`interpretive assessment != specified rule evaluation`
+
+`specified rule evaluates true != rule is applicable / current / authoritative`
+
+If rule applicability, scope, meaning, or exception handling is itself ambiguous, that ambiguity requires interpretive qualification before the specified evaluation can carry the transition.
+
+Repeated interpretive judgments may later be codified into a specified rule, but rule-making must create an explicit definition and version. Historical interpretations do not silently become deterministic policy.
 
 ## 1. Prohibit semantic shortcuts first
 
@@ -118,7 +178,7 @@ Permission does not automatically transfer across operation, resource, scope, co
 
 ## 4. Keep policy definition, evaluation, and Decision distinct
 
-A rule definition and the result of applying that rule to current facts are different objects.
+A rule definition and the result of applying that rule to current facts are different objects. This is the canonical specified-qualification path when rule applicability is already established. If applicability itself is ambiguous, interpretive qualification precedes the policy evaluation.
 
 ```text
 PolicyVersion
@@ -410,6 +470,7 @@ A system that produces real side effects needs at least these objects or equival
 
 ```text
 FactClaim
+QualificationBasis + regime-specific assessment / evaluation
 PolicyVersion / PolicyEvaluation
 Decision
 GovernanceBasis
@@ -444,6 +505,9 @@ Storage may be consolidated; semantics must not be.
 14. Being able to parse or formulate a question does not mean the question is qualified; when framing affects downstream scope or authority, qualification must come first.
 15. Failure to distinguish a feasible path is `unknown`, not `cannot`, unless an explicitly bounded capability assessment has sufficient qualified basis for `cannot`.
 16. The six analytical dimensions need not map one-to-one to storage fields, services, or runtime layers; implementations may consolidate storage, but not semantic boundaries.
+17. Interpretive qualification and specified qualification are not interchangeable; the qualification regime and its basis remain traceable.
+18. A specified rule evaluating true does not establish the rule's applicability, authority, freshness, or normative validity unless those prerequisites are independently established.
+19. An interpretive judgment does not become a deterministic rule without explicit rule-making, versioning, and authority.
 
 ## 24. Minimum conformance tests
 
@@ -451,6 +515,10 @@ At minimum, test that:
 
 - a default schema/category cannot be treated as the unique boundary of the World without supporting basis;
 - when problem framing changes scope, authority, or completion conditions, an unqualified question cannot directly enter Decision / execution;
+- an interpretive qualification cannot be consumed as though it were a specified rule evaluation without an explicit semantic bridge;
+- a specified rule that evaluates true but is stale, out of scope, unauthorized, or not yet qualified as applicable cannot admit the transition;
+- ambiguous rule applicability enters interpretive qualification rather than defaulting to rule satisfaction;
+- codifying repeated interpretation creates a new explicit rule/version and does not rewrite the historical interpretive assessments;
 - when no feasible path has been distinguished but the candidate space is not qualified as sufficiently bounded, capability remains `unknown` rather than becoming `cannot`;
 - a change in tools, interfaces, permissions, capability, or coordination can reopen or revise the distinguishable range instead of being flattened into a field update inside the old range;
 - a high-confidence model claim cannot enter authoritative facts directly;
