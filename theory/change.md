@@ -52,6 +52,40 @@ A structure can be stable in the short term and unstable in the long term. A lon
 
 “What changed?” therefore requires a declared scale.
 
+## Rate compatibility
+
+Multiple processes can coexist at different speeds. A correction mechanism may exist in principle yet be ineffective if it is slower than the process that creates damage or lock-in.
+
+A useful comparison is:
+
+`detection + judgment + stopping + recovery + reauthorization`
+
+versus
+
+`error propagation + damage accumulation + lock-in`
+
+If correction takes about as long as, or longer than, the window in which major irreversible effects form, the system may be structurally unable to correct in time.
+
+`correction exists != correction is fast enough`
+
+Rate compatibility is not a universal preference for slower or faster systems. It asks whether the response dynamics are adequate for the dynamics of the change being governed.
+
+## Hysteresis and effective reversibility
+
+The path into a state need not be the reverse of the path out:
+
+`path in != path out`
+
+Dependency, trust, concentration, information spread, institutional change, and accumulated damage can show hysteresis: the conditions required to recover may be different from the conditions that produced the state.
+
+Effective reversibility should therefore distinguish at least:
+
+- **state reversibility**: whether the relevant reality state can be restored to an acceptable condition;
+- **control reversibility**: whether participants can regain the ability to stop, modify, take over, migrate, or exit;
+- **epistemic reversibility**: whether the evidence, knowledge, people, records, dissent channels, and verification capacity needed to understand and revise the situation still exist.
+
+A rollback mechanism may restore one layer while another remains irreversible. The deepest lock-in occurs when a system loses not only a current option but the capacity to discover alternatives or regain control.
+
 ## Closure, revalidation, and reopening
 
 Finite systems need provisional closure:
