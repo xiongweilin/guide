@@ -115,4 +115,4 @@ For the engineering expression, read this page and then [Precise Semantics](./pr
 
 For one concrete implementation, continue to [AIOS Architecture](./aios-architecture.md).
 
-The six dimensions are basic coordinates of human activity. AIOS is one engineering application of them.
+The six dimensions are basic analytical dimensions of human activity. AIOS is one engineering application of them.
