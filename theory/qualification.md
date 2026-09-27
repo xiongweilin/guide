@@ -84,7 +84,7 @@ The two regimes solve different problems and create a persistent tension:
 - specified qualification increases determinacy, repeatability, and automation, but only inside the distinctions and conditions already encoded;
 - interpretive qualification can handle ambiguity, novelty, and incomplete specification, but requires accountable judgment and leaves more room for disagreement and revision.
 
-Many real activities are **hybrid**. A transition may require specified gates plus an interpretive closure, or an interpretive judgment may first decide whether a specified rule applies.
+Many real activities are **hybrid**. Hybrid is not a third primitive regime; it is an explicit composition of interpretive and specified qualification slices. A transition may require specified gates plus an interpretive closure, or an interpretive judgment may first decide whether a specified rule applies.
 
 They can also convert over time:
 
