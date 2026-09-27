@@ -2,7 +2,7 @@
 
 > **Six-dimension position: engineering semantics across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
 
-The engineering objective is not to implement a single `qualified = true`. It is to preserve the independent conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
+The engineering objective is not to implement a single `qualified = true`. It is to preserve the distinct conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
 
 The six dimensions are analytical distinctions, not a requirement for six independent fields, services, or layers. They need not sit at the same logical level: qualification is cross-cutting transition semantics, and distinction can form feedback loops with capability, tools, interfaces, and others. Engineering must preserve those semantic boundaries and dependencies rather than force a one-to-one physical decomposition.
 
