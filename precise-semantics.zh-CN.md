@@ -4,12 +4,54 @@
 
 核心链：
 
-`request → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
+`request / trigger → problem framing / question qualification（需要解释时） → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
+
+## 0. 认知边界不是一个数据库字段
+
+工程系统必须区分认知边界与可操作语义。
+
+- **世界（认知边界）**不是一个等待被完整序列化的对象。系统不应声称某个 schema、ontology、embedding space 或 knowledge graph 已经穷尽世界。
+- 本文中的 **Reality / 现实** 指当前任务中可以由来源、observation、read-back 或 reconciliation 建立的外部状态。它属于可区分世界中的操作切片，不等于世界本身。
+- **可区分范围**由当前 source、sensor、API、语言、工具和权限共同限制；**已区分范围**是系统实际形成并可调用的 distinctions。
+- schema、enum、label、policy category 和 model taxonomy 都可能只是**默认区分**。存在于 schema 中不等于它具有世界本体论上的优先地位。
+
+当系统需要解释开放式请求、自己生成问题或重构任务 framing 时，还应显式保留 problem semantics：
+
+```text
+DistinctionContext
+- scope / purpose
+- distinguishable_sources / interfaces
+- currently_distinguished_categories
+- default_distinctions / assumptions
+- unknown_or_excluded_space
+- version / provenance
+
+QuestionCandidate
+- text / structured_form
+- objects / predicates / relations
+- scope / time_scale / principals
+- expected_answer_type
+- source
+
+QuestionQualification
+- question_ref
+- presuppositions
+- default_distinctions
+- competing_framings
+- unsupported_boundaries
+- disposition: qualified | needs_refinement | reframed | rejected | unknown
+- reasons
+- qualified_at
+```
+
+并非每个固定 API 调用都需要单独持久化这些对象；但只要 framing 会实质改变目标、scope、authority、不可逆性或完成条件，就不能把“收到一句请求”直接压成“问题已经成立”。
 
 ## 1. 先禁止语义捷径
 
 | 已经成立的事实 | 不能自动推出 | 还需要的条件 |
 | --- | --- | --- |
+| 已接收到请求 / 文本 | 问题结构已经成立 | problem framing、presupposition check、question qualification |
+| schema 中存在分类 | 该分类就是世界的真实边界 | source evidence、boundary validation、alternative framing |
 | 已接收到数据 | 内容为真 | source、provenance、validation |
 | 模型置信度高 | authoritative fact | authority、evidence |
 | fact 可用 | policy 已满足 | policy version、evaluation input |
@@ -306,7 +348,7 @@ CompletionAssessment
 
 不要把 record type、epistemic state 和 lifecycle 压成一个 enum。
 
-Record 可以是 Evidence、Observation、Assertion、Derivation、Goal、Constraint、Experiment、Decision、Action、Policy、Outcome、Revision 或 ChangeObject。
+Record 可以是 DistinctionContext、QuestionCandidate、QuestionQualification、Evidence、Observation、Assertion、Derivation、Goal、Constraint、Experiment、Decision、Action、Policy、Outcome、Revision 或 ChangeObject。
 
 同一 record 可以同时是 unverified、supported、contested、refuted、unknown 或 revalidation_required。
 
@@ -360,7 +402,7 @@ Fail closed 只意味着“系统现在不能继续”，绝不能伪造相反�
 
 ## 22. 最小可部署 contract
 
-会产生现实副作用的系统，至少需要以下对象或等效语义：
+会产生现实副作用的系统，至少需要以下对象或等效语义。若系统还负责开放式问题 framing，则应在进入这些对象之前额外保留 DistinctionContext / QuestionCandidate / QuestionQualification 或等效语义：
 
 ```text
 FactClaim
@@ -394,11 +436,15 @@ AuditRecord
 10. source、policy、authority、scope 或关键 dependency 变化进入 review / revalidation。
 11. Revalidation 不自动续期 authority；reopening 不自动授权行动。
 12. Completion 不自动等于长期 responsibility discharge。
+13. 当前已区分范围不自动等于全部可区分范围；schema 中缺失的候选不能仅因此被标记为 impossible。
+14. 能够解析或提出一个问题不等于问题已经获得资格；当 framing 影响后续 scope 或 authority 时，必须先 qualification。
 
 ## 24. 最小 conformance test
 
 至少测试：
 
+- 默认 schema/category 不能在缺少依据时被当作世界本身的唯一边界；
+- 当问题 framing 会改变 scope、authority 或完成条件时，未获得资格的问题不能直接进入 Decision / execution；
 - 高置信度 model claim 不能直接进入 authoritative fact；
 - stale fact / policy / Decision / authority 被拒绝；
 - operation 不能超出 authorization scope；
