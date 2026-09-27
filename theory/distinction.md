@@ -24,7 +24,7 @@ The structure above is a semantic dependency map, not a one-way causal history. 
 
 `distinguishable range_t → acquisition → distinguished range_t → changed tools / capability / interfaces / others → distinguishable range_t+1`
 
-This feedback does not make the World a derived object. The World remains the cognitive boundary against which every current distinguishable range stays incomplete in principle.
+This feedback does not make the World a derived object. The World remains the cognitive boundary, so no current distinguishable range may be treated as exhaustive merely because it is usable.
 
 ## Default distinctions
 
