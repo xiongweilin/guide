@@ -470,7 +470,7 @@ A system that produces real side effects needs at least these objects or equival
 
 ```text
 FactClaim
-QualificationBasis / QualificationAssessment (qualification regime preserved)
+QualificationBasis + regime-specific assessment / evaluation
 PolicyVersion / PolicyEvaluation
 Decision
 GovernanceBasis
