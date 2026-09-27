@@ -2,7 +2,9 @@
 
 > **Six-dimension position: engineering semantics across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
 
-The engineering objective is not to implement a single `qualified = true`. It is to preserve the independent conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
+The engineering objective is not to implement a single `qualified = true`. It is to preserve the distinct conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
+
+The six dimensions are analytical distinctions, not a requirement for six independent fields, services, or layers. They need not sit at the same logical level: qualification is cross-cutting transition semantics, and distinction can form feedback loops with capability, tools, interfaces, and others. Engineering must preserve those semantic boundaries and dependencies rather than force a one-to-one physical decomposition.
 
 Core chain:
 
@@ -14,7 +16,7 @@ Engineering systems must separate cognitive boundaries from operational semantic
 
 - The **World (cognitive boundary)** is not an object waiting to be serialized completely. A system should not claim that a schema, ontology, embedding space, or knowledge graph exhausts the World.
 - **Reality** in this document means external task-relevant state that can be established through sources, observations, read-back, or reconciliation. It is an operational slice inside the distinguishable world, not the World itself.
-- The **distinguishable range** is constrained by current sources, sensors, APIs, language, tools, and permissions; the **distinguished range** is the set of distinctions the system has actually formed and can invoke.
+- The **distinguishable range** is constrained by current sources, sensors, APIs, language, tools, permissions, and capability; the **distinguished range** is the set of distinctions the system has actually formed and can invoke. These ranges are versioned operational conditions, not fixed frontiers: new distinctions, tools, interfaces, permissions, or coordination may expand or contract what is distinguishable later.
 - Schemas, enums, labels, policy categories, and model taxonomies may be only **default distinctions**. Presence in a schema does not give them ontological priority.
 
 When a system interprets open-ended requests, generates its own questions, or restructures task framing, it should also preserve explicit problem semantics:
@@ -440,6 +442,8 @@ Storage may be consolidated; semantics must not be.
 12. Completion does not automatically equal long-term responsibility discharge.
 13. The current distinguished range does not automatically equal the entire distinguishable range; a candidate absent from the schema cannot be marked impossible for that reason alone.
 14. Being able to parse or formulate a question does not mean the question is qualified; when framing affects downstream scope or authority, qualification must come first.
+15. Failure to distinguish a feasible path is `unknown`, not `cannot`, unless an explicitly bounded capability assessment has sufficient qualified basis for `cannot`.
+16. The six analytical dimensions need not map one-to-one to storage fields, services, or runtime layers; implementations may consolidate storage, but not semantic boundaries.
 
 ## 24. Minimum conformance tests
 
@@ -447,6 +451,8 @@ At minimum, test that:
 
 - a default schema/category cannot be treated as the unique boundary of the World without supporting basis;
 - when problem framing changes scope, authority, or completion conditions, an unqualified question cannot directly enter Decision / execution;
+- when no feasible path has been distinguished but the candidate space is not qualified as sufficiently bounded, capability remains `unknown` rather than becoming `cannot`;
+- a change in tools, interfaces, permissions, capability, or coordination can reopen or revise the distinguishable range instead of being flattened into a field update inside the old range;
 - a high-confidence model claim cannot enter authoritative facts directly;
 - stale facts / policies / Decisions / authority are rejected;
 - an operation cannot exceed authorization scope;
