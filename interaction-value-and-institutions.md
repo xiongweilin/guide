@@ -2,13 +2,25 @@
 
 In multi-agent environments, facts, models, goals, permissions, and values may differ. We cannot assume that all participants share one complete and internally consistent view of the "real situation."
 
+## 0. Multiple Agents do not share one distinguished world
+
+“Being in the same World” does not mean “having the same distinctions.” Different Agents may have heavily overlapping **distinguishable ranges** while having very different **distinguished ranges**, default classifications, languages, time scales, and callable evidence.
+
+Multi-Agent interaction therefore contains at least three kinds of mismatch:
+
+- **acquisition mismatch**: one party acquired a signal and another did not;
+- **distinction mismatch**: the parties acquired similar material but organize it with different boundaries, classifications, or relations;
+- **question-structure mismatch**: the parties appear to answer the same question while relying on different objects, predicates, scopes, or default presuppositions.
+
+No participant's current distinction scheme should be silently promoted into “the structure of the World itself.” Coordination may require reopening distinctions and question qualification, not merely exchanging answers.
+
 ## 1. Strategic agents and local representations
 
 Strategic interaction exists whenever one agent's judgment or action changes another agent's information, reality, judgment, or reachable paths.
 
 An agent may be an individual, team, organization, institution, or technical system. Being a strategic agent does not automatically imply subjective experience, moral responsibility, or formal authority.
 
-Each agent may have only a local representation and maintain only limited-depth beliefs about others, such as "I think this is what you think," rather than infinite recursion. Structural unknowns can also include missing participants, actions, information, timing, and rules.
+Each agent may have only a local representation and maintain only limited-depth beliefs about others, such as "I think this is what you think," rather than infinite recursion. Its distinguished range may also be much smaller than its current distinguishable range. Structural unknowns can include missing participants, actions, information, timing, rules, classifications, and question structures that have not yet been formed.
 
 ## 2. Behavior, signals, and evidence are different
 
