@@ -1,5 +1,7 @@
 # From Difference to Qualification
 
+> **Six-dimension position: distinction, qualification, change.** This document mainly explains how distinctions enter qualification, and how closure, reopening, and structural change affect current qualification. See [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) for the shared framework.
+
 This guide does not begin by asserting that the World itself is ultimately composed of differences, relations, or change. The **World** is first kept as a cognitive boundary: current observation, language, models, and classifications do not exhaust it, and the structure of a representation cannot be projected backward as the final structure of the World itself.
 
 Qualification is an Agent-side problem. Once an Agent can observe, distinguish, ask, judge, choose, commit, and act, an additional question emerges: **why is this distinction, question, interpretation, judgment, rule, action, or state sufficient to continue to hold or move to the next step?**
