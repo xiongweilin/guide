@@ -1,5 +1,7 @@
 # Interaction, Value, and Institutions
 
+> **Six-dimension position: value, others, qualification.** This document mainly explains external and internal norms, alignment and conflict under strong or weak relations, and how commitment, authority, and legitimacy are qualified. See [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) for the shared framework.
+
 In multi-agent environments, facts, models, goals, permissions, and values may differ. We cannot assume that all participants share one complete and internally consistent view of the "real situation."
 
 ## 0. Multiple Agents do not share one distinguished world
