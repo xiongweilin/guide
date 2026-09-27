@@ -44,11 +44,7 @@ Long-running, unattended loop:
 └────────────────────────────────────┘
 ```
 
-AIOS is a long-running AI runtime, designed for unattended operation with low
-visibility. Its primary loop acquires reality-side evidence, checks distinction
-and framing qualification when needed, forms Decisions / Authorization, performs
-bounded action, and incorporates authoritative observations, read-back, and
-outcome evidence. Routine operation does not depend on a person being present.
+AIOS is a long-running AI runtime, designed for unattended operation with low visibility. Its primary loop acquires reality-side evidence, checks distinction and framing qualification when needed, forms Decisions / Authorization, performs bounded action, and incorporates authoritative observations, read-back, and outcome evidence. Routine operation does not depend on a person being present.
 
 ## Temporary external intervention
 
@@ -65,17 +61,9 @@ AIOS integration boundary ─────────────► Reality, wh
   └── report verified state to the Human, then disconnect
 ```
 
-The user does not directly operate AIOS as an interactive assistant product.
-When inspection, explanation, or maintenance is needed, the user may use an
-existing Agent product as a temporary intervention adapter. The Agent reads
-authoritative state, explains conditions, performs only bounded authorized
-changes, verifies read-back and recovery, reports the result, and exits. AIOS
-continues operating after the session ends.
+The user does not directly operate AIOS as an interactive assistant product. When inspection, explanation, or maintenance is needed, the user may use an existing Agent product as a temporary intervention adapter. The Agent reads authoritative state, explains conditions, performs only bounded authorized changes, verifies read-back and recovery, reports the result, and exits. AIOS continues operating after the session ends.
 
-This external Agent is not part of the AIOS runtime, is not a durable state or
-authority owner, and is not a required runtime dependency. API/CLI boundaries
-are machine integration and maintenance boundaries, not AIOS's primary human
-management interface.
+This external Agent is not part of the AIOS runtime, is not a durable state or authority owner, and is not a required runtime dependency. API/CLI boundaries are machine integration and maintenance boundaries, not AIOS's primary human management interface.
 
 ```text
 Human presence != system operation
@@ -120,11 +108,7 @@ OUT-OF-BAND, ONLY WHEN NEEDED
 Human ⇄ existing short-lived Agent product ⇄ AIOS machine boundary
 ```
 
-AIOS is headless and container-only at runtime. The containers are a
-deployment boundary, not a durable semantic owner. Internal Agent/executor
-implementations, model providers, monitoring systems, and external Agent
-clients remain replaceable; none is required for the runtime's autonomous
-continuity.
+AIOS is headless and container-only at runtime. The containers are a deployment boundary, not a durable semantic owner. Internal Agent/executor implementations, model providers, monitoring systems, and external Agent clients remain replaceable; none is required for the runtime's autonomous continuity.
 
 ## Repository topology
 
@@ -184,9 +168,7 @@ External Agent session state is ephemeral; it does not become durable authority,
 
 ## Temporary intervention boundary
 
-Human intervention is out-of-band from the AIOS operating loop. When a query or
-maintenance need arises, the user connects through an existing, replaceable
-Agent product rather than directly operating AIOS.
+Human intervention is out-of-band from the AIOS operating loop. When a query or maintenance need arises, the user connects through an existing, replaceable Agent product rather than directly operating AIOS.
 
 ```text
 Human request / approval when needed
@@ -206,13 +188,9 @@ reality read-back / recovery verification
 report to the Human, then disconnect
 ```
 
-The external Agent owns only ephemeral session state and disposable
-projections. It does not own durable authority, responsibility, Personal
-World truth, domain lifecycle truth, domain outcomes, or runtime execution.
+The external Agent owns only ephemeral session state and disposable projections. It does not own durable authority, responsibility, Personal World truth, domain lifecycle truth, domain outcomes, or runtime execution.
 
-An API or CLI may serve as a machine integration or maintenance boundary. It
-is not the primary human management interface and does not put the Human in the
-long-term operating loop.
+An API or CLI may serve as a machine integration or maintenance boundary. It is not the primary human management interface and does not put the Human in the long-term operating loop.
 
 A command changes state only through the authoritative owner.
 
@@ -534,10 +512,7 @@ qualification / responsibility assessment / reconciliation
 autonomous continuation / next work cycle
 ```
 
-If a person needs an explanation or an intervention, an external Agent can
-temporarily read the resulting authoritative state, carry out only an
-authorized bounded repair, verify it, and exit. This is an exceptional access
-path, not a required stage of the software lifecycle.
+If a person needs an explanation or an intervention, an external Agent can temporarily read the resulting authoritative state, carry out only an authorized bounded repair, verify it, and exit. This is an exceptional access path, not a required stage of the software lifecycle.
 
 Personal World basis used by requirement analysis is revision-bound.
 
@@ -579,8 +554,7 @@ Responsibility assessment
 current agency state / next autonomous cycle
 ```
 
-Only when an exception requires human attention does a separate short-lived
-Agent session project this state to the user.
+Only when an exception requires human attention does a separate short-lived Agent session project this state to the user.
 
 Provider acknowledgement alone cannot terminate the loop.
 
