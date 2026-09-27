@@ -27,7 +27,8 @@ Long-running, unattended loop:
 │ AIOS Runtime                       ├─────────────────────────────►│ Reality │
 │ observe → distinguish / qualify    │◄─────────────────────────────┤         │
 │ → frame / decide → authorize       │ authoritative read-back /    └─────────┘
-│ Personal World / Runtime / Domains │ evidence / outcomes / unknowns
+│ → act → verify                     │ evidence / outcomes / unknowns
+│ Personal World / Runtime / Domains │
 │ replaceable internal Agent/Executor│
 └────────────────────────────────────┘
 ```
