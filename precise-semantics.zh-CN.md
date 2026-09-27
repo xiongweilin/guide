@@ -39,6 +39,7 @@ QuestionCandidate
 
 QuestionQualification
 - question_ref
+- qualification_regime: interpretive | specified | hybrid
 - presuppositions
 - default_distinctions
 - competing_framings
@@ -49,6 +50,65 @@ QuestionQualification
 ```
 
 并非每个固定 API 调用都需要单独持久化这些对象；但只要 framing 会实质改变目标、scope、authority、不可逆性或完成条件，就不能把“收到一句请求”直接压成“问题已经成立”。
+
+### 资格机制本身也是语义
+
+工程系统不仅要保存最终资格状态，还必须保存“这个足够是怎样成立的”。
+
+至少区分：
+
+- **解释型资格**：通过对语境、证据、反证、假设、竞争 framing 和剩余未知的可追责判断形成“足够”；
+- **规定型资格**：按照显式且带版本的规则、predicate、threshold、guard、test、approval set 或 contract 计算“足够”；
+- **混合资格**：一个 transition 显式依赖两者，例如先解释判断某条规则是否适用，再执行规定型 evaluation。
+
+可以存在共同 envelope，但必须保留各机制自己的依据：
+
+```text
+QualificationBasis
+- qualification_id
+- regime: interpretive | specified | hybrid
+- subject / target_transition
+- scope / purpose / time_scale
+- accountable_owner
+- basis_version
+- review / reopen conditions
+
+InterpretiveQualificationAssessment
+- qualification_ref
+- evidence / counterevidence
+- assumptions / default_distinctions
+- competing_interpretations
+- residual_unknowns / accepted_risk
+- reasons
+- accountable_judge
+- disposition
+- assessed_at
+
+SpecifiedQualificationRule
+- qualification_ref
+- rule_id / version
+- authority_source
+- applicability_scope / effective_period
+- required_inputs
+- predicates / thresholds / required_conditions
+- exceptions / override_conditions
+
+SpecifiedQualificationEvaluation
+- rule_ref
+- input_versions
+- result
+- unmet_conditions
+- evaluator
+- evaluated_at
+```
+
+`解释型 assessment ≠ 规定型 rule evaluation`
+
+`规定规则 evaluation 为真 ≠ 规则对当前对象适用 / 仍有效 / 具有 authority`
+
+如果规则的 applicability、scope、含义或 exception handling 本身存在实质含糊，就必须先进入解释型资格；在这个问题解决之前，规定型 evaluation 不能独自承担 transition。
+
+反复出现的解释判断可以后来被规则化，但 rule-making 必须显式产生 definition、version 和 authority。历史解释不能静默变成确定性 policy。
 
 ## 1. 先禁止语义捷径
 
@@ -118,7 +178,7 @@ Permission 不能自动跨 operation、resource、scope、context 或 time 转�
 
 ## 4. 保持 policy definition、evaluation 和 Decision 区分
 
-规则定义和把规则应用到当前 facts 的结果是不同对象。
+规则定义和把规则应用到当前 facts 的结果是不同对象。当规则 applicability 已经成立时，这就是规定型资格的典型工程路径；如果 applicability 本身含糊，则必须先经过解释型资格，再进入 policy evaluation。
 
 ```text
 PolicyVersion
@@ -410,6 +470,7 @@ Fail closed 只意味着“系统现在不能继续”，绝不能伪造相反�
 
 ```text
 FactClaim
+QualificationBasis / QualificationAssessment（保留 qualification regime）
 PolicyVersion / PolicyEvaluation
 Decision
 GovernanceBasis
@@ -444,6 +505,9 @@ AuditRecord
 14. 能够解析或提出一个问题不等于问题已经获得资格；当 framing 影响后续 scope 或 authority 时，必须先 qualification。
 15. 没有区分出可行路径时，能力状态应保持 `unknown`，不能直接变成 `cannot`；只有在明确有界的能力判断获得充分资格后，才能形成 `cannot`。
 16. 六个分析维度不要求一一对应存储字段、服务或 runtime layer；实现可以合并存储，但不能合并语义边界。
+17. 解释型资格和规定型资格不能互相冒充；qualification regime 及其 basis 必须保持可追踪。
+18. 规定规则 evaluation 为真，不能自动建立该规则的 applicability、authority、freshness 或规范有效性；这些前提必须独立成立。
+19. 解释型判断不能在没有显式 rule-making、versioning 和 authority 的情况下变成确定性规则。
 
 ## 24. 最小 conformance test
 
@@ -451,6 +515,10 @@ AuditRecord
 
 - 默认 schema/category 不能在缺少依据时被当作世界本身的唯一边界；
 - 当问题 framing 会改变 scope、authority 或完成条件时，未获得资格的问题不能直接进入 Decision / execution；
+- 解释型 qualification 不能在没有显式语义桥接的情况下，被下游当成规定型 rule evaluation 使用；
+- 规定规则即使 evaluation 为真，只要 stale、out-of-scope、unauthorized 或 applicability 尚未获得资格，就不能放行 transition；
+- 规则 applicability 含糊时进入解释型资格，而不是默认规则已满足；
+- 把反复解释规则化时必须产生新的显式 rule/version，不能改写历史 interpretive assessments；
 - 尚未区分出可行路径、且候选空间尚未获得足够有界资格时，能力必须保持 `unknown`，不能直接标记为 `cannot`；
 - 工具、接口、权限、能力或协作方式变化时，可以触发可区分范围的 reopening / revision，而不能只在旧范围内修改一个字段；
 - 高置信度 model claim 不能直接进入 authoritative fact；
