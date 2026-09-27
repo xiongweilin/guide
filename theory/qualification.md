@@ -80,6 +80,18 @@ Material changes in facts, scope, dependencies, authority, value, cost, risk, or
 
 Reopening restores candidate and choice space. It does not automatically create a new answer, decision, or authority.
 
+## Finite closure and meta-qualification
+
+A qualification judgment is itself a claim and may need review, but the framework does not require an infinite stack of meta-qualification records before anything can proceed.
+
+Each qualification slice closes only locally: its object, scope, purpose, time scale, supporting basis, authority, residual unknowns, and reopening conditions must be sufficient for the transition currently being considered. If the validity of that basis later becomes material to another transition, it becomes an explicit object of review or revalidation.
+
+So:
+
+`provisional local closure != absolute foundation`
+
+`qualification may be reviewed != every qualification requires an endless prior qualification`
+
 ## State and transition
 
 A resulting state may be acceptable while the path used to reach it was invalid.
