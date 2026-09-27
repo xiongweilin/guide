@@ -2,13 +2,15 @@
 
 > **Six-dimension position: engineering semantics across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
 
-The engineering objective is not to implement a single `qualified = true`. It is to preserve the distinct conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
+The engineering objective is not to implement a master `qualified = true`, nor to let any one of the six dimensions become the semantic owner of the other five. It is to preserve non-substitution across all six dimensions and to keep the grounds for consequential transitions explicit. Because transition errors are especially easy to hide in software, qualification mechanics occupy substantial space in this document; that engineering density does **not** make Qualification theoretically prior to Distinction, Value, Capability, Change, or Others.
 
-The six dimensions are analytical distinctions, not a requirement for six independent fields, services, or layers. They need not sit at the same logical level: qualification is cross-cutting transition semantics, and distinction can form feedback loops with capability, tools, interfaces, and others. Engineering must preserve those semantic boundaries and dependencies rather than force a one-to-one physical decomposition.
+The six dimensions are analytical distinctions and are equally basic within the framework; they are not a requirement for six independent fields, services, or layers. Qualification provides transition semantics, Distinction preserves representational boundaries, Value preserves normative direction, Capability preserves reachability, Change preserves temporal and structural status, and Others preserves relational and multi-participant structure. Engineering must preserve these boundaries, interactions, and feedback relations rather than force a one-to-one physical decomposition or collapse them into one master state.
 
 Core chain:
 
 `request / trigger → problem framing / question qualification (when interpretation is required) → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
+
+Conformance to this engineering semantics does not prove that a representation is true of the World. Reality-side observation, counterexamples, failed effects, and changed conditions can invalidate current records, contracts, or assumptions and can ultimately require the guide's own distinctions to be revised.
 
 ## 0. A cognitive boundary is not a database field
 

@@ -6,7 +6,7 @@
 
 Qualification asks: **what conditions are sufficient for a candidate or state to enter the next state?**
 
-It is not a universal score. It is the structure of grounds required for a state transition.
+It is not a universal score. It is the structure of grounds required for a state transition. Qualification is one of the six equally basic analytical dimensions in this guide; it does not rank above distinction, value, capability, change, or others, and it does not define their content.
 
 ## Minimal state structure
 
@@ -107,7 +107,7 @@ A concrete qualification slice should identify at least:
 - conditions that must be satisfied and preserved;
 - degrees of freedom that remain open;
 - supporting basis;
-- who proposes, evaluates or judges, authorizes, verifies, and reopens;
+- who holds definition or standard-setting power, who proposes, who evaluates or judges, who decides or authorizes, who verifies, and who can reopen;
 - conditions for invalidation, exit, review, and revalidation.
 
 Different domains have different qualification conditions. One global `qualified = true` cannot preserve all of these meanings.
@@ -133,6 +133,32 @@ These are forms of **qualification contraction**.
 Each contraction needs grounds proportional to what it excludes or freezes. “Not generated,” “not currently visible,” or “not found with current resources” cannot silently become “impossible.” A constraint or verification standard that has already been qualified for a slice also cannot be rewritten merely because the current implementation fails to satisfy it.
 
 Closure is therefore not the first point where qualification matters; it is a special point reached after a sequence of qualified contractions.
+
+## Definition, judgment, and decision power
+
+Qualification sits inside a wider power structure. At least three powers should remain distinct:
+
+1. **Definition power**: the power to set or revise the problem boundary, candidate space, categories, admissible evidence, criteria, thresholds, verification standards, and completion conditions.
+2. **Judgment power**: the power to interpret the current basis and judge whether the defined conditions are met or sufficient. This is where qualification is most directly exercised.
+3. **Decision power**: the power to decide whether a judgment becomes commitment, authorization, resource allocation, rule adoption, action, continuation, suspension, or termination.
+
+Keep separate:
+
+`power to define != power to judge != power to decide`
+
+`standard-setting authority != evaluator authority != action / commitment authority`
+
+Holding one of these powers does not automatically grant the other two. A participant who can define a standard cannot therefore declare that the standard has been met; a participant who judges that a basis is sufficient does not therefore gain authority to commit resources or change reality; a decision-maker does not therefore gain authority to redefine evidence or lower the standard after seeing the result.
+
+This separation need not always mean three different people or institutions. In low-impact, easily reversible activity, one participant may legitimately hold several roles. But as impact, irreversibility, dependency, or power asymmetry grows, the framework should make the separation more real through independent evidence, independent evaluation, bounded rule-change authority, external veto or stop paths, review, appeal, or other checks appropriate to the domain.
+
+The main failure to prevent is a self-validating loop:
+
+`define the rule → judge against the rule → decide the consequence → redefine the rule when inconvenient`
+
+A process can be procedurally tidy at every local step and still be captured if the same position controls what counts as a candidate, what counts as sufficient, and whether the resulting judgment becomes binding.
+
+Qualification therefore does not generate definition power or decision power. It asks whether the current basis is sufficient within a defined transition. The legitimacy, allocation, and limits of the surrounding powers remain separate questions that may require value, others, domain governance, law, institutional procedure, or other external structures.
 
 ## Responsibility and qualification are orthogonal
 

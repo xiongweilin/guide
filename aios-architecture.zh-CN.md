@@ -2,6 +2,8 @@
 
 > **六维定位：六维的工程应用。** 本篇不是六维框架的来源，而是展示一个持续运行技术系统怎样在工程上保存这些边界。理论定义见 [README 的六维地图](./README.zh-CN.md#人类活动的六个基础维度) 与 `theory/` 下六篇文档。
 
+六个维度在这里仍然同等基础。资格之所以在 runtime 中频繁出现，是因为 admission 和状态转换需要显式 gate；这种实现需求不使资格成为区分、价值、能力、变化或他者的 owner，也不使它成为最高层解释。现实侧反馈可以要求这些表示中的任何一个重开，也可以要求 guide 自身重开。
+
 ## 认知边界与架构中的 Reality
 
 AIOS 不把“世界本身”实现成一个总 ontology。
@@ -75,7 +77,7 @@ Successful recovery = authoritative state + reality read-back + required verific
 
 `semantic-language` 为整个架构提供跨领域语义区分。
 
-`guide` 持有 doctrine、qualification rules、failure distinctions 和 architectural invariants。
+`guide` 持有六维框架、non-substitution、可修订边界和 architectural invariants。
 
 Agent implementation、model provider、model-routing gateway、monitoring system 和 deployment runtime 都是可替换集成。仅仅因为某次部署使用它们，并不会使其成为 durable semantic owner。
 
@@ -112,7 +114,7 @@ AIOS runtime 是 headless 且仅容器运行。容器只是部署边界，不是
 
 | 仓库 / 组件 | 所有权 |
 | --- | --- |
-| [guide](https://github.com/xiongweilin/guide) | doctrine、qualification、distinction、architectural invariant |
+| [guide](https://github.com/xiongweilin/guide) | 六维框架、non-substitution、可修订边界、architectural invariant |
 | [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的 monorepo 和 Git owner |
 | [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 跨领域含义和 non-substitution rule |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts、preference、relationship、resource link、provenance、revision、freshness、privacy boundary、purpose-limited context |

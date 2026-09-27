@@ -2,6 +2,8 @@
 
 > **Six-dimension position: engineering application of all six dimensions.** This document is not the source of the six-dimension framework; it shows how a continuously operating technical system can preserve these boundaries in engineering. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
 
+All six dimensions remain equally basic here. Qualification appears frequently because a runtime needs explicit admission and transition gates; that implementation concern does not make it the owner or highest-level interpretation of Distinction, Value, Capability, Change, or Others. Reality-side feedback can require any of these representations, and the guide itself, to be reopened.
+
 ## Cognitive boundary and Reality in the architecture
 
 AIOS does not implement “the World itself” as one total ontology.
@@ -128,7 +130,7 @@ continuity.
 
 | Repository / component | Ownership |
 | --- | --- |
-| [guide](https://github.com/xiongweilin/guide) | doctrine, qualification, distinctions, architectural invariants |
+| [guide](https://github.com/xiongweilin/guide) | six-dimension framework, non-substitution, revision boundaries, architectural invariants |
 | [aios](https://github.com/xiongweilin/aios) | monorepo and Git owner for AIOS source components |
 | [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | cross-domain meanings and non-substitution rules |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
@@ -741,7 +743,7 @@ New domain breadth does not imply a universal domain ontology.
 
 ```text
 guide
-    doctrine / qualification / distinctions
+    six dimensions / non-substitution / revisability
                      │
                      ▼
 aios/semantic-language

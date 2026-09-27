@@ -44,7 +44,9 @@ The same activity should retain at least six analytical dimensions that cannot s
 
 The six dimensions are not six kinds of object and not six independent axes. They are non-substitutable analytical dimensions of the same activity. They can constrain one another and form feedback loops.
 
-Qualification is cross-cutting transition semantics: it governs when candidates or states in the other dimensions may advance without replacing their content. It has two basic regimes in tension: **interpretive qualification**, where sufficiency is established through accountable judgment over context and evidence, and **specified qualification**, where sufficiency is checked against an explicit rule, predicate, threshold, or contract. Real activities can combine both, but they cannot silently substitute for one another. Distinction and capability form a feedback loop in activity: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. The reading order is therefore not an ontological derivation or a one-way causal stack.
+The six dimensions are **equally basic within this framework**. None is the master dimension, and none is entitled to define the content of the other five. Distinction asks what can enter representation; Qualification asks what grounds are sufficient for a transition; Value asks what is worth pursuing or refusing; Capability asks what is currently realizable and by what means; Change asks what persists, transitions, or requires reopening; Others asks how multiple participants, relations, power, recognition, alignment, and conflict alter the activity. Each dimension can constrain, challenge, or reopen the others.
+
+Qualification remains transition semantics within this set, not a higher-order owner of the framework. It has two basic regimes in tension: **interpretive qualification**, where sufficiency is established through accountable judgment over context and evidence, and **specified qualification**, where sufficiency is checked against an explicit rule, predicate, threshold, or contract. Real activities can combine both, but they cannot silently substitute for one another. Distinction and capability form one important feedback loop: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. Other dimensions form their own feedback relations as well. The reading order is navigational, not an ontological derivation, priority order, or one-way causal stack.
 
 For example:
 
@@ -56,7 +58,7 @@ For example:
 
 `my distinctions / values / authority != others' distinctions / values / recognition`
 
-## Qualification and non-substitution
+## Non-substitution across the six dimensions
 
 The common rule across the repository is: **what holds at one layer does not silently establish another layer.**
 
@@ -102,15 +104,17 @@ A more useful standard is:
 
 A framework can therefore remain incomplete in capability while still being responsible about where its current claims end.
 
-The framework itself is not exempt from these rules. A competing framing or theory does not need to translate itself into the current six-dimensional vocabulary before it can expose a blind spot or failure. Semantic mapping becomes necessary when integrating, federating, or migrating between frameworks, not as a precondition for challenge.
+The framework itself is not exempt from these rules. **This guide is a revisable working framework, not a source of truth about the World.** Its categories, distinctions, qualification rules, value framings, capability models, change models, and representations of others are all fallible. Reality-side observation, counterexamples, failed predictions, failed interventions, unanticipated effects, and better framings can require a claim to be narrowed, revised, replaced, or retired.
+
+A competing framing or theory does not need to translate itself into the current six-dimensional vocabulary before it can expose a blind spot or failure. Semantic mapping becomes necessary when integrating, federating, or migrating between frameworks, not as a precondition for challenge. Internal coherence is not sufficient protection against reality-side failure.
 
 Core structure should be reopened when repeated real problems cannot be located or handed off, when “keep open / unknown” stops producing new distinctions or useful stopping conditions, when maintaining the framework requires growing special cases without proportional value, or when the framework demands revisability from its objects while exempting itself.
 
 The default maintenance cycle is therefore:
 
-`use → accumulate failure cases → revise when necessary`
+`use → encounter reality / counterexamples → accumulate failures → revise, narrow, replace, or retire when necessary`
 
-not continuous expansion of the core.
+not continuous expansion of the core and not preservation of the framework for its own sake.
 
 ## Document structure
 
@@ -133,7 +137,7 @@ Theory lives under `theory/`:
 
 ## Suggested reading
 
-For the framework itself, read the six files in `theory/` in order.
+For the framework itself, read the six files in `theory/` in whatever order best matches the problem. The listed order is navigational, not a ranking of importance.
 
 For the engineering expression, read this page and then [Precise Semantics](./precise-semantics.md).
 

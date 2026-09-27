@@ -2,13 +2,15 @@
 
 > **六维定位：跨六维的工程语义。** 本篇负责防止区分、资格、价值、能力、变化和他者中的状态被压成同一个字段或被静默替代。理论定义见 [README 的六维地图](./README.zh-CN.md#人类活动的六个基础维度) 与 `theory/` 下六篇文档。
 
-工程目标不是实现一个 `qualified = true`，而是保存每个 qualification slice 各自的条件，使系统不能把某一层的有效性自动提升为下一层的有效性。
+工程目标不是实现一个总控式 `qualified = true`，也不是让六维中的任何一个维度成为另外五个维度的语义 owner。目标是保存六维之间的 non-substitution，并让重要转换的依据保持显式。由于软件最容易把状态转换中的短路藏进字段和流程，本文会使用较多 qualification 机制；这种工程表达密度**不表示资格在理论上高于区分、价值、能力、变化或他者**。
 
-六维是分析区分，不要求实现成六个独立字段、服务或层级，也不要求处在同一逻辑层级。资格是跨维度的状态转换语义；区分则可以与能力、工具、接口和他者形成反馈。工程上的要求是保存这些语义边界和依赖，而不是强迫它们一一对应某种物理拆分。
+六维在框架中同等基础，但不要求实现成六个独立字段、服务或层级。资格保存转换语义，区分保存表示边界，价值保存规范方向，能力保存可达性，变化保存时间与结构状态，他者保存关系和多参与者结构。工程上的要求是保存这些边界、相互作用和反馈关系，而不是强迫它们一一对应某种物理拆分，更不能把它们压成一个总状态。
 
 核心链：
 
 `request / trigger → problem framing / question qualification（需要解释时） → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
+
+符合这套工程语义，不等于某个表示已经成为关于世界的真理。现实侧 observation、反例、effect 失败和条件变化都可以使当前记录、contract 或假设失效，并最终要求 guide 自身的区分和结构接受修订。
 
 ## 0. 认知边界不是一个数据库字段
 
