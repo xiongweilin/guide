@@ -6,14 +6,27 @@ Capability asks: **which outcomes are currently realizable, and through what cau
 
 Capability is not the sum of skills stored inside a person. It is the set of reachable paths that can actually be invoked under current conditions.
 
-## Basic expansion structure
+## Epistemic status and capability modes
 
-`cannot → self-capable → assisted-capable → leverage-capable`
+Before classifying how an outcome can be reached, separate what is known about reachability:
 
-- **Cannot**: no feasible path is currently available, or necessary conditions are missing.
+`unknown | cannot | capable`
+
+- **Unknown**: the current distinguished range or evidence is insufficient to establish either a feasible callable path or its absence.
+- **Cannot**: under an explicit scope and qualified basis, necessary conditions are known to be absent or the bounded candidate space is sufficient to conclude that no feasible callable path is currently available.
+- **Capable**: at least one feasible callable path has been established under current conditions.
+
+When an outcome is capable, one or more modes may coexist:
+
+`self-capable | assisted-capable | leverage-capable`
+
 - **Self-capable**: achievable through one's body, knowledge, skills, and directly controlled resources.
 - **Assisted-capable**: achievable through tools, devices, AI, professional services, institutional interfaces, or other external capability.
 - **Leverage-capable**: achievable without personally carrying the main causal process, by using environment, rules, networks, incentives, cooperation, automation, or existing trends.
+
+This separation prevents an epistemic gap from being silently promoted into impossibility:
+
+`path absent from current representation != no feasible path exists`
 
 The core question becomes:
 
@@ -36,6 +49,20 @@ Whether a target is reachable depends on:
 - available recovery and exit paths.
 
 “I can do this” therefore always has a scope and set of conditions.
+
+## Feedback with distinction
+
+Capability assessment depends on paths, conditions, and evidence that have already been distinguished, while capability, tools, and interfaces can themselves change the next distinguishable range. This is dynamic feedback, not a definition of the two concepts as the same thing:
+
+`distinguished paths / conditions → current capability assessment → changed tools / action / coordination → new distinguishable range`
+
+Keep at least:
+
+`no path currently distinguished != currently proven incapable`
+
+`cannot under current bounded conditions != permanently impossible`
+
+New distinctions may reveal existing paths, while new tools, interfaces, or coordination with others may create paths that did not previously exist.
 
 ## Capability, permission, and value
 
@@ -79,4 +106,4 @@ The deepest capability loss is not merely failing to do one thing. It is losing 
 
 ## Boundary with the other dimensions
 
-Capability depends on paths made visible by [distinction](./distinction.md), needs [qualification](./qualification.md) before entering governed action, receives direction from [value](./value.md), changes as environments and structures [change](./change.md), and is often acquired, amplified, or constrained through [others](./others.md) and institutions.
+Capability assessment depends on paths, conditions, and evidence made visible by [distinction](./distinction.md), while capability, tools, and interfaces can expand later distinguishable range. It needs [qualification](./qualification.md) before entering governed action, receives direction from [value](./value.md), changes as environments and structures [change](./change.md), and is often acquired, amplified, or constrained through [others](./others.md) and institutions.
