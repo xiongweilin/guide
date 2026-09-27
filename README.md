@@ -6,9 +6,9 @@
 
 > Make clear what holds, why it holds, who may act, and how results are confirmed.
 
-An index of ideas and methods about knowledge, semantics, interaction, institutions, and reliable action.
+An index of ideas and methods about distinction, qualification, value, capability, change, others, knowledge, semantics, institutions, and reliable action in human activity.
 
-This repository keeps the **World** as a cognitive boundary: it refers to what is not exhausted by current observation, language, models, or classifications, without asserting that the World itself is ultimately made of “differences,” “relations,” or any other concept available inside a current representation. The documents begin once an Agent can form distinctions, so they are about **knowledge and action within a distinguishable world**, not a final ontology of the World itself.
+This repository keeps the **World** as a cognitive boundary: it refers to what is not exhausted by current observation, language, models, or classifications, without asserting that the World itself is ultimately made of “differences,” “relations,” or any other concept available inside a current representation. The documents begin once humans can form distinctions and participate in activity, so they are about **human activity within a distinguishable world**. Individuals, teams, organizations, institutions, Agents, and technical systems can all be concrete objects of analysis, but none is a prerequisite for the framework.
 
 ## Foundational boundaries
 
@@ -20,6 +20,23 @@ The following distinctions apply across all documents:
 - **Distinguished range**: distinctions the Agent has actually acquired, formed, and can currently invoke. It is no larger than the distinguishable range and may still contain mistaken distinctions.
 - **Default distinctions**: classifications and boundaries silently inherited from language, culture, interfaces, historical decisions, or existing models. Being default does not make them qualified.
 - **Question candidate and question qualification**: a sentence being askable does not mean its problem structure is established. Before answer search, inspect whether its objects, predicates, scope, presuppositions, default distinctions, and expected answer type are sufficiently supported.
+
+## Six basic dimensions of human activity
+
+Cognitive boundaries and qualification alone are not enough to describe human activity. The same activity should retain at least six coordinates that cannot silently substitute for one another:
+
+| Dimension | Minimal structure | Core question |
+| --- | --- | --- |
+| **Distinction** | `World boundary → distinguishable world / range → distinguished range` | What has entered the current world, and what has not? |
+| **Qualification** | `unmet → accumulating → sufficient → enter` | What conditions are sufficient for a candidate or state to advance? |
+| **Value** | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
+| **Capability** | `cannot → self-capable → assisted-capable → leverage-capable` | Which outcomes are currently realizable, and through what means? |
+| **Change** | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
+| **Others** | `relation strength × alignment / conflict` | Who affects whom, and in which dimensions are they aligned or in conflict? |
+
+The six dimensions are not six kinds of object. They are six coordinates of the same activity. For example, “can do” does not imply “worth doing,” “worth doing” does not imply “qualified to proceed,” and present stability does not imply long-term validity.
+
+See [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) for the full definitions and cross-dimensional relations.
 
 The foundational chain is therefore not “differences in reality directly produce judgment,” but:
 
@@ -33,6 +50,7 @@ The documents focus on boundaries between layers: a difference does not automati
 
 | Order | Document | Core question |
 | --- | --- | --- |
+| 00 | [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) | How do distinction, qualification, value, capability, change, and others jointly provide minimal coordinates for human activity? |
 | 01 | [From Difference to Qualification](./from-difference-to-qualification.md) | Starting from distinguishable range, default distinctions, and question qualification, what allows a candidate, judgment, rule, or action to enter the next state? |
 | 02 | [Knowledge and Judgment](./knowledge-and-judgment.md) | How should the World boundary, distinguishable world, distinguished range, evidence, unknowns, and judgment be separated? |
 | 03 | [Interaction, Value, and Institutions](./interaction-value-and-institutions.md) | How do multiple agents form value, commitments, authority, and institutions? |
@@ -42,7 +60,7 @@ The documents focus on boundaries between layers: a difference does not automati
 
 ## Suggested reading order
 
-Reading in the order above moves from how differences acquire qualification to how qualification becomes precise action and durable records.
+Start with the six-dimension overview, then read in the order above. This establishes the shared coordinates before moving from how differences acquire qualification to how qualification becomes precise action and durable records.
 For a more engineering-oriented path, start with [Precise Semantics](./precise-semantics.md) and [Action, Authorization, and Reliability](./action-authorization-and-reliability.md), then return to the foundations in knowledge, interaction, and institutions.
 
 ## About this index
