@@ -38,7 +38,7 @@ The same activity should retain at least six analytical dimensions that cannot s
 | [**Distinction**](./theory/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What has entered the current distinguished range, and what has not? |
 | [**Qualification**](./theory/qualification.md) | `unmet → accumulating → sufficient → enter` | What conditions are sufficient for a candidate or state to advance? |
 | [**Value**](./theory/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
-| [**Capability**](./theory/capability.md) | `cannot → self-capable → assisted-capable → leverage-capable` | Which outcomes are currently realizable, and through what means? |
+| [**Capability**](./theory/capability.md) | `unknown / cannot / capable` + `self / assisted / leverage` | Which outcomes are currently realizable, how is that known, and through what means? |
 | [**Change**](./theory/change.md) | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
 | [**Others**](./theory/others.md) | `relation strength × alignment / conflict` | Who affects whom, and in which dimensions are they aligned or in conflict? |
 
