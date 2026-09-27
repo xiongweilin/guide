@@ -10,6 +10,8 @@ It is not a universal score. It is the structure of grounds required for a state
 
 `unmet → accumulating → sufficient → enter`
 
+`Unmet` is a qualification state, not an epistemic negation. It may mean a condition is known false, evidence is missing, the state is unknown, or the required basis has simply not yet been established; those reasons should remain distinguishable.
+
 “Accumulating” need not mean a numerical increase, and “sufficient” need not mean one scalar threshold. Conditions may include:
 
 - necessary conditions becoming satisfied;
@@ -82,7 +84,7 @@ Reopening restores candidate and choice space. It does not automatically create 
 
 ## Finite closure and meta-qualification
 
-A qualification judgment is itself a claim and may need review, but the framework does not require an infinite stack of meta-qualification records before anything can proceed.
+A qualification judgment is itself a claim and may need review, but the framework does not require an infinite stack of meta-qualification judgments before anything can proceed.
 
 Each qualification slice closes only locally: its object, scope, purpose, time scale, supporting basis, authority, residual unknowns, and reopening conditions must be sufficient for the transition currently being considered. If the validity of that basis later becomes material to another transition, it becomes an explicit object of review or revalidation.
 
