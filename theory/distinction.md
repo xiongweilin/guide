@@ -100,6 +100,24 @@ Structural tension does not prove which replacement is correct. It can justify a
 
 `current structure is insufficient != correct replacement is already known`
 
+## Challenge without prior translation
+
+A distinction scheme must remain open to challenges that are not already expressible in its own vocabulary.
+
+An alternative framing, ontology, representation, or theory does **not** need to map itself into the current distinction scheme before it can expose a blind spot, counterexample, or failure.
+
+Keep separate:
+
+`challenge admission != migration requirement`
+
+During **challenge**, competing schemes may be compared through consequences, explanatory failures, excluded observations, unresolved unknowns, prediction, verification, or practical performance without first forcing semantic equivalence.
+
+Only when an alternative is being integrated, federated, or substituted into the current system does **migration** require explicit mapping of concepts, history, scope, and compatibility.
+
+Otherwise the current scheme could protect itself circularly by accepting only criticisms already stated in its own language.
+
+`current distinctions are the language of evaluation != current distinctions are the boundary of admissible alternatives`
+
 ## Distinction among multiple people
 
 Different people can inhabit the same World while having different distinguishable ranges, distinguished ranges, languages, and default classifications.
