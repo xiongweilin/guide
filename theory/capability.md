@@ -52,6 +52,20 @@ Whether a target is reachable depends on:
 
 “I can do this” therefore always has a scope and set of conditions.
 
+## Capability model and calibration
+
+A participant also maintains a working model of its own capability: what resources, tools, interfaces, permissions, collaborators, failure modes, and reachable paths it believes are currently available.
+
+That model is useful but fallible.
+
+`believed capability != actual reachable capability`
+
+`past capability != current capability`
+
+A person, Agent, team, or organization can overestimate capability by assuming stale permissions, unavailable tools, hidden dependencies, or recovery paths that do not actually work. It can also underestimate capability by failing to distinguish new tools, collaborators, interfaces, or leverage paths.
+
+Changes in providers, tools, permissions, resources, collaborators, environment, or recovery conditions should therefore trigger capability recalibration. Capability assessment is not only path discovery; it also includes correcting the model of what can currently be invoked.
+
 ## Feedback with distinction
 
 Capability assessment depends on paths, conditions, and evidence that have already been distinguished, while capability, tools, and interfaces can themselves change the next distinguishable range. This is dynamic feedback, not a definition of the two concepts as the same thing:
