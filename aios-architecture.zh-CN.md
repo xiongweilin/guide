@@ -1,0 +1,515 @@
+# AIOS 架构
+
+## 长期自主运行时
+
+```text
+长期、无人值守闭环：
+
+┌────────────────────────────────────┐       有边界的 effect      ┌─────────┐
+│ AIOS Runtime                       ├─────────────────────────────►│ Reality │
+│ observe → qualify → decide         │◄─────────────────────────────┤         │
+│ → authorize → act → verify         │ 权威 read-back /            └─────────┘
+│ Personal World / Runtime / Domains │ evidence / outcome / unknown
+│ 可替换的内部 Agent/Executor        │
+└────────────────────────────────────┘
+```
+
+AIOS 是一个长期运行的 AI runtime，面向低可见度、无人值守运行。它的主闭环是：AIOS 对现实采取行动，并吸收权威 observation、read-back 和 outcome evidence。日常运行不依赖人在场。
+
+## 临时外部介入
+
+```text
+Human
+  │ 必要时 query / request / approval
+  ▼
+现有 Agent 产品
+（短生命周期 client session）
+  │ 权威检查 / 解释 / 有边界且已授权的修复 / verification
+  ▼
+AIOS integration boundary ─────────────► Reality（需要已授权 effect 时）
+  │
+  └── 向 Human 报告已验证状态，然后断开
+```
+
+用户不直接把 AIOS 当成交互式助手操作。需要 inspection、explanation 或 maintenance 时，可以使用现有 Agent 产品作为临时 intervention adapter。Agent 读取权威状态、解释当前条件，只执行有边界且已授权的变更，验证 read-back 和 recovery，报告结果，然后退出。Session 结束后 AIOS 继续运行。
+
+这个外部 Agent 不是 AIOS runtime 的组成部分，不是 durable state 或 authority owner，也不是必须存在的 runtime dependency。API/CLI 是机器集成和维护边界，不是 AIOS 的主要人机管理界面。
+
+```text
+Human presence != system operation
+Human absence != suspended agency
+Intervention session != durable agency
+External Agent != AIOS authority owner
+Agent explanation != authoritative state
+Agent repair != successful recovery
+Successful recovery = authoritative state + reality read-back + required verification
+```
+
+`semantic-language` 为整个架构提供跨领域语义区分。
+
+`guide` 持有 doctrine、qualification rules、failure distinctions 和 architectural invariants。
+
+Agent implementation、model provider、model-routing gateway、monitoring system 和 deployment runtime 都是可替换集成。仅仅因为某次部署使用它们，并不会使其成为 durable semantic owner。
+
+## 架构区域
+
+```text
+┌──────────────────────────────────────────────────────────────────────┐
+│ AIOS — 长期自主运行时                                                │
+│                                                                      │
+│ Personal World ──purpose-limited context───► internal Agent/Executor│
+│       ▲                                     │                        │
+│       │ provenance / revision                │ analysis / candidate  │
+│       │                                     ▼                        │
+│       └──────────────────────────► domain admission                  │
+│                         │                                            │
+│ semantic-language / World Runtime / Domain Controllers              │
+│ responsibility / authority / work / effects / recovery / read-back   │
+└─────────────────────────┬────────────────────────────────────────────┘
+                          │ governed effect / evidence return
+                          ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│ REALITY                                                              │
+│ external systems / source repositories / builds / deployments /      │
+│ traffic / infrastructure / organizational systems                    │
+└──────────────────────────────────────────────────────────────────────┘
+
+带外，仅在需要时：
+Human ⇄ existing short-lived Agent product ⇄ AIOS machine boundary
+```
+
+AIOS runtime 是 headless 且仅容器运行。容器只是部署边界，不是 durable semantic owner。内部 Agent/executor implementation、model provider、monitoring system 和外部 Agent client 都保持可替换；AIOS 自主连续性不依赖其中任何一个具体实现。
+
+## 仓库拓扑
+
+| 仓库 / 组件 | 所有权 |
+| --- | --- |
+| [guide](https://github.com/xiongweilin/guide) | doctrine、qualification、distinction、architectural invariant |
+| [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的 monorepo 和 Git owner |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 跨领域含义和 non-substitution rule |
+| [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts、preference、relationship、resource link、provenance、revision、freshness、privacy boundary、purpose-limited context |
+| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | durable agency state、responsibility、authority、decision、qualification、execution identity、recovery、reconciliation、history |
+| [control-plane](https://github.com/xiongweilin/aios/tree/main/src/domains/control_plane) | operational incident、有边界 repair、monitoring、operational provider、operational outcome evidence |
+| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/domains/administrative_orchestrator) | administrative case、obligation、governance basis、administrative effect、business outcome 和 completion semantics |
+| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/domains/autonomous_development) | 软件开发 lifecycle、requirements、source/build/test/deploy/canary/promotion/rollback semantics |
+| Agent / executor adapters | 可替换的 cognition 或 engineering execution implementation |
+| Model providers / routing adapters | 可替换的模型访问与协议 transport |
+| Providers and external systems | 具体 effect 和权威外部状态 |
+| Reality | execution 尝试改变、observation 尝试建立的真实状态 |
+
+组件目录可以保持独立 semantic owner，而不需要成为独立 Git repository。
+
+## 跨领域语义宪法
+
+`semantic-language` 保持小而跨领域。
+
+```text
+Evidence != Belief
+Observation != Claim
+Claim != current qualified state
+IntentCandidate != confirmed human intent
+HumanApprovalGesture != Decision
+Decision != Authorization
+Authentication != Representation
+Representation != transition authority
+Personal context != execution authority
+Effect != Outcome
+Provider success != verified reality
+Projection != authoritative state
+Historical validity != current qualification
+Explanation != reality
+```
+
+领域特定含义继续由 domain owner 持有。
+
+Runtime lifecycle 含义继续由 Runtime owner 持有。
+
+个人含义继续由 Personal World owner 持有。
+
+外部 Agent session state 是 ephemeral；它不会变成 durable authority、responsibility 或 agency state。
+
+## 临时介入边界
+
+Human intervention 位于 AIOS 操作闭环之外。出现 query 或 maintenance 需要时，用户通过现有、可替换的 Agent 产品连接，而不是直接操作 AIOS。
+
+```text
+Human request / approval when needed
+  ↓
+short-lived external Agent session
+  ↓
+authenticated read of authoritative state
+  ↓
+explanation / diagnosis / bounded repair proposal
+  ↓
+explicit authorization when a state-changing action is required
+  ↓
+authoritative owner admission / effect
+  ↓
+reality read-back / recovery verification
+  ↓
+report to the Human, then disconnect
+```
+
+外部 Agent 只拥有 ephemeral session state 和 disposable projection。它不拥有 durable authority、responsibility、Personal World truth、domain lifecycle truth、domain outcome 或 runtime execution。
+
+API 或 CLI 可以作为机器集成或维护边界；它不是主要人机管理界面，也不会把 Human 放进长期运行闭环。
+
+Command 只有通过 authoritative owner 才能改变状态。
+
+Projection 保持 read-only 且 disposable。
+
+含糊的 command transport 保持 `pending-reconciliation`，直到 authoritative read-back 消除含糊。结束 intervention session 不会暂停或终止 AIOS agency。
+
+## 个人连续性
+
+`personal-world` 持有一个人的 durable、持续演化的 context。
+
+```text
+Source
+  ↓
+Observation
+  ↓
+Claim
+  ↓
+Qualification
+  ↓
+Personal Record Revision
+  ↓
+Current lineage head
+  ↓
+Purpose-limited ContextProjection
+  ↓
+Agent / authorized consumer
+```
+
+公开 personal record kind 保持：
+
+```text
+PersonalFact
+Preference
+Relationship
+ResourceLink
+```
+
+Personal World 不拥有：
+
+```text
+Decision
+Authorization
+Mandate
+Responsibility
+Work
+Run
+Effect
+Outcome
+provider execution
+domain lifecycle
+model-private memory
+```
+
+模型 inference 本身不会变成已接受的 personal truth。
+
+Domain projection 不会把 domain ownership 转移到 Personal World。
+
+ContextProjection 不会变成 canonical Personal World state。
+
+## 认知执行
+
+Cognitive execution 是可替换边界。
+
+```text
+autonomous domain trigger / standing mandate
+  or
+authorized request admitted through a temporary Agent session
+  +
+Purpose-limited Personal World context
+  +
+Domain state
+  +
+Runtime constraints
+  ↓
+Agent / Executor
+  ↓
+analysis / proposal / implementation candidate / test / review
+```
+
+Executor 不拥有 durable authority、durable responsibility、Personal World truth 或 domain completion。
+
+根据接收边界，Executor output 仍然只是 evidence、interpretation、proposal、implementation candidate 或 review result。
+
+Model selection 和 model routing 是 executor 边界之下的 transport/configuration concern。它们不会扩大 authority 或 effect scope；改变它们也不会替代 Personal World、Runtime state、Domain state、responsibility 或 history。
+
+## Durable agency
+
+`world-runtime` 是 interpreted intent 与 domain realization 之间的 agency continuity membrane。
+
+```text
+qualified work trigger / authorized request
+        │
+        ▼
+   governed agency
+        │
+        ▼
+   WORLD RUNTIME
+        │
+        ▼
+ bounded realization
+        │
+        ▼
+    Reality-side
+```
+
+Runtime 持有通用 durable agency primitive：
+
+```text
+identity
+epistemic references
+responsibility
+decision
+mandate
+authorization
+strategy
+qualification
+Work / Run
+execution identity
+provider-attempt identity
+reconciliation
+recovery
+historical lineage
+```
+
+Runtime 不拥有：
+
+```text
+personal facts or preferences
+UI interaction state
+model selection policy
+software release semantics
+administrative completion semantics
+incident-repair semantics
+provider-specific business semantics
+```
+
+Runtime 管理一个 agency transition 或 reality-bound effect 是否可以继续。
+
+Domain Controller 决定 domain completion 和 domain outcome 的具体含义。
+
+## Domain realization
+
+### Control Plane
+
+`control-plane` 持有 operational reality。
+
+```text
+monitoring signal
+  ↓
+authenticated ingress
+  ↓
+Runtime Responsibility + DomainAssignment
+  ↓
+bounded diagnosis
+  ↓
+RepairClosure
+  ↓
+DomainWork / DomainRun
+  ↓
+operational provider
+  ↓
+reality observation
+  ↓
+RepairRevision
+  ↓
+DomainReport
+  ↓
+Runtime assessment / Decision / discharge
+```
+
+Operational diagnosis 不是 authority。
+
+Provider success 不是 target recovery。
+
+Operational completion 需要 domain evidence。
+
+### Administrative
+
+`administrative-orchestrator` 持有 administrative reality。
+
+```text
+organizational request / evidence
+  ↓
+Administrative case / facts / policy / obligations
+  ↓
+GovernanceBasis
+  ↓
+Administrative ExecutionAuthorization
+  ↓
+Runtime Responsibility / Work / Run / authority
+  ↓
+external administrative system
+  ↓
+independent read-back
+  ↓
+ConfirmedOutcome
+  ↓
+CompletionAssessment
+  ↓
+Runtime responsibility assessment
+```
+
+Administrative approval satisfaction 不是 Runtime Authorization。
+
+Administrative EffectRecord 不是 external reality。
+
+Case completion 不自动等于 Runtime responsibility discharge。
+
+### Autonomous Development
+
+`autonomous-development` 持有软件开发现实。
+
+```text
+qualified development objective / admitted request
+  ↓
+DevelopmentRequest
+  ↓
+Personal World context projection
+  ↓
+engineering executor requirement analysis
+  ↓
+ChangeProposal
+  ↓
+isolated implementation
+  ↓
+deterministic verification + independent review
+  ↓
+immutable build
+  ↓
+candidate deployment
+  ↓
+offline evaluation
+  ↓
+canary
+  ↓
+promotion or rollback
+  ↓
+post-promotion soak
+  ↓
+ReleasedVersion
+```
+
+Autonomous Development 持有：
+
+```text
+DevelopmentTarget
+ProductObjectiveRevision
+DevelopmentRequest
+RequirementAnalysis
+ChangeProposal
+worktree and source semantics
+verification gates
+build artifact identity
+deployment state
+traffic exposure
+feedback attribution
+canary lifecycle
+promotion
+rollback
+ReleasedVersion
+```
+
+配置的 engineering executor 执行边界明确的实现工作；Autonomous Development 保留 lifecycle 和 release authority。
+
+World Runtime 持有通用 responsibility、authority、durable effect identity 和 reality-effect admission。
+
+Autonomous Development 持有“有效软件 release”的含义。
+
+Git commit 不是 ReleasedVersion。
+
+Tests passed 不是 promotion authority。
+
+Deployment healthy 不是 ProductImproved。
+
+Canary completion 不是 release finalization。
+
+## Autonomous Development 垂直切片
+
+```text
+autonomous development trigger
+  or
+authorized request via temporary external Agent
+  ↓
+DevelopmentRequest admission
+  ↓
+Personal World
+  ↓
+purpose-limited context + basis revisions
+  ↓
+engineering executor requirement analysis
+  ↓
+RequirementAnalysis / ChangeProposal
+  ↓
+Autonomous Development lifecycle
+  ↓
+World Runtime
+  ↓
+governed reality-changing dispatch
+  ↓
+Git / build / deployment / traffic
+  ↓
+Reality
+  ↓
+tests / telemetry / deployment read-back / release evidence
+  ↓
+Autonomous Development
+  ↓
+domain outcome / ReleasedVersion / rollback / unknown
+  ↓
+World Runtime
+  ↓
+qualification / responsibility assessment / reconciliation
+  ↓
+autonomous continuation / next work cycle
+```
+
+如果某人需要 explanation 或 intervention，外部 Agent 可以临时读取由此产生的权威状态，只执行已授权、有边界的 repair，完成 verification 后退出。这是 exceptional access path，不是软件 lifecycle 的必经阶段。
+
+Requirement analysis 使用的 Personal World basis 绑定 revision。
+
+```text
+Personal World record @ revision N
+  ↓
+RequirementAnalysis basis
+  ↓
+record changes / disappears / loses current qualification
+  ↓
+basis revalidation fails
+  ↓
+old analysis cannot silently continue
+  ↓
+revalidation / new analysis / temporary external intervention if needed
+```
+
+Personal context 变化不会改写 historical analysis。
+
+Historical analysis 不意味着 current qualification。
+
+## 现实回流路径
+
+每条有后果的路径都包含 return path。
+
+```text
+Reality
+  ↓
+observation / provider receipt / external state
+  ↓
+Domain evidence
+  ↓
+Effect realization / Outcome / Unknown
+  ↓
+World Runtime reconciliation and qualification
+  ↓
+Responsibility assessment
+  ↓
+current agency state / next autonomous cycle
+```
+
+只有异常情况需要 human attention 时，才使用单独的短生命周期 Agent session 把这个状态投影给用户。
