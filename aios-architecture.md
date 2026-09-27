@@ -89,7 +89,7 @@ Successful recovery = authoritative state + reality read-back + required verific
 
 `semantic-language` supplies cross-domain semantic distinctions across the architecture.
 
-`guide` holds doctrine, qualification rules, failure distinctions, and architectural invariants.
+`guide` holds the six-dimension framework, non-substitution rules, revision boundaries, and architectural invariants.
 
 Agent implementations, model providers, model-routing gateways, monitoring systems, and deployment runtimes are replaceable integrations. None becomes a durable semantic owner merely because a deployment uses it.
 

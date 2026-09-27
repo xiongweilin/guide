@@ -133,4 +133,8 @@ Coordination sometimes requires exchanging facts and sometimes rebuilding a shar
 
 ## Boundary with the other dimensions
 
-A candidate being distinguished does not mean it has [qualification](./qualification.md). Distinguishing a norm does not mean it is one's [value](./value.md). Failure to distinguish a path does not prove lack of [capability](./capability.md). A usable current classification does not prove long-term [stability](./change.md). One person's distinction scheme cannot silently become the structure that [others](./others.md) must accept.
+- Distinguishing a candidate does not mean it has [qualification](./qualification.md).
+- Distinguishing a norm does not mean it is one's [value](./value.md).
+- Failure to distinguish a path does not prove lack of [capability](./capability.md).
+- A usable current classification does not prove long-term [stability](./change.md).
+- One person's distinction scheme cannot silently become the structure that [others](./others.md) must accept.

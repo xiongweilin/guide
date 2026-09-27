@@ -555,3 +555,203 @@ current agency state / next autonomous cycle
 ```
 
 只有异常情况需要 human attention 时，才使用单独的短生命周期 Agent session 把这个状态投影给用户。
+
+仅有 provider acknowledgement 不能终止闭环。
+
+Transport ambiguity 必须保留 uncertainty。
+
+只要 domain 支持，就通过独立的 authoritative read-back 确认现实状态。
+
+Unknown 保持为一等状态。
+
+## 连续性模型
+
+架构承载三种 durable continuity。
+
+```text
+Personal continuity
+  = Personal World
+
+Agency continuity
+  = World Runtime
+
+Domain continuity
+  = Domain Controllers
+```
+
+`semantic-language` 在三种连续性之间保存 distinctions。
+
+External-Agent projection 从 authoritative owner 重建，不是第四个 durable authority store。
+
+替换内部 Agent/executor 不应替换任何 durable continuity。
+
+替换或断开短生命周期 external Agent client，不应替换 Personal World、World Runtime、Domain state 或 AIOS operation。
+
+Domain Controller 可以演化，而不需要把自己的专业 lifecycle 移入 World Runtime。
+
+World Runtime 可以重启，而不丢失 durable agency state。
+
+## Authority path
+
+```text
+authenticated actor
+  ↓
+representation
+  ↓
+intent / proposal
+  ↓
+Decision
+  ↓
+Mandate / Authorization
+  ↓
+bounded Runtime transition authority
+  ↓
+domain-specific execution authorization
+  ↓
+durable effect identity
+  ↓
+provider dispatch
+  ↓
+reality
+```
+
+前一阶段不能替代后一阶段。
+
+知道一个 resource，不会因此取得对它的 authority。
+
+能够代表某个 principal，不会自动取得 transition authority。
+
+取得 transition authority，不会自动取得所有 reality effect 的权限。
+
+Domain execution permission 不能证明 domain outcome。
+
+## Evidence 与 qualification path
+
+```text
+Reality
+  ↓
+Observation
+  ↓
+Evidence
+  ↓
+Domain interpretation
+  ↓
+Outcome / Unknown candidate
+  ↓
+qualification
+  ↓
+Responsibility assessment
+  ↓
+current agency state
+```
+
+Evidence 必须能够追溯到 source。
+
+Current qualification 变化时，historical evidence 仍然只是 historical evidence。
+
+Material basis 变化时，应触发 revalidation，而不是静默继续。
+
+## 仓库放置规则
+
+只有当多个 domain 都需要同一个不可替代的 distinction 时，新的跨领域 meaning 才进入 `semantic-language`。
+
+新的 durable cross-domain agency invariant 进入 `world-runtime`。
+
+新的 personal fact、preference、relationship、resource reference 或 personal-context lineage 进入 `personal-world`。
+
+新的专业 lifecycle 进入 Domain Controller。
+
+Provider-specific implementation 保持在拥有它的 Domain Controller 之下。
+
+短生命周期 external Agent interaction 与 projection logic 保持在 AIOS 之外；任何 AIOS API/CLI integration 都不得成为 authoritative durable state owner。
+
+Agent/executor logic 保持可替换，默认不成为 durable state owner。
+
+Model routing 与 model transport 保持为可替换的 integration concern。
+
+新组件通过显式 Runtime 与 Personal World boundary 接入，而不是复制任何一侧的 substrate。
+
+## 扩展拓扑
+
+新增 executor 接到 cognitive execution boundary。
+
+```text
+Agency / Domain request
+  ↓
+executor selection
+  ├─ Agent adapter
+  ├─ engineering executor
+  └─ specialized executor
+```
+
+新增 Domain Controller 接到 World Runtime 下方。
+
+```text
+World Runtime
+  ├─ Control Plane
+  ├─ Administrative
+  ├─ Autonomous Development
+  ├─ future domain
+  └─ future domain
+```
+
+新增 provider 接到其 owning domain 下方。
+
+```text
+Domain Controller
+  ├─ API
+  ├─ application
+  ├─ device
+  ├─ infrastructure
+  ├─ human
+  └─ robot
+```
+
+新增 capability 不意味着需要新的 Runtime semantics。
+
+更强的 model intelligence 不意味着新的 durable authority。
+
+新的 domain breadth 不意味着 universal domain ontology。
+
+## 稳定架构
+
+```text
+guide
+    six dimensions / non-substitution / revisability
+                     │
+                     ▼
+aios/semantic-language
+    cross-domain semantic constitution
+
+AIOS — long-lived, headless runtime
+    personal-world ──► internal Agent / Executor
+           ▲                         │
+           │                         ▼
+           └────────────── domain admission
+                                     │
+                                     ▼
+                               world-runtime
+                                     │
+                    ┌────────────────┼─────────────────┐
+                    ▼                ▼                 ▼
+              control-plane   administrative   autonomous-development
+                    │                │                 │
+                    ▼                ▼                 ▼
+                 providers       providers          providers
+                    │                │                 │
+                    └────────────────┼─────────────────┘
+                                     ▼ effects
+                                  Reality
+                                     │
+                                     └── evidence / read-back / outcome / unknown
+                                         ───────────────────────────────► AIOS
+
+Out-of-band, only when needed:
+Human ─► existing Agent product (short-lived session) ─► AIOS machine boundary
+                 inspect / explain / bounded authorized repair / verify
+                 ─► report ─► disconnect; AIOS continues
+
+External Agent products, model providers, and routing adapters remain
+replaceable integrations. The external intervention session is not a stage in
+the continuous AIOS–Reality operating loop.
+```

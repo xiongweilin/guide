@@ -148,4 +148,8 @@ Long duration is not permanent exemption from review, and temporary negative exp
 
 ## Boundary with the other dimensions
 
-The objects and norm sources involved in value must first be [distinguished](./distinction.md). A value entering commitment, rule, or action needs independent [qualification](./qualification.md). “Worth doing” does not imply current [capability](./capability.md), including real exit capability. Values can change with experience and structure [change](./change.md). When values affect multiple people, [others](./others.md) introduces alignment, conflict, strategic interaction, authority, recognition, and legitimacy.
+- The objects and norm sources involved in value must first be [distinguished](./distinction.md).
+- A value entering commitment, rule, or action needs independent [qualification](./qualification.md).
+- “Worth doing” does not imply current [capability](./capability.md), including real exit capability.
+- Values can change with experience and structure [change](./change.md).
+- When values affect multiple people, [others](./others.md) introduces alignment, conflict, strategic interaction, authority, recognition, and legitimacy.

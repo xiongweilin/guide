@@ -118,6 +118,8 @@ not continuous expansion of the core and not preservation of the framework for i
 
 ## Document structure
 
+English and Simplified Chinese are two co-authoritative views of the same documents, not primary and secondary editions. Every semantic change must update both language versions together. Section structure, claim strength, examples, formulas, tables, code blocks, links, and revision boundaries should correspond; wording may differ only as required for natural translation.
+
 The repository root keeps only three conceptual documents:
 
 | Document | Role |
