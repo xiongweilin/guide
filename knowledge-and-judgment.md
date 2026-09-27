@@ -1,5 +1,7 @@
 # Knowledge and Judgment
 
+> **Six-dimension position: distinction, qualification, change.** This document mainly explains how finite systems form distinctions, qualify judgments, and retain the ability to revise them as structures change. See [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) for the shared framework.
+
 The epistemic problem is not "how to obtain the truth once and for all." It is how a finite system can form usable judgments when information, time, and the candidate space are incomplete while preserving the ability to revise those judgments.
 
 ## 1. World, distinguishable world, and the current representation boundary
