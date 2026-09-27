@@ -1,5 +1,7 @@
 # Action, Authorization, and Reliability
 
+> **Six-dimension position: capability, qualification, change, others.** This document mainly explains how capability becomes bounded action, and why tools, dependencies, authority, change, and multi-party effects cannot be flattened into one question of whether something can be done. See [Six Basic Dimensions of Human Activity](./six-dimensions-of-human-activity.md) for the shared framework.
+
 Between "knowing what is true" and "changing reality," we must distinguish at least judgment, technical capability, formal authorization, execution, real-world effect, verification, and long-term responsibility.
 
 ## 0. Qualify the problem and reality boundary before action
