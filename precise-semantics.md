@@ -519,6 +519,7 @@ Storage may be consolidated; semantics must not be.
 18. A specified rule evaluating true does not establish the rule's applicability, authority, freshness, or normative validity unless those prerequisites are independently established.
 19. An interpretive judgment does not become a deterministic rule without explicit rule-making, versioning, and authority.
 20. Role separation does not establish failure independence; multiple reviewers / verifiers / models count as reliability gain only when common failure correlation is materially reduced.
+21. Individually qualified components do not automatically establish qualification of their composition; when composition introduces new assumptions, scope, authority, dependencies, feedback, or side effects, the composition needs its own compatibility and qualification basis.
 
 ## 24. Minimum conformance tests
 
@@ -534,6 +535,7 @@ At minimum, test that:
 - a change in tools, interfaces, permissions, capability, or coordination can reopen or revise the distinguishable range instead of being flattened into a field update inside the old range;
 - a high-confidence model claim cannot enter authoritative facts directly;
 - multiple reviewers / verifiers / models are not treated as independent evidence or redundancy when they share a material common failure source;
+- when two or more local objects are individually qualified but their composition creates new scope, assumptions, authority, dependencies, feedback, or side effects, the composed object cannot be marked qualified without a composition-level basis;
 - stale facts / policies / Decisions / authority are rejected;
 - an operation cannot exceed authorization scope;
 - an illegal transition is rejected even when its endpoint is otherwise legitimate;
