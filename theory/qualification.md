@@ -25,10 +25,80 @@ The core question is:
 
 > Under the current object, scope, purpose, time scale, and conditions, what makes this transition valid now?
 
+## Two qualification regimes
+
+Reality does not always make sufficiency available in the same way. Keep at least two regimes distinct.
+
+### Interpretive qualification
+
+**Interpretive qualification** is used when the conditions for sufficiency cannot be completely fixed in advance. A participant must interpret the object, context, evidence, counterevidence, purpose, competing framings, and residual unknowns, then form an accountable judgment that the current basis is sufficient or insufficient.
+
+This is common in open-ended questions, diagnosis, strategy, design, exception handling, novel cases, and judgments whose relevant variables or weights cannot be fully enumerated beforehand.
+
+Interpretive qualification is not arbitrary. It should preserve at least:
+
+- the object and transition being judged;
+- scope, purpose, and time scale;
+- evidence and counterevidence;
+- assumptions and default distinctions;
+- competing interpretations or candidates that materially matter;
+- residual unknowns and accepted risk;
+- reasons for closure;
+- who is accountable for the judgment;
+- review and reopening conditions.
+
+So:
+
+`judgment is reasoned != criterion was fully specified in advance`
+
+`interpretive sufficiency != universal truth`
+
+### Specified qualification
+
+**Specified qualification** is used when the relevant conditions have already been made explicit enough to check: a rule, predicate, threshold, state-machine guard, protocol, test, contract, approval set, or equivalent specification defines what counts as sufficient for the current transition.
+
+Examples include an age threshold, required signatures, a schema constraint, a test suite, a policy predicate, or a versioned authorization condition.
+
+Specified qualification should preserve at least:
+
+- the rule or contract identity and version;
+- its authority or source;
+- applicability scope and effective period;
+- required inputs and their versions;
+- predicates, thresholds, or required conditions;
+- evaluator and evaluation result;
+- exceptions, override rules, and reopening conditions.
+
+A clear rule only makes evaluation more determinate. It does not establish the rule's own applicability, authority, current validity, or value.
+
+So:
+
+`rule is explicit != rule is qualified for this case`
+
+`predicate evaluates true != transition is automatically authorized`
+
+### Tension, combination, and conversion
+
+The two regimes solve different problems and create a persistent tension:
+
+- specified qualification increases determinacy, repeatability, and automation, but only inside the distinctions and conditions already encoded;
+- interpretive qualification can handle ambiguity, novelty, and incomplete specification, but requires accountable judgment and leaves more room for disagreement and revision.
+
+Many real activities are **hybrid**. A transition may require specified gates plus an interpretive closure, or an interpretive judgment may first decide whether a specified rule applies.
+
+They can also convert over time:
+
+`repeated interpretation → explicit rule-making → specified qualification`
+
+`novel case / rule ambiguity / changed basis → reopening → interpretive qualification`
+
+But conversion must be explicit. A past interpretation does not silently become a deterministic rule, and a satisfied deterministic rule does not eliminate the need to interpret whether that rule still applies.
+
 ## Qualification slice
 
 A concrete qualification judgment should identify at least:
 
+- the qualification regime: interpretive, specified, or explicitly hybrid, and why;
 - the current object or state;
 - the intended next state;
 - scope, purpose, and time scale;
@@ -39,6 +109,8 @@ A concrete qualification judgment should identify at least:
 - conditions for invalidation, exit, review, and revalidation.
 
 Different domains have different qualification conditions. One global `qualified = true` cannot preserve all of these meanings.
+
+A shared status such as `sufficient` does not erase the regime that produced it. Two records with the same result but different qualification regimes do not carry the same semantics.
 
 ## Qualification does not silently inherit
 
