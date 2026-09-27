@@ -35,7 +35,7 @@ The same activity should retain at least six analytical dimensions that cannot s
 
 | Dimension | Minimal structure | Core question |
 | --- | --- | --- |
-| [**Distinction**](./theory/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What has entered the current distinguished range, and what has not? |
+| [**Distinction**](./theory/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What can become distinguishable, what has been distinguished, and what remains outside the current representation? |
 | [**Qualification**](./theory/qualification.md) | `unmet → accumulating → sufficient → enter` | What conditions are sufficient for a candidate or state to advance? |
 | [**Value**](./theory/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
 | [**Capability**](./theory/capability.md) | `unknown / cannot / capable` + `self / assisted / leverage` | Which outcomes are currently realizable, how is that known, and through what means? |
@@ -44,7 +44,7 @@ The same activity should retain at least six analytical dimensions that cannot s
 
 The six dimensions are not six kinds of object and not six independent axes. They are non-substitutable analytical dimensions of the same activity. They can constrain one another and form feedback loops.
 
-Qualification is cross-cutting transition semantics: it governs when candidates or states in the other dimensions may advance without replacing their content. Distinction and capability are mutually recursive in activity: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. The reading order is therefore not an ontological derivation or a one-way causal stack.
+Qualification is cross-cutting transition semantics: it governs when candidates or states in the other dimensions may advance without replacing their content. Distinction and capability form a feedback loop in activity: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. The reading order is therefore not an ontological derivation or a one-way causal stack.
 
 For example:
 
