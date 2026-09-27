@@ -96,7 +96,7 @@ But conversion must be explicit. A past interpretation does not silently become 
 
 ## Qualification slice
 
-A concrete qualification judgment should identify at least:
+A concrete qualification slice should identify at least:
 
 - the qualification regime: interpretive, specified, or explicitly hybrid, and why;
 - the current object or state;
@@ -105,7 +105,7 @@ A concrete qualification judgment should identify at least:
 - conditions that must be satisfied and preserved;
 - degrees of freedom that remain open;
 - supporting basis;
-- who proposes, judges, authorizes, verifies, and reopens;
+- who proposes, evaluates or judges, authorizes, verifies, and reopens;
 - conditions for invalidation, exit, review, and revalidation.
 
 Different domains have different qualification conditions. One global `qualified = true` cannot preserve all of these meanings.
