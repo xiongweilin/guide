@@ -470,7 +470,7 @@ Fail closed 只意味着“系统现在不能继续”，绝不能伪造相反�
 
 ```text
 FactClaim
-QualificationBasis / QualificationAssessment（保留 qualification regime）
+QualificationBasis + regime-specific assessment / evaluation
 PolicyVersion / PolicyEvaluation
 Decision
 GovernanceBasis
