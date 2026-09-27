@@ -1,5 +1,9 @@
 # guide
 
+![Repository: Public](https://img.shields.io/badge/repository-public-success.svg) [![Docs: EN / 中文](https://img.shields.io/badge/docs-EN%20%7C%20%E4%B8%AD%E6%96%87-blue.svg)](README.zh-CN.md)
+
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 > Make clear what holds, why it holds, who may act, and how results are confirmed.
 
 An index of ideas and methods about knowledge, semantics, interaction, institutions, and reliable action.
