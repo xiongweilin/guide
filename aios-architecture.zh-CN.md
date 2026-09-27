@@ -27,7 +27,8 @@ AIOS 不把“世界本身”实现成一个总 ontology。
 │ AIOS Runtime                       ├─────────────────────────────►│ Reality │
 │ observe → distinguish / qualify    │◄─────────────────────────────┤         │
 │ → frame / decide → authorize       │ 权威 read-back /            └─────────┘
-│ Personal World / Runtime / Domains │ evidence / outcome / unknown
+│ → act → verify                     │ evidence / outcome / unknown
+│ Personal World / Runtime / Domains │
 │ 可替换的内部 Agent/Executor        │
 └────────────────────────────────────┘
 ```
