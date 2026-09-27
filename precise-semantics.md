@@ -1,5 +1,7 @@
 # Precise Semantics
 
+> **Six-dimension position: engineering semantics across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
+
 The engineering objective is not to implement a single `qualified = true`. It is to preserve the independent conditions of each qualification slice so that the system cannot automatically promote validity at one layer into validity at the next.
 
 Core chain:

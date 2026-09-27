@@ -1,5 +1,7 @@
 # AIOS Architecture
 
+> **Six-dimension position: engineering application of all six dimensions.** This document is not the source of the six-dimension framework; it shows how a continuously operating technical system can preserve these boundaries in engineering. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
+
 ## Cognitive boundary and Reality in the architecture
 
 AIOS does not implement “the World itself” as one total ontology.

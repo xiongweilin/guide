@@ -4,48 +4,109 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-> Make clear what holds, why it holds, who may act, and how results are confirmed.
+> Make clear what we distinguish, what is sufficient, what is worth pursuing, what can be done, how structures change, and how people affect one another.
 
-An index of ideas and methods about knowledge, semantics, interaction, institutions, and reliable action.
+An index of ideas and methods about the **basic structure of human activity and its engineering expression**.
 
-This repository keeps the **World** as a cognitive boundary: it refers to what is not exhausted by current observation, language, models, or classifications, without asserting that the World itself is ultimately made of “differences,” “relations,” or any other concept available inside a current representation. The documents begin once an Agent can form distinctions, so they are about **knowledge and action within a distinguishable world**, not a final ontology of the World itself.
+Individuals, families, teams, organizations, institutions, Agents, and technical systems can all be objects of analysis. Agent is only a formal term for a participant capable of taking part in the current activity; it is not a prerequisite for the framework.
 
-## Foundational boundaries
+## World boundary
 
-The following distinctions apply across all documents:
+This repository keeps the **World** as a cognitive boundary.
 
-- **World (cognitive boundary)**: what lies beyond the current representation remains open; the structure of an Agent's representation cannot be projected back as the structure of the World itself.
-- **Distinguishable world**: aspects of reality that can enter distinction, comparison, relation, and verification under some sensing, language, tool, interaction, and capability conditions.
-- **Distinguishable range**: distinctions that could in principle be formed under the current capabilities and interfaces, including candidates not yet actually formed.
-- **Distinguished range**: distinctions the Agent has actually acquired, formed, and can currently invoke. It is no larger than the distinguishable range and may still contain mistaken distinctions.
-- **Default distinctions**: classifications and boundaries silently inherited from language, culture, interfaces, historical decisions, or existing models. Being default does not make them qualified.
-- **Question candidate and question qualification**: a sentence being askable does not mean its problem structure is established. Before answer search, inspect whether its objects, predicates, scope, presuppositions, default distinctions, and expected answer type are sufficiently supported.
+Current observations, language, models, classifications, schemas, ontologies, and knowledge graphs are not entitled by default to count as the complete structure of the World simply because they are usable. The documents concern **human activity within a distinguishable world**, not a final ontology of the World itself.
 
-The foundational chain is therefore not “differences in reality directly produce judgment,” but:
+Keep at least:
 
-`World (cognitive boundary) → distinguishable world / distinguishable range → acquisition and distinguished range → concepts, relations, and structure → question candidate → question qualification → answer or model candidate → judgment qualification → decision, authorization, action, and verification`
+- **World (cognitive boundary)**: what remains beyond the current representation stays open;
+- **distinguishable world / distinguishable range**: distinctions that could in principle be formed under current sensing, language, tools, interaction, capability, and interfaces;
+- **distinguished range**: distinctions already acquired, formed, and currently invocable;
+- **default distinctions**: classifications and boundaries silently inherited from language, culture, interfaces, institutions, historical decisions, or existing models.
 
-No layer silently substitutes for the next, and no current chain may be projected backward as a complete description of the World itself.
+Therefore:
 
-The documents focus on boundaries between layers: a difference does not automatically become a qualification, a judgment does not automatically become an authorization, and an execution result does not automatically mean that reality has reached the intended state.
+`current representation != the World itself`
 
-## Contents
+`absent from current representation != nonexistent != impossible`
 
-| Order | Document | Core question |
+## Six basic dimensions of human activity
+
+The same activity should retain at least six coordinates that cannot silently substitute for one another:
+
+| Dimension | Minimal structure | Core question |
 | --- | --- | --- |
-| 01 | [From Difference to Qualification](./from-difference-to-qualification.md) | Starting from distinguishable range, default distinctions, and question qualification, what allows a candidate, judgment, rule, or action to enter the next state? |
-| 02 | [Knowledge and Judgment](./knowledge-and-judgment.md) | How should the World boundary, distinguishable world, distinguished range, evidence, unknowns, and judgment be separated? |
-| 03 | [Interaction, Value, and Institutions](./interaction-value-and-institutions.md) | How do multiple agents form value, commitments, authority, and institutions? |
-| 04 | [Action, Authorization, and Reliability](./action-authorization-and-reliability.md) | Once we know how to act, how can action be safe and verifiable? |
-| 05 | [Precise Semantics](./precise-semantics.md) | How can facts, permissions, decisions, execution, and verification remain semantically distinct? |
-| 06 | [AIOS Architecture](./aios-architecture.md) | How does a continuously operating AI runtime close the loop with reality, and how can an external Agent intervene temporarily? |
+| [**Distinction**](./theory/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What has entered the current world, and what has not? |
+| [**Qualification**](./theory/qualification.md) | `unmet → accumulating → sufficient → enter` | What conditions are sufficient for a candidate or state to advance? |
+| [**Value**](./theory/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
+| [**Capability**](./theory/capability.md) | `cannot → self-capable → assisted-capable → leverage-capable` | Which outcomes are currently realizable, and through what means? |
+| [**Change**](./theory/change.md) | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
+| [**Others**](./theory/others.md) | `relation strength × alignment / conflict` | Who affects whom, and in which dimensions are they aligned or in conflict? |
 
-## Suggested reading order
+The six dimensions are not six kinds of object. They are six coordinates of the same activity.
 
-Reading in the order above moves from how differences acquire qualification to how qualification becomes precise action and durable records.
-For a more engineering-oriented path, start with [Precise Semantics](./precise-semantics.md) and [Action, Authorization, and Reliability](./action-authorization-and-reliability.md), then return to the foundations in knowledge, interaction, and institutions.
+For example:
 
-## About this index
+`can do != worth doing`
 
-This repository is a continuously refined collection of concepts, boundaries, and judgment frameworks.
-Technical terms are used where they preserve precision; no prior commitment to a specific theoretical system is assumed.
+`worth doing != qualified to act`
+
+`stable now != valid indefinitely`
+
+`my distinctions / values / authority != others' distinctions / values / recognition`
+
+## Qualification and non-substitution
+
+The common rule across the repository is: **what holds at one layer does not silently establish another layer.**
+
+Typical boundaries include:
+
+`default distinction != structure of the World`
+
+`question can be asked != question is qualified`
+
+`question is qualified != answer is reliable`
+
+`judgment is sufficient != goal is worth committing to`
+
+`worth doing != capable of doing`
+
+`capable of doing != authorized to do`
+
+`authorized != executed`
+
+`execution success != real-world effect occurred`
+
+`effect occurred != goal completed`
+
+`historically valid != currently valid`
+
+The theory explains these boundaries through the six dimensions. Precise Semantics and AIOS preserve them in engineering systems.
+
+## Document structure
+
+The repository root keeps only three conceptual documents:
+
+| Document | Role |
+| --- | --- |
+| **README** | World boundary, six-dimension map, and repository entry point |
+| [**Precise Semantics**](./precise-semantics.md) | turns theoretical boundaries into implementable, verifiable engineering semantics that resist silent substitution |
+| [**AIOS Architecture**](./aios-architecture.md) | shows how these boundaries are realized in a continuously operating AI runtime |
+
+Theory lives under `theory/`:
+
+1. [Distinction](./theory/distinction.md)
+2. [Qualification](./theory/qualification.md)
+3. [Value](./theory/value.md)
+4. [Capability](./theory/capability.md)
+5. [Change](./theory/change.md)
+6. [Others](./theory/others.md)
+
+## Suggested reading
+
+For the framework itself, read the six files in `theory/` in order.
+
+For the engineering expression, read this page and then [Precise Semantics](./precise-semantics.md).
+
+For one concrete implementation, continue to [AIOS Architecture](./aios-architecture.md).
+
+The six dimensions are basic coordinates of human activity. AIOS is one engineering application of them.
