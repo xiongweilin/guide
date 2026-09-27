@@ -519,6 +519,7 @@ AuditRecord
 18. 规定规则 evaluation 为真，不能自动建立该规则的 applicability、authority、freshness 或规范有效性；这些前提必须独立成立。
 19. 解释型判断不能在没有显式 rule-making、versioning 和 authority 的情况下变成确定性规则。
 20. 角色分离不自动产生故障独立；只有共同失败相关性实际下降时，多 reviewer / verifier / model 才能被当作可靠性增益。
+21. 局部组件分别获得 qualification，不自动建立组合后的 qualification；当组合引入新的 assumption、scope、authority、dependency、feedback 或 side effect 时，必须建立组合层自己的兼容性与 qualification basis。
 
 ## 24. 最小 conformance test
 
@@ -534,6 +535,7 @@ AuditRecord
 - 工具、接口、权限、能力或协作方式变化时，可以触发可区分范围的 reopening / revision，而不能只在旧范围内修改一个字段；
 - 高置信度 model claim 不能直接进入 authoritative fact；
 - 多个 reviewer / verifier / model 即使角色不同，只要共享关键共同失败源，就不能被测试当作独立证据或独立冗余；
+- 两个或多个局部对象分别 qualified 时，若其组合产生新的 scope、assumption、authority、dependency、feedback 或 side effect，而没有组合层 basis，则不能把组合整体标记为 qualified；
 - stale fact / policy / Decision / authority 被拒绝；
 - operation 不能超出 authorization scope；
 - 即使 endpoint 本身合法，illegal transition 也会被拒绝；
