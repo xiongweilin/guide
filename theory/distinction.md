@@ -2,7 +2,7 @@
 
 [English](./distinction.md) | [简体中文](./distinction.zh-CN.md)
 
-Distinction asks: **what can enter the current world, and what has not yet entered it?**
+Distinction asks: **what can become distinguishable under current conditions, what has already entered the distinguished range, and what remains outside the current representation?**
 
 It is not a final ontology of the World. It is the foundational dimension through which finite humans and their extended systems form usable structures of reality.
 
@@ -19,6 +19,12 @@ It is not a final ontology of the World. It is the foundational dimension throug
 Therefore:
 
 `absent from current representation != nonexistent != impossible`
+
+The structure above is a semantic dependency map, not a one-way causal history. Once distinctions are formed, they can change language, tools, capability, interfaces, and coordination with others; those changes can alter what becomes distinguishable next. A dynamic view is therefore:
+
+`distinguishable range_t → acquisition → distinguished range_t → changed tools / capability / interfaces / others → distinguishable range_t+1`
+
+This feedback does not make the World a derived object. The World remains the cognitive boundary against which every current distinguishable range stays incomplete in principle.
 
 ## Default distinctions
 
