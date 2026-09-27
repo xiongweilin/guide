@@ -104,17 +104,51 @@ A more useful standard is:
 
 A framework can therefore remain incomplete in capability while still being responsible about where its current claims end.
 
-The framework itself is not exempt from these rules. **This guide is a revisable working framework, not a source of truth about the World.** Its categories, distinctions, qualification rules, value framings, capability models, change models, and representations of others are all fallible. Reality-side observation, counterexamples, failed predictions, failed interventions, unanticipated effects, and better framings can require a claim to be narrowed, revised, replaced, or retired.
+The framework itself is not exempt from these rules. **This guide is a revisable working framework, not a source of truth about the World.** Its categories, distinctions, qualification rules, value framings, capability models, change models, and representations of others are all fallible. Reality-side observation, counterexamples, failed predictions, failed interventions, unanticipated effects, and better framings can give people sufficient reason to narrow, revise, replace, or stop using a claim or framework.
+
+### No proof obligation for the number of dimensions
+
+This guide does not attempt to prove why there are exactly six dimensions, and it will not create a new proof obligation if the number of dimensions changes later.
+
+The current dimensional count is a **working closure**: it is sufficient when it helps distinguish real problems, prevents important substitutions, supports useful action and engineering, and remains responsive to reality-side failure. That is enough for current use.
+
+So:
+
+`current six dimensions are useful != reality has exactly six fundamental dimensions`
+
+`dimension count changed != the old count must first be disproved`
+
+`framework works well enough for current purposes != framework has reached a final foundation`
+
+The framework does not recurse indefinitely into “why exactly this many dimensions?” If further questioning is not producing materially better distinctions, decisions, predictions, actions, or corrections, the count may remain provisionally closed. Reality can reopen it later.
+
+### Retirement is not a self-enforcing rule
+
+A theory is not an acting subject. It cannot guarantee that people will obey its own review, replacement, or retirement guidance.
+
+The same theory can remain useful to one person, become obsolete for another, be partially retained by a third, and be abandoned at different times. There is no requirement that retirement be synchronized across people, organizations, or contexts.
+
+Therefore this guide does not define an impossible rule such as “the theory must retire itself when condition X is met.” It can only provide signals that may justify review, narrowing, replacement, archival, or non-use. Whether those actions happen is a matter for living participants, their contexts, their values, their capabilities, and their relations.
+
+So:
+
+`theory states a retirement condition != theory can enforce retirement`
+
+`one user stops using the theory != all users should stop at the same time`
+
+`continued use by someone != proof that the theory remains adequate everywhere`
+
+Revision and retirement are therefore **human practices around the framework**, not autonomous behaviors of the framework itself.
 
 A competing framing or theory does not need to translate itself into the current six-dimensional vocabulary before it can expose a blind spot or failure. Semantic mapping becomes necessary when integrating, federating, or migrating between frameworks, not as a precondition for challenge. Internal coherence is not sufficient protection against reality-side failure.
 
-Core structure should be reopened when repeated real problems cannot be located or handed off, when “keep open / unknown” stops producing new distinctions or useful stopping conditions, when maintaining the framework requires growing special cases without proportional value, or when the framework demands revisability from its objects while exempting itself.
+People have reason to reopen the core when repeated real problems cannot be located or handed off, when “keep open / unknown” stops producing new distinctions or useful stopping conditions, or when maintaining the framework requires growing special cases without proportional value. These are review signals, not self-executing commands issued by the framework.
 
-The default maintenance cycle is therefore:
+A practical maintenance cycle is therefore:
 
-`use → encounter reality / counterexamples → accumulate failures → revise, narrow, replace, or retire when necessary`
+`use → encounter reality / counterexamples → accumulate failures → people revise, narrow, replace, archive, or stop using when sufficiently warranted`
 
-not continuous expansion of the core and not preservation of the framework for its own sake.
+not continuous expansion of the core, not infinite justification of the current dimension count, and not a claim that all users will update or retire the framework together.
 
 ## Document structure
 
