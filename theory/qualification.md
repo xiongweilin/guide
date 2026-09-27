@@ -98,7 +98,7 @@ But conversion must be explicit. A past interpretation does not silently become 
 
 A concrete qualification slice should identify at least:
 
-- the qualification regime: interpretive, specified, or explicitly hybrid, and why;
+- the primitive qualification regime(s): interpretive and/or specified, whether they are composed, and why;
 - the current object or state;
 - the intended next state;
 - scope, purpose, and time scale;
