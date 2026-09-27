@@ -114,6 +114,40 @@ Different domains have different qualification conditions. One global `qualified
 
 A shared status such as `sufficient` does not erase the regime that produced it. Two records with the same result but different qualification regimes do not carry the same semantics.
 
+## Qualification contraction
+
+Qualification is not only about the final moment of entry or closure. Many intermediate operations reduce the degrees of freedom that remain open:
+
+- rejecting a candidate;
+- stopping search;
+- fixing an interpretation;
+- freezing an interface or verification standard;
+- narrowing scope;
+- restricting action;
+- turning a provisional arrangement into a commitment.
+
+These are forms of **qualification contraction**.
+
+`open space → qualified contraction → convergence → provisional closure`
+
+Each contraction needs grounds proportional to what it excludes or freezes. “Not generated,” “not currently visible,” or “not found with current resources” cannot silently become “impossible.” A constraint or verification standard that has already been qualified for a slice also cannot be rewritten merely because the current implementation fails to satisfy it.
+
+Closure is therefore not the first point where qualification matters; it is a special point reached after a sequence of qualified contractions.
+
+## Responsibility and qualification are orthogonal
+
+Responsibility asks **who** is accountable for defining, proposing, judging, authorizing, executing, verifying, stopping, repairing, recording, or reopening.
+
+Qualification asks whether the **current basis is sufficient** for the transition under consideration.
+
+Keep separate:
+
+`responsible role exists != qualification conditions are satisfied`
+
+`qualification conditions are satisfied != authority is automatically granted`
+
+A role can own a judgment without being entitled to fabricate its evidence or prerequisites. Conversely, a basis can be sufficient while the relevant authority still belongs to someone else.
+
 ## Qualification does not silently inherit
 
 The central rule is:
@@ -178,6 +212,18 @@ Qualification therefore checks both:
 - whether the transition from the previous state had valid grounds.
 
 A valid endpoint cannot retroactively prove a valid path.
+
+## Cross-domain transfer strength
+
+When a structure appears across domains, keep at least three levels of transfer distinct:
+
+1. **Shared problem**: only the question or framing transfers.
+2. **Formal similarity**: a representation, comparison, or computational structure can transfer.
+3. **Mechanism similarity**: limited prediction or intervention experience can transfer only when the relevant objects, boundary conditions, and mechanisms are sufficiently alike.
+
+`formal similarity != mechanism evidence`
+
+A structure that has mechanism-level support in one domain does not inherit the same status in another domain. Cross-domain reuse therefore needs its own qualification rather than being justified by vocabulary or shape alone.
 
 ## Boundary with the other dimensions
 
