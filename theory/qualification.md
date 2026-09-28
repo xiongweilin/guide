@@ -98,41 +98,27 @@ But conversion must be explicit. A past interpretation does not silently become 
 
 ## Qualification slice
 
-A concrete qualification slice should identify at least:
+A concrete qualification slice needs enough context to answer:
 
-- the primitive qualification regime(s): interpretive and/or specified, whether they are composed, and why;
-- the current object or state;
-- the intended next state;
-- scope, purpose, and time scale;
-- conditions that must be satisfied and preserved;
-- degrees of freedom that remain open;
-- supporting basis;
-- who holds definition or standard-setting power, who proposes, who evaluates or judges, who decides or authorizes, who verifies, and who can reopen;
-- conditions for invalidation, exit, review, and revalidation.
+- which regime applies and what transition is being judged;
+- scope, purpose, time scale, conditions, and supporting basis;
+- what remains open and what is being excluded or frozen;
+- who defines standards, judges, decides or authorizes, verifies, and can reopen;
+- what invalidates, reviews, or revalidates the conclusion.
 
-Different domains have different qualification conditions. One global `qualified = true` cannot preserve all of these meanings.
-
-A shared status such as `sufficient` does not erase the regime that produced it. Two records with the same result but different qualification regimes do not carry the same semantics.
+Different domains have different qualification conditions, so one global `qualified = true` cannot preserve all meanings. A shared result such as `sufficient` also does not erase the regime and basis that produced it.
 
 ## Qualification contraction
 
-Qualification is not only about the final moment of entry or closure. Many intermediate operations reduce the degrees of freedom that remain open:
+Qualification can matter before final entry when an intermediate narrowing itself claims that there is sufficient basis to exclude or freeze possibilities. Examples include rejecting a candidate, ending search, freezing a standard, or turning a provisional arrangement into a commitment.
 
-- rejecting a candidate;
-- stopping search;
-- fixing an interpretation;
-- freezing an interface or verification standard;
-- narrowing scope;
-- restricting action;
-- turning a provisional arrangement into a commitment.
+Such a narrowing is a **qualification contraction** only when sufficiency is actually being asserted:
 
-These are forms of **qualification contraction**.
+`narrowing != qualification by default`
 
-`open space → qualified contraction → convergence → provisional closure`
+`open space → qualified contraction → provisional closure`
 
-Each contraction needs grounds proportional to what it excludes or freezes. “Not generated,” “not currently visible,” or “not found with current resources” cannot silently become “impossible.” A constraint or verification standard that has already been qualified for a slice also cannot be rewritten merely because the current implementation fails to satisfy it.
-
-Closure is therefore not the first point where qualification matters; it is a special point reached after a sequence of qualified contractions.
+A qualified contraction needs grounds proportional to what it excludes or freezes. “Not generated,” “not currently visible,” or “not found with current resources” cannot silently become “impossible.” Closure may result from repeated qualified contractions, but not every reduction of options is a qualification event.
 
 ## Definition, judgment, and decision power
 
@@ -176,118 +162,64 @@ A role can own a judgment without being entitled to fabricate its evidence or pr
 
 ## No-shortcut rule
 
-Non-substitution can be stated more generally.
+When moving from `X` to `Y` materially depends on an intermediate responsibility, basis, or qualification `R`, it cannot be silently omitted:
 
-If moving from `X` to `Y` requires an intermediate responsibility, basis, or qualification `R`:
+`X → R → Y`, not `X → Y`.
 
-`X → R → Y`
-
-then the framework must not silently compress it into:
-
-`X → Y`
-
-When a material responsibility is missing, the legitimate responses are limited to four broad forms:
-
-1. **add the missing responsibility position** when the structure truly lacks a necessary distinction;
-2. **handoff explicitly** when another domain, authority, procedure, or theory owns that responsibility;
-3. **keep the question open** while more basis, candidates, or evidence are obtained;
-4. **stop specifying** when there is no current qualification to make a stronger claim.
-
-This rule does not guarantee that the eventual conclusion is correct. It prevents an easier conclusion from occupying the semantic position of a harder question whose responsibility has not yet been discharged.
+If `R` is missing, add the missing position when it is genuinely necessary, hand it off to the domain or procedure that owns it, keep the question open while basis is obtained, or stop making the stronger claim. This prevents semantic substitution; it does not guarantee that the eventual conclusion is correct.
 
 ## Composition qualification
 
-Qualification is not automatically compositional.
+Qualification is not automatically compositional:
 
 `qualified(C1) + qualified(C2) + ... != qualified(C1 ∘ C2 ∘ ...)`
 
-Individually qualified components, claims, rules, actions, or subsystems may fail when combined because their assumptions, scopes, timing, resources, permissions, interfaces, effects, or failure dependencies interact.
-
-Keep at least three questions distinct:
-
-- is each local component sufficiently qualified in its own slice?
-- are the local qualifications mutually compatible when combined?
-- do the local descriptions contain enough information to qualify the joint structure itself?
-
-So:
-
-`locally qualified != jointly compatible != composition qualified`
-
-A composition therefore needs its own basis whenever the interaction can create new constraints, side effects, feedback, authority expansion, dependency, or failure propagation.
+Local qualification does not establish joint compatibility or qualification of the composition. A separate composition basis is needed only when interaction introduces material new assumptions, scope, timing, permissions, dependencies, side effects, feedback, or failure propagation.
 
 ## Handoff completeness
 
-A handoff can lose responsibility even when both modules are internally well-formed.
+A material handoff should preserve enough context to prevent downstream overclaim:
 
-A materially important handoff should preserve enough context for the receiver to know what is being transferred and what is **not** being claimed. Depending on the domain, this includes:
-
-- current conclusion or state;
-- object, scope, purpose, and time scale;
-- supporting basis and source provenance;
-- key assumptions;
-- major residual unknowns;
-- live alternatives that remain qualified for consideration;
-- counterevidence, falsification, or invalidation conditions;
-- current closure status;
-- review, revalidation, and reopening triggers.
+- the current conclusion or state, with scope, purpose, and time scale;
+- supporting basis, key assumptions, residual unknowns, and material alternatives;
+- invalidation, review, revalidation, or reopening conditions;
+- the limits of current closure and authority.
 
 `handoff != downstream requalification`
 
-The receiver may rely on the transferred material only within the qualification actually preserved by the handoff. Transfer does not silently create new authority, broader scope, stronger evidence, or permanent validity.
+Transfer does not silently create broader scope, stronger evidence, new authority, or permanent validity.
 
 ## Qualification does not silently inherit
 
-The central rule is:
+The repository-wide non-substitution rule applies directly to qualification:
 
-`valid at one layer != automatically valid at the next`
+`valid at one slice != automatically valid at the next`
 
-For example:
-
-`default distinction != structure of the World`
-
-`question can be asked != question is qualified`
-
-`question is qualified != answer is reliable`
+In particular:
 
 `evidence exists != judgment is sufficient`
 
 `judgment is sufficient != goal is worth committing to`
 
-`goal is worth committing to != someone has authority to decide`
-
-`authority to decide != current execution permission`
-
-`request succeeded != real-world effect occurred`
+`goal is worth committing to != authority to decide`
 
 `effect occurred != goal is complete`
 
-`goal complete != long-term validity continues`
+A qualification only carries the scope and basis actually established for that slice.
 
-Many serious failures are not total errors at one step. They are cases where qualification from one slice is silently promoted into another.
+## Finite closure and reopening
 
-## Closure and reopening
-
-Finite activity cannot keep all possibilities open forever. A common cycle is:
+Finite activity needs provisional closure:
 
 `open → converge → provisional closure → continue → conditions change → review / reopen`
 
-Closure means only that support is sufficient for the current purpose. It does not mean permanent truth.
+Closure is local to the current object, scope, purpose, time scale, and basis; it is not permanent truth or an absolute foundation. The framework does not require an infinite stack of prior meta-qualifications before action.
 
-Material changes in facts, scope, dependencies, authority, value, cost, risk, or environment should trigger review, revalidation, or reopening.
-
-Reopening restores candidate and choice space. It does not automatically create a new answer, decision, or authority.
-
-## Finite closure and meta-qualification
-
-A qualification judgment is itself a claim and may need review, but the framework does not require an infinite stack of meta-qualification judgments before anything can proceed.
-
-Each qualification slice closes only locally: its object, scope, purpose, time scale, supporting basis, authority, residual unknowns, and reopening conditions must be sufficient for the transition currently being considered. If the validity of that basis later becomes material to another transition, it becomes an explicit object of review or revalidation.
-
-So:
+Material changes in facts, scope, dependencies, authority, value, cost, risk, or environment can trigger review, revalidation, or reopening. Reopening restores candidate and choice space; it does not automatically create a new answer, decision, or authority.
 
 `provisional local closure != absolute foundation`
 
-`qualification may be reviewed != every qualification requires an endless prior qualification`
+`qualification may be reviewed != every qualification requires endless prior qualification`
 
 ## State and transition
 
@@ -314,4 +246,4 @@ A structure that has mechanism-level support in one domain does not inherit the 
 
 ## Boundary with the other dimensions
 
-Qualification depends on [distinction](./distinction.md), but cannot be inferred from it. It governs transitions involving [value](./value.md), [capability](./capability.md), [change](./change.md), and [others](./others.md), while never replacing the content of those dimensions.
+Qualification uses [distinction](./distinction.md) to identify what is being judged, but cannot be inferred from it. It can constrain transitions involving [value](./value.md), [capability](./capability.md), [change](./change.md), and [others](./others.md) without defining their content.

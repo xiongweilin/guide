@@ -6,7 +6,7 @@
 
 Distinction asks: **what can become distinguishable under current conditions, what has already entered the distinguished range, and what remains outside the current representation?**
 
-It is not a final ontology of the World. It is the foundational dimension through which finite humans and their extended systems form usable structures of reality.
+It is not a final ontology of the World. It describes how finite humans and their extended systems form usable representations of reality.
 
 ## Basic structure
 

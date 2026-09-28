@@ -116,4 +116,4 @@ A system can look stable while losing its ability to exit, substitute, recover, 
 
 ## Boundary with the other dimensions
 
-[Distinction](./distinction.md) determines what is currently treated as structure. [Qualification](./qualification.md) determines when it can remain or must reopen. [Value](./value.md) can be revised through experience. [Capability](./capability.md) determines whether paths can be changed. [Others](./others.md) couples multiple change processes together.
+[Distinction](./distinction.md) affects what is currently treated as structure. [Qualification](./qualification.md) asks whether there is sufficient basis to maintain or reopen a current treatment. [Value](./value.md) can be revised through experience. [Capability](./capability.md) affects which paths can actually be changed. [Others](./others.md) couples multiple change processes together.

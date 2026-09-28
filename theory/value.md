@@ -31,13 +31,13 @@ Keep separate:
 
 “I feel this is my value” does not by itself prove independence from external norms.
 
-## Value formation: four layers
+## Value layers
 
-A useful non-substitution sequence is:
+Four analytical layers may matter, but they are not a mandatory developmental sequence:
 
-`consequence difference → system relevance → regulatory polarity → experience-status gate → experienced valence → first-order orientation → reflective endorsement → individual value commitment`
+`descriptive / functional != experiential != reflective commitment != public normative`
 
-Each arrow introduces a new question. None is automatic.
+A case need not contain all four. In particular, public normativity is not derived merely by extending an individual's experience or commitment.
 
 ### Descriptive / functional
 
@@ -85,58 +85,33 @@ Pain, welfare, fear, attachment, dignity loss, or strong personal commitment can
 
 ## Normative standing and rights claims
 
-Not every preference or affected interest automatically occupies the same normative position. Multi-participant questions should distinguish at least:
+Not every preference or affected interest occupies the same normative position:
 
 `has a preference != has an interest != is affected != has moral standing != has procedural standing != has decision right != has veto right != has authority`
 
-These positions may overlap, but none should silently inherit from another.
-
-A rights claim should preserve enough structure to show what is being claimed rather than treating “right” as one undifferentiated label. Depending on the domain, this can include:
-
-- the right-holder;
-- the protected object, interest, freedom, status, or opportunity;
-- the duty-bearer or constrained party;
-- source and justification basis;
-- scope, conditions, and priority;
-- whether and how the claim can be overridden;
-- remedy, review, or appeal;
-- recognition and practical enforcement.
-
-Keep separate:
+A material rights claim should preserve at least the holder and protected interest or freedom, the constrained or duty-bearing party, the relevant basis and scope, and available remedy, recognition, or enforcement.
 
 `source of a right != justification of the right != recognition of the right != enforcement of the right`
 
-The guide does not attempt to derive all rights from one ultimate moral foundation. It requires the relevant rights basis and conflicts to remain visible when they materially affect a decision.
+The guide does not derive all rights from one ultimate moral foundation. It requires the relevant basis and conflicts to remain visible when they materially affect a decision.
 
 ## Normative conflict, aggregation, and public justification
 
-Value conflict should not be compressed into one generic tradeoff. Depending on the case, preserve distinctions such as:
+Value conflict need not reduce to one generic tradeoff. Depending on the case, it may involve comparable tradeoffs, thresholds or side constraints, priority conflicts, partial comparability or incomparability, or a tragic conflict in which every available option violates an important value or claim.
 
-- ordinary tradeoffs between comparable values;
-- threshold conflicts, where one consideration changes priority after a limit;
-- side constraints that are not treated as freely compensable;
-- priority conflicts between roles, commitments, or claims;
-- partial comparability, where only some comparisons are qualified;
-- incomparability, where no shared ordering is currently established;
-- tragic conflicts, where every available option violates an important value or claim.
-
-So a legitimate current state may be:
+A legitimate current state can therefore be:
 
 `value A qualified + value B qualified + material conflict + no qualified common metric`
-
-That state is not a failure merely because no scalar optimizer can close it.
 
 When many people are involved, also keep:
 
 `individual preferences != aggregated preference != collective value != legitimate decision`
 
-Aggregation can be useful, but the aggregation rule itself has assumptions, exclusions, information requirements, and distributional effects. A majority, sum, ranking, market price, or welfare measure cannot silently become the whole public normative judgment.
-
-Publicly binding decisions may therefore require a **public justification structure**: who is affected, who has standing, which claims and rights enter, what information is admissible, what cannot be traded away, which procedure applies, who decides, and what review, appeal, or exit remains.
+Aggregation can be useful, but a majority, sum, ranking, market price, or welfare measure does not silently become the whole public normative judgment. Binding decisions may require a public justification structure covering who is affected, who has standing, which rights or claims enter, which procedure applies, who decides, and what review, appeal, or exit remains.
 
 `normative truth claim != consent != public justifiability != procedural legitimacy != authority`
 
-The guide does not choose one final theory of justice, welfare, freedom, equality, rights, or legitimacy. Its role is to keep the conflict structure inspectable enough that a domain-specific normative theory or institution can enter without being confused with fact, preference, payoff, or power.
+The guide does not choose one final theory of justice, welfare, freedom, equality, rights, or legitimacy. It keeps the conflict structure inspectable enough for domain-specific normative theories or institutions to enter without being confused with fact, preference, payoff, or power.
 
 Also keep terminology separate when external theories use “capability” normatively:
 
@@ -177,16 +152,6 @@ What matters is the structure of influence:
 Finding manipulation or coercion does not reveal what the person “really ought to want.” It weakens the basis for treating the surface commitment as freely and durably endorsed.
 
 A nominal exit option is not the same as real exit capability. Exit may require resources, safety, identity, relationships, knowledge, time, and institutional conditions.
-
-## Plural values and comparability
-
-Multiple values can be jointly represented without being reducible to one common scale.
-
-`comparable outcomes != common value scale`
-
-Some contexts support cost, preference, or utility representations. Others need to preserve rights boundaries, non-compensable losses, role obligations, identity commitments, or values that remain only partially comparable.
-
-A more stable equilibrium or a larger aggregate payoff therefore does not by itself settle what should be accepted.
 
 ## Commitment and reopening
 

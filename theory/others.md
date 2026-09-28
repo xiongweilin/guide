@@ -60,19 +60,15 @@ Coordination sometimes requires exchanging information, sometimes rebuilding sha
 
 ## Typed power topology
 
-Relation strength says how much participants affect one another; it does not say **which control position** one participant occupies. Power should therefore be represented with typed control relations when the distinction matters.
+Relation strength says how much participants affect one another; it does not identify which control position they occupy.
 
-Examples include:
+Keep the three core powers distinct:
 
-- **definition power**: changing the problem boundary, candidate space, categories, standards, or agenda;
-- **judgment power**: determining whether evidence, conditions, or claims count as sufficient;
-- **decision power**: turning judgments into commitments, allocations, permissions, or binding choices;
-- execution power: directly producing or withholding effects;
-- verification power: determining whether claimed effects or conditions are accepted as established;
-- resource-allocation power: changing another participant's practical options through resources;
-- information-control power: changing what others can know, observe, or contest;
-- exit-control power: raising or lowering the real cost of refusal, switching, or departure;
-- stop / reopen power: suspending continuation or forcing a question back into review.
+- **definition power**: shaping the problem boundary, candidate space, standards, or agenda;
+- **judgment power**: deciding whether evidence or conditions count as sufficient;
+- **decision power**: turning judgment into commitment, allocation, permission, or binding choice.
+
+Execution, verification, resource, information, exit, stop, or reopen power should be represented separately only when those differences materially change the analysis.
 
 So:
 
@@ -84,9 +80,7 @@ So:
 
 `power under current rules != power to change the rules`
 
-The same formal decision procedure can therefore produce very different structures depending on who controls candidates, standards, information, resources, verification, and exit.
-
-Power concentration becomes especially important when one participant or one failure domain controls several positions that are supposed to check one another.
+Power concentration matters especially when one participant or failure domain controls several positions that are supposed to check one another.
 
 ## No pre-given complete game
 
@@ -124,15 +118,13 @@ Finite higher-order modeling is permitted — “I think that you think...” �
 
 ## Collective action and organizational actors
 
-Aligned interests do not automatically produce collective action.
+Aligned interests do not automatically produce collective action:
 
-`aligned interests != coordination != mobilization != sustained collective capability`
+`aligned interests != coordination != sustained collective capability`
 
-Collective action can depend on participation thresholds, public-goods structure, free riding, common knowledge, selective incentives, leadership, identity, trust, communication, enforcement, institutions, and network position.
+Coordination can depend on thresholds, incentives, trust, communication, institutions, and network position. Likewise, an organization should not be treated as a large individual when internal coalitions, incentives, authority, or information differences materially affect the result.
 
-Likewise, an organization should not be treated as a large individual merely because a model needs one actor node.
-
-Keep at least:
+Keep:
 
 `organization action != unified member preference`
 
@@ -140,31 +132,17 @@ Keep at least:
 
 `formal authority != effective internal control`
 
-Organizations can contain coalitions, subunits, principal-agent problems, informal authority, internal information asymmetry, bureaucratic incentives, and competing time horizons. A statement such as “the organization wants X” is therefore a compressed representation whose internal structure may need to be reopened when it affects prediction, responsibility, or legitimacy.
-
-Collective capability is also not the sum of individual capability. A group of individually capable participants may still lack coordination, shared interfaces, authority, trust, or institutions needed to act together.
-
 `many capable individuals != capable collective`
+
+Internal organizational structure should be reopened only when it changes prediction, responsibility, capability, or legitimacy.
 
 ## Networks, structural positions, and identity
 
-Pairwise relations do not exhaust multi-participant structure.
+Pairwise relations do not exhaust multi-participant structure:
 
 `sum of bilateral relations != network structure`
 
-Network position can alter information access, opportunities, bargaining power, diffusion, dependence, exposure, and reachable paths even when pairwise resources appear similar. Relevant structures may include centrality, brokerage, clustering, cascades, network externalities, and cumulative advantage.
-
-A useful neutral representation is **structural position**: a relatively persistent location in a relation structure that changes a participant's opportunities, costs, risks, or control. Depending on the domain, this can include:
-
-- resource position;
-- authority position;
-- network position;
-- status position;
-- dependency position;
-- risk-bearing position;
-- exit position.
-
-This vocabulary can represent class, organizational hierarchy, market position, status groups, or other domain-specific structures without making one such theory universal.
+Network position can change information access, opportunities, bargaining power, dependence, diffusion, exposure, and reachable paths. A **structural position** is any relatively persistent location in a relation structure that materially changes opportunities, costs, risks, or control; the domain may describe it in terms of resources, authority, network position, status, dependency, risk-bearing, exit, class, hierarchy, or market position.
 
 Identity can also occupy different semantic positions:
 
@@ -203,15 +181,13 @@ Forecasts, metrics, incentives, published rules, and revealed strategies can cha
 
 ## Formal representation and heterogeneous orientations
 
-A joint strategic representation does not imply that participants share the same orientation.
+A joint strategic representation does not imply shared values or goals:
 
 `joint strategic representation != shared values or goals`
 
 `comparable outcomes != common value scale`
 
-A payoff, utility, ranking, or cost representation is a modeling choice. Some contexts require preserving rights boundaries, non-compensable losses, role obligations, or partially incomparable commitments instead of reducing them to one scalar.
-
-Formal optimality, equilibrium, strategic advantage, or aggregate payoff therefore does not by itself create authority or legitimacy.
+Payoff, utility, ranking, and cost are modeling choices. Formal optimality, equilibrium, strategic advantage, or aggregate payoff does not by itself create authority or legitimacy.
 
 ## Authority, recognition, and legitimacy
 
@@ -275,19 +251,9 @@ The guide does not adopt one universal class, institutional, or political-econom
 
 ## Strategic failure and reopening
 
-When prediction or coordination fails, do not assume that only a parameter needs updating.
+When prediction or coordination fails, do not assume that only a parameter needs updating. Failure may come from missing actors, actions, constraints, or time scales; an inadequate model of others; weak evidence; reflexive adaptation; or changes in environment, authority, value, or relationship structure.
 
-Possible causes include:
-
-- missing actors, actions, constraints, time scales, or consequence paths;
-- an inadequate model of another participant;
-- changed information acquisition or distinctions;
-- misjudged evidence strength;
-- one's own action changing the object;
-- adaptation by others to rules, predictions, or incentives;
-- changed environment, authority, value, or relationship structure.
-
-Useful strategic memory should therefore preserve not only “what strategy worked,” but also the situation representation, important other-actor models, signal conditions, rejected alternatives, adaptation effects, and conditions that should trigger reopening.
+Useful strategic memory should preserve enough of the situation, important other-actor models, signals, rejected alternatives, adaptation effects, and reopening conditions to distinguish these possibilities.
 
 ## Boundary with the other dimensions
 

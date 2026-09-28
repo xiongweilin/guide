@@ -116,4 +116,4 @@
 
 ## 与其他维度的边界
 
-[区分](./distinction.zh-CN.md)决定当前把什么看成结构，[资格](./qualification.zh-CN.md)决定何时保持或重新打开，[价值](./value.zh-CN.md)可能随经历修订，[能力](./capability.zh-CN.md)决定能否改变路径，[他者](./others.zh-CN.md)则会使多个变化过程相互耦合。
+[区分](./distinction.zh-CN.md)影响当前把什么看成结构，[资格](./qualification.zh-CN.md)判断维持或重新打开当前处理方式的依据是否足够，[价值](./value.zh-CN.md)可能随经历修订，[能力](./capability.zh-CN.md)影响哪些路径实际上能够改变，[他者](./others.zh-CN.md)则会使多个变化过程相互耦合。
