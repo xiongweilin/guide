@@ -140,6 +140,8 @@
 
 规则适用性存在实质含糊时，应先进入解释型充分性。反复解释若要变成机器规则，必须显式规则制定、版本化和权限来源。
 
+充分性是一项工程责任，不要求存在统一 universal payload。具体系统可以通过 owner-local qualification / admission、显式依据引用、守卫条件、ReviewCase 和领域 acceptance contract 来实现。只要这些机制能够保存“为什么当前转换现在被允许”的依据，就不需要引入单一跨领域 `Sufficiency` 对象。
+
 ## 5. 禁止语义捷径
 
 | 已成立 | 不能自动推出 |
