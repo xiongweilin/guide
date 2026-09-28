@@ -1,6 +1,8 @@
 # Precise Semantics
 
-> **Six-dimension position: engineering semantics across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
+> **Six-dimension position: engineering semantics across all six dimensions.** This document prevents states in distinction, qualification, value, capability, change, and others from being flattened into one field or silently substituted for one another. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `six-dimensions/` for the analytical definitions.
+
+Exploration beyond the current boundary and free decision within a provisionally accepted boundary are separate activity mechanisms under [`explore-decide/`](./explore-decide/). They are not additional dimensions. This document does not yet define a complete universal exploration or decision runtime; concrete implementations must still preserve provenance, qualification, authority, state-transition, and reality-verification boundaries.
 
 The engineering objective is not to implement a master `qualified = true`, nor to let any one of the six dimensions become the semantic owner of the other five. It is to preserve non-substitution across all six dimensions and to keep the grounds for consequential transitions explicit. Because transition errors are especially easy to hide in software, qualification mechanics occupy substantial space in this document; that engineering density does **not** make Qualification theoretically prior to Distinction, Value, Capability, Change, or Others.
 

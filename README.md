@@ -4,9 +4,9 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-> Make clear what we distinguish, what is sufficient, what is worth pursuing, what can be done, how structures change, and how people affect one another.
+> Make clear what we distinguish, what is sufficient, what is worth pursuing, what can be done, how structures change, and how people affect one another. Then ask when the current boundary should be reopened, and how to choose responsibly when more than one admissible path remains.
 
-An index of ideas and methods about the **basic structure of human activity and its engineering expression**.
+An index of ideas and methods about the **basic structure of human activity, exploration beyond current boundaries, free decision within provisionally accepted boundaries, and their engineering expression**.
 
 Individuals, families, teams, organizations, institutions, Agents, and technical systems can all be objects of analysis. Agent is only a formal term for a participant capable of taking part in the current activity; it is not a prerequisite for the framework.
 
@@ -35,12 +35,12 @@ The same activity should retain at least six analytical dimensions that cannot s
 
 | Dimension | Minimal structure | Core question |
 | --- | --- | --- |
-| [**Distinction**](./theory/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What can become distinguishable, what has been distinguished, and what remains outside the current representation? |
-| [**Qualification**](./theory/qualification.md) | `interpretive / specified` + `unmet → accumulating → sufficient → enter` | What conditions are sufficient, and is sufficiency being interpreted or checked against a specified rule? |
-| [**Value**](./theory/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
-| [**Capability**](./theory/capability.md) | `unknown / cannot / capable` + `self / assisted / leverage` | Which outcomes are currently realizable, how is that known, and through what means? |
-| [**Change**](./theory/change.md) | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
-| [**Others**](./theory/others.md) | `relation strength × alignment / conflict` | Who affects whom, and in which dimensions are they aligned or in conflict? |
+| [**Distinction**](./six-dimensions/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What can become distinguishable, what has been distinguished, and what remains outside the current representation? |
+| [**Qualification**](./six-dimensions/qualification.md) | `interpretive / specified` + `unmet → accumulating → sufficient → enter` | What conditions are sufficient, and is sufficiency being interpreted or checked against a specified rule? |
+| [**Value**](./six-dimensions/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
+| [**Capability**](./six-dimensions/capability.md) | `unknown / cannot / capable` + `self / assisted / leverage` | Which outcomes are currently realizable, how is that known, and through what means? |
+| [**Change**](./six-dimensions/change.md) | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
+| [**Others**](./six-dimensions/others.md) | `relation strength × alignment / conflict` | Who affects whom, and in which dimensions are they aligned or in conflict? |
 
 The six dimensions are not six kinds of object and not six independent axes. They are non-substitutable analytical dimensions of the same activity. They can constrain one another and form feedback loops.
 
@@ -57,6 +57,48 @@ For example:
 `stable now != valid indefinitely`
 
 `my distinctions / values / authority != others' distinctions / values / recognition`
+
+## From current boundaries to exploration and decision
+
+The six dimensions make the **current activity boundary** explicit. They do not imply that the current boundary is complete, and they do not uniquely determine what a participant must choose.
+
+Two further activity mechanisms therefore sit beside the six-dimensional analysis without becoming a seventh or eighth dimension:
+
+- [**Exploration beyond the current boundary**](./explore-decide/explore.md) asks when the current distinctions are no longer sufficient, what kinds of missing candidates may matter, whether reopening is worth its cost now, and how to explore without disguising unknowns as knowns.
+- [**Free decision within the current boundary**](./explore-decide/decide.md) asks how a participant forms an accountable choice when the current boundary is provisionally sufficient and more than one admissible action remains.
+
+Their relationship can be summarized as:
+
+```text
+current boundary
+    ↓
+six-dimensional analysis
+    ↓
+is the boundary sufficient for the current purpose?
+    ├─ no / materially uncertain → explore → revise the boundary
+    └─ yes                    → decide within the boundary
+                                      ↓
+                                    action
+                                      ↓
+                               reality-side feedback
+                                      ↓
+                         retain or reopen the boundary
+```
+
+This is a control relation, not a strict one-way pipeline. Exploration itself uses distinction, qualification, value, capability, change, and others; decision does too. A decision may expose a missing distinction and reopen exploration, while exploration may end with a provisional boundary that makes decision possible.
+
+At least preserve:
+
+`current boundary is useful != current boundary is complete`
+
+`unknown outside the current representation != a known alternative waiting in a list`
+
+`more than one admissible option != no reason is needed for choice`
+
+`no uniquely best option != arbitrary choice`
+
+`a decision is accountable != the decision was logically forced`
+
 
 ## Non-substitution across the six dimensions
 
@@ -183,29 +225,38 @@ not continuous expansion of the core, not infinite justification of the current 
 
 English and Simplified Chinese are two co-authoritative views of the same documents, not primary and secondary editions. Every semantic change must update both language versions together. Section structure, claim strength, examples, formulas, tables, code blocks, links, and revision boundaries should correspond; wording may differ only as required for natural translation.
 
-The repository root keeps only three conceptual documents:
+The repository separates current-boundary analysis, activity mechanisms, engineering semantics, and one concrete architecture:
 
-| Document | Role |
+| Path / document | Role |
 | --- | --- |
-| **README** | World boundary, six-dimension map, and repository entry point |
-| [**Precise Semantics**](./precise-semantics.md) | turns theoretical boundaries into implementable, verifiable engineering semantics that resist silent substitution |
+| **README** | World boundary, repository map, and the relation among six-dimensional analysis, exploration, decision, and engineering |
+| `six-dimensions/` | six co-basic analytical dimensions for making the current activity boundary explicit |
+| `explore-decide/` | exploration beyond the current boundary and free decision within a provisionally accepted boundary |
+| [**Precise Semantics**](./precise-semantics.md) | turns semantic boundaries into implementable, verifiable engineering semantics that resist silent substitution |
 | [**AIOS Architecture**](./aios-architecture.md) | shows how these boundaries are realized in a continuously operating AI runtime |
 
-Theory lives under `theory/`:
+The six dimensions live under `six-dimensions/`:
 
-1. [Distinction](./theory/distinction.md)
-2. [Qualification](./theory/qualification.md)
-3. [Value](./theory/value.md)
-4. [Capability](./theory/capability.md)
-5. [Change](./theory/change.md)
-6. [Others](./theory/others.md)
+1. [Distinction](./six-dimensions/distinction.md)
+2. [Qualification](./six-dimensions/qualification.md)
+3. [Value](./six-dimensions/value.md)
+4. [Capability](./six-dimensions/capability.md)
+5. [Change](./six-dimensions/change.md)
+6. [Others](./six-dimensions/others.md)
+
+Exploration and decision live under `explore-decide/`:
+
+1. [Exploration beyond the current boundary](./explore-decide/explore.md)
+2. [Free decision within the current boundary](./explore-decide/decide.md)
 
 ## Suggested reading
 
-For the framework itself, read the six files in `theory/` in whatever order best matches the problem. The listed order is navigational, not a ranking of importance.
+To understand the current-boundary framework, read the six files in `six-dimensions/` in whatever order best matches the problem. The listed order is navigational, not a ranking of importance.
+
+To understand what happens when the current boundary may be insufficient, read [Exploration beyond the current boundary](./explore-decide/explore.md). To understand choice after a boundary is provisionally accepted, read [Free decision within the current boundary](./explore-decide/decide.md).
 
 For the engineering expression, read this page and then [Precise Semantics](./precise-semantics.md).
 
 For one concrete implementation, continue to [AIOS Architecture](./aios-architecture.md).
 
-The six dimensions are basic analytical dimensions of human activity. AIOS is one engineering application of them.
+The six dimensions are basic analytical dimensions of human activity. Exploration governs when and how the current boundary is reopened; free decision governs accountable choice inside a provisionally accepted boundary. AIOS is one engineering application of these boundaries and activity mechanisms.

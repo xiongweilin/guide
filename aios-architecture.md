@@ -1,6 +1,8 @@
 # AIOS Architecture
 
-> **Six-dimension position: engineering application of all six dimensions.** This document is not the source of the six-dimension framework; it shows how a continuously operating technical system can preserve these boundaries in engineering. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `theory/` for the theoretical definitions.
+> **Six-dimension position: engineering application of all six dimensions.** This document is not the source of the six-dimension framework; it shows how a continuously operating technical system can preserve these boundaries in engineering. See the [six-dimension map](./README.md#six-basic-dimensions-of-human-activity) and the six files under `six-dimensions/` for the analytical definitions.
+
+The guide also separates [exploration beyond the current boundary](./explore-decide/explore.md) from [free decision within a provisionally accepted boundary](./explore-decide/decide.md). They are activity mechanisms rather than additional dimensions; AIOS may use both without making either a universal semantic owner.
 
 All six dimensions remain equally basic here. Qualification appears frequently because a runtime needs explicit admission and transition gates; that implementation concern does not make it the owner or highest-level interpretation of Distinction, Value, Capability, Change, or Others. Reality-side feedback can require any of these representations, and the guide itself, to be reopened.
 
@@ -77,7 +79,7 @@ Successful recovery = authoritative state + reality read-back + required verific
 
 `semantic-language` supplies a closed cross-domain role vocabulary, versioned references, canonicalization, and non-substitution rules across the architecture. It does not own concrete Runtime or Domain payload schemas, lifecycle state, or persistence.
 
-`guide` holds the six-dimension framework, non-substitution rules, revision boundaries, and architectural invariants.
+`guide` holds the six-dimension framework, exploration and free-decision methods, non-substitution rules, revision boundaries, and architectural invariants.
 
 Agent implementations, model providers, model-routing gateways, monitoring systems, and deployment runtimes are replaceable integrations. None becomes a durable semantic owner merely because a deployment uses it.
 
@@ -114,7 +116,7 @@ AIOS is headless and container-only at runtime. The containers are a deployment 
 
 | Repository / component | Ownership |
 | --- | --- |
-| [guide](https://github.com/xiongweilin/guide) | six-dimension framework, non-substitution, revision boundaries, architectural invariants |
+| [guide](https://github.com/xiongweilin/guide) | six-dimension framework, exploration and free-decision methods, non-substitution, revision boundaries, architectural invariants |
 | [aios](https://github.com/xiongweilin/aios) | monorepo and Git owner for AIOS source components |
 | [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | closed cross-domain role vocabulary, references, canonicalization, and non-substitution rules; no concrete payload/lifecycle ownership |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
@@ -717,7 +719,7 @@ New domain breadth does not imply a universal domain ontology.
 
 ```text
 guide
-    six dimensions / non-substitution / revisability
+    six dimensions / exploration / decision / non-substitution / revisability
                      │
                      ▼
 aios/semantic-language

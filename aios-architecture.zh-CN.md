@@ -1,6 +1,8 @@
 # AIOS 架构
 
-> **六维定位：六维的工程应用。** 本篇不是六维框架的来源，而是展示一个持续运行技术系统怎样在工程上保存这些边界。理论定义见 [README 的六维地图](./README.zh-CN.md#人类活动的六个基础维度) 与 `theory/` 下六篇文档。
+> **六维定位：六维的工程应用。** 本篇不是六维框架的来源，而是展示一个持续运行技术系统怎样在工程上保存这些边界。分析定义见 [README 的六维地图](./README.zh-CN.md#人类活动的六个基础维度) 与 `six-dimensions/` 下六篇文档。
+
+本仓库还把[当前边界外探索](./explore-decide/explore.zh-CN.md)与[暂定边界内自由决策](./explore-decide/decide.zh-CN.md)分开。它们是活动机制，不是新增维度；AIOS 可以使用两者，但不会让任何一个成为通用语义归属方。
 
 六个维度在这里仍然同等基础。资格之所以在运行时中频繁出现，是因为准入和状态转换需要显式门槛；这种实现需求不使资格成为区分、价值、能力、变化或他者的归属方，也不使它成为最高层解释。现实侧反馈可以要求这些表示中的任何一个重开，也可以要求 guide 自身重开。
 
@@ -77,7 +79,7 @@ AIOS 集成边界 ─────────────► 现实（需要已�
 
 `semantic-language` 为整个架构提供封闭的跨领域 role vocabulary、带版本引用、规范化与不可替代规则；它不拥有运行时或领域的具体 payload schema、生命周期状态或持久化。
 
-`guide` 持有六维框架、不可替代、可修订边界和架构不变量。
+`guide` 持有六维框架、探索与自由决策方法、不可替代、可修订边界和架构不变量。
 
 智能体实现、模型提供方、模型路由网关、监控系统和部署运行时都是可替换集成。仅仅因为某次部署使用它们，并不会使其成为持久语义归属方。
 
@@ -114,7 +116,7 @@ AIOS 运行时是无界面且仅容器运行。容器只是部署边界，不是
 
 | 仓库 / 组件 | 所有权 |
 | --- | --- |
-| [guide](https://github.com/xiongweilin/guide) | 六维框架、不可替代、可修订边界、架构不变量 |
+| [guide](https://github.com/xiongweilin/guide) | 六维框架、探索与自由决策方法、不可替代、可修订边界、架构不变量 |
 | [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的单体仓库和 Git 归属方 |
 | [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 封闭的跨领域 role vocabulary、引用、规范化和不可替代规则；不拥有具体 payload / 生命周期 |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | 持久个人事实、偏好、关系、资源链接、溯源、修订、时效有效性、隐私边界、用途受限上下文 |
@@ -717,7 +719,7 @@ Git / 构建 / 部署 / 流量
 
 ```text
 guide
-    六个维度 / 不可替代 / 可修订性
+    六个维度 / 探索 / 决策 / 不可替代 / 可修订性
                      │
                      ▼
 aios/semantic-language
