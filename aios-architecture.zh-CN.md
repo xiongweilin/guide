@@ -2,84 +2,84 @@
 
 > **六维定位：六维的工程应用。** 本篇不是六维框架的来源，而是展示一个持续运行技术系统怎样在工程上保存这些边界。理论定义见 [README 的六维地图](./README.zh-CN.md#人类活动的六个基础维度) 与 `theory/` 下六篇文档。
 
-六个维度在这里仍然同等基础。资格之所以在 runtime 中频繁出现，是因为 admission 和状态转换需要显式 gate；这种实现需求不使资格成为区分、价值、能力、变化或他者的 owner，也不使它成为最高层解释。现实侧反馈可以要求这些表示中的任何一个重开，也可以要求 guide 自身重开。
+六个维度在这里仍然同等基础。资格之所以在运行时中频繁出现，是因为准入和状态转换需要显式门槛；这种实现需求不使资格成为区分、价值、能力、变化或他者的归属方，也不使它成为最高层解释。现实侧反馈可以要求这些表示中的任何一个重开，也可以要求 guide 自身重开。
 
-## 认知边界与架构中的 Reality
+## 认知边界与架构中的现实
 
-AIOS 不把“世界本身”实现成一个总 ontology。
+AIOS 不把“世界本身”实现成一个总本体。
 
-- **世界（认知边界）**：表示当前 observation、schema、模型和存储都不能被默认视为世界本身的完整结构；它不是 runtime 中的 durable object。
-- **可区分世界 / 可区分范围**：由当前 source、sensor、provider、API、语言、工具、权限和 domain interface 共同决定，表示原则上能够进入系统区分与验证的现实侧面。
-- **已区分范围**：AIOS 当前实际获得、形成并能够调用的 distinctions，包括已建立的 facts、categories、relationships、problem framings 和 domain states。
-- 架构图中的 **Reality**：特指某个 domain 中可通过 authoritative observation、read-back 或 reconciliation 建立的现实状态，是可区分世界中的任务切片，不等于“世界本身”。
-- **Personal World**：只持有一个人的 durable、qualified、可追踪的个人上下文，是已区分范围的一部分；名称不表示它拥有这个人的全部可区分世界，更不表示它是世界本体模型。
+- **世界（认知边界）**：表示当前观察、模式、模型和存储都不能被默认视为世界本身的完整结构；它不是运行时中的持久对象。
+- **可区分世界 / 可区分范围**：由当前来源、传感器、提供方、API、语言、工具、权限和领域接口共同决定，表示原则上能够进入系统区分与验证的现实侧面。
+- **已区分范围**：AIOS 当前实际获得、形成并能够调用的区分，包括已建立的事实、类别、关系、问题框定和领域状态。
+- 架构图中的 **现实**：特指某个领域中可通过权威观察、回读或校正建立的现实状态，是可区分世界中的任务切片，不等于“世界本身”。
+- **个人世界**：只持有一个人的持久、已取得资格、可追踪的个人上下文，是已区分范围的一部分；名称不表示它拥有这个人的全部可区分世界，更不表示它是世界本体模型。
 
-因此，AIOS 必须同时允许两种 revision：一是更新已知值，二是重新打开当前的区分、分类、问题 framing 和候选空间。后者不能被简化成“某个字段值变了”。
+因此，AIOS 必须同时允许两种修订：一是更新已知值，二是重新打开当前的区分、分类、问题框定和候选空间。后者不能被简化成“某个字段值变了”。
 
-当一个 request、standing mandate 或 autonomous trigger 需要解释时，入口链应允许：
+当一个请求、规范地位授权令或自主触发条件需要解释时，入口链应允许：
 
-`trigger / request → distinction context → question / task candidate → question qualification → domain admission → judgment / decision / authorization`
+`触发条件 / 请求 → 区分情境 → 问题 / 任务候选 → 问题资格 → 领域准入 → 判断 / 决定 / 授权`
 
-固定且已 qualification 的 machine contract 可以跳过重复的问题持久化；但任何会改变 goal、scope、authority、irreversibility 或 completion semantics 的 framing 都必须先重新获得资格。
+固定且已资格的机器契约可以跳过重复的问题持久化；但任何会改变目标、范围、权限、不可逆性或完成语义的框定都必须先重新获得资格。
 
-AIOS 必须保留两种资格机制，而不能把它们压成一个 `qualified` flag：
+AIOS 必须保留两种资格机制，而不能把它们压成一个 `已取得资格` 标志：
 
-- 开放式 framing、诊断、例外处理和 applicability 含糊的情况，通常进入**解释型资格**，并保留 reasons、evidence、剩余未知和可追责的判断边界；
-- 固定 contract、policy predicate、状态机 guard、verification gate 和明确 approval condition，通常进入**规定型资格**，并绑定被检查的准确 rule/version 与 input versions。
+- 开放式框定、诊断、例外处理和适用性含糊的情况，通常进入**解释型资格**，并保留理由、证据、剩余未知和可追责的判断边界；
+- 固定契约、策略规则谓词、状态机守卫条件、验证门槛和明确批准条件，通常进入**规定型资格**，并绑定被检查的准确规则/版本与输入版本。
 
-同一条 flow 可以组合两者。特别是，当 scope、含义、exception handling 或 current validity 存在实质含糊时，规定规则不能自行证明自己的 applicability，而必须先回到解释型资格。反过来，反复出现的解释结果也不能自动成为 machine contract；只有经过有 authority 的 rule-making 路径显式建立新 rule/version 后，才能进入规定型资格。
+同一条流程可以组合两者。特别是，当范围、含义、例外处理或当前有效性存在实质含糊时，规定规则不能自行证明自己的适用性，而必须先回到解释型资格。反过来，反复出现的解释结果也不能自动成为机器契约；只有经过有权限的规则制定路径显式建立新规则/版本后，才能进入规定型资格。
 
 ## 长期自主运行时
 
 ```text
 长期、无人值守闭环：
 
-┌────────────────────────────────────┐       有边界的 effect      ┌─────────┐
-│ AIOS Runtime                       ├─────────────────────────────►│ Reality │
-│ observe → distinguish / qualify    │◄─────────────────────────────┤         │
-│ → frame / decide → authorize       │ 权威 read-back /            └─────────┘
-│ → act → verify                     │ evidence / outcome / unknown
-│ Personal World / Runtime / Domains │
-│ 可替换的内部 Agent/Executor        │
+┌────────────────────────────────────┐       有边界的现实效果      ┌─────────┐
+│ AIOS 运行时                       ├─────────────────────────────►│ 现实 │
+│ 观察 → 区分 / 取得资格    │◄─────────────────────────────┤         │
+│ → 框定 / 决定 → 授权       │ 权威回读 /            └─────────┘
+│ → 行动 → 验证                     │ 证据 / 结果 / 未知
+│ 个人世界 / 运行时 / 领域 │
+│ 可替换的内部智能体/执行器        │
 └────────────────────────────────────┘
 ```
 
-AIOS 是一个长期运行的 AI runtime，面向低可见度、无人值守运行。它的主闭环是：AIOS 获取现实侧 evidence，必要时检查 distinctions 与 framing 的资格，形成 Decision / Authorization，执行有边界的 action，再吸收权威 observation、read-back 和 outcome evidence。日常运行不依赖人在场。
+AIOS 是一个长期运行的人工智能运行时，面向低可见度、无人值守运行。它的主闭环是：AIOS 获取现实侧证据，必要时检查区分与框定的资格，形成决定 / 授权，执行有边界的行动，再吸收权威观察、回读和结果证据。日常运行不依赖人在场。
 
 ## 临时外部介入
 
 ```text
-Human
-  │ 必要时 query / request / approval
+人
+  │ 必要时查询 / 请求 / 批准
   ▼
-现有 Agent 产品
-（短生命周期 client session）
-  │ 权威检查 / 解释 / 有边界且已授权的修复 / verification
+现有智能体产品
+（短生命周期客户端会话）
+  │ 权威检查 / 解释 / 有边界且已授权的修复 / 验证
   ▼
-AIOS integration boundary ─────────────► Reality（需要已授权 effect 时）
+AIOS 集成边界 ─────────────► 现实（需要已授权现实效果时）
   │
-  └── 向 Human 报告已验证状态，然后断开
+  └── 向人报告已验证状态，然后断开
 ```
 
-用户不直接把 AIOS 当成交互式助手操作。需要 inspection、explanation 或 maintenance 时，可以使用现有 Agent 产品作为临时 intervention adapter。Agent 读取权威状态、解释当前条件，只执行有边界且已授权的变更，验证 read-back 和 recovery，报告结果，然后退出。Session 结束后 AIOS 继续运行。
+用户不直接把 AIOS 当成交互式助手操作。需要检查、解释或维护时，可以使用现有智能体产品作为临时介入适配器。智能体读取权威状态、解释当前条件，只执行有边界且已授权的变更，验证回读和恢复，报告结果，然后退出。会话结束后 AIOS 继续运行。
 
-这个外部 Agent 不是 AIOS runtime 的组成部分，不是 durable state 或 authority owner，也不是必须存在的 runtime dependency。API/CLI 是机器集成和维护边界，不是 AIOS 的主要人机管理界面。
+这个外部智能体不是 AIOS 运行时的组成部分，不是持久状态或权限归属方，也不是必须存在的运行时依赖。API/CLI 是机器集成和维护边界，不是 AIOS 的主要人机管理界面。
 
 ```text
-Human presence != system operation
-Human absence != suspended agency
-Intervention session != durable agency
-External Agent != AIOS authority owner
-Agent explanation != authoritative state
-Agent repair != successful recovery
-Successful recovery = authoritative state + reality read-back + required verification
+人在场 != 系统操作
+人缺失 != 暂停自主行动能力
+介入会话 != 持久自主行动能力
+外部智能体 != AIOS 权限归属方
+智能体解释 != 权威状态
+智能体修复 != 成功恢复
+成功恢复 = 权威状态 + 现实回读 + 所需验证
 ```
 
 `semantic-language` 为整个架构提供跨领域语义区分。
 
-`guide` 持有六维框架、non-substitution、可修订边界和 architectural invariants。
+`guide` 持有六维框架、不可替代、可修订边界和架构不变量。
 
-Agent implementation、model provider、model-routing gateway、monitoring system 和 deployment runtime 都是可替换集成。仅仅因为某次部署使用它们，并不会使其成为 durable semantic owner。
+智能体实现、模型提供方、模型路由网关、监控系统和部署运行时都是可替换集成。仅仅因为某次部署使用它们，并不会使其成为持久语义归属方。
 
 ## 架构区域
 
@@ -87,671 +87,671 @@ Agent implementation、model provider、model-routing gateway、monitoring syste
 ┌──────────────────────────────────────────────────────────────────────┐
 │ AIOS — 长期自主运行时                                                │
 │                                                                      │
-│ Personal World ──purpose-limited context───► internal Agent/Executor│
+│ 个人世界 ──用途受限上下文───► 内部智能体/执行器│
 │       ▲                                     │                        │
-│       │ provenance / revision                │ analysis / candidate  │
+│       │ 溯源 / 修订                │ 分析 / 候选  │
 │       │                                     ▼                        │
-│       └──────────────────────────► domain admission                  │
+│       └──────────────────────────► 领域准入                  │
 │                         │                                            │
-│ semantic-language / World Runtime / Domain Controllers              │
-│ responsibility / authority / work / effects / recovery / read-back   │
+│ semantic-language / 世界运行时 / 领域控制器              │
+│ 责任 / 权限 / 工作 / 效果 / 恢复 / 回读   │
 └─────────────────────────┬────────────────────────────────────────────┘
-                          │ governed effect / evidence return
+                          │ 受治理的现实效果 / 证据返回
                           ▼
 ┌──────────────────────────────────────────────────────────────────────┐
-│ REALITY                                                              │
-│ external systems / source repositories / builds / deployments /      │
-│ traffic / infrastructure / organizational systems                    │
+│ 现实                                                              │
+│ 外部系统 / 来源仓库 / 构建 / 部署 /      │
+│ 流量 / 基础设施 / 组织系统                    │
 └──────────────────────────────────────────────────────────────────────┘
 
 带外，仅在需要时：
-Human ⇄ existing short-lived Agent product ⇄ AIOS machine boundary
+人 ⇄ 现有短生命周期智能体产品 ⇄ AIOS 机器边界
 ```
 
-AIOS runtime 是 headless 且仅容器运行。容器只是部署边界，不是 durable semantic owner。内部 Agent/executor implementation、model provider、monitoring system 和外部 Agent client 都保持可替换；AIOS 自主连续性不依赖其中任何一个具体实现。
+AIOS 运行时是无界面且仅容器运行。容器只是部署边界，不是持久语义归属方。内部智能体/执行器实现、模型提供方、监控系统和外部智能体客户端都保持可替换；AIOS 自主连续性不依赖其中任何一个具体实现。
 
 ## 仓库拓扑
 
 | 仓库 / 组件 | 所有权 |
 | --- | --- |
-| [guide](https://github.com/xiongweilin/guide) | 六维框架、non-substitution、可修订边界、architectural invariant |
-| [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的 monorepo 和 Git owner |
-| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 跨领域含义和 non-substitution rule |
-| [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts、preference、relationship、resource link、provenance、revision、freshness、privacy boundary、purpose-limited context |
-| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | durable agency state、responsibility、authority、decision、qualification、execution identity、recovery、reconciliation、history |
-| [control-plane](https://github.com/xiongweilin/aios/tree/main/src/domains/control_plane) | operational incident、有边界 repair、monitoring、operational provider、operational outcome evidence |
-| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/domains/administrative_orchestrator) | administrative case、obligation、governance basis、administrative effect、business outcome 和 completion semantics |
-| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/domains/autonomous_development) | 软件开发 lifecycle、requirements、source/build/test/deploy/canary/promotion/rollback semantics |
-| Agent / executor adapters | 可替换的 cognition 或 engineering execution implementation |
-| Model providers / routing adapters | 可替换的模型访问与协议 transport |
-| Providers and external systems | 具体 effect 和权威外部状态 |
-| Reality | execution 尝试改变、observation 尝试建立的真实状态 |
+| [guide](https://github.com/xiongweilin/guide) | 六维框架、不可替代、可修订边界、架构不变量 |
+| [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的单体仓库和 Git 归属方 |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/语义/semantic_language) | 跨领域含义和不可替代规则 |
+| [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | 持久个人事实、偏好、关系、资源链接、溯源、修订、时效有效性、隐私边界、用途受限上下文 |
+| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | 持久自主行动能力状态、责任、权限、决定、资格、执行身份、恢复、校正、历史 |
+| [control-plane](https://github.com/xiongweilin/aios/tree/main/src/领域/control_plane) | 运行故障事件、有边界修复、监控、运行提供方、运行结果证据 |
+| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/领域/administrative_orchestrator) | 行政管理事项、义务、治理依据、行政管理现实效果、业务结果和完成语义 |
+| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/领域/autonomous_development) | 软件开发生命周期、需求、来源/构建/测试/部署/金丝雀发布/晋级/回滚语义 |
+| 智能体 / 执行器适配器 | 可替换的认知或工程执行实现 |
+| 模型提供方 / 路由适配器 | 可替换的模型访问与协议传输 |
+| 提供方和外部系统 | 具体现实效果和权威外部状态 |
+| 现实 | 执行尝试改变、观察尝试建立的真实状态 |
 
-组件目录可以保持独立 semantic owner，而不需要成为独立 Git repository。
+组件目录可以保持独立语义归属方，而不需要成为独立 Git 仓库。
 
 ## 跨领域语义宪法
 
 `semantic-language` 保持小而跨领域。
 
 ```text
-World != current representation
-Distinguishable range != distinguished range
-Default distinction != qualified distinction
-QuestionCandidate != qualified question
-Interpretive qualification != specified qualification
-Specified rule satisfied != rule applicable / current / authoritative
-Interpretive judgment != machine contract
-Qualified question != Decision
-Evidence != Belief
-Observation != Claim
-Claim != current qualified state
-IntentCandidate != confirmed human intent
-HumanApprovalGesture != Decision
-Decision != Authorization
-Authentication != Representation
-Representation != transition authority
-Personal context != execution authority
-Effect != Outcome
-Provider success != verified reality
-Projection != authoritative state
-Historical validity != current qualification
-Explanation != reality
+世界 != 当前表示
+可区分范围 != 已区分范围
+默认区分 != 已取得资格区分
+问题候选 != 已取得资格问题
+解释型资格 != 规定型资格
+规定型规则满足 != 规则适用 / 当前 / 权威
+解释型判断 != 机器契约
+已取得资格问题 != 决定
+证据 != 信念
+观察 != 主张
+主张 != 当前已取得资格状态
+意图候选 != 已确认人意图
+人工批准动作 != 决定
+决定 != 授权
+身份认证 != 表示
+表示 != 状态转换权限
+个人情境 != 执行权限
+现实效果 != 结果
+提供方成功 != 已验证现实
+投影 != 权威状态
+历史有效性 != 当前资格
+解释 != 现实
 ```
 
-领域特定含义继续由 domain owner 持有。
+领域特定含义继续由领域归属方持有。
 
-Runtime lifecycle 含义继续由 Runtime owner 持有。
+运行时生命周期含义继续由运行时归属方持有。
 
-个人含义继续由 Personal World owner 持有。
+个人含义继续由个人世界归属方持有。
 
-外部 Agent session state 是 ephemeral；它不会变成 durable authority、responsibility 或 agency state。
+外部智能体会话状态是临时；它不会变成持久权限、责任或自主行动能力状态。
 
 ## 临时介入边界
 
-Human intervention 位于 AIOS 操作闭环之外。出现 query 或 maintenance 需要时，用户通过现有、可替换的 Agent 产品连接，而不是直接操作 AIOS。
+人介入位于 AIOS 操作闭环之外。出现查询或维护需要时，用户通过现有、可替换的智能体产品连接，而不是直接操作 AIOS。
 
 ```text
-Human request / approval when needed
+人请求 / 批准需要时
   ↓
-short-lived external Agent session
+短生命周期外部智能体会话
   ↓
-authenticated read of authoritative state
+经认证读取权威状态
   ↓
-explanation / diagnosis / bounded repair proposal
+解释 / 诊断 / 有边界的修复提案
   ↓
-explicit authorization when a state-changing action is required
+显式授权当 一个改变状态的行动需要
   ↓
-authoritative owner admission / effect
+权威归属方准入 / 现实效果
   ↓
-reality read-back / recovery verification
+现实回读 / 恢复验证
   ↓
-report to the Human, then disconnect
+向人报告，然后断开
 ```
 
-外部 Agent 只拥有 ephemeral session state 和 disposable projection。它不拥有 durable authority、responsibility、Personal World truth、domain lifecycle truth、domain outcome 或 runtime execution。
+外部智能体只拥有临时会话状态和一次性投影。它不拥有持久权限、责任、个人世界真实状态、领域生命周期真实状态、领域结果或运行时执行。
 
-API 或 CLI 可以作为机器集成或维护边界；它不是主要人机管理界面，也不会把 Human 放进长期运行闭环。
+API 或 CLI 可以作为机器集成或维护边界；它不是主要人机管理界面，也不会把人放进长期运行闭环。
 
-Command 只有通过 authoritative owner 才能改变状态。
+命令只有通过权威归属方才能改变状态。
 
-Projection 保持 read-only 且 disposable。
+投影保持只读且一次性。
 
-含糊的 command transport 保持 `pending-reconciliation`，直到 authoritative read-back 消除含糊。结束 intervention session 不会暂停或终止 AIOS agency。
+含糊的命令传输保持 `pending-reconciliation`，直到权威回读消除含糊。结束介入会话不会暂停或终止 AIOS 自主行动能力。
 
 ## 个人连续性
 
-`personal-world` 持有一个人的 durable、持续演化且已 qualification 的 context。它记录的是当前已区分并被接受的 personal context，不是人的完整可区分范围；record absence 也不能自动解释为现实中的 absence。
+`personal-world` 持有一个人的持久、持续演化且已资格的情境。它记录的是当前已区分并被接受的个人情境，不是人的完整可区分范围；记录缺失也不能自动解释为现实中的缺失。
 
 ```text
-Source
+来源
   ↓
-Observation
+观察
   ↓
-Claim
+主张
   ↓
-Qualification
+资格
   ↓
-Personal Record Revision
+个人记录修订
   ↓
-Current lineage head
+当前沿革当前头
   ↓
-Purpose-limited ContextProjection
+用途受限上下文投影
   ↓
-Agent / authorized consumer
+智能体 / 已授权使用者
 ```
 
-公开 personal record kind 保持：
+公开个人记录类型保持：
 
 ```text
-PersonalFact
-Preference
-Relationship
-ResourceLink
+个人事实
+偏好
+关系
+资源链接
 ```
 
-Personal World 不拥有：
+个人世界不拥有：
 
 ```text
-Decision
-Authorization
-Mandate
-Responsibility
-Work
-Run
-Effect
-Outcome
-provider execution
-domain lifecycle
-model-private memory
+决定
+授权
+授权令
+责任
+工作
+运行
+现实效果
+结果
+提供方执行
+领域生命周期
+模型私有记忆
 ```
 
-模型 inference 本身不会变成已接受的 personal truth。
+模型推断本身不会变成已接受的个人真实状态。
 
-Domain projection 不会把 domain ownership 转移到 Personal World。
+领域投影不会把领域归属转移到个人世界。
 
-ContextProjection 不会变成 canonical Personal World state。
+上下文投影不会变成规范个人世界状态。
 
 ## 认知执行
 
-Cognitive execution 是可替换边界。
+认知执行是可替换边界。
 
 ```text
-autonomous domain trigger / standing mandate
-  or
-authorized request admitted through a temporary Agent session
+自主领域触发条件 / 规范地位授权令
+  或
+已授权请求通过临时会话准入的智能体会话
   +
-Purpose-limited Personal World context
+用途受限个人世界情境
   +
-Domain state
+领域状态
   +
-Runtime constraints
+运行时约束
   ↓
-Agent / Executor
+智能体 / 执行器
   ↓
-distinction review / question or task framing
+区分复核 / 问题或任务框定
   ↓
-question qualification when framing is material
+问题资格当 框定是实质
   ↓
-analysis / proposal / implementation candidate / test / review
+分析 / 提案 / 实现候选 / 测试 / 复核
 ```
 
-Executor 不拥有 durable authority、durable responsibility、Personal World truth 或 domain completion。
+执行器不拥有持久权限、持久责任、个人世界真实状态或领域完成。
 
-根据接收边界，Executor output 仍然只是 distinction candidate、question/task candidate、evidence、interpretation、proposal、implementation candidate 或 review result。生成新的 framing 不会自动使它获得 domain admission；当 framing 改变 scope、authority 或 completion semantics 时，需要独立的 question / task qualification。
+根据接收边界，执行器输出仍然只是区分候选、问题/任务候选、证据、解释、提案、实现候选或复核结果。生成新的框定不会自动使它获得领域准入；当框定改变范围、权限或完成语义时，需要独立的问题 / 任务资格。
 
-Model selection 和 model routing 是 executor 边界之下的 transport/configuration concern。它们不会扩大 authority 或 effect scope；改变它们也不会替代 Personal World、Runtime state、Domain state、responsibility 或 history。
+模型选择和模型路由是执行器边界之下的传输/配置事项。它们不会扩大权限或现实效果范围；改变它们也不会替代个人世界、运行时状态、领域状态、责任或历史。
 
-## Durable agency
+## 持久自主行动能力
 
-`world-runtime` 是 interpreted intent 与 domain realization 之间的 agency continuity membrane。
+`world-runtime` 是已解释意图与领域实现之间的自主连续性中介层。
 
 ```text
-qualified work trigger / authorized request
+已取得资格工作触发条件 / 已授权请求
         │
         ▼
-   governed agency
+   受治理的自主行动能力
         │
         ▼
-   WORLD RUNTIME
+   世界运行时
         │
         ▼
- bounded realization
+ 有边界的实现
         │
         ▼
-    Reality-side
+    现实侧
 ```
 
-Runtime 持有通用 durable agency primitive：
+运行时持有通用持久自主行动能力基础对象：
 
 ```text
-identity
-epistemic references
-responsibility
-decision
-mandate
-authorization
-strategy
-qualification
-Work / Run
-execution identity
-provider-attempt identity
-reconciliation
-recovery
-historical lineage
+身份
+认识依据引用
+责任
+决定
+授权令
+授权
+策略
+资格
+工作 / 运行
+执行身份
+提供方尝试身份
+校正
+恢复
+历史沿革
 ```
 
-Runtime 不拥有：
+运行时不拥有：
 
 ```text
-personal facts or preferences
-UI interaction state
-model selection policy
-software release semantics
-administrative completion semantics
-incident-repair semantics
-provider-specific business semantics
+个人事实或偏好
+界面交互状态
+模型选择策略规则
+软件发布语义
+行政管理完成语义
+故障修复语义
+提供方特定业务语义
 ```
 
-Runtime 管理一个 agency transition 或 reality-bound effect 是否可以继续。
+运行时管理一个自主行动能力状态转换或现实绑定现实效果是否可以继续。
 
-Domain Controller 决定 domain completion 和 domain outcome 的具体含义。
+领域控制器决定领域完成和领域结果的具体含义。
 
-## Domain realization
+## 领域实现
 
-### Control Plane
+### 控制平面
 
-`control-plane` 持有 operational reality。
+`control-plane` 持有运行现实。
 
 ```text
-monitoring signal
+监控信号
   ↓
-authenticated ingress
+已认证入口
   ↓
-Runtime Responsibility + DomainAssignment
+运行时责任 + 领域分配
   ↓
-bounded diagnosis
+有边界的诊断
   ↓
-RepairClosure
+修复闭合
   ↓
-DomainWork / DomainRun
+领域工作 / 领域运行
   ↓
-operational provider
+运行提供方
   ↓
-reality observation
+现实观察
   ↓
-RepairRevision
+修复修订
   ↓
-DomainReport
+领域报告
   ↓
-Runtime assessment / Decision / discharge
+运行时评估 / 决定 / 解除
 ```
 
-Operational diagnosis 不是 authority。
+运行诊断不是权限。
 
-Provider success 不是 target recovery。
+提供方成功不是目标恢复。
 
-Operational completion 需要 domain evidence。
+运行完成需要领域证据。
 
-### Administrative
+### 行政管理
 
-`administrative-orchestrator` 持有 administrative reality。
+`administrative-orchestrator` 持有行政管理现实。
 
 ```text
-organizational request / evidence
+组织请求 / 证据
   ↓
-Administrative case / facts / policy / obligations
+行政管理事项 / 事实 / 策略规则 / 义务
   ↓
-GovernanceBasis
+治理依据
   ↓
-Administrative ExecutionAuthorization
+行政管理执行授权
   ↓
-Runtime Responsibility / Work / Run / authority
+运行时责任 / 工作 / 运行 / 权限
   ↓
-external administrative system
+外部行政管理系统
   ↓
-independent read-back
+独立回读
   ↓
-ConfirmedOutcome
+已确认结果
   ↓
-CompletionAssessment
+完成评估
   ↓
-Runtime responsibility assessment
+运行时责任评估
 ```
 
-Administrative approval satisfaction 不是 Runtime Authorization。
+行政管理批准满足不是运行时授权。
 
-Administrative EffectRecord 不是 external reality。
+行政管理效果记录不是外部现实。
 
-Case completion 不自动等于 Runtime responsibility discharge。
+事项完成不自动等于运行时责任解除。
 
-### Autonomous Development
+### 自主开发
 
 `autonomous-development` 持有软件开发现实。
 
 ```text
-qualified development objective / admitted request
+已取得资格开发目标 / 已准入请求
   ↓
-DevelopmentRequest
+开发请求
   ↓
-Personal World context projection
+个人世界情境投影
   ↓
-engineering executor requirement analysis
+工程执行器需求分析
   ↓
-ChangeProposal
+变更提案
   ↓
-isolated implementation
+隔离实现
   ↓
-deterministic verification + independent review
+确定性验证 + 独立复核
   ↓
-immutable build
+不可变构建
   ↓
-candidate deployment
+候选部署
   ↓
-offline evaluation
+离线评估
   ↓
-canary
+金丝雀发布
   ↓
-promotion or rollback
+晋级或回滚
   ↓
-post-promotion soak
+晋级后观察期
   ↓
-ReleasedVersion
+发布版本
 ```
 
-Autonomous Development 持有：
+自主开发持有：
 
 ```text
-DevelopmentTarget
-ProductObjectiveRevision
-DevelopmentRequest
-RequirementAnalysis
-ChangeProposal
-worktree and source semantics
-verification gates
-build artifact identity
-deployment state
-traffic exposure
-feedback attribution
-canary lifecycle
-promotion
-rollback
-ReleasedVersion
+开发目标
+产品目标修订
+开发请求
+需求分析
+变更提案
+工作树和来源语义
+验证门槛
+构建制品身份
+部署状态
+流量暴露
+反馈归因
+金丝雀发布生命周期
+晋级
+回滚
+发布版本
 ```
 
-配置的 engineering executor 执行边界明确的实现工作；Autonomous Development 保留 lifecycle 和 release authority。
+配置的工程执行器执行边界明确的实现工作；自主开发保留生命周期和发布权限。
 
-World Runtime 持有通用 responsibility、authority、durable effect identity 和 reality-effect admission。
+世界运行时持有通用责任、权限、持久现实效果身份和现实效果准入。
 
-Autonomous Development 持有“有效软件 release”的含义。
+自主开发持有“有效软件发布”的含义。
 
-Git commit 不是 ReleasedVersion。
+Git 提交不是发布版本。
 
-Tests passed 不是 promotion authority。
+测试通过不是晋级权限。
 
-Deployment healthy 不是 ProductImproved。
+部署健康不是产品已改善。
 
-Canary completion 不是 release finalization。
+金丝雀发布完成不是发布最终确认。
 
-## Autonomous Development 垂直切片
+## 自主开发垂直切片
 
 ```text
-autonomous development trigger
-  or
-authorized request via temporary external Agent
+自主开发触发条件
+  或
+已授权请求通过临时外部智能体
   ↓
-DevelopmentRequest admission
+开发请求准入
   ↓
-Personal World
+个人世界
   ↓
-purpose-limited context + basis revisions
+用途受限上下文 + 依据修订
   ↓
-engineering executor requirement analysis
+工程执行器需求分析
   ↓
-RequirementAnalysis / ChangeProposal
+需求分析 / 变更提案
   ↓
-Autonomous Development lifecycle
+自主开发生命周期
   ↓
-World Runtime
+世界运行时
   ↓
-governed reality-changing dispatch
+受治理的改变现实的调度
   ↓
-Git / build / deployment / traffic
+Git / 构建 / 部署 / 流量
   ↓
-Reality
+现实
   ↓
-tests / telemetry / deployment read-back / release evidence
+测试 / 遥测 / 部署回读 / 发布证据
   ↓
-Autonomous Development
+自主开发
   ↓
-domain outcome / ReleasedVersion / rollback / unknown
+领域结果 / 发布版本 / 回滚 / 未知
   ↓
-World Runtime
+世界运行时
   ↓
-qualification / responsibility assessment / reconciliation
+资格 / 责任评估 / 校正
   ↓
-autonomous continuation / next work cycle
+自主继续 / 下一工作周期
 ```
 
-如果某人需要 explanation 或 intervention，外部 Agent 可以临时读取由此产生的权威状态，只执行已授权、有边界的 repair，完成 verification 后退出。这是 exceptional access path，不是软件 lifecycle 的必经阶段。
+如果某人需要解释或介入，外部智能体可以临时读取由此产生的权威状态，只执行已授权、有边界的修复，完成验证后退出。这是例外入口路径，不是软件生命周期的必经阶段。
 
-Requirement analysis 使用的 Personal World basis 绑定 revision。
+需求分析使用的个人世界依据绑定修订。
 
 ```text
-Personal World record @ revision N
+个人世界记录 @ 修订 N
   ↓
-RequirementAnalysis basis
+需求分析依据
   ↓
-record changes / disappears / loses current qualification
+记录发生变化 / 消失 / 失去当前资格
   ↓
-basis revalidation fails
+依据重新验证失败
   ↓
-old analysis cannot silently continue
+旧分析不能静默继续
   ↓
-revalidation / new analysis / temporary external intervention if needed
+重新验证 / 新分析 / 临时外部介入如果需要
 ```
 
-Personal context 变化不会改写 historical analysis。
+个人情境变化不会改写历史分析。
 
-Historical analysis 不意味着 current qualification。
+历史分析不意味着当前资格。
 
 ## 现实回流路径
 
-每条有后果的路径都包含 return path。
+每条有后果的路径都包含返回路径。
 
 ```text
-Reality
+现实
   ↓
-observation / provider receipt / external state
+观察 / 提供方回执 / 外部状态
   ↓
-Domain evidence
+领域证据
   ↓
-Effect realization / Outcome / Unknown
+现实效果实现 / 结果 / 未知
   ↓
-World Runtime reconciliation and qualification
+世界运行时校正和资格
   ↓
-Responsibility assessment
+责任评估
   ↓
-current agency state / next autonomous cycle
+当前自主状态 / 下一自主循环
 ```
 
-只有异常情况需要 human attention 时，才使用单独的短生命周期 Agent session 把这个状态投影给用户。
+只有异常情况需要人关注时，才使用单独的短生命周期智能体会话把这个状态投影给用户。
 
-仅有 provider acknowledgement 不能终止闭环。
+仅有提供方确认回执不能终止闭环。
 
-Transport ambiguity 必须保留 uncertainty。
+传输歧义必须保留不确定性。
 
-只要 domain 支持，就通过独立的 authoritative read-back 确认现实状态。
+只要领域支持，就通过独立的权威回读确认现实状态。
 
-Unknown 保持为一等状态。
+未知保持为一等状态。
 
 ## 连续性模型
 
-架构承载三种 durable continuity。
+架构承载三种持久连续性。
 
 ```text
-Personal continuity
-  = Personal World
+个人连续性
+  = 个人世界
 
-Agency continuity
-  = World Runtime
+自主连续性
+  = 世界运行时
 
-Domain continuity
-  = Domain Controllers
+领域连续性
+  = 领域控制器
 ```
 
-`semantic-language` 在三种连续性之间保存 distinctions。
+`semantic-language` 在三种连续性之间保存区分。
 
-External-Agent projection 从 authoritative owner 重建，不是第四个 durable authority store。
+外部智能体投影从权威归属方重建，不是第四个持久权限存储。
 
-替换内部 Agent/executor 不应替换任何 durable continuity。
+替换内部智能体/执行器不应替换任何持久连续性。
 
-替换或断开短生命周期 external Agent client，不应替换 Personal World、World Runtime、Domain state 或 AIOS operation。
+替换或断开短生命周期外部智能体客户端，不应替换个人世界、世界运行时、领域状态或 AIOS 操作。
 
-Domain Controller 可以演化，而不需要把自己的专业 lifecycle 移入 World Runtime。
+领域控制器可以演化，而不需要把自己的专业生命周期移入世界运行时。
 
-World Runtime 可以重启，而不丢失 durable agency state。
+世界运行时可以重启，而不丢失持久自主行动能力状态。
 
-## Authority path
+## 权限路径
 
 ```text
-authenticated actor
+已认证行动者
   ↓
-representation
+表示
   ↓
-intent / proposal
+意图 / 提案
   ↓
-Decision
+决定
   ↓
-Mandate / Authorization
+授权令 / 授权
   ↓
-bounded Runtime transition authority
+有边界的运行时状态转换权限
   ↓
-domain-specific execution authorization
+领域特定执行授权
   ↓
-durable effect identity
+持久现实效果身份
   ↓
-provider dispatch
+提供方调度
   ↓
-reality
+现实
 ```
 
 前一阶段不能替代后一阶段。
 
-知道一个 resource，不会因此取得对它的 authority。
+知道一个资源，不会因此取得对它的权限。
 
-能够代表某个 principal，不会自动取得 transition authority。
+能够代表某个责任主体，不会自动取得状态转换权限。
 
-取得 transition authority，不会自动取得所有 reality effect 的权限。
+取得状态转换权限，不会自动取得所有现实现实效果的权限。
 
-Domain execution permission 不能证明 domain outcome。
+领域执行权限不能证明领域结果。
 
-## Evidence 与 qualification path
+## 证据与资格路径
 
 ```text
-Reality
+现实
   ↓
-Observation
+观察
   ↓
-Evidence
+证据
   ↓
-Domain interpretation
+领域解释
   ↓
-Outcome / Unknown candidate
+结果 / 未知候选
   ↓
-qualification
+资格
   ↓
-Responsibility assessment
+责任评估
   ↓
-current agency state
+当前自主状态
 ```
 
-Evidence 必须能够追溯到 source。
+证据必须能够追溯到来源。
 
-Current qualification 变化时，historical evidence 仍然只是 historical evidence。
+当前资格变化时，历史证据仍然只是历史证据。
 
-Material basis 变化时，应触发 revalidation，而不是静默继续。
+实质依据变化时，应触发重新验证，而不是静默继续。
 
 ## 仓库放置规则
 
-只有当多个 domain 都需要同一个不可替代的 distinction 时，新的跨领域 meaning 才进入 `semantic-language`。
+只有当多个领域都需要同一个不可替代的区分时，新的跨领域含义才进入 `semantic-language`。
 
-新的 durable cross-domain agency invariant 进入 `world-runtime`。
+新的持久跨领域自主行动能力不变量进入 `world-runtime`。
 
-新的 personal fact、preference、relationship、resource reference 或 personal-context lineage 进入 `personal-world`。
+新的个人事实、偏好、关系、资源引用或个人上下文沿革进入 `personal-world`。
 
-新的专业 lifecycle 进入 Domain Controller。
+新的专业生命周期进入领域控制器。
 
-Provider-specific implementation 保持在拥有它的 Domain Controller 之下。
+提供方特定实现保持在拥有它的领域控制器之下。
 
-短生命周期 external Agent interaction 与 projection logic 保持在 AIOS 之外；任何 AIOS API/CLI integration 都不得成为 authoritative durable state owner。
+短生命周期外部智能体交互与投影逻辑保持在 AIOS 之外；任何 AIOS API/CLI 集成都不得成为权威持久状态归属方。
 
-Agent/executor logic 保持可替换，默认不成为 durable state owner。
+智能体/执行器逻辑保持可替换，默认不成为持久状态归属方。
 
-Model routing 与 model transport 保持为可替换的 integration concern。
+模型路由与模型传输保持为可替换的集成事项。
 
-新组件通过显式 Runtime 与 Personal World boundary 接入，而不是复制任何一侧的 substrate。
+新组件通过显式运行时与个人世界边界接入，而不是复制任何一侧的基础承载。
 
 ## 扩展拓扑
 
-新增 executor 接到 cognitive execution boundary。
+新增执行器接到认知执行边界。
 
 ```text
-Agency / Domain request
+自主行动能力 / 领域请求
   ↓
-executor selection
-  ├─ Agent adapter
-  ├─ engineering executor
-  └─ specialized executor
+执行器选择
+  ├─ 智能体适配器
+  ├─ 工程执行器
+  └─ 专用执行器
 ```
 
-新增 Domain Controller 接到 World Runtime 下方。
+新增领域控制器接到世界运行时下方。
 
 ```text
-World Runtime
-  ├─ Control Plane
-  ├─ Administrative
-  ├─ Autonomous Development
-  ├─ future domain
-  └─ future domain
+世界运行时
+  ├─ 控制平面
+  ├─ 行政管理
+  ├─ 自主开发
+  ├─ 未来领域
+  └─ 未来领域
 ```
 
-新增 provider 接到其 owning domain 下方。
+新增提供方接到其归属领域下方。
 
 ```text
-Domain Controller
+领域控制器
   ├─ API
-  ├─ application
-  ├─ device
-  ├─ infrastructure
-  ├─ human
-  └─ robot
+  ├─ 应用
+  ├─ 设备
+  ├─ 基础设施
+  ├─ 人
+  └─ 机器人
 ```
 
-新增 capability 不意味着需要新的 Runtime semantics。
+新增能力不意味着需要新的运行时语义。
 
-更强的 model intelligence 不意味着新的 durable authority。
+更强的模型智能不意味着新的持久权限。
 
-新的 domain breadth 不意味着 universal domain ontology。
+新的领域范围不意味着通用领域本体。
 
 ## 稳定架构
 
 ```text
 guide
-    six dimensions / non-substitution / revisability
+    六个维度 / 不可替代 / 可修订性
                      │
                      ▼
 aios/semantic-language
-    cross-domain semantic constitution
+    跨领域语义宪法
 
-AIOS — long-lived, headless runtime
-    personal-world ──► internal Agent / Executor
+AIOS — 长期, 无界面运行时
+    personal-world ──► 内部智能体 / 执行器
            ▲                         │
            │                         ▼
-           └────────────── domain admission
+           └────────────── 领域准入
                                      │
                                      ▼
                                world-runtime
                                      │
                     ┌────────────────┼─────────────────┐
                     ▼                ▼                 ▼
-              control-plane   administrative   autonomous-development
+              control-plane   行政管理   autonomous-development
                     │                │                 │
                     ▼                ▼                 ▼
-                 providers       providers          providers
+                 提供方提供方提供方
                     │                │                 │
                     └────────────────┼─────────────────┘
-                                     ▼ effects
-                                  Reality
+                                     ▼ 效果
+                                  现实
                                      │
-                                     └── evidence / read-back / outcome / unknown
+                                     └── 证据 / 回读 / 结果 / 未知
                                          ───────────────────────────────► AIOS
 
-Out-of-band, only when needed:
-Human ─► existing Agent product (short-lived session) ─► AIOS machine boundary
-                 inspect / explain / bounded authorized repair / verify
-                 ─► report ─► disconnect; AIOS continues
+带外, 仅在需要时:
+人 ─► 现有智能体产品 (短生命周期会话) ─► AIOS 机器边界
+                 检查 / 解释 / 有边界的已授权修复 / 验证
+                 ─► 报告 ─► 断开; AIOS 继续
 
-External Agent products, model providers, and routing adapters remain
-replaceable integrations. The external intervention session is not a stage in
-the continuous AIOS–Reality operating loop.
+外部智能体产品, 模型提供方, 和路由适配器保持
+可替换集成. 该外部介入会话是不是一个阶段在
+该持续的 AIOS—现实运行闭环.
 ```
