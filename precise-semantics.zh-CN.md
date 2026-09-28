@@ -10,7 +10,7 @@
 
 `request / trigger → problem framing / question qualification（需要解释时） → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
 
-符合这套工程语义，不等于某个表示已经成为关于世界的真理。现实侧 observation、反例、effect 失败和条件变化都可以使当前记录、contract 或假设失效，并最终要求 guide 自身的区分和结构接受修订。
+符合这套工程语义，不等于某个表示已经成为关于世界的真理。Formal schema、状态机、invariant、测试或局部 formal verification 可以建立具体工程性质，但不构成对 guide 自身的形式化证明。现实侧 observation、反例、effect 失败和条件变化都可以使当前记录、contract 或假设失效，并最终要求 guide 自身的区分和结构接受修订。
 
 ## 0. 认知边界不是一个数据库字段
 

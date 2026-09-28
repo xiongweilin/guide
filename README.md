@@ -122,6 +122,35 @@ So:
 
 The framework does not recurse indefinitely into “why exactly this many dimensions?” If further questioning is not producing materially better distinctions, decisions, predictions, actions, or corrections, the count may remain provisionally closed. Reality can reopen it later.
 
+### No formal proof obligation; evaluate by use
+
+This guide will not attempt to establish the framework itself through formal proof. It may use precise definitions, symbolic shorthand, state machines, invariants, tests, or domain-specific formal verification when those tools improve clarity or engineering, but none of them proves that the guide is a true or final structure of the World.
+
+The guide is evaluated primarily through six practical indicators:
+
+| Indicator | Use question |
+| --- | --- |
+| **Correctness** | Do the distinctions, judgments, actions, and resulting claims remain consistent with available reality-side evidence, intended semantics, and observed outcomes? |
+| **Usability** | Can people and systems understand, apply, maintain, and revise the framework without disproportionate friction? |
+| **Reliability** | Under repeated use, variation, failure, and changing conditions, does the framework continue to produce dependable guidance and support correction or recovery? |
+| **Performance** | Does using the framework produce decisions, coordination, or engineering results with acceptable latency, responsiveness, and throughput for the task? |
+| **Capacity / scalability** | Can the framework remain usable as users, data, tasks, domains, dependencies, and interaction complexity grow, without unacceptable degradation? |
+| **Efficiency** | Are useful results obtained with proportionate time, computation, money, attention, coordination, maintenance, and opportunity cost? |
+
+These six indicators are **usage guidance**, not six new theoretical dimensions, axioms, or a proof obligation. The guide does not prove why these are exactly six either. Their relevance, measurement method, threshold, and weighting depend on the concrete use.
+
+So:
+
+`formal precision != formal proof of the framework`
+
+`local formal verification != proof that the guide is true`
+
+`good score on one indicator != overall adequacy`
+
+`current use is good enough across relevant indicators != permanent validity`
+
+When the relevant indicators are good enough for the current purpose, use may close provisionally without further foundational proof. When reality-side results deteriorate, the framework can be reopened by the people using it.
+
 ### Retirement is not a self-enforcing rule
 
 A theory is not an acting subject. It cannot guarantee that people will obey its own review, replacement, or retirement guidance.

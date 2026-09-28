@@ -10,7 +10,7 @@ Core chain:
 
 `request / trigger → problem framing / question qualification (when interpretation is required) → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
 
-Conformance to this engineering semantics does not prove that a representation is true of the World. Reality-side observation, counterexamples, failed effects, and changed conditions can invalidate current records, contracts, or assumptions and can ultimately require the guide's own distinctions to be revised.
+Conformance to this engineering semantics does not prove that a representation is true of the World. Formal schemas, state machines, invariants, tests, or local formal verification may establish specific engineering properties, but they do not constitute a formal proof of the guide itself. Reality-side observation, counterexamples, failed effects, and changed conditions can invalidate current records, contracts, or assumptions and can ultimately require the guide's own distinctions to be revised.
 
 ## 0. A cognitive boundary is not a database field
 
