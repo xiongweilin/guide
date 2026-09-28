@@ -60,8 +60,8 @@ AIOS machine boundary ─────────────► Reality
 The external Agent:
 
 - is not part of the AIOS runtime;
-- does not own durable state, responsibility, or authority;
-- is not the owner of personal-world or domain truth;
+- does not create or durably own state, responsibility, or authority; it may only exercise bounded authority explicitly granted by AIOS for the session;
+- does not own canonical Personal World state or domain-owned state;
 - does not pause autonomous AIOS operation when its session ends.
 
 `human present != system operation requires human`
@@ -70,7 +70,13 @@ The external Agent:
 
 `external Agent repair != successful recovery`
 
-`successful recovery = authoritative state + reality-side readback + required verification`
+`provider reconciliation succeeded != domain outcome verified`
+
+`domain outcome verified != domain recovered`
+
+`domain recovered != responsibility discharged`
+
+Provider-level reconciliation establishes only an execution fact. Domain recovery requires domain-owned reality-side observation, outcome qualification, and any required verification.
 
 API / CLI are machine integration and maintenance boundaries, not the primary human management surface.
 
@@ -109,7 +115,7 @@ A container is a deployment boundary, not a durable semantic owner. Internal Age
 | aios | AIOS source monorepo |
 | semantic-language | stable cross-domain role vocabulary, references, normalization, non-substitution |
 | personal-world | durable personal facts, preferences, relations, resource refs, provenance, revision, freshness, privacy, purpose-limited context |
-| world-runtime | durable agency, responsibility, decisions, sufficiency basis, authorization, execution identity, recovery, reconciliation, history |
+| world-runtime | durable agency, responsibility, decisions and basis refs, mandates / authorizations, qualification review, execution identity, recovery, reconciliation, history |
 | control-plane | operational incidents, diagnosis, repair, monitoring, runtime providers, result evidence |
 | administrative-orchestrator | administrative cases, obligations, governance basis, administrative effects, outcomes, completion semantics |
 | autonomous-development | software requirements, source, build, test, deploy, canary, promotion, rollback, release semantics |
@@ -119,11 +125,11 @@ A container is a deployment boundary, not a durable semantic owner. Internal Age
 
 Directories can own independent semantics without becoming separate Git repositories.
 
-## 6. semantic-language: cross-domain constitution
+## 6. semantic-language: promoted cross-domain role vocabulary
 
-semantic-language stays small and stable, expressing only cross-domain role distinctions that recur and whose collapse causes concrete correctness failure.
+semantic-language stays small and stable. It directly owns only promoted universal role distinctions whose collapse creates concrete cross-domain correctness failure. The broader non-substitution rules below are AIOS-wide engineering invariants; distinctions that have not been promoted remain owner-local and are preserved by the subsystem or domain contract where they matter.
 
-At minimum preserve:
+AIOS should preserve, when material:
 
 ```text
 reality != current representation
@@ -154,13 +160,13 @@ A stable semantic distinction does not automatically require a universal payload
 
 ## 7. personal-world: personal continuity
 
-personal-world owns a person's durable, evolving, provenance-bearing context accepted through proportionate sufficiency judgments. The name does not imply that it contains the person's whole distinguishable world, and absence of a record does not imply absence in reality.
+personal-world owns a person's durable, evolving, provenance-bearing context accepted through owner-local qualification / admission that realizes the framework's sufficiency requirement. The name does not imply that it contains the person's whole distinguishable world, and absence of a record does not imply absence in reality.
 
 ```text
 source
 → observation
 → claim
-→ sufficiency
+→ qualification / admission
 → personal record revision
 → current lineage head
 → purpose-limited context projection
@@ -190,7 +196,7 @@ domain lifecycle
 model-private memory
 ```
 
-Model inference does not automatically become accepted personal truth. Domain projections do not transfer domain ownership. Context projections are not new authoritative personal state.
+Model inference does not automatically become currently qualified Personal World state. Domain projections do not transfer domain ownership. Context projections are not new authoritative personal state.
 
 ## 8. Cognitive execution
 
@@ -234,10 +240,9 @@ world-runtime may own:
 identity
 epistemic-basis refs
 responsibility
-decision
-authorization warrant / authorization
-policy
-sufficiency basis
+decision + basis refs
+mandate / authorization
+qualification binding / review case
 work / run
 execution identity
 provider-attempt identity
@@ -257,9 +262,10 @@ authenticated actor
 → representation
 → intent / proposal
 → decision
-→ authorization warrant / authorization
++ current mandate
+→ authorization
 → runtime state-transition authority
-→ domain execution authorization
+→ reality-effect authorization
 → durable real-world effect identity
 → provider dispatch
 → Reality
@@ -275,14 +281,13 @@ Knowing a resource does not create permission. Representing a principal does not
 Reality
 → observation
 → evidence
-→ domain interpretation
-→ outcome / unknown candidate
-→ sufficiency
-→ responsibility evaluation
+→ domain interpretation / outcome qualification
+→ DomainReport + Outcome refs / unknown
+→ runtime review / Responsibility assessment
 → current autonomous state
 ```
 
-Evidence must remain traceable to sources. Changes in current sufficiency do not rewrite historical evidence. Material basis changes trigger revalidation.
+Evidence must remain traceable to sources. World Runtime may record or reference domain-owned Outcomes, but it does not reinterpret their domain meaning. Changes in current qualification do not rewrite historical evidence. Material basis changes trigger review / revalidation.
 
 ## 12. control-plane
 
@@ -395,9 +400,9 @@ Every consequential path contains a return path:
 Reality
 → observation / provider receipt / external state
 → domain evidence
-→ real-world effect / outcome / unknown
-→ world-runtime reconciliation and sufficiency
-→ responsibility evaluation
+→ domain-owned Outcome refs / unknown + effect state
+→ DomainReport
+→ world-runtime reconciliation / Responsibility assessment
 → current autonomous state / next cycle
 ```
 
@@ -481,7 +486,7 @@ guide
        │
        ▼
 aios/semantic-language
-  cross-domain semantic constitution
+  promoted cross-domain role vocabulary
 
 AIOS
   personal-world ──► internal Agent / executor
