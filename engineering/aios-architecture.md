@@ -154,7 +154,7 @@ A stable semantic distinction does not automatically require a universal payload
 
 ## 7. personal-world: personal continuity
 
-personal-world owns a person's durable, evolving, provenance-bearing context accepted through proportionate sufficiency judgments.
+personal-world owns a person's durable, evolving, provenance-bearing context accepted through proportionate sufficiency judgments. The name does not imply that it contains the person's whole distinguishable world, and absence of a record does not imply absence in reality.
 
 ```text
 source
@@ -365,6 +365,25 @@ release version
 `deployment healthy != product improved`
 
 `canary complete != release finally confirmed`
+
+### Autonomous Development vertical slice
+
+```text
+autonomous-development trigger / admitted request
+→ request admission
+→ personal-world purpose-limited context @ revision
+→ requirements analysis / change proposal
+→ autonomous-development lifecycle
+→ world-runtime governed real-world effects
+→ Git / build / deploy / traffic
+→ Reality
+→ tests / telemetry / deployment readback / release evidence
+→ domain outcome / release version / rollback / unknown
+→ world-runtime responsibility evaluation / reconciliation
+→ next autonomous cycle
+```
+
+The configured engineering executor performs bounded implementation work; autonomous-development retains specialist lifecycle and release authority, while world-runtime retains generic responsibility, authorization, durable effect identity, and effect admission.
 
 personal-world inputs bind revisions. Personal context changes do not rewrite historical analysis, but can invalidate the current sufficiency of old analysis.
 

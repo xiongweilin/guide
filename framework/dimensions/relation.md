@@ -50,6 +50,10 @@ Participants may agree on facts but conflict on values, agree on values but conf
 
 ## 3. Local worlds and models of others
 
+A **strategic actor** is an analytical position whose judgment or action can materially change another participant's later conditions, including reality, information, judgment conditions, costs, or reachable paths.
+
+`strategic actor != experiential subjectivity != responsibility standing != authority`
+
 Different finite systems have different current boundaries:
 
 `B_i != B_j`
@@ -131,7 +135,17 @@ Relational systems can also be reflexive:
 
 Public predictions, metrics, incentives, institutional rules, and exposed strategies can change the modeled actors.
 
-## 8. Authority, recognition, and legitimacy
+## 8. Formal representation and heterogeneous orientations
+
+A joint strategic representation does not imply shared values or goals:
+
+`joint strategic representation != shared value or goal`
+
+`outcomes comparable != participants share one value scale`
+
+Payoffs, utilities, rankings, and costs are modeling choices. Formal optimality, equilibrium, strategic advantage, or aggregate payoff does not by itself create authority or legitimacy.
+
+## 9. Authority, recognition, and legitimacy
 
 Multi-participant activity should separate:
 
@@ -143,7 +157,7 @@ Multi-participant activity should separate:
 
 Recognition is a relational fact, not a global boolean. Widespread recognition also does not automatically establish normative legitimacy.
 
-## 9. Institutions and meta-power
+## 10. Institutions and meta-power
 
 Institutions can provide problem framing, procedures, authority, representation, commitments, handoffs, review, appeal, exit, renegotiation, and reopening.
 
