@@ -4,259 +4,189 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-> Make clear what we distinguish, what is sufficient, what is worth pursuing, what can be done, how structures change, and how people affect one another. Then ask when the current boundary should be reopened, and how to choose responsibly when more than one admissible path remains.
+> A working framework for how a finite system forms a current boundary under reality, judges whether it is sufficient, explores when it is not, decides when it is, and receives reality-side feedback through an action chain.
 
-An index of ideas and methods about the **basic structure of human activity, exploration beyond current boundaries, free decision within provisionally accepted boundaries, and their engineering expression**.
+This repository does not attempt to provide a final ontology of reality, nor does it treat any cognitive model, optimization method, or engineering implementation as reality itself. It requires only that a finite system make the boundary of its current activity sufficiently explicit, prevent important semantics from being silently substituted, avoid disguising unknowns as knowns, and remain revisable through reality-side feedback after action.
 
-Individuals, families, teams, organizations, institutions, Agents, and technical systems can all be objects of analysis. Agent is only a formal term for a participant capable of taking part in the current activity; it is not a prerequisite for the framework.
-
-## World boundary
-
-This repository keeps the **World** as a cognitive boundary.
-
-Current observations, language, models, classifications, schemas, ontologies, and knowledge graphs are not entitled by default to count as the complete structure of the World simply because they are usable. The documents concern **human activity within a distinguishable world**, not a final ontology of the World itself.
-
-Keep at least:
-
-- **World (cognitive boundary)**: what remains beyond the current representation stays open;
-- **distinguishable world / distinguishable range**: distinctions that could in principle be formed under current sensing, language, tools, interaction, capability, and interfaces;
-- **distinguished range**: distinctions already acquired, formed, and currently invocable;
-- **default distinctions**: classifications and boundaries silently inherited from language, culture, interfaces, institutions, historical decisions, or existing models.
-
-Therefore:
-
-`current representation != the World itself`
-
-`absent from current representation != nonexistent != impossible`
-
-## Six basic dimensions of human activity
-
-The same activity should retain at least six analytical dimensions that cannot silently substitute for one another. They are not assumed to be independent, orthogonal, or at the same logical level:
-
-| Dimension | Minimal structure | Core question |
-| --- | --- | --- |
-| [**Distinction**](./six-dimensions/distinction.md) | `World boundary → distinguishable world / range → distinguished range` | What can become distinguishable, what has been distinguished, and what remains outside the current representation? |
-| [**Qualification**](./six-dimensions/qualification.md) | `interpretive / specified` + `unmet → accumulating → sufficient → enter` | What conditions are sufficient, and is sufficiency being interpreted or checked against a specified rule? |
-| [**Value**](./six-dimensions/value.md) | `external norms ↔ internal norms` | What is worth pursuing, required, rejected, or refused? |
-| [**Capability**](./six-dimensions/capability.md) | `unknown / cannot / capable` + `self / assisted / leverage` | Which outcomes are currently realizable, how is that known, and through what means? |
-| [**Change**](./six-dimensions/change.md) | `stable / transitional / no stable structure` | Are we facing a persistent structure, a transition, or no stable structure yet? |
-| [**Others**](./six-dimensions/others.md) | `relation strength × alignment / conflict` | Who affects whom, and in which dimensions are they aligned or in conflict? |
-
-The six dimensions are not six kinds of object and not six independent axes. They are non-substitutable analytical dimensions of the same activity. They can constrain one another and form feedback loops.
-
-The six dimensions are **equally basic within this framework**. None is the master dimension, and none is entitled to define the content of the other five. Distinction asks what can enter representation; Qualification asks what grounds are sufficient for a transition; Value asks what is worth pursuing or refusing; Capability asks what is currently realizable and by what means; Change asks what persists, transitions, or requires reopening; Others asks how multiple participants, relations, power, recognition, alignment, and conflict alter the activity. Each dimension can constrain, challenge, or reopen the others.
-
-Qualification remains transition semantics within this set, not a higher-order owner of the framework. It has two basic regimes in tension: **interpretive qualification**, where sufficiency is established through accountable judgment over context and evidence, and **specified qualification**, where sufficiency is checked against an explicit rule, predicate, threshold, or contract. Real activities can combine both, but they cannot silently substitute for one another. Distinction and capability form one important feedback loop: current capability, tools, interfaces, and others constrain what can become distinguishable; newly formed distinctions can reveal or create new reachable paths. Other dimensions form their own feedback relations as well. The reading order is navigational, not an ontological derivation, priority order, or one-way causal stack.
-
-For example:
-
-`can do != worth doing`
-
-`worth doing != qualified to act`
-
-`stable now != valid indefinitely`
-
-`my distinctions / values / authority != others' distinctions / values / recognition`
-
-## From current boundaries to exploration and decision
-
-The six dimensions make the **current activity boundary** explicit. They do not imply that the current boundary is complete, and they do not uniquely determine what a participant must choose.
-
-Two further activity mechanisms therefore sit beside the six-dimensional analysis without becoming a seventh or eighth dimension:
-
-- [**Exploration beyond the current boundary**](./explore-decide/explore.md) asks when the current distinctions are no longer sufficient, what kinds of missing candidates may matter, whether reopening is worth its cost now, and how to explore without disguising unknowns as knowns.
-- [**Free decision within the current boundary**](./explore-decide/decide.md) asks how a participant forms an accountable choice when the current boundary is provisionally sufficient and more than one admissible action remains.
-
-Their relationship can be summarized as:
+## Overall structure
 
 ```text
-current boundary
-    ↓
-six-dimensional analysis
-    ↓
-is the boundary sufficient for the current purpose?
-    ├─ no / materially uncertain → explore → revise the boundary
-    └─ yes                    → decide within the boundary
-                                      ↓
-                                    action
-                                      ↓
-                               reality-side feedback
-                                      ↓
-                         retain or reopen the boundary
+Reality (external boundary)
+    │
+    ▼
+Finite system
+    │
+    ▼
+Current activity / current purpose
+    │
+    ▼
+Construct current boundary B
+    │
+    ├─ Distinction
+    ├─ Relation
+    ├─ Causality
+    ├─ Temporality
+    ├─ Possibility
+    └─ Value
+    │
+    ▼
+Sufficiency S(B, purpose, next transition)
+    ├─ insufficient / materially uncertain → explore → revise B
+    └─ sufficient                         → decide
+                                               │
+                                               ▼
+                                          action chain
+                                               │
+                                               ▼
+                                            reality
+                                               │
+                                      reality-side feedback
+                                               │
+                                    retain / revise / reopen
 ```
 
-This is a control relation, not a strict one-way pipeline. Exploration itself uses distinction, qualification, value, capability, change, and others; decision does too. A decision may expose a missing distinction and reopen exploration, while exploration may end with a provisional boundary that makes decision possible.
+Each position has a different responsibility:
 
-At least preserve:
+- **Reality** is the external boundary. A representation, model, schema, ontology, classification, or knowledge graph is not reality itself.
+- **Finite system** is the user of the framework. A person, team, organization, institution, Agent, or technical system may be analyzed as a finite system; all are limited by sensing, language, time, computation, resources, authority, and control.
+- **Six dimensions** describe the current activity boundary: distinction, relation, causality, temporality, possibility, and value.
+- **Sufficiency** is an operator, not a seventh dimension. It asks whether the current boundary is enough for the next transition under the current purpose.
+- **Exploration and decision** are activities, not dimensions. Explore when the boundary is insufficient; decide when it is provisionally sufficient.
+- **The action chain** connects decision to reality while preserving the differences among decision, authorization, execution, real-world effect, observation, verification, outcome, and reopening.
 
-`current boundary is useful != current boundary is complete`
+## Six dimensions
 
-`unknown outside the current representation != a known alternative waiting in a list`
+The six dimensions are not six kinds of object and are not assumed to be independent, orthogonal, or at the same logical level. They are six descriptive dimensions that the current framework does not allow to silently substitute for one another.
 
-`more than one admissible option != no reason is needed for choice`
+| Dimension | Core question |
+| --- | --- |
+| [**Distinction**](./framework/dimensions/distinction.md) | What can be distinguished, what has been distinguished, and what remains outside the current representation? |
+| [**Relation**](./framework/dimensions/relation.md) | How are distinguished contents connected, composed, dependent, constrained, and mutually affected? |
+| [**Causality**](./framework/dimensions/causality.md) | What changes cause what other changes, and what interventions can change which outcomes? |
+| [**Temporality**](./framework/dimensions/temporality.md) | What happens before or after what, for how long and at what rate, and when does a structure remain valid or fail? |
+| [**Possibility**](./framework/dimensions/possibility.md) | What else may occur, and which paths are reachable, callable, unknown, or excluded? |
+| [**Value**](./framework/dimensions/value.md) | What is worth pursuing, avoiding, maintaining, committing to, or refusing? |
 
-`no uniquely best option != arbitrary choice`
+Typical non-substitutions:
 
-`a decision is accountable != the decision was logically forced`
+`a classification exists in the current representation != reality has only that classification`
 
+`relation exists != causal effect exists`
 
-## Non-substitution across the six dimensions
+`temporal order observed != causality established`
 
-The common rule across the repository is: **what holds at one layer does not silently establish another layer.**
+`possible != currently controllable by this system`
 
-Typical boundaries include:
+`can do != authorized to do != worth doing`
 
-`default distinction != structure of the World`
+`stable now != permanently valid`
 
-`question can be asked != question is qualified`
+`individual preference != collective value != legitimate collective decision`
 
-`question is qualified != answer is reliable`
+## Sufficiency operator
 
-`interpretive qualification != specified qualification`
+[Sufficiency](./framework/sufficiency.md) does not ask whether the current model is complete. It asks:
 
-`specified rule satisfied != rule is applicable / current / authoritative`
+> Is the current boundary sufficient for the current purpose and next transition?
 
-`judgment is sufficient != goal is worth committing to`
+Sufficiency is therefore local, purpose-relative, time-relative, and reopenable. It can be established through two basic mechanisms:
 
-`worth doing != capable of doing`
+- **Interpretive sufficiency**: an accountable judgment over context, evidence, counterevidence, competing explanations, residual unknowns, and risk.
+- **Specified sufficiency**: checking an explicit and versioned rule, predicate, threshold, guard, test, or contract.
 
-`capable of doing != authorized to do`
+They can be combined but cannot silently substitute for each other.
 
-`authorized != executed`
+`sufficient for the next step != complete boundary`
 
-`execution success != real-world effect occurred`
+`specified rule satisfied != rule currently applicable / valid / authoritative`
+
+`interpretive judgment is reasoned != a deterministic rule already exists`
+
+## Exploration and decision
+
+[Exploration](./framework/activities/exploration.md) reopens the current boundary when it is insufficient or materially uncertain. Its purpose is not endless information accumulation, but greater discriminative power among important competing candidates, with a stopping condition when further exploration is no longer worth its cost.
+
+[Decision](./framework/activities/decision.md) forms a choice after the current boundary is provisionally sufficient. It permits multiple admissible options, partial orderings, incommensurable reasons, and explicit choice procedures without disguising the resulting choice as logically forced.
+
+`unknown exists != exploration must continue indefinitely`
+
+`multiple admissible options != choice needs no reason`
+
+`no unique optimum != no accountable decision is possible`
+
+## Action chain
+
+The [action chain](./framework/action-chain.md) closes the framework back onto reality:
+
+```text
+decision
+→ commitment / governance basis
+→ authorization
+→ execution
+→ real-world effect
+→ observation
+→ verification
+→ outcome / completion judgment
+→ retain, revise, recover, or reopen
+```
+
+These positions cannot be collapsed into one notion of “success”:
+
+`decision != authorization`
+
+`authorization != execution`
+
+`execution succeeded != real-world effect occurred`
 
 `effect occurred != goal completed`
 
-`historically valid != currently valid`
+`goal completed != long-term responsibility discharged`
 
-The theory explains these boundaries through the six dimensions. Precise Semantics and AIOS preserve them in engineering systems.
+Reality-side feedback may require only a value update, or it may reopen relations, causal assumptions, time structure, possibility, value, the problem framing, or even the current six-dimensional closure itself.
 
-## Framework completeness and self-challenge
+## Working closure, not final completeness
 
-This framework does not define completeness as “all final questions already have answers.”
+The current six dimensions are a **working closure**, not a proof that reality has exactly six fundamental dimensions.
 
-A more useful standard is:
+The framework may close provisionally when it is sufficient for the current use. Counterexamples, prediction failures, intervention failures, structural tension, unexpected consequences, accumulating special cases, loss of recoverability, or a better competing framing can all justify reopening.
 
-`unknown is not disguised as known`
+Therefore:
 
-`missing responsibility is not silently substituted`
+`current six dimensions are useful != reality has exactly six ultimate dimensions`
 
-`a boundary knows how to hand off, reopen, or stop`
+`internal coherence != consistency with reality`
 
-A framework can therefore remain incomplete in capability while still being responsible about where its current claims end.
+`local formal verification passed != guide has been proven true`
 
-The framework itself is not exempt from these rules. **This guide is a revisable working framework, not a source of truth about the World.** Its categories, distinctions, qualification rules, value framings, capability models, change models, and representations of others are all fallible. Reality-side observation, counterexamples, failed predictions, failed interventions, unanticipated effects, and better framings can give people sufficient reason to narrow, revise, replace, or stop using a claim or framework.
+A competing theory need not first translate itself into guide vocabulary before it can challenge guide through consequences, counterexamples, predictions, or practice. Semantic mapping becomes necessary for integration, migration, or federation.
 
-### No proof obligation for the number of dimensions
+guide does not require a theory to retire itself. A theory is not an acting subject; revision, narrowing, replacement, archival, and non-use are practices of the finite systems using it.
 
-This guide does not attempt to prove why there are exactly six dimensions, and it will not create a new proof obligation if the number of dimensions changes later.
+## Evaluation in use
 
-The current dimensional count is a **working closure**: it is sufficient when it helps distinguish real problems, prevents important substitutions, supports useful action and engineering, and remains responsive to reality-side failure. That is enough for current use.
+The framework does not establish its ultimate validity through formal proof. Concrete use can be evaluated through task-relevant indicators including:
 
-So:
+- correctness;
+- usability;
+- reliability;
+- performance;
+- capacity / scalability;
+- efficiency.
 
-`current six dimensions are useful != reality has exactly six fundamental dimensions`
+These are usage indicators, not new theoretical dimensions. Good performance on one indicator does not establish overall sufficiency; deteriorating reality-side results can reopen the framework.
 
-`dimension count changed != the old count must first be disproved`
+## Document map
 
-`framework works well enough for current purposes != framework has reached a final foundation`
-
-The framework does not recurse indefinitely into “why exactly this many dimensions?” If further questioning is not producing materially better distinctions, decisions, predictions, actions, or corrections, the count may remain provisionally closed. Reality can reopen it later.
-
-### No formal proof obligation; evaluate by use
-
-This guide will not attempt to establish the framework itself through formal proof. It may use precise definitions, symbolic shorthand, state machines, invariants, tests, or domain-specific formal verification when those tools improve clarity or engineering, but none of them proves that the guide is a true or final structure of the World.
-
-The guide is evaluated primarily through six practical indicators:
-
-| Indicator | Use question |
+| Document | Role |
 | --- | --- |
-| **Correctness** | Do the distinctions, judgments, actions, and resulting claims remain consistent with available reality-side evidence, intended semantics, and observed outcomes? |
-| **Usability** | Can people and systems understand, apply, maintain, and revise the framework without disproportionate friction? |
-| **Reliability** | Under repeated use, variation, failure, and changing conditions, does the framework continue to produce dependable guidance and support correction or recovery? |
-| **Performance** | Does using the framework produce decisions, coordination, or engineering results with acceptable latency, responsiveness, and throughput for the task? |
-| **Capacity / scalability** | Can the framework remain usable as users, data, tasks, domains, dependencies, and interaction complexity grow, without unacceptable degradation? |
-| **Efficiency** | Are useful results obtained with proportionate time, computation, money, attention, coordination, maintenance, and opportunity cost? |
+| [Reality](./framework/reality.md) | external boundary, distinguishable range, current representation, and reality-side correction |
+| [Finite system](./framework/finite-system.md) | user, epistemic status, capability, and control boundary |
+| `framework/dimensions/` | six descriptive dimensions |
+| [Sufficiency](./framework/sufficiency.md) | operator controlling exploration / decision transitions |
+| [Exploration](./framework/activities/exploration.md) | reopening activity when the boundary is insufficient |
+| [Decision](./framework/activities/decision.md) | choice activity when the boundary is sufficient |
+| [Action chain](./framework/action-chain.md) | closed loop from decision to reality-side feedback |
+| [Precise Semantics](./engineering/precise-semantics.md) | engineering semantics that preserve the structure without silent substitution |
+| [AIOS Architecture](./engineering/aios-architecture.md) | one concrete expression in a continuously operating AI system |
 
-These six indicators are **usage guidance**, not six new theoretical dimensions, axioms, or a proof obligation. The guide does not prove why these are exactly six either. Their relevance, measurement method, threshold, and weighting depend on the concrete use.
-
-So:
-
-`formal precision != formal proof of the framework`
-
-`local formal verification != proof that the guide is true`
-
-`good score on one indicator != overall adequacy`
-
-`current use is good enough across relevant indicators != permanent validity`
-
-When the relevant indicators are good enough for the current purpose, use may close provisionally without further foundational proof. When reality-side results deteriorate, the framework can be reopened by the people using it.
-
-### Retirement is not a self-enforcing rule
-
-A theory is not an acting subject. It cannot guarantee that people will obey its own review, replacement, or retirement guidance.
-
-The same theory can remain useful to one person, become obsolete for another, be partially retained by a third, and be abandoned at different times. There is no requirement that retirement be synchronized across people, organizations, or contexts.
-
-Therefore this guide does not define an impossible rule such as “the theory must retire itself when condition X is met.” It can only provide signals that may justify review, narrowing, replacement, archival, or non-use. Whether those actions happen is a matter for living participants, their contexts, their values, their capabilities, and their relations.
-
-So:
-
-`theory states a retirement condition != theory can enforce retirement`
-
-`one user stops using the theory != all users should stop at the same time`
-
-`continued use by someone != proof that the theory remains adequate everywhere`
-
-Revision and retirement are therefore **human practices around the framework**, not autonomous behaviors of the framework itself.
-
-A competing framing or theory does not need to translate itself into the current six-dimensional vocabulary before it can expose a blind spot or failure. Semantic mapping becomes necessary when integrating, federating, or migrating between frameworks, not as a precondition for challenge. Internal coherence is not sufficient protection against reality-side failure.
-
-People have reason to reopen the core when repeated real problems cannot be located or handed off, when “keep open / unknown” stops producing new distinctions or useful stopping conditions, or when maintaining the framework requires growing special cases without proportional value. These are review signals, not self-executing commands issued by the framework.
-
-A practical maintenance cycle is therefore:
-
-`use → encounter reality / counterexamples → accumulate failures → people revise, narrow, replace, archive, or stop using when sufficiently warranted`
-
-not continuous expansion of the core, not infinite justification of the current dimension count, and not a claim that all users will update or retire the framework together.
-
-## Document structure
-
-English and Simplified Chinese are two co-authoritative views of the same documents, not primary and secondary editions. Every semantic change must update both language versions together. Section structure, claim strength, examples, formulas, tables, code blocks, links, and revision boundaries should correspond; wording may differ only as required for natural translation.
-
-The repository separates current-boundary analysis, activity mechanisms, engineering semantics, and one concrete architecture:
-
-| Path / document | Role |
-| --- | --- |
-| **README** | World boundary, repository map, and the relation among six-dimensional analysis, exploration, decision, and engineering |
-| `six-dimensions/` | six co-basic analytical dimensions for making the current activity boundary explicit |
-| `explore-decide/` | exploration beyond the current boundary and free decision within a provisionally accepted boundary |
-| [**Precise Semantics**](./precise-semantics.md) | turns semantic boundaries into implementable, verifiable engineering semantics that resist silent substitution |
-| [**AIOS Architecture**](./aios-architecture.md) | shows how these boundaries are realized in a continuously operating AI runtime |
-
-The six dimensions live under `six-dimensions/`:
-
-1. [Distinction](./six-dimensions/distinction.md)
-2. [Qualification](./six-dimensions/qualification.md)
-3. [Value](./six-dimensions/value.md)
-4. [Capability](./six-dimensions/capability.md)
-5. [Change](./six-dimensions/change.md)
-6. [Others](./six-dimensions/others.md)
-
-Exploration and decision live under `explore-decide/`:
-
-1. [Exploration beyond the current boundary](./explore-decide/explore.md)
-2. [Free decision within the current boundary](./explore-decide/decide.md)
-
-## Suggested reading
-
-To understand the current-boundary framework, read the six files in `six-dimensions/` in whatever order best matches the problem. The listed order is navigational, not a ranking of importance.
-
-To understand what happens when the current boundary may be insufficient, read [Exploration beyond the current boundary](./explore-decide/explore.md). To understand choice after a boundary is provisionally accepted, read [Free decision within the current boundary](./explore-decide/decide.md).
-
-For the engineering expression, read this page and then [Precise Semantics](./precise-semantics.md).
-
-For one concrete implementation, continue to [AIOS Architecture](./aios-architecture.md).
-
-The six dimensions are basic analytical dimensions of human activity. Exploration governs when and how the current boundary is reopened; free decision governs accountable choice inside a provisionally accepted boundary. AIOS is one engineering application of these boundaries and activity mechanisms.
+English and Simplified Chinese are co-authoritative views. Semantic changes should update both; section structure, claim strength, formulas, tables, code blocks, and links should correspond.
