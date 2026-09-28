@@ -69,6 +69,8 @@ The six dimensions are not six kinds of object and are not assumed to be indepen
 
 Typical non-substitutions:
 
+Throughout this repository, `A != B` is shorthand for a non-substitution rule: establishing A does not by itself establish B, and A must not silently substitute for B. It does not mean that a valid transition, mapping, or qualified realization from A to B is impossible.
+
 `a classification exists in the current representation != reality has only that classification`
 
 `relation exists != causal effect exists`
