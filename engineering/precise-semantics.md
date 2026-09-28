@@ -140,6 +140,8 @@ specified evaluation
 
 Material ambiguity in applicability returns to interpretive sufficiency. Repeated interpretation becomes a machine rule only through explicit rulemaking, versioning, and authority.
 
+Sufficiency is an engineering responsibility, not a required universal payload. A concrete system may realize it through owner-local qualification / admission, explicit basis refs, guards, review cases, and domain acceptance contracts. Those mechanisms must preserve why a transition is currently allowed without introducing a single cross-domain `Sufficiency` object.
+
 ## 5. Prohibit semantic shortcuts
 
 | Established | Does not automatically establish |
