@@ -1,6 +1,6 @@
 # 变化
 
-[英文](./变更.md) | [简体中文](./变更.zh-CN.md)
+[英文](./change.md) | [简体中文](./change.zh-CN.md)
 
 > 灵感来源：稳定与不稳定的冲突。
 
@@ -116,4 +116,4 @@
 
 ## 与其他维度的边界
 
-[区分](./distinction.zh-CN.md)决定当前把什么看成结构，[资格](./资格.zh-CN.md)决定何时保持或重新打开，[价值](./value.zh-CN.md)可能随经历修订，[能力](./能力.zh-CN.md)决定能否改变路径，[他者](./others.zh-CN.md)则会使多个变化过程相互耦合。
+[区分](./distinction.zh-CN.md)决定当前把什么看成结构，[资格](./qualification.zh-CN.md)决定何时保持或重新打开，[价值](./value.zh-CN.md)可能随经历修订，[能力](./capability.zh-CN.md)决定能否改变路径，[他者](./others.zh-CN.md)则会使多个变化过程相互耦合。

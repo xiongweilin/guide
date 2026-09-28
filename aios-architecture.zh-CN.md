@@ -116,12 +116,12 @@ AIOS 运行时是无界面且仅容器运行。容器只是部署边界，不是
 | --- | --- |
 | [guide](https://github.com/xiongweilin/guide) | 六维框架、不可替代、可修订边界、架构不变量 |
 | [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的单体仓库和 Git 归属方 |
-| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/语义/semantic_language) | 跨领域含义和不可替代规则 |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 跨领域含义和不可替代规则 |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | 持久个人事实、偏好、关系、资源链接、溯源、修订、时效有效性、隐私边界、用途受限上下文 |
 | [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | 持久自主行动能力状态、责任、权限、决定、资格、执行身份、恢复、校正、历史 |
-| [control-plane](https://github.com/xiongweilin/aios/tree/main/src/领域/control_plane) | 运行故障事件、有边界修复、监控、运行提供方、运行结果证据 |
-| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/领域/administrative_orchestrator) | 行政管理事项、义务、治理依据、行政管理现实效果、业务结果和完成语义 |
-| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/领域/autonomous_development) | 软件开发生命周期、需求、来源/构建/测试/部署/金丝雀发布/晋级/回滚语义 |
+| [control-plane](https://github.com/xiongweilin/aios/tree/main/src/domains/control_plane) | 运行故障事件、有边界修复、监控、运行提供方、运行结果证据 |
+| [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/domains/administrative_orchestrator) | 行政管理事项、义务、治理依据、行政管理现实效果、业务结果和完成语义 |
+| [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/domains/autonomous_development) | 软件开发生命周期、需求、来源/构建/测试/部署/金丝雀发布/晋级/回滚语义 |
 | 智能体 / 执行器适配器 | 可替换的认知或工程执行实现 |
 | 模型提供方 / 路由适配器 | 可替换的模型访问与协议传输 |
 | 提供方和外部系统 | 具体现实效果和权威外部状态 |
