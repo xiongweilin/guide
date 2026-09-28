@@ -6,6 +6,8 @@ The engineering objective is not to implement a master `qualified = true`, nor t
 
 The six dimensions are analytical distinctions and are equally basic within the framework; they are not a requirement for six independent fields, services, or layers. Qualification provides transition semantics, Distinction preserves representational boundaries, Value preserves normative direction, Capability preserves reachability, Change preserves temporal and structural status, and Others preserves relational and multi-participant structure. Engineering must preserve these boundaries, interactions, and feedback relations rather than force a one-to-one physical decomposition or collapse them into one master state.
 
+A semantic distinction also does not imply one universal payload class, one durable entity, one table, or one service. Split implementation objects only when independent identity, lifecycle, authority, concurrency, provenance, recovery, or retention semantics materially require it. Otherwise an owner-local record or lifecycle may carry several distinctions, provided illegal substitution remains impossible and the relevant transitions, provenance, authority, and failure paths remain inspectable.
+
 Core chain:
 
 `request / trigger → problem framing / question qualification (when interpretation is required) → claim / fact → policy evaluation → decision → governance basis → authorization → execution → observation → verification → obligation completion → revalidation / discharge`
@@ -414,7 +416,7 @@ Long-term responsibility may also require handoff, a successor, compensation, co
 
 Do not flatten record type, epistemic state, and lifecycle into one enumeration.
 
-A record can be DistinctionContext, QuestionCandidate, QuestionQualification, Evidence, Observation, Assertion, Derivation, Goal, Constraint, Experiment, Decision, Action, Policy, Outcome, Revision, or ChangeObject.
+A record can carry semantic roles such as DistinctionContext, QuestionCandidate, QuestionQualification, Evidence, Observation, Assertion, Derivation, Goal, Constraint, Experiment, Decision, Action, Policy, Outcome, Revision, or ChangeObject. These labels do not require a global type hierarchy or one durable object per distinction.
 
 The same record can simultaneously be unverified, supported, contested, refuted, unknown, or revalidation_required.
 
@@ -430,7 +432,7 @@ At minimum, the record should answer: who did what under which inputs and rules;
 
 ## 19. Semantic entry points are trust boundaries
 
-Content from models, external services, users, or other systems must be validated according to source type before entering the semantic core.
+Content from models, external services, users, or other systems must be validated according to source type before entering an authoritative semantic boundary.
 
 A positive transition that expands qualification, clears a blocker, or creates a side effect should fail closed when source, authority, freshness, scope, or provenance is missing.
 
@@ -478,7 +480,7 @@ During upgrades, check whether field meaning, default behavior, permission, scop
 
 ## 22. Minimum deployable contract
 
-A system that produces real side effects needs at least these objects or equivalent semantics. If the system also owns open-ended problem framing, it should preserve DistinctionContext / QuestionCandidate / QuestionQualification or equivalent semantics before entering these objects:
+A system that produces real side effects needs at least the following boundaries or equivalent semantics. They do not have to be separate universal types or durable entities. If the system also owns open-ended problem framing, it should preserve DistinctionContext / QuestionCandidate / QuestionQualification or equivalent semantics before crossing the consequential boundaries below:
 
 ```text
 FactClaim
@@ -493,11 +495,11 @@ Observation
 Verification
 Outcome / ReconciliationState
 CompletionAssessment
-ReviewObligation
+Review / RevalidationState
 AuditRecord
 ```
 
-Storage may be consolidated; semantics must not be.
+Storage and owner-local payloads may be consolidated; semantic boundaries must not be erased. One durable case may carry assessment and resolution states when they share identity and lifecycle, while still forbidding assessment from impersonating resolution. Split into separate durable entities only when separate identity, lifecycle, authority, concurrency, provenance, recovery, retention, or independent referencing materially requires it.
 
 ## 23. Minimum invariants
 
@@ -516,7 +518,7 @@ Storage may be consolidated; semantics must not be.
 13. The current distinguished range does not automatically equal the entire distinguishable range; a candidate absent from the schema cannot be marked impossible for that reason alone.
 14. Being able to parse or formulate a question does not mean the question is qualified; when framing affects downstream scope or authority, qualification must come first.
 15. Failure to distinguish a feasible path is `unknown`, not `cannot`, unless an explicitly bounded capability assessment has sufficient qualified basis for `cannot`.
-16. The six analytical dimensions need not map one-to-one to storage fields, services, or runtime layers; implementations may consolidate storage, but not semantic boundaries.
+16. The six analytical dimensions need not map one-to-one to storage fields, services, or runtime layers; implementations may consolidate storage and owner-local payloads, but not semantic boundaries. A semantic distinction alone is not sufficient reason to create a universal class, durable entity, table, or service.
 17. Interpretive qualification and specified qualification are not interchangeable; the qualification regime and its basis remain traceable.
 18. A specified rule evaluating true does not establish the rule's applicability, authority, freshness, or normative validity unless those prerequisites are independently established.
 19. An interpretive judgment does not become a deterministic rule without explicit rule-making, versioning, and authority.
@@ -548,6 +550,7 @@ At minimum, test that:
 - a cross-effect / cross-subject outcome cannot substitute for the correct verification;
 - completion fails when the planner omits an obligation;
 - after rollback, the original Decision, attempt, and observation remain traceable;
-- a completed workflow cannot be marked responsibility discharged while residual obligations remain.
+- a completed workflow cannot be marked responsibility discharged while residual obligations remain;
+- when multiple semantic distinctions share one owner-local record or lifecycle, tests still reject illegal substitution and shortcut transitions between those distinctions.
 
 These tests matter more than the terminology itself: if a theoretical boundary cannot change a contract, transition, failure path, or test, it should not continue to occupy the engineering semantic layer.

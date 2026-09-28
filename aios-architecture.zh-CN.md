@@ -75,7 +75,7 @@ AIOS 集成边界 ─────────────► 现实（需要已�
 成功恢复 = 权威状态 + 现实回读 + 所需验证
 ```
 
-`semantic-language` 为整个架构提供跨领域语义区分。
+`semantic-language` 为整个架构提供封闭的跨领域 role vocabulary、带版本引用、规范化与不可替代规则；它不拥有运行时或领域的具体 payload schema、生命周期状态或持久化。
 
 `guide` 持有六维框架、不可替代、可修订边界和架构不变量。
 
@@ -116,9 +116,9 @@ AIOS 运行时是无界面且仅容器运行。容器只是部署边界，不是
 | --- | --- |
 | [guide](https://github.com/xiongweilin/guide) | 六维框架、不可替代、可修订边界、架构不变量 |
 | [aios](https://github.com/xiongweilin/aios) | AIOS 源码组件的单体仓库和 Git 归属方 |
-| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 跨领域含义和不可替代规则 |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | 封闭的跨领域 role vocabulary、引用、规范化和不可替代规则；不拥有具体 payload / 生命周期 |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | 持久个人事实、偏好、关系、资源链接、溯源、修订、时效有效性、隐私边界、用途受限上下文 |
-| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | 持久自主行动能力状态、责任、权限、决定、资格、执行身份、恢复、校正、历史 |
+| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | 持有持久自主行动能力状态、责任、权限、决定、资格、执行身份、恢复、校正和历史的具体运行时 payload 与生命周期 |
 | [control-plane](https://github.com/xiongweilin/aios/tree/main/src/domains/control_plane) | 运行故障事件、有边界修复、监控、运行提供方、运行结果证据 |
 | [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/domains/administrative_orchestrator) | 行政管理事项、义务、治理依据、行政管理现实效果、业务结果和完成语义 |
 | [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/domains/autonomous_development) | 软件开发生命周期、需求、来源/构建/测试/部署/金丝雀发布/晋级/回滚语义 |
@@ -131,7 +131,7 @@ AIOS 运行时是无界面且仅容器运行。容器只是部署边界，不是
 
 ## 跨领域语义宪法
 
-`semantic-language` 保持小而跨领域。
+`semantic-language` 保持小而跨领域。一个语义区分本身并不要求 universal payload class、独立 durable entity、独立数据表或独立 service；只有当 identity、lifecycle、authority、concurrency 或 recovery 边界确实需要时，归属方才选择相应实现。
 
 ```text
 世界 != 当前表示
@@ -301,7 +301,7 @@ API 或 CLI 可以作为机器集成或维护边界；它不是主要人机管�
     现实侧
 ```
 
-运行时持有通用持久自主行动能力基础对象：
+运行时持有通用持久自主行动能力基础对象的具体 payload 与生命周期；这些是运行时归属类型，不表示 universal semantic kernel 继续扩张：
 
 ```text
 身份
@@ -653,9 +653,9 @@ Git / 构建 / 部署 / 流量
 
 ## 仓库放置规则
 
-只有当多个领域都需要同一个不可替代的区分时，新的跨领域含义才进入 `semantic-language`。
+只有当至少三个实质不同的领域都需要同一个稳定的跨领域 role distinction，而且合并该区分会造成具体的跨领域 correctness failure 时，它才进入 `semantic-language`。提升只加入 role distinction，不带入归属方特定 payload 字段或生命周期状态。
 
-新的持久跨领域自主行动能力不变量进入 `world-runtime`。
+新的持久跨领域自主行动能力不变量进入 `world-runtime`。新的运行时局部概念默认留在自身归属方，除非满足更严格的 semantic-language 提升条件。
 
 新的个人事实、偏好、关系、资源引用或个人上下文沿革进入 `personal-world`。
 

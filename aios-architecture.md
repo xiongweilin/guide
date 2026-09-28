@@ -75,7 +75,7 @@ Agent repair != successful recovery
 Successful recovery = authoritative state + reality read-back + required verification
 ```
 
-`semantic-language` supplies cross-domain semantic distinctions across the architecture.
+`semantic-language` supplies a closed cross-domain role vocabulary, versioned references, canonicalization, and non-substitution rules across the architecture. It does not own concrete Runtime or Domain payload schemas, lifecycle state, or persistence.
 
 `guide` holds the six-dimension framework, non-substitution rules, revision boundaries, and architectural invariants.
 
@@ -116,9 +116,9 @@ AIOS is headless and container-only at runtime. The containers are a deployment 
 | --- | --- |
 | [guide](https://github.com/xiongweilin/guide) | six-dimension framework, non-substitution, revision boundaries, architectural invariants |
 | [aios](https://github.com/xiongweilin/aios) | monorepo and Git owner for AIOS source components |
-| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | cross-domain meanings and non-substitution rules |
+| [semantic-language](https://github.com/xiongweilin/aios/tree/main/src/semantic/semantic_language) | closed cross-domain role vocabulary, references, canonicalization, and non-substitution rules; no concrete payload/lifecycle ownership |
 | [personal-world](https://github.com/xiongweilin/aios/tree/main/src/kernel/personal_world) | durable personal facts, preferences, relationships, resource links, provenance, revisions, freshness, privacy boundaries, purpose-limited context |
-| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | durable agency state, responsibility, authority, decisions, qualification, execution identity, recovery, reconciliation, history |
+| [world-runtime](https://github.com/xiongweilin/aios/tree/main/src/kernel/world_runtime) | concrete Runtime-owned payloads and lifecycles for durable agency state, responsibility, authority, decisions, qualification, execution identity, recovery, reconciliation, and history |
 | [control-plane](https://github.com/xiongweilin/aios/tree/main/src/domains/control_plane) | operational incidents, bounded repair, monitoring, operational providers, operational outcome evidence |
 | [administrative-orchestrator](https://github.com/xiongweilin/aios/tree/main/src/domains/administrative_orchestrator) | administrative cases, obligations, governance basis, administrative effects, business outcome and completion semantics |
 | [autonomous-development](https://github.com/xiongweilin/aios/tree/main/src/domains/autonomous_development) | software-development lifecycle, requirements, source/build/test/deploy/canary/promotion/rollback semantics |
@@ -131,7 +131,7 @@ A component directory may remain a distinct semantic owner without being a disti
 
 ## Cross-cutting semantic constitution
 
-`semantic-language` remains small and cross-domain.
+`semantic-language` remains small and cross-domain. A semantic distinction does not by itself require a universal payload class, a separate durable entity, a separate table, or a separate service. Those implementation choices belong to the owner that needs the identity, lifecycle, authority, concurrency, or recovery boundary.
 
 ```text
 World != current representation
@@ -301,7 +301,7 @@ qualified work trigger / authorized request
     Reality-side
 ```
 
-Runtime owns generic durable agency primitives:
+Runtime owns concrete payloads and lifecycles for generic durable agency primitives; these are Runtime-owned types, not an expansion of the universal semantic kernel:
 
 ```text
 identity
@@ -653,9 +653,9 @@ Material basis changes trigger revalidation rather than silent continuation.
 
 ## Repository placement rules
 
-A new cross-domain meaning belongs in `semantic-language` only when multiple domains require the same non-substitutable distinction.
+A new cross-domain role distinction belongs in `semantic-language` only when at least three materially different domains require the same stable distinction and collapsing it creates a concrete cross-domain correctness failure. Promotion adds the role distinction, not owner-specific payload fields or lifecycle state.
 
-A new durable cross-domain agency invariant belongs in `world-runtime`.
+A new durable cross-domain agency invariant belongs in `world-runtime`. A new Runtime-local concept should remain owner-local unless the stricter semantic-language promotion test is met.
 
 A new personal fact, preference, relationship, resource reference, or personal-context lineage belongs in `personal-world`.
 
