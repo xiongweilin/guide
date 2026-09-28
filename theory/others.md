@@ -58,6 +58,36 @@ Different participants also do not automatically share the same distinguished wo
 
 Coordination sometimes requires exchanging information, sometimes rebuilding shared distinctions, and sometimes accepting value conflicts that cannot be eliminated.
 
+## Typed power topology
+
+Relation strength says how much participants affect one another; it does not say **which control position** one participant occupies. Power should therefore be represented with typed control relations when the distinction matters.
+
+Examples include:
+
+- **definition power**: changing the problem boundary, candidate space, categories, standards, or agenda;
+- **judgment power**: determining whether evidence, conditions, or claims count as sufficient;
+- **decision power**: turning judgments into commitments, allocations, permissions, or binding choices;
+- execution power: directly producing or withholding effects;
+- verification power: determining whether claimed effects or conditions are accepted as established;
+- resource-allocation power: changing another participant's practical options through resources;
+- information-control power: changing what others can know, observe, or contest;
+- exit-control power: raising or lowering the real cost of refusal, switching, or departure;
+- stop / reopen power: suspending continuation or forcing a question back into review.
+
+So:
+
+`relation strength != power type`
+
+`formal role != effective control`
+
+`power to decide != power to define the available options`
+
+`power under current rules != power to change the rules`
+
+The same formal decision procedure can therefore produce very different structures depending on who controls candidates, standards, information, resources, verification, and exit.
+
+Power concentration becomes especially important when one participant or one failure domain controls several positions that are supposed to check one another.
+
 ## No pre-given complete game
 
 Strategic uncertainty is not limited to unknown values inside an already defined model.
@@ -91,6 +121,56 @@ A **model of another actor** is one participant's working representation of anot
 Such a model is also not automatically a probability distribution or a personality type. Those are optional formalizations when the domain supports them.
 
 Finite higher-order modeling is permitted — “I think that you think...” — but depth should increase only when another layer could materially change action candidates, risk, or discriminating information. Failure to model an infinite hierarchy is not failure to understand anything useful.
+
+## Collective action and organizational actors
+
+Aligned interests do not automatically produce collective action.
+
+`aligned interests != coordination != mobilization != sustained collective capability`
+
+Collective action can depend on participation thresholds, public-goods structure, free riding, common knowledge, selective incentives, leadership, identity, trust, communication, enforcement, institutions, and network position.
+
+Likewise, an organization should not be treated as a large individual merely because a model needs one actor node.
+
+Keep at least:
+
+`organization action != unified member preference`
+
+`formal organization goal != actual internal incentive structure`
+
+`formal authority != effective internal control`
+
+Organizations can contain coalitions, subunits, principal-agent problems, informal authority, internal information asymmetry, bureaucratic incentives, and competing time horizons. A statement such as “the organization wants X” is therefore a compressed representation whose internal structure may need to be reopened when it affects prediction, responsibility, or legitimacy.
+
+Collective capability is also not the sum of individual capability. A group of individually capable participants may still lack coordination, shared interfaces, authority, trust, or institutions needed to act together.
+
+`many capable individuals != capable collective`
+
+## Networks, structural positions, and identity
+
+Pairwise relations do not exhaust multi-participant structure.
+
+`sum of bilateral relations != network structure`
+
+Network position can alter information access, opportunities, bargaining power, diffusion, dependence, exposure, and reachable paths even when pairwise resources appear similar. Relevant structures may include centrality, brokerage, clustering, cascades, network externalities, and cumulative advantage.
+
+A useful neutral representation is **structural position**: a relatively persistent location in a relation structure that changes a participant's opportunities, costs, risks, or control. Depending on the domain, this can include:
+
+- resource position;
+- authority position;
+- network position;
+- status position;
+- dependency position;
+- risk-bearing position;
+- exit position.
+
+This vocabulary can represent class, organizational hierarchy, market position, status groups, or other domain-specific structures without making one such theory universal.
+
+Identity can also occupy different semantic positions:
+
+`self identity != classification by others != institutionally recognized status`
+
+These can affect values, how others judge the participant, and which opportunities institutions make available. Identity therefore often lies across Distinction, Value, and Others rather than belonging to one dimension alone.
 
 ## Action, signal, and evidence
 
@@ -162,6 +242,36 @@ Institutions do not need to eliminate difference. Their role is to provide inspe
 A nominal choice or exit path is not automatically a real one. Whether participants can refuse, appeal, leave, or renegotiate can depend on resources, information, safety, relationships, time, and institutional alternatives.
 
 A durable institution supports stable cooperation while retaining the ability to reopen arrangements when facts, values, authority, recognition, costs, or relationship structures materially change.
+
+## Institutional reproduction and meta-power
+
+Institutions do more than provide procedures. Existing rules and structures can reshape incentives, resources, capabilities, network positions, and bargaining power in ways that help reproduce the institution itself.
+
+A common loop is:
+
+`institution → incentives / constraints → adaptation → resource and capability distribution → future bargaining power → institution reproduction`
+
+Therefore:
+
+`institution persists != institution remains normatively justified`
+
+`institution persists != participants actively chose it again`
+
+Path dependence, switching cost, sunk investment, network effects, organizational routines, legal commitments, and unequal exit capability can all make an arrangement durable even after its original basis weakens.
+
+Political and organizational analysis also needs **meta-power**: control over what reaches visible decision at all.
+
+Keep separate:
+
+`decision power != agenda-setting power`
+
+`choice among offered options != power to define the option set`
+
+`winning under current rules != power to shape the rules, venue, or enforcement conditions`
+
+A system can therefore appear procedurally open at the decision stage while remaining highly concentrated earlier in problem definition, candidate generation, standard setting, resource allocation, or access to review.
+
+The guide does not adopt one universal class, institutional, or political-economy theory. It requires these structural mechanisms to remain representable when they materially change participants' possibility spaces.
 
 ## Strategic failure and reopening
 

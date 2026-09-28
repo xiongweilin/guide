@@ -52,6 +52,80 @@
 
 所以“我能做”必须绑定范围和条件。
 
+## 因果路径资格
+
+把一条路径称为“因果路径”，不能只依据两个变量同时变化。因此能力判断应把“存在可达路径”与“这条路径的因果依据是否充分”分开。
+
+至少保持：
+
+`相关 ≠ 因果效应`
+
+`因果假设 ≠ 已识别的因果效应`
+
+`因果效应已识别 ≠ 效应已经被可靠估计`
+
+`总体效应 ≠ 个体反事实`
+
+`因果效应存在 ≠ 当前参与者能够干预这个原因`
+
+`能够干预 ≠ 当前个案一定产生预期结果`
+
+### 因果问题与 intervention
+
+一个实质重要的因果主张至少应明确：
+
+- 候选原因或 intervention；
+- outcome；
+- 目标对象、population 或 system；
+- context 与 boundary condition；
+- 时间尺度；
+- 正在比较的 contrast；
+- 所询问的 causal quantity 或现实差异。
+
+这样至少把三类问题分开：
+
+`实际观察到什么 ≠ 干预后会发生什么 ≠ 当前个案如果没有这样做本来会发生什么`
+
+Observation 可以支持因果假设，但 intervention 语义需要额外假设或证据。Counterfactual 通常还需要更强的结构，因为现实状态与其替代状态不能在同一个个案上同时被观察。
+
+### Identification、confounding 与因果证据
+
+一个 causal quantity 可以有明确含义，但在当前证据下仍然无法 identification。增加更多 observation 不会自动补上缺失的 identification basis。
+
+`更多数据 ≠ 因果 identification`
+
+根据领域不同，因果判断至少可能需要区分：
+
+- **confounder**：共同原因，可能制造或扭曲表面关系；
+- **mediator**：位于因果路径上，对它进行控制会改变正在估计的效应含义；
+- **collider**：对它进行 conditioning 可能制造误导性的关联；
+- measurement 与 selection process，它们会改变什么进入证据；
+- 在当前 observation 下仍然兼容的替代因果结构。
+
+不要求所有领域采用统一状态机，但在有必要时，工作性因果主张可以保留 `未知`、`假设中`、`有支持`、`在给定假设下已识别`、`经 intervention 检验`、`已取得迁移资格` 等状态。
+
+使因果效应能够 identification 的假设本身就是依据的一部分，不能只因为 estimator 输出了数字就把这些假设丢掉。
+
+### Interference、迁移与可调用性
+
+在社会、组织、网络或适应性系统中，一个参与者的 intervention 可能先改变其他参与者，再由他者反过来改变 outcome。因此因果路径可能包含间接反应和适应，而不是一条孤立 treatment-effect edge。
+
+`我的 intervention → 他者响应 → 制度 / 网络适应 → 最终 outcome`
+
+因此：
+
+`假设不存在 interference ≠ 现实中不存在 interference`
+
+在一个 population、environment、时间段或制度环境中建立的因果关系，也不能自动迁移到另一个环境。
+
+`那里存在因果效应 ≠ 这里仍存在同样因果效应`
+
+最后，因果成立与能力成立仍然不同。只有当前参与者能够实际访问 intervention，并保持路径工作所需条件时，它才可能成为可调用路径。
+
+`因果关系 ≠ intervention interface ≠ 可调用能力`
+
+现实中的可调用路径可能需要因果依据、intervention access、资源、时机、依赖可用性、对关键条件的控制和恢复路径共同成立。Authorization 仍然是独立问题。
+
 ## 能力自我模型与校准
 
 参与者还会维护一个关于自身能力的工作模型：当前认为自己拥有哪些资源、工具、接口、权限、协作者、已知失败方式和可达路径。

@@ -83,6 +83,65 @@
 
 痛苦、福利、恐惧、依恋、尊严受损或强烈个人承诺都可能是重要事实材料，但不能单独完成公共规范判断。
 
+## 规范 standing 与权利主张
+
+不是每一种 preference 或受影响利益都自动占据相同规范位置。多人问题中至少应区分：
+
+`有 preference ≠ 有利益 ≠ 受到影响 ≠ 有 moral standing ≠ 有 procedural standing ≠ 有决定权 ≠ 有否决权 ≠ 有 authority`
+
+这些位置可以重叠，但不能从一个位置静默继承另一个位置。
+
+权利主张应保留足够结构，说明究竟在主张什么，而不是把“权利”当作一个不可再分的标签。根据领域不同，可以包括：
+
+- right-holder；
+- 被保护的对象、利益、自由、身份或机会；
+- duty-bearer 或受到约束的一方；
+- source 与 justification basis；
+- scope、条件和 priority；
+- 是否以及怎样可以被 override；
+- remedy、review 或 appeal；
+- recognition 与现实 enforcement。
+
+至少保持：
+
+`权利来源 ≠ 权利 justification ≠ 权利 recognition ≠ 权利 enforcement`
+
+guide 不尝试从一个终极道德基础推导所有权利；它只要求，当权利及其冲突会实质影响决定时，相应 basis 必须保持可见。
+
+## 规范冲突、聚合与公共正当化
+
+价值冲突不能全部压成一种通用 tradeoff。根据具体问题，应保留例如：
+
+- 可比较价值之间的普通 tradeoff；
+- threshold conflict，即超过某个界限后优先级发生变化；
+- side constraint，即不能被自由补偿交换的边界；
+- 角色、承诺或主张之间的 priority conflict；
+- partial comparability，即只有部分比较已经取得资格；
+- incomparability，即当前没有建立共同排序；
+- tragic conflict，即所有可用方案都会违反重要价值或主张。
+
+因此，一个合法的当前状态可以是：
+
+`价值 A 已取得资格 + 价值 B 已取得资格 + 存在实质冲突 + 当前没有取得资格的共同尺度`
+
+不能被标量 optimizer 自动闭合，不代表这个状态本身就是失败。
+
+多人活动中还应保持：
+
+`个人 preferences ≠ 聚合 preference ≠ 集体价值 ≠ legitimate decision`
+
+Aggregation 可以有用，但 aggregation rule 自身也带有假设、排除、信息要求和分配后果。多数票、求和、排序、市场价格或 welfare measure 都不能静默成为完整公共规范判断。
+
+因此，对多人具有约束力的决定可能需要一个**公共 justification structure**：谁受到影响、谁具有 standing、哪些主张和权利进入、什么信息可接受、什么不能交换、采用什么程序、谁决定，以及保留什么 review、appeal 或 exit。
+
+`规范真理主张 ≠ consent ≠ public justifiability ≠ procedural legitimacy ≠ authority`
+
+guide 不选择一个最终的正义、福利、自由、公平、权利或 legitimacy 理论。它的任务是让冲突结构保持足够可检查，使领域规范理论或制度能够接入，而不会被混同成事实、偏好、payoff 或权力。
+
+当外部理论以规范含义使用“capability”时，还应保持术语边界：
+
+`guide 的因果能力 ≠ 规范 capability / substantive freedom`
+
 ## 来源与有效性
 
 价值可以来自身体、体验、照护与关系、教育、制度、激励、习惯、路径依赖、损失、创伤、模仿、战略互动、反思认领或拒绝。

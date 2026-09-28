@@ -58,6 +58,36 @@
 
 协调有时需要交换信息，有时需要重建共同区分，有时则需要承认无法消除的价值冲突。
 
+## 类型化权力拓扑
+
+关联强度说明参与者彼此影响多大，但不能说明一个参与者究竟占据**哪一种控制位置**。因此在相关差异会影响结果时，应使用类型化控制关系表示权力。
+
+例如：
+
+- **定义权**：改变问题边界、候选空间、分类、标准或 agenda；
+- **判断权**：决定什么证据、条件或主张算足够；
+- **决定权**：把判断转成承诺、资源配置、permission 或具有约束力的选择；
+- 执行权：直接制造或拒绝现实 effect；
+- 验证权：决定声称的 effect 或条件是否被接受为已建立；
+- 资源配置权：通过资源改变他者的现实选项；
+- 信息控制权：改变他者能够知道、观察或争议什么；
+- 退出控制权：提高或降低拒绝、切换或离开的现实成本；
+- stop / reopen 权：暂停继续，或迫使问题重新进入 review。
+
+因此：
+
+`关联强度 ≠ 权力类型`
+
+`formal role ≠ effective control`
+
+`决定权 ≠ 定义可选项的权力`
+
+`在当前规则下拥有权力 ≠ 修改规则的权力`
+
+所以，即使使用相同的 formal decision procedure，只要候选、标准、信息、资源、验证和退出分别由不同位置控制，就可能形成完全不同的权力结构。
+
+当同一个参与者或同一个 failure domain 同时控制多个本应用来相互检查的位置时，权力集中尤其重要。
+
 ## 不预设一个完整“真博弈”
 
 战略不确定性不只是在已经定义好的模型里不知道某个变量值。
@@ -91,6 +121,56 @@
 他者模型也不自动等于概率分布或人格类型；只有领域条件支持时，才进一步形式化。
 
 允许有限的高阶建模，例如“我认为你认为……”，但只有当再增加一层可能实质改变行动候选、风险判断或可判别信息时，才值得继续。不能完成无限递归，不等于无法形成有用理解。
+
+## 集体行动与组织行动者
+
+利益一致不会自动产生集体行动。
+
+`利益一致 ≠ 协调完成 ≠ 动员完成 ≠ 持续集体能力`
+
+集体行动可能依赖 participation threshold、public-good structure、free riding、common knowledge、selective incentive、leadership、identity、trust、communication、enforcement、institution 和 network position。
+
+同样，不能只因为模型需要一个 actor node，就把组织视为放大的个人。
+
+至少保持：
+
+`组织行动 ≠ 成员 preference 的统一表达`
+
+`组织 formal goal ≠ 实际内部 incentive structure`
+
+`formal authority ≠ effective internal control`
+
+组织内部可以存在 coalition、subunit、principal-agent problem、informal authority、内部信息不对称、bureaucratic incentive 和冲突的时间尺度。因此“组织想要 X”只是压缩表示；当内部结构会影响预测、责任或 legitimacy 时，就应重新打开。
+
+集体能力也不是个人能力的简单求和。一群分别有能力的参与者，仍可能因为缺少协调、共同接口、authority、trust 或 institution 而无法共同完成行动。
+
+`很多有能力的个人 ≠ 有能力的集体`
+
+## 网络、结构位置与身份
+
+两两关系不能穷尽多人结构。
+
+`双边关系之和 ≠ network structure`
+
+即使 pairwise resource 看起来相似，network position 仍可能改变信息取得、机会、议价权、扩散、依赖、暴露和可达路径。相关结构可以包括 centrality、brokerage、clustering、cascade、network externality 和 cumulative advantage。
+
+一个中性的表示方式是**结构位置**：在关系结构中相对持续的位置，它会改变参与者的机会、成本、风险或控制能力。根据领域不同，可以包括：
+
+- 资源位置；
+- authority 位置；
+- network position；
+- status position；
+- dependency position；
+- risk-bearing position；
+- exit position。
+
+这套词汇可以表示阶层、组织层级、市场位置、status group 或其他领域结构，而不把其中某一种理论设成普遍真理。
+
+Identity 也至少可以占据不同语义位置：
+
+`self identity ≠ 他者对我的分类 ≠ institutionally recognized status`
+
+这些位置会影响自身价值、他者怎样判断自己，以及制度开放哪些机会。因此 identity 往往横跨区分、价值和他者，而不是只属于某一个维度。
 
 ## 行为、信号与证据
 
@@ -162,6 +242,36 @@ recognition 是关系性事实，不是全局 Boolean。它必须说明：谁承
 名义上存在选择或退出路径，不等于现实中真正可用。参与者能否拒绝、申诉、退出或重谈，可能取决于资源、信息、安全、关系、时间和制度替代路径。
 
 好的制度既允许形成稳定合作，也保留在事实、价值、authority、recognition、成本或关系结构发生实质变化后重新打开安排的能力。
+
+## 制度再生产与 meta-power
+
+制度不只提供程序。既有规则和结构还会改变 incentive、资源、能力、network position 和 bargaining power，从而帮助制度自身继续存在。
+
+一个常见闭环是：
+
+`制度 → incentive / constraint → 行动者适应 → 资源与能力分布 → 未来 bargaining power → 制度再生产`
+
+因此：
+
+`制度持续存在 ≠ 制度仍具有 normative justification`
+
+`制度持续存在 ≠ 参与者再次主动选择了它`
+
+Path dependence、switching cost、sunk investment、network effect、organizational routine、legal commitment 和不对称 exit capability，都可能让一个安排在原始依据已经削弱之后仍然持续。
+
+政治与组织分析还需要 **meta-power**：控制什么问题根本能够进入可见决定。
+
+至少保持：
+
+`决定权 ≠ agenda-setting power`
+
+`在给定选项中选择 ≠ 定义 option set 的权力`
+
+`在当前规则下获胜 ≠ 塑造规则、venue 或 enforcement condition 的权力`
+
+因此，一个系统可以在最终 decision stage 看起来程序开放，但在更早的问题定义、候选生成、标准制定、资源配置或 review access 上仍然高度集中。
+
+guide 不采用一个普遍的阶级、制度或 political-economy 理论；它只要求，当这些结构机制会实质改变参与者的可能性空间时，框架能够表示它们。
 
 ## 战略失败与重新打开
 

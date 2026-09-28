@@ -83,6 +83,65 @@ When choices affect other people, rights, shared resources, third parties, or in
 
 Pain, welfare, fear, attachment, dignity loss, or strong personal commitment can matter greatly without by themselves completing a public normative judgment.
 
+## Normative standing and rights claims
+
+Not every preference or affected interest automatically occupies the same normative position. Multi-participant questions should distinguish at least:
+
+`has a preference != has an interest != is affected != has moral standing != has procedural standing != has decision right != has veto right != has authority`
+
+These positions may overlap, but none should silently inherit from another.
+
+A rights claim should preserve enough structure to show what is being claimed rather than treating “right” as one undifferentiated label. Depending on the domain, this can include:
+
+- the right-holder;
+- the protected object, interest, freedom, status, or opportunity;
+- the duty-bearer or constrained party;
+- source and justification basis;
+- scope, conditions, and priority;
+- whether and how the claim can be overridden;
+- remedy, review, or appeal;
+- recognition and practical enforcement.
+
+Keep separate:
+
+`source of a right != justification of the right != recognition of the right != enforcement of the right`
+
+The guide does not attempt to derive all rights from one ultimate moral foundation. It requires the relevant rights basis and conflicts to remain visible when they materially affect a decision.
+
+## Normative conflict, aggregation, and public justification
+
+Value conflict should not be compressed into one generic tradeoff. Depending on the case, preserve distinctions such as:
+
+- ordinary tradeoffs between comparable values;
+- threshold conflicts, where one consideration changes priority after a limit;
+- side constraints that are not treated as freely compensable;
+- priority conflicts between roles, commitments, or claims;
+- partial comparability, where only some comparisons are qualified;
+- incomparability, where no shared ordering is currently established;
+- tragic conflicts, where every available option violates an important value or claim.
+
+So a legitimate current state may be:
+
+`value A qualified + value B qualified + material conflict + no qualified common metric`
+
+That state is not a failure merely because no scalar optimizer can close it.
+
+When many people are involved, also keep:
+
+`individual preferences != aggregated preference != collective value != legitimate decision`
+
+Aggregation can be useful, but the aggregation rule itself has assumptions, exclusions, information requirements, and distributional effects. A majority, sum, ranking, market price, or welfare measure cannot silently become the whole public normative judgment.
+
+Publicly binding decisions may therefore require a **public justification structure**: who is affected, who has standing, which claims and rights enter, what information is admissible, what cannot be traded away, which procedure applies, who decides, and what review, appeal, or exit remains.
+
+`normative truth claim != consent != public justifiability != procedural legitimacy != authority`
+
+The guide does not choose one final theory of justice, welfare, freedom, equality, rights, or legitimacy. Its role is to keep the conflict structure inspectable enough that a domain-specific normative theory or institution can enter without being confused with fact, preference, payoff, or power.
+
+Also keep terminology separate when external theories use “capability” normatively:
+
+`guide causal capability != normative capability / substantive freedom`
+
 ## Source and validity
 
 Values can arise from the body, experience, care and relationships, education, institutions, incentives, habits, path dependence, loss, trauma, imitation, strategic interaction, reflective endorsement, or rejection.
