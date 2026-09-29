@@ -18,6 +18,12 @@ reality
 
 The distinguishable range is constrained by sensing, language, tools, interfaces, permissions, resources, collaborators, and existing capability. The distinguished range can be incomplete and can contain incorrect distinctions.
 
+Therefore keep distinct:
+
+`current representation ≠ distinguished range ≠ distinguishable range ≠ reality`
+
+A finite system does not have sufficient grounds to treat the boundary of its distinguishable range as the boundary of reality.
+
 Once formed, distinctions can in turn change tools, interfaces, capability, and relations:
 
 `distinguishable_range_t → distinguished_range_t → tools / interfaces / relations change → distinguishable_range_t+1`
