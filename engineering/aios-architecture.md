@@ -2,11 +2,11 @@
 
 [English](./aios-architecture.md) | [简体中文](./aios-architecture.zh-CN.md)
 
-> Role: realize "reality — finite system — six-dimensional boundary — sufficiency — exploration/decision — action chain" in a long-running autonomous AI system. AIOS is an application of the framework, not its source.
+> Role: realize "reality — purposeful finite actor — six-dimensional boundary — sufficiency — exploration/decision — action chain" in a long-running autonomous AI system. AIOS is an application of the framework, not its source.
 
 ## 1. From framework to runtime
 
-AIOS is itself a finite system. It does not implement "reality" as a total ontology and does not claim that personal-world, databases, models, or knowledge graphs contain the whole world.
+AIOS is itself a purposeful finite actor. It does not implement "reality" as a total ontology and does not claim that personal-world, databases, models, or knowledge graphs contain the whole world.
 
 The runtime needs to preserve:
 
@@ -22,7 +22,7 @@ The six dimensions do not map to six services. They are semantic requirements th
 
 ```text
 ┌────────────────────────────────────┐
-│ AIOS: finite system                │
+│ AIOS: purposeful finite actor                │
 │                                    │
 │ observe / distinguish boundary     │
 │ → sufficiency                      │
@@ -84,7 +84,7 @@ API / CLI are machine integration and maintenance boundaries, not the primary hu
 
 ```text
 ┌────────────────────────────────────────────────────────────────┐
-│ AIOS — long-running autonomous finite system                   │
+│ AIOS — long-running autonomous purposeful finite actor                   │
 │                                                                │
 │ personal-world ──purpose-limited context──► internal Agent     │
 │      ▲                                      / executor          │
@@ -478,7 +478,7 @@ New capability does not automatically require new runtime semantics. A stronger 
 
 ```text
 guide
-  reality / finite system
+  reality / purposeful finite actor
   six-dimensional boundary
   sufficiency
   exploration / decision
