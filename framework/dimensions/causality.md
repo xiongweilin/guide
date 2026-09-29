@@ -2,6 +2,8 @@
 
 [English](./causality.md) | [简体中文](./causality.zh-CN.md)
 
+> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../foundations/minimal-derivation.md`](../foundations/minimal-derivation.md) for the minimal derivation.
+
 Causality asks: **what changes cause what other changes, and what interventions can change which outcomes?**
 
 It separates "appears together or is related" from "changing one condition changes another outcome" and supplies effect hypotheses for the action chain.
@@ -50,7 +52,7 @@ When key assumptions remain insufficient, causal status should remain unknown, c
 
 ## 3. Causality and actionable capability
 
-Even an established causal effect does not imply that the current finite system can call that path.
+Even an established causal effect does not imply that the current purposeful finite actor can call that path.
 
 `causal relation != intervention interface != callable path != authorization`
 
