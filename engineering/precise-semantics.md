@@ -2,7 +2,7 @@
 
 [English](./precise-semantics.md) | [简体中文](./precise-semantics.zh-CN.md)
 
-> Role: translate "reality — finite system — six-dimensional boundary — sufficiency — exploration/decision — action chain" into implementable, verifiable engineering semantics that resist silent substitution.
+> Role: translate "reality — purposeful finite actor — six-dimensional boundary — sufficiency — exploration/decision — action chain" into implementable, verifiable engineering semantics that resist silent substitution.
 
 The engineering goal is not six fields, six tables, or six services, and not a universal `sufficient=true`. The dimensions describe the current boundary; epistemic status cuts across representations; sufficiency gates concrete transitions; exploration and decision are activities; the action chain connects decision to reality and returns feedback.
 

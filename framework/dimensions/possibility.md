@@ -2,6 +2,8 @@
 
 [English](./possibility.md) | [简体中文](./possibility.zh-CN.md)
 
+> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../foundations/minimal-derivation.md`](../foundations/minimal-derivation.md) for the minimal derivation.
+
 Possibility asks: **what else may occur, which candidates, futures, and paths remain open, which have been excluded, and on what grounds?**
 
 Possibility is not the same as probability or capability. Probabilities, scenarios, branching futures, counterfactuals, reachability, and feasible sets are different ways to represent possibility structure.
@@ -26,7 +28,7 @@ A strong claim of impossibility or current inability requires a sufficiently bou
 
 ## 2. Candidate space can be incomplete
 
-A finite system easily mistakes "the candidates already listed" for the whole possibility space.
+A purposeful finite actor easily mistakes "the candidates already listed" for the whole possibility space.
 
 At minimum distinguish:
 
@@ -54,7 +56,7 @@ When the candidate space is incomplete, assigning precise probabilities to the k
 
 ## 4. Reachability, controllability, and callability
 
-For a finite system, possibility further distinguishes:
+For a purposeful finite actor, possibility further distinguishes:
 
 - **possible**: a state has not been sufficiently excluded;
 - **reachable**: a path exists from the current state;

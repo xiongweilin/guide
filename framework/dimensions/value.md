@@ -2,6 +2,8 @@
 
 [English](./value.md) | [简体中文](./value.zh-CN.md)
 
+> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../foundations/minimal-derivation.md`](../foundations/minimal-derivation.md) for the minimal derivation.
+
 Value asks: **what is worth pursuing, avoiding, maintaining, committing to, or refusing?**
 
 Facts describe what is. Value provides direction. Knowing how reality is does not automatically determine where it should be moved.

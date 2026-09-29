@@ -2,9 +2,11 @@
 
 [English](./distinction.md) | [简体中文](./distinction.zh-CN.md)
 
+> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../foundations/minimal-derivation.md`](../foundations/minimal-derivation.md) for the minimal derivation.
+
 Distinction asks: **under current conditions, what can become distinguishable, what has been distinguished, and what remains outside the current representation?**
 
-It describes how a finite system forms callable differences, objects, and classifications from reality. It does not claim that these boundaries are the final structure of reality.
+It describes how a purposeful finite actor forms callable differences, objects, and classifications from reality. It does not claim that these boundaries are the final structure of reality.
 
 ## 1. Basic structure
 
@@ -22,7 +24,7 @@ Therefore keep distinct:
 
 `current representation ≠ distinguished range ≠ distinguishable range ≠ reality`
 
-A finite system does not have sufficient grounds to treat the boundary of its distinguishable range as the boundary of reality.
+A purposeful finite actor does not have sufficient grounds to treat the boundary of its distinguishable range as the boundary of reality.
 
 Once formed, distinctions can in turn change tools, interfaces, capability, and relations:
 
@@ -92,9 +94,9 @@ But:
 
 A proportionate response may be to narrow scope, weaken the claim, retain unknown, obtain a more discriminating observation, or enter exploration.
 
-## 6. Distinctions across finite systems
+## 6. Distinctions across purposeful finite actors
 
-Different finite systems can face the same reality while having different:
+Different purposeful finite actors can face the same reality while having different:
 
 - sensing and data;
 - distinguishable ranges;

@@ -6,7 +6,7 @@ Decision is the activity of choosing when the current boundary is **provisionall
 
 Decision asks:
 
-> When current facts, rules, constraints, possibilities, and values do not uniquely force one action, how can a finite system form a choice that has reasons, is attributable, remains revisable, and carries proportionate responsibility for consequences?
+> When current facts, rules, constraints, possibilities, and values do not uniquely force one action, how can a purposeful finite actor form a choice that has reasons, is attributable, remains revisable, and carries proportionate responsibility for consequences?
 
 ## 1. Preconditions: boundary provisionally sufficient
 
@@ -132,7 +132,7 @@ A consequential decision should preserve where practical:
 - review, reversal, and reopening conditions;
 - decision time.
 
-Then it enters the [Action chain](../action-chain.md) for authorization, execution, and reality-side verification.
+Then it enters the [Action chain](../lifecycle.md) for authorization, execution, and reality-side verification.
 
 ## 7. Responsibility under uncertainty
 
