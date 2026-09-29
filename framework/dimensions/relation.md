@@ -2,6 +2,8 @@
 
 [English](./relation.md) | [简体中文](./relation.zh-CN.md)
 
+> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../foundations/minimal-derivation.md`](../foundations/minimal-derivation.md) for the minimal derivation.
+
 Relation asks: **how are already distinguished contents connected, composed, dependent, constrained, and mutually affected?**
 
 Relation is not limited to relations among people. Objects, variables, organizations, roles, resources, interfaces, rules, network nodes, identities, and institutions can all form relational structures.
@@ -54,7 +56,7 @@ A **strategic actor** is an analytical position whose judgment or action can mat
 
 `strategic actor != experiential subjectivity != responsibility standing != authority`
 
-Different finite systems have different current boundaries:
+Different purposeful finite actors have different current boundaries:
 
 `B_i != B_j`
 
@@ -118,7 +120,7 @@ When interpretation fails, separate problems in reality-side input, acquisition,
 
 ## 7. Strategy and reflexivity
 
-Strategic interaction does not presuppose a fully specified "true game." A finite system may not know:
+Strategic interaction does not presuppose a fully specified "true game." A purposeful finite actor may not know:
 
 - which actors matter;
 - which actions are feasible;
