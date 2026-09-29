@@ -54,7 +54,7 @@ Current boundary B is the local representation and epistemic state actually call
 
 It can be incomplete, wrong, stale, differently granular across activities, and changed by new tools, permissions, relations, and experience.
 
-The actor's self-model is also part of this boundary and can be revised without requiring loss of identity continuity.
+Where the actor has a richer self-model, that model is also part of this boundary and may be revised without requiring loss of identity continuity.
 
 The current six working lenses are only one decomposition of B.
 

@@ -37,21 +37,21 @@ With it, the framework has the weakest continuing self: not an immutable essence
 
 This continuity requires some ordering of transitions, but that does not prove temporality is an irreducible ontological primitive.
 
-## 3. Add reality-side revisability: fallible self-model
+## 3. Optional branch: add reality-side revisability
 
-Add one condition:
+From the continuing self, add one condition:
 
-> Reality-side constraint can alter retained self-related content without erasing the continuity that makes it content about the same continuing process.
+> Reality-side mismatch can alter retained self-related content without erasing the continuity that keeps it about the same continuing process.
 
-Now the continuing self can be wrong about itself and later revise that representation.
-
-This is the weakest **fallible self-model** needed by guide.
+This yields the weakest **corrigible self-model** used by guide: the system can be wrong about itself and later revise that representation.
 
 It still does not imply subjective experience, introspective transparency, or complete self-knowledge.
 
+This is a strengthening branch, not a prerequisite for actor status. A continuing self may act while remaining non-corrigible.
+
 ## 4. Add reality-changing action: actor
 
-Add one condition:
+Returning to the main dependency spine from the continuing self, add one condition:
 
 > At least some executable transitions of the continuing system change conditions of later reality.
 
@@ -151,17 +151,17 @@ external constraint
 + identity continuity
 = continuing self
 
-+ reality-side revisability
-= fallible self-model
+├─ + reality-side revisability
+│  = corrigible self-model
+│
+└─ + reality-changing action
+   = actor
 
-+ reality-changing action
-= actor
+   + bounded lifetime / capacity
+   = finite actor
 
-+ bounded lifetime / capacity
-= finite actor
-
-+ action-relevant direction
-= purposeful finite actor
+   + action-relevant direction
+   = purposeful finite actor
 
 + explore / commit alternative
 = local sufficiency problem

@@ -4,7 +4,7 @@
 
 guide uses **purposeful finite actor** as its unified working subject, but not as its foundational starting primitive.
 
-The [minimal derivation](./foundations/minimal-derivation.md) starts from minimal self-reference and reaches this working subject only after adding identity continuity, reality-side revisability, agency, finitude, and action-relevant direction.
+The [minimal derivation](./foundations/minimal-derivation.md) starts from minimal self-reference and reaches this working subject on the main dependency spine by adding identity continuity, agency, finitude, and action-relevant direction. Corrigible self-modeling is an additional strengthening, not an actor prerequisite.
 
 People, teams, organizations, institutions, agents, long-running services, and technical systems can all be analyzed as purposeful finite actors when they satisfy this working definition.
 

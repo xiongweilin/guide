@@ -36,15 +36,16 @@ distinction process
              re-entry
 \`\`\`
 
-The working subject is obtained only by adding further conditions:
+The working subject is obtained along the main dependency spine by adding further conditions:
 
 - **identity continuity** → the self-side can be retained as the same continuing process across later distinctions;
-- **revisability by reality** → retained self-related content can be corrected, giving a fallible self-model;
 - **agency** → some executable transitions change conditions of future reality;
 - **finitude** → lifetime, sensing, representation, computation, resources, and control are bounded;
 - **purposefulness** → some continuations, paths, constraints, or outcomes matter differently for action.
 
 Only at that point does guide use the working subject **purposeful finite actor**.
+
+A corrigible self-model is a separate strengthening: reality-side mismatch must be able to revise retained self-related content. It is not required merely for actor status.
 
 For actors that can continue acquiring distinctions or enter commitment-bearing action, a local sufficiency problem appears:
 
@@ -73,7 +74,7 @@ The order above is a dependency order for the framework, not a claim that every 
 
 ## From the minimum to the working framework
 
-- **Foundation**: minimal self-reference, continuity, fallible self-model, agency, finitude, and purpose are kept as distinct added conditions rather than hidden inside one starting definition;
+- **Foundation**: minimal self-reference, continuity, agency, finitude, and purpose form the main dependency spine; corrigible self-modeling remains an additional branch rather than a hidden actor requirement;
 - **Conditional derivations**: sufficiency, exploration / decision, and reopening require additional capabilities such as an explore / commit alternative or corrigibility;
 - **Working decomposition**: distinction, relation, causality, temporality, possibility, and value are six lenses on a current boundary, not irreducible ontological primitives;
 - **Engineering necessities**: Decision / Authorization / Effect / Outcome, idempotency, read-back, and recovery become correctness-critical only under additional engineering conditions and remain in \`engineering/\`.
