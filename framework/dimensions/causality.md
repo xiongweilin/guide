@@ -67,7 +67,7 @@ For a causal path to become current callable capability, it additionally needs:
 - necessary authority;
 - recovery or exit path.
 
-This is why capability is not a separate dimension here: it is a callable structure jointly formed by causality, possibility, relation, temporality, and finite-system interfaces.
+This is why capability is not a separate dimension here: it is a callable structure jointly formed by causality, possibility, relation, temporality, and purposeful-actor interfaces.
 
 ## 4. Dependencies, failure, and recovery
 
