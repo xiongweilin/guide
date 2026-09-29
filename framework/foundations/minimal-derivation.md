@@ -2,165 +2,190 @@
 
 [English](./minimal-derivation.md) | [简体中文](./minimal-derivation.zh-CN.md)
 
-> Goal: not to prove guide as an ultimate truth, but to separate what follows from the premises, what follows only conditionally, and what remains a working or engineering choice.
+> Goal: identify the smallest sufficient self-referential structure, then add one materially necessary condition at a time. The order below is a dependency order, not a chronological development story and not a substitute for proof.
 
-## 1. Starting point
+## 1. Starting point: minimal self-reference
 
-Assume external reality R and multiple purposeful finite actors A1, A2, …, An. Each actor Ai exists only over a finite lifetime Li = [bi, di) and has:
+guide starts from three conditions only:
 
-- a finite internal state space Mi;
-- a bounded representation map qi: HR → Mi from real histories to current internal state;
-- actions capable of changing conditions of future reality;
-- at least one purpose, acceptability condition, hard constraint, or approach / avoid direction.
+1. **External constraint**: there is reality not exhausted by the current representation, and it continues to constrain that representation.
+2. **Reflexive distinction**: the process making distinctions distinguishes itself from non-self reality.
+3. **Retained re-entry**: the resulting self / non-self difference enters and remains in the current representation and can again become an object of the distinction process that produced it.
 
-“Purposeful” requires only that some continuations or paths matter differently for action. It does not presuppose free will, subjective experience, a complete utility function, or an ultimate moral theory.
+Together these conditions are sufficient for the weakest self-reference used here: a distinction process retains a difference that includes itself and can operate on that retained difference again.
 
-“External reality” requires only that reality can provide constraints, effects, and feedback not determined solely by the actor's current representation. It does not first specify the ultimate composition of reality.
+“Self” at this level means only the side of the distinction referring to the distinction-maintaining process. It does not yet mean a person, conscious subject, autonomous agent, moral patient, or stable identity.
 
-## 2. Finite representation, non-identity, and epistemic underdetermination
+Minimal self-reference does **not** by itself establish:
 
-Finitude alone does not prove that qi must be non-injective. guide's external-reality premise already requires that the actor's current representation does not exhaust reality:
+- identity continuity across later transitions;
+- a revisable self-model;
+- action on reality;
+- finitude;
+- purpose;
+- sufficiency, decision, or learning.
 
-`current representation ≠ reality`
+## 2. Add identity continuity: continuing self
 
-If relevant real histories contain distinctions beyond the actor's current representational capacity—for example, if `|HR_relevant| > |Mi|`—then qi cannot be injective. More generally, whenever there are:
+Add one condition:
 
-`h1 ≠ h2` and `qi(h1) = qi(h2)`
+> Later reflexive distinctions can treat the previously retained self-side and the current distinction-maintaining process as the same continuing process.
 
-the same current actor state remains compatible with multiple different real histories.
+Without this condition, retained re-entry can recur while each occurrence remains unrelated to the others.
 
-Define the current indistinguishability class:
+With it, the framework has the weakest continuing self: not an immutable essence, but continuity of self-reference across change.
 
-`[h]i = { h' | qi(h') = qi(h) }`
+This continuity requires some ordering of transitions, but that does not prove temporality is an irreducible ontological primitive.
 
-Under this condition, representation compression yields epistemic underdetermination: the actor works from a local equivalence class rather than from a complete copy of reality.
+## 3. Add reality-side revisability: fallible self-model
 
-`finite representation + excess relevant distinctions → possible non-injectivity → unresolved epistemic remainder`
+Add one condition:
 
-## 3. Distinction and unresolved remainder
+> Reality-side constraint can alter retained self-related content without erasing the continuity that makes it content about the same continuing process.
 
-Any non-trivial actor must distinguish at least some internal states, inputs, or actions. Otherwise all states and actions are equivalent. Difference / distinction is therefore among the hardest structures to remove further.
+Now the continuing self can be wrong about itself and later revise that representation.
 
-If a proposition p differs across two currently indistinguishable real histories while `qi(h1) = qi(h2)`, the actor cannot correctly assert either p or not-p from its current state alone.
+This is the weakest **fallible self-model** needed by guide.
 
-An actor that does not disguise insufficient evidence as knowledge therefore needs some unresolved state:
+It still does not imply subjective experience, introspective transparency, or complete self-knowledge.
 
-`unresolved / unknown remainder`
+## 4. Add reality-changing action: actor
 
-This does not require an engineering object named `Unknown`; under representational underdetermination, it is first a structural consequence of the actor's current finite representation.
+Add one condition:
 
-## 4. Lifecycle implies order and change
+> At least some executable transitions of the continuing system change conditions of later reality.
 
-A finite lifetime contains order: `bi < t1 < t2 < di`.
+Now the system is an **actor** in guide's working sense.
 
-If actor state can persist or change, then `mi(t1) → mi(t2)`. Some order, duration, and change structure is therefore unavoidable.
+Internal transition, attempted action, real effect, and later observation remain different things. Agency requires real action-sensitive continuation, not merely an internal label saying that an action occurred.
 
-This does not prove temporality is an independent ontological primitive; order can be represented by a relation `x ≺ y`.
+## 5. Add finitude: finite actor
 
-`temporal semantics are necessary ≠ temporality is irreducible`
+Add one condition:
 
-## 5. Agency implies action-sensitive continuations
+> The actor is bounded in lifetime and in at least some relevant sensing, representation, computation, resources, interfaces, control, correction, or recovery capacity.
 
-Let `Cont(h, a)` be the real continuations still possible after action a at history h.
+Finitude does not require treating the set of all possible internal states as mathematically finite. What matters is that current effective capacity is bounded and cannot be assumed to exhaust reality.
 
-If every action satisfies `Cont(h, a1) = Cont(h, a2)`, those actions have no control significance.
+When relevant real distinctions exceed current representational capacity, different real conditions may remain compatible with the same current representation. An unresolved epistemic remainder then exists.
 
-Agency therefore requires at least some a1 and a2 such that:
+\`current representation ≠ reality\` is only shorthand for the stronger premise that reality contains constraints not exhausted or determined by that representation.
 
-`Cont(h, a1) ≠ Cont(h, a2)`
+A finite actor eventually terminates. If it has already changed reality, termination of the actor does not erase effects already left in reality.
 
-This gives the weakest causal / intervention structure: different executable actions can change the continuation space of reality. No stronger causal metaphysics is required.
+## 6. Add action-relevant direction: purposeful finite actor
 
-## 6. The six lenses are not a minimal primitive vocabulary
+Add one condition:
 
-- **Possibility** can be the set of currently unexcluded real continuations;
-- **Relation** can be structural constraints or tuples among distinguished items;
-- **Temporality** can be order relations among events or states;
-- **Causality** can be differences in continuation structure under intervention.
+> Some continuations, paths, constraints, or outcomes matter differently for action.
 
-The six working lenses are therefore not a minimal primitive vocabulary. Their role is to prevent materially different questions from being silently collapsed in practice.
+Now the finite actor is **purposeful**.
 
-## 7. Purpose gives direction, not a full normative theory
+Purpose may appear as an acceptability condition, partial ordering, constraint, target, approach / avoid direction, role, commitment, or other action-relevant direction.
 
-Purposefulness requires some action-relevant direction, such as an acceptability predicate `AcceptP(h, a)`, a partial order, a constraint set, or a target state.
+This is enough for functional direction. It does not establish a complete normative theory, moral standing, public legitimacy, authority over others, free will, or subjective experience.
 
-This is enough for the weakest sense of value / direction / constraint, but does not automatically imply subjective experience, reflective commitment, moral standing, public legitimacy, or authority over others.
+At this point guide reaches its unified working subject: the **purposeful finite actor**.
 
-`functional direction ≠ complete normative theory`
+## 7. Add an explore / commit alternative: local sufficiency
 
-## 8. Conditional derivation of sufficiency
+Add one condition:
 
-Let current boundary be B, purpose P, and proposed next transition T.
+> For some next transition, the actor can either continue acquiring or revising distinctions, or enter a commitment-bearing transition.
 
-If an actor can either continue acquiring distinctions or enter a commitment-bearing action, its policy necessarily induces a boundary `S(B, P, T)` separating “continue exploring / revising” from “enter the next transition”.
+Then its policy must separate, in practice, cases where it continues inquiry from cases where it proceeds.
 
-Even without a field named `sufficient=true`, a system that sometimes gathers more information and sometimes stops and acts behaviorally implements a sufficiency boundary.
+guide calls the grounds for that boundary **local sufficiency**.
 
-`finite knowledge + purpose + choice between exploration and action → local sufficiency problem`
+\`operational trigger ≠ warranted sufficiency\`
 
-But the fact that a transition was triggered establishes only that its **operational trigger** was met; it does not establish that the transition had sufficient grounds.
+A transition occurring only proves that its trigger occurred. If the actor claims that proceeding is warranted, the relevant grounds, unknowns, invalidation conditions, risk, and reversibility become part of the sufficiency question.
 
-`operational trigger ≠ warranted sufficiency`
+## 8. Exploration and commitment are derived activity classes
 
-## 9. Conditional derivation of exploration and decision
+Given the sufficiency boundary:
 
-A transition that primarily changes the current boundary, acquires distinctions, or expands candidates is an **epistemic transition**; guide calls this exploration.
+- transitions primarily changing the current boundary, distinctions, evidence, or candidate space are **epistemic transitions**; guide calls purposeful cases exploration;
+- transitions primarily forming a choice, commitment, or path of influence on reality are **commitment transitions**; guide calls the choice-forming activity decision.
 
-A transition that forms a choice, commitment, or path of real-world influence is a **commitment transition**; guide calls this decision and entry into action.
+These are working activity classes, not ontological primitives.
 
-Exploration / decision are therefore not ontological primitives but common activity classes around a sufficiency boundary.
+## 9. Add corrigibility: feedback revision and reopening
 
-## 10. Feedback and reopening
+Add one condition:
 
-Real effects and later observations can conflict with the current boundary. If the system is required to be corrigible, material invalidation of assumptions, prediction failure, effect divergence, or newly distinguished structure must be able to produce `Bt → Bt+1`, including reopening prior provisional closure.
+> Material reality-side invalidation must be able to change the current boundary.
 
-`finite knowledge + reality feedback + corrigibility requirement → reopenability`
+Then prediction failure, effect divergence, new distinctions, invalidated assumptions, or changed conditions can produce revision or reopen a previous provisional closure.
 
-Without corrigibility, this conclusion does not follow; a purposeful finite actor may simply be non-revisable.
+Without corrigibility, reality may still contradict an actor while the actor remains unrevisable.
 
-## 11. Multi-actor structure
+## 10. Add another actor: multi-actor structure
 
-Different actors have different maps qi, so generally `Bi ≠ Bj` even in the same reality.
+Add one or more other purposeful finite actors in the same reality.
 
-One actor may also change another actor's later conditions through reality:
+Different actors need not share sensing, representation, history, purpose, resources, or authority. Their local boundaries may therefore differ while each remains constrained by the same external reality.
 
-`Ai → Reality → Aj`
+One actor can also change another actor's later conditions through reality.
 
-Shared reality therefore naturally admits different local representations, mutual modeling, coordination, conflict, strategic adaptation, and reflexive feedback.
+This permits mutual modeling, coordination, conflict, strategic adaptation, and reflexive feedback.
 
-Authorization, rights, legitimacy, and governance procedures still require additional institutional or normative premises.
+Authorization, rights, legitimacy, and governance do not follow from plurality alone; they require additional institutional or normative premises.
 
-## 12. Termination does not erase effects
+## 11. The six working lenses are not foundation primitives
 
-After di, the actor no longer continues its own process, but prior effects have already become part of reality and may continue to affect other actors.
+Distinction, relation, causality, temporality, possibility, and value remain useful working lenses on a current boundary.
 
-`actor termination ≠ erasure of its real effects`
+The derivation above does not require treating them as six irreducible pieces of reality. Their practical role is to prevent materially different questions from being silently substituted for one another.
 
-This applies to people, organizations, agents, services, model instances, and other bounded acting systems.
+## 12. Layered result
 
-## 13. Current minimal result
+The dependency structure can be summarized as:
 
-The minimal working structure that survives the derivation is:
+\`\`\`text
+external constraint
++ reflexive distinction
++ retained re-entry
+= minimal self-reference
 
-`external reality + purposeful finite actors + local distinction + constrained change + bidirectional influence`
++ identity continuity
+= continuing self
 
-For actors that can explore, choose, and correct themselves, add:
++ reality-side revisability
+= fallible self-model
 
-`local sufficiency + feedback revision`
++ reality-changing action
+= actor
 
-which unfolds as:
++ bounded lifetime / capacity
+= finite actor
 
-`Reality ↔ Actor → Boundary → Sufficiency → Transition → Reality → Feedback → Revision`
++ action-relevant direction
+= purposeful finite actor
 
-## 14. What has not been proved
++ explore / commit alternative
+= local sufficiency problem
+
++ corrigibility
+= feedback revision / reopening
+
++ additional actors
+= multi-actor structure
+\`\`\`
+
+These equal signs are compact labels for "the preceding structure plus the stated added condition is sufficient for the named working framework". They are not claims of mathematical identity or formal proof.
+
+## 13. What has not been proved
 
 This derivation does **not** prove that:
 
-- reality is ultimately composed of actors, boundaries, or feedback;
-- the six lenses are irreducible or unique;
-- every actor must learn, reflect, or correct itself;
+- reality is ultimately composed of self-referential systems, actors, boundaries, or feedback;
+- every self-referential system is conscious, purposeful, or agentic;
+- every actor is corrigible, reflective, moral, or autonomous;
+- the six working lenses are irreducible or unique;
 - all value follows from functional purpose;
-- Decision, Authorization, Effect, Outcome, and other engineering roles are cosmic structure;
+- multiple actors imply any particular governance rule;
+- Decision, Authorization, Effect, Outcome, or other engineering roles are cosmic structure;
 - guide is the only framework capable of describing these processes.
 
-Those stronger claims require additional premises, comparison with competing theories, and reality-side testing.
+Stronger claims require additional premises, competing explanations, and reality-side testing.

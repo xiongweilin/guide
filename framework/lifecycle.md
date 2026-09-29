@@ -4,16 +4,16 @@
 
 Lifecycle describes the general process of a purposeful finite actor from emergence to termination. It is a framework-level process, not an engineering state machine.
 
+The dependency order in the [minimal derivation](./foundations/minimal-derivation.md) is not a lifecycle timeline. Minimal self-reference and the added conditions define what counts as the working subject; this document describes that subject once it exists and continues through reality.
+
 ## 1. Overall process
 
-```text
+\`\`\`text
 emergence / birth
     ↓
 reality acts on actor
     ↓
-initial reaction
-    ↓
-persistent internal state
+retained history / current self-related state
     ↓
 form current boundary B
     ↓
@@ -32,25 +32,29 @@ sufficiency for next transition S(B, P, T)
     …
     ↓
 termination / death
-```
+\`\`\`
 
 An actor can contain many nested loops. The framework does not require every activity to follow one strict linear pipeline.
 
 ## 2. Initial stage
 
-A first reaction does not require a prior complete model:
+The first observed actor state need not expose a complete model or replay the foundation as chronological stages.
 
-`Reality → Reaction → RetainedState`
+At minimum, prior reality exposure must be able to leave state relevant to later self-reference and transition:
 
-Once reaction leaves state that affects later transitions, minimal historical continuity exists.
+\`Reality → retained state → later transition\`
 
-Stable objects, relations, causal hypotheses, temporal structure, candidates, and direction can emerge later.
+For guide's working actor, this retained history sits on top of the minimal self-referential structure already defined in the foundation.
+
+Stable objects, relations, causal hypotheses, temporal structure, candidates, purposes, and commitments can be articulated later or remain partly implicit.
 
 ## 3. Current boundary
 
 Current boundary B is the local representation and epistemic state actually callable by the actor for the current activity.
 
 It can be incomplete, wrong, stale, differently granular across activities, and changed by new tools, permissions, relations, and experience.
+
+The actor's self-model is also part of this boundary and can be revised without requiring loss of identity continuity.
 
 The current six working lenses are only one decomposition of B.
 
@@ -74,19 +78,19 @@ An internally formed choice does not mean reality has already changed.
 
 At framework level keep at least:
 
-`choice / action ≠ real effect ≠ later feedback`
+\`choice / action ≠ real effect ≠ later feedback\`
 
-Finer Decision / Authorization / Execution / Effect / Observation / Outcome engineering semantics belong in [`../engineering/action-chain.md`](../engineering/action-chain.md).
+Finer Decision / Authorization / Execution / Effect / Observation / Outcome engineering semantics belong in [the engineering action chain](../engineering/action-chain.md).
 
 ## 6. Retain, revise, and reopen
 
 After feedback, at least three outcomes are possible:
 
 - **retain**: the current boundary remains adequate;
-- **revise**: update values, relations, scope, or grounds within the current framing;
+- **revise**: update values, relations, scope, grounds, or self-model within the current framing;
 - **reopen**: prior provisional closure itself loses sufficiency and candidates, framing, or working lenses must be reopened.
 
-`reopening ≠ erasing all prior history`
+\`reopening ≠ erasing all prior history\`
 
 ## 7. Termination
 

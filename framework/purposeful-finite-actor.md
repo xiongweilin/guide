@@ -2,55 +2,55 @@
 
 [English](./purposeful-finite-actor.md) | [简体中文](./purposeful-finite-actor.zh-CN.md)
 
-guide uses **purposeful finite actor** as its unified subject.
+guide uses **purposeful finite actor** as its unified working subject, but not as its foundational starting primitive.
+
+The [minimal derivation](./foundations/minimal-derivation.md) starts from minimal self-reference and reaches this working subject only after adding identity continuity, reality-side revisability, agency, finitude, and action-relevant direction.
 
 People, teams, organizations, institutions, agents, long-running services, and technical systems can all be analyzed as purposeful finite actors when they satisfy this working definition.
 
 ## 1. Working definition
 
-A purposeful finite actor has at least:
+A purposeful finite actor presupposes the minimal self-referential structure and has at least:
 
-1. **finite lifetime**: it emerges, persists for some interval, and eventually terminates;
-2. **local representation**: it cannot completely and costlessly observe or represent reality;
-3. **persistent state**: prior experience can in some way affect later transitions;
+1. **continuing self-reference**: the self / non-self distinction can remain relevant across later transitions as the same continuing process;
+2. **finite lifetime and bounded capacity**: its lifetime and at least some relevant sensing, representation, computation, resources, interfaces, control, or recovery capacity are bounded;
+3. **local representation and persistent state**: prior experience can affect later transitions, while the current representation remains local and fallible;
 4. **agency**: at least some executable actions change conditions of future reality;
 5. **purposefulness**: at least some continuations, paths, constraints, or outcomes matter differently for action.
 
 Purpose may come from self-maintenance, tasks, goals, commitments, roles, external mandates, preferences, hard constraints, or other directional structure.
 
-It does not automatically imply subjective experience, free will, reflective autonomy, moral standing, authority over others, or a complete utility function.
+This definition does not automatically imply subjective experience, free will, reflective autonomy, moral standing, authority over others, or a complete utility function.
 
 ## 2. Finitude
 
 An actor may be bounded by sensing, data, language, classification, representation, time, attention, computation, resources, tools, interfaces, permission, knowledge of other actors, knowledge of future and counterfactuals, real control, and correction / recovery / exit speed.
 
+Finitude here means bounded effective capacity, not necessarily a mathematically finite set of every possible internal state.
+
 Complete knowledge therefore cannot be a general precondition for action.
 
 ## 3. Lifecycle
 
-For actor Ai, write `Li = [bi, di)` for its working lifetime.
+For actor Ai, write \`Li = [bi, di)\` as a convenient description of its working lifetime, not as a derivation of time from notation.
 
 Before bi it does not yet continue this actor process; after di it no longer produces new self-transitions.
 
 During its lifetime it repeatedly participates in:
 
-`Reality → Actor → Reality`
+\`Reality → Actor → Reality\`
 
 and may learn, degrade, lock in, change, or remain stable.
 
-## 4. Initial reaction and persistent state
+## 4. Retained history and current boundary
 
-An actor need not already have a complete model when reality first affects it. The weakest structure can be:
+A purposeful finite actor need not begin with a complete articulated model.
 
-```text
-real condition
-→ reaction
-→ internal state that affects later transition
-```
-
-Once prior reaction can affect later transition, the actor has history.
+At framework level, what matters is that the foundational self / non-self difference and other prior effects can be retained so that earlier reality exposure affects later transitions.
 
 At richer stages, persistent state may be organized into a current boundary, claims, relations, causal hypotheses, candidates, goals, commitments, and other structures.
+
+The derivation order in the foundation is a dependency order. It is not a claim that every actor must chronologically develop through separately observable stages.
 
 ## 5. Purpose and choice
 
@@ -67,7 +67,7 @@ At minimum distinguish:
 - **controllable**: the actor can sufficiently influence critical processes;
 - **callable**: the required tools, interfaces, resources, collaborators, and permissions are currently obtainable.
 
-`Possible ≠ Reachable ≠ Controllable ≠ Callable`
+\`Possible ≠ Reachable ≠ Controllable ≠ Callable\`
 
 Capability may be distributed across tools, infrastructure, organizations, and other actors rather than located only inside the actor.
 
@@ -75,11 +75,11 @@ Capability may be distributed across tools, infrastructure, organizations, and o
 
 The actor's model of its own capability, resources, permissions, recovery conditions, and failure modes is itself part of a current boundary.
 
-`believing it can act ≠ currently reachable`
+\`believing it can act ≠ currently reachable\`
 
-`previously callable ≠ still callable`
+\`previously callable ≠ still callable\`
 
-Reality feedback can therefore revise the self-model.
+Reality feedback can therefore revise the self-model while the actor remains the same continuing process for current purposes.
 
 ## 8. Termination and residual effects
 
@@ -87,4 +87,4 @@ When an actor terminates, its own continuing process stops, but previously creat
 
 A person, organization, agent, or service can terminate while its records, code, institutions, assets, commitments, damage, deployments, and changes to other actors remain in reality.
 
-`actor termination ≠ effect erasure`
+\`actor termination ≠ effect erasure\`

@@ -4,61 +4,88 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-> A working framework for how **purposeful finite actors** form local boundaries in external reality, judge whether the next transition has sufficient grounds, act, receive feedback, and keep revising.
+> A working framework that starts from **minimal self-reference under external reality**, then adds only the conditions needed for finite agency, purpose, local sufficiency, action, feedback, and revision.
 
 guide does not provide an ultimate ontology of the world. It does not identify reality with any current representation, model, classification, six-lens decomposition, engineering contract, or implementation.
 
 ## Minimal structure
 
-The framework starts only from the following structure:
+The foundation starts only from three conditions:
 
-1. **External reality**: reality is not exhausted by any actor's current representation and continues to provide constraints, effects, counterexamples, and feedback.
-2. **Multiple purposeful finite actors**: each actor has a finite lifetime and bounded sensing, representation, computation, resources, and control, and has at least some purpose, acceptability condition, constraint, or approach/avoid direction.
-3. **Local current boundary**: an actor can form only a local, fallible, expirable, revisable representation of reality.
-4. **Sufficiency**: for a current purpose and next transition, the actor needs local adequacy rather than complete knowledge.
-5. **Action and feedback**: an actor can change conditions of future reality; effects and new observations enter later actor states.
-6. **Lifecycle**: an actor emerges, undergoes reality, forms and revises boundaries, acts, and eventually terminates; actor termination does not erase effects already left in reality.
+1. **External constraint**: reality is not exhausted by the current representation and continues to constrain it.
+2. **Reflexive distinction**: the process making distinctions distinguishes itself from non-self reality.
+3. **Retained re-entry**: that self / non-self difference enters and remains in the current representation and can again become an object of the distinction process that produced it.
 
-Minimal loop:
+Together these conditions are sufficient only for the weakest **minimal self-reference** used by guide. They do not by themselves establish a continuing self, a self-model, agency, purpose, consciousness, or normativity.
 
-```text
-                         external reality
-                    ┌────────┴────────┐
-                    │                 │
-                 influence       effect / feedback
-                    │                 ▲
-                    ▼                 │
-              purposeful finite actor│
-                    │                 │
-              current boundary B     │
-                    │                 │
-          S(B, purpose, transition)  │
-             ┌──────┴──────┐         │
-             │             │         │
-   insufficient / uncertain sufficient
-             │             │         │
-      explore / revise   choose / act
-             │             └─────────┘
-             └──────► new current boundary
-```
+Minimal self-reference:
 
-This is a working minimal structure, not a metaphysical claim that reality is ultimately composed only of these items.
+\`\`\`text
+external reality
+      │
+      │ constraint
+      ▼
+distinction process
+      │
+      ├──► self / non-self difference
+      │              │
+      │              ▼
+      │       current representation
+      │              │
+      └──────────────┘
+             re-entry
+\`\`\`
+
+The working subject is obtained only by adding further conditions:
+
+- **identity continuity** → the self-side can be retained as the same continuing process across later distinctions;
+- **revisability by reality** → retained self-related content can be corrected, giving a fallible self-model;
+- **agency** → some executable transitions change conditions of future reality;
+- **finitude** → lifetime, sensing, representation, computation, resources, and control are bounded;
+- **purposefulness** → some continuations, paths, constraints, or outcomes matter differently for action.
+
+Only at that point does guide use the working subject **purposeful finite actor**.
+
+For actors that can continue acquiring distinctions or enter commitment-bearing action, a local sufficiency problem appears:
+
+\`\`\`text
+Reality ↔ purposeful finite actor
+                 │
+          current boundary B
+                 │
+        S(B, purpose, transition)
+           ┌─────┴─────┐
+           │           │
+       insufficient   sufficient
+       / uncertain       │
+           │             │
+     explore / revise  choose / act
+           │             │
+           └──────► reality
+                       │
+                  effect / feedback
+                       │
+                 retain / revise /
+                     reopen
+\`\`\`
+
+The order above is a dependency order for the framework, not a claim that every real system develops through these stages chronologically.
 
 ## From the minimum to the working framework
 
-- **Structural derivations**: representation is not reality, finite distinguishability, unresolved remainder, order, relation, and action-sensitive continuations;
-- **Conditional derivations**: sufficiency, exploration / decision, and reopening require further conditions such as purpose, selectable action, exploration, or corrigibility;
-- **Working decomposition**: the current framework uses distinction, relation, causality, temporality, possibility, and value as six lenses on the current boundary. They are not irreducible ontological primitives;
-- **Engineering necessities**: Decision / Authorization / Effect / Outcome, idempotency, read-back, and recovery become correctness-critical only under additional engineering conditions and belong in `engineering/`.
+- **Foundation**: minimal self-reference, continuity, fallible self-model, agency, finitude, and purpose are kept as distinct added conditions rather than hidden inside one starting definition;
+- **Conditional derivations**: sufficiency, exploration / decision, and reopening require additional capabilities such as an explore / commit alternative or corrigibility;
+- **Working decomposition**: distinction, relation, causality, temporality, possibility, and value are six lenses on a current boundary, not irreducible ontological primitives;
+- **Engineering necessities**: Decision / Authorization / Effect / Outcome, idempotency, read-back, and recovery become correctness-critical only under additional engineering conditions and remain in \`engineering/\`.
 
 ## Documentation map
 
 | Document | Role |
 | --- | --- |
-| [Minimal derivation](./framework/foundations/minimal-derivation.md) | What follows, follows conditionally, or does not follow from external reality and purposeful finite actors |
+| [Minimal derivation](./framework/foundations/minimal-derivation.md) | Layered conditions from minimal self-reference to purposeful finite actors, sufficiency, feedback, and multi-actor structure |
 | [Theoretical sources](./framework/foundations/theoretical-sources.md) | Relations to bounded rationality, pragmatism, cybernetics, decision theory, multi-agent theory, and neighboring traditions |
 | [Reality](./framework/reality.md) | External boundary, reality feedback, and non-identity with current representation |
-| [Purposeful finite actor](./framework/purposeful-finite-actor.md) | Actor definition, finitude, purpose, capability, lifecycle, and termination |
+| [Purposeful finite actor](./framework/purposeful-finite-actor.md) | Derived working subject: self-reference, continuity, finitude, purpose, capability, lifecycle, and termination |
 | [Lifecycle](./framework/lifecycle.md) | General process from emergence to termination and epistemic / commitment transitions |
 | [Sufficiency](./framework/sufficiency.md) | When a current boundary is adequate for a next transition |
 | [Multi-actor](./framework/multi-actor.md) | Multiple local boundaries, shared reality, interaction, coordination, and conflict |
