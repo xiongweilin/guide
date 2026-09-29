@@ -2,99 +2,68 @@
 
 [English](./reality.md) | [简体中文](./reality.zh-CN.md)
 
-Reality is the **external boundary** of this framework.
+Reality is guide's external boundary, not a total object waiting to be completely serialized.
 
-The framework does not implement reality as a total object, nor does it claim that current observations, language, classifications, schemas, ontologies, knowledge graphs, databases, or models exhaust it. A finite system can form only local, conditional, revisable representations within reality.
+## 1. Minimal commitment
 
-## 1. Minimal structure
+guide requires only that reality can:
+
+- continue to constrain beyond an actor's current representation;
+- exhibit effects, including failure of expected effects;
+- provide new observations, counterexamples, mismatches, and feedback;
+- admit different local representations by multiple actors.
+
+`current representation ≠ reality`
+
+This does not first require deciding whether reality is ultimately material, processual, relational, informational, mental, or something else.
+
+## 2. From reality to a current boundary
+
+A purposeful finite actor can form local distinctions only through sensing, sources, tools, language, interfaces, permissions, resources, and other actors:
 
 ```text
-Reality
+reality
   ↓ sensing / interaction / sources / tools
 distinguishable range
-  ↓ acquisition and formation of distinctions
+  ↓ acquisition and distinction
 distinguished range
   ↓ organization
-current representation
+current boundary / representation
 ```
 
-- **Reality** continues to constrain the system through counterexamples, effects, and feedback regardless of whether the current representation is complete.
-- **Distinguishable range** is what can in principle become distinguished under current sensing, language, tools, interfaces, permissions, resources, collaborators, and capability.
-- **Distinguished range** is what has actually been acquired, formed, and made invocable; it can be incomplete or wrong.
-- **Current representation** organizes distinguished contents into objects, classifications, relations, causal hypotheses, temporal structures, possibilities, and value judgments.
+`current representation ≠ distinguished range ≠ distinguishable range ≠ reality`
 
-Therefore:
-
-`current representation != reality`
-
-`absent from current representation != nonexistent != impossible`
-
-`schema lacks a field != reality lacks the structure`
-
-## 2. Default distinctions are not the boundary of reality
-
-Language, culture, education, interfaces, institutions, historical decisions, existing models, and personal experience preinstall many classifications and boundaries.
-
-A default distinction only means "easy to invoke now." It does not establish that the boundary comes from reality itself, is valid for the current problem, excludes competing distinctions, or should remain forever.
-
-Persistent errors are often not wrong values but default boundaries that were never reopened.
-
-A competing framing, theory, or ontology need not translate itself into current vocabulary before it can challenge the representation through consequences, counterexamples, failed explanations, predictions, or practice.
-
-`challenge admission != migration requirement`
-
-Semantic mapping is required only when an alternative is integrated, migrated, federated, or substituted into the current system.
+“Not currently visible” must not silently become “does not exist” or “is impossible”.
 
 ## 3. Two kinds of unknown
 
 At minimum distinguish:
 
-1. **unknown value inside a formed structure**: the object, variable, category, or relation exists in the current representation, but its value is unknown;
-2. **structure not yet formed**: relevant variables, object types, relations, causal mechanisms, time scales, candidates, participants, acquisition methods, verification methods, or the framing itself may not yet exist in the representation.
+1. a structure has been formed but some value or state within it is unknown;
+2. relevant objects, variables, relations, mechanisms, timescales, candidates, or acquisition methods have not yet been formed.
 
-Therefore:
+The second kind means the candidate space itself may be incomplete.
 
-`unknown value != incomplete candidate space`
+`candidate not generated ≠ candidate does not exist`
 
-`candidate not generated or found != candidate nonexistent`
+`not expressible in the current framework ≠ absent from reality`
 
-Persistent residuals, counterexamples, boundary failures, cross-context mismatches, or accumulating exceptions can support only the weaker conclusion that the current representation may be insufficient. They do not identify the correct replacement.
+## 4. Reality feedback
 
-## 4. Reality-side feedback
+Reality can require revision through new observation, authoritative read-back, predictive failure, failed intervention, unexpected side effects, adaptation by other actors, changes in tools / interfaces / resources / permissions, timescale change, or persistent structural tension.
 
-Reality constrains the boundary through:
+Feedback may update one value or reopen distinctions, relations, causal assumptions, temporal structure, possibility space, value framing, or even guide's current working structure.
 
-- new observations or authoritative readback;
-- successful or failed predictions;
-- interventions that do or do not produce expected effects;
-- unexpected side effects;
-- participant adaptation;
-- new tools, interfaces, permissions, or sources;
-- structural changes at different time scales;
-- recurring problems the current framework cannot locate.
+## 5. Authoritative sources are not reality
 
-Reality-side feedback may require a value update, a revised distinction, changed relations, causal reassessment, a new time scale, expanded or narrowed possibility, reopened value judgment, re-evaluated sufficiency, new exploration, or replacement of part of the framework.
+Engineering systems may use an “authoritative source” or “authoritative read-back”, but this means only a source granted specific factual authority for a task:
 
-## 5. Reality is not an "authoritative database"
+`authoritative source ≠ reality`
 
-Engineering uses terms such as "authoritative source" or "authoritative readback," but these mean only a source assigned a specific factual authority for a task.
+Such a source can still be delayed, partial, stale, unavailable, or wrong.
 
-`authoritative source != reality itself`
+## 6. guide is also exposed to reality
 
-An authoritative source can fail, lag, become stale, or cover only part of the relevant reality. Source unavailability must not be silently converted into object absence.
+guide's minimal derivation, six working lenses, sufficiency structure, and engineering expressions are not unrevisable truths.
 
-Reality-side state should therefore allow at least:
-
-`present | missing | unavailable | unknown`
-
-and:
-
-`currently valid | stale | unknown`
-
-## 6. The framework is also exposed to reality
-
-guide is not a source of truth about reality. Its dimensions, sufficiency structure, activity distinctions, action chain, and engineering expressions can all be reopened by reality-side failure.
-
-The current six dimensions are only a working closure. If maintaining them requires growing special cases, recurring important problems cannot be located, reopening stops producing useful distinctions or stopping conditions, or a competing framework repeatedly yields better predictions, actions, and corrections, a finite system has reason to review the core.
-
-Internal coherence cannot replace reality-side correction.
+If competing frameworks persistently produce better prediction, action, coordination, correction, or explanation, guide itself should be narrowed, revised, or replaced.
