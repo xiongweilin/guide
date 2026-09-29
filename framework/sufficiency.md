@@ -1,214 +1,102 @@
-# Sufficiency operator
+# Sufficiency: when the next transition has adequate grounds
 
 [English](./sufficiency.md) | [简体中文](./sufficiency.zh-CN.md)
 
-Sufficiency is the **operator** of this framework, not a seventh dimension.
+Sufficiency is the key relation that lets a purposeful finite actor continue acting without a complete representation of reality.
 
 It asks:
 
-> Is the current boundary sufficient for the current purpose and next transition?
+> For the current purpose and proposed next transition, is the current boundary adequate?
 
-Abstractly:
+Abstractly: `S(B, P, T) → {insufficient, materially uncertain, sufficient}`.
 
-`S(B, P, T) → {insufficient, materially uncertain, sufficient}`
+B is the current boundary and epistemic state, P the current purpose / constraint / acceptability condition, and T the proposed next transition.
 
-where:
+## 1. Sufficiency is not completeness
 
-- (B): the current six-dimensional boundary and its epistemic status;
-- (P): the current purpose;
-- (T): the next transition, such as continued exploration, candidate exclusion, decision, authorization, execution, verification, or completion.
+A finite actor cannot make complete knowledge of reality a general precondition for action.
 
-Sufficiency is not a property of reality itself. It is a relation among current boundary, purpose, and transition.
+`sufficient for next transition ≠ complete boundary`
 
-## 1. Minimal states
+Sufficiency is local to object, scope, purpose, timescale, and transition.
 
-`unmet → accumulating → sufficient → enter`
+## 2. Operational trigger versus warranted sufficiency
 
-"Unmet" may mean a condition is known false, evidence is missing, state is unknown, required grounds are absent, or applicability of a rule remains disputed. These causes must not collapse into one boolean.
+The fact that a transition occurred shows only that its operational trigger fired.
 
-"Accumulating" does not require numerical increase. Grounds may include:
+`operational trigger ≠ warranted sufficiency`
 
-- necessary conditions being met;
-- evidence and counterevidence being distinguished;
-- dependencies becoming valid;
-- permissions, approvals, or commitments being established;
-- verification completed;
-- risk, cost, and residual unknowns acceptable for the current purpose.
+A fixed automaton may transition when conditions match without making any epistemic judgment about its grounds.
 
-## 2. Two basic mechanisms
+guide mainly concerns the second notion: if an actor claims that it now has enough reason to enter a transition, the relevant grounds, unknowns, and invalidation conditions should be expressible at proportional strength.
+
+## 3. Two basic mechanisms
 
 ### Interpretive sufficiency
 
-When "what counts as enough" cannot be fully specified in advance, a finite system forms an accountable judgment over context, evidence, counterevidence, competing interpretations, purpose, and residual unknowns.
+When criteria cannot be exhaustively specified in advance, the actor forms accountable provisional closure from context, scope, evidence, counterevidence, competing explanations, residual unknowns, risk, cost, irreversibility, and current purpose.
 
-Open problems, diagnosis, strategy, design, exception handling, and novel cases commonly require interpretive sufficiency.
+### Prescriptive sufficiency
 
-At minimum preserve:
+When conditions are sufficiently explicit, use predicates, thresholds, tests, contracts, state guards, or explicit rules.
 
-- object and transition under judgment;
-- scope, purpose, and time scale;
-- evidence and counterevidence;
-- assumptions and default distinctions;
-- competing interpretations that could materially change the result;
-- residual unknowns and accepted risk;
-- reason for provisional closure;
-- accountable judgment;
-- review and reopening conditions.
+A rule passing does not by itself prove that the rule applies, remains current, or has adequate normative authority.
 
-`reasoned judgment != criteria were fully specified in advance`
+## 4. The sufficiency boundary
 
-`interpretive sufficiency != universal truth`
+Any actor that sometimes continues exploration and sometimes stops exploring and acts already induces a boundary:
 
-### Specified sufficiency
+`Explore | Commit`
 
-When relevant conditions are explicit enough to check, use a rule, predicate, threshold, state-machine guard, protocol, test, contract, or approval set.
+Explicit `S(B, P, T)` makes this otherwise implicit policy boundary inspectable.
 
-At minimum preserve:
+## 5. When exploration can stop
 
-- rule / contract identity and version;
-- authority or source;
-- applicability and validity interval;
-- inputs and versions;
-- predicates, thresholds, or necessary conditions;
-- evaluator and result;
-- exceptions, overrides, and reopening conditions.
+Stopping does not require unknowns to disappear. Provisional closure may be supported when:
 
-`rule explicit != rule applicable to the current object`
+- residual unknowns are unlikely to change the current transition;
+- currently obtainable high-discrimination evidence is adequate;
+- delay risk exceeds expected exploration value;
+- the next step remains recoverable;
+- further exploration lacks permission, is too dangerous, or has disproportionate cost;
+- unresolved material can be carried explicitly as unknown.
 
-`predicate true != transition automatically authorized`
+`stop exploring ≠ complete knowledge of reality`
 
-### Combination and conversion
+## 6. Shrinking possibility needs grounds
 
-Real activity can combine both mechanisms, for example interpreting whether a rule applies before running the specified check.
+Excluding candidates, freezing criteria, stopping search, or committing all shrink later possibility.
 
-`repeated interpretation → explicit rulemaking → specified checking`
+`open space → warranted contraction → provisional closure`
 
-`novel case / ambiguity / changed grounds → reopen → interpretive judgment`
+“not found”, “not generated”, and “not currently visible” do not automatically become “impossible”.
 
-Past interpretation must not silently become a deterministic rule. Rule satisfaction must not erase questions of applicability, freshness, or authority.
+## 7. Different transitions need different sufficiency
 
-## 3. Sufficiency slice
+`S(B, P, T1) does not automatically imply S(B, P, T2)`.
 
-A concrete sufficiency judgment only needs context proportionate to the transition:
+For example:
 
-- transition under judgment;
-- current boundary version;
-- purpose, scope, and time scale;
-- supporting grounds;
-- remaining unknowns;
-- excluded or frozen candidates;
-- rule maker, judge, decider, and authorizer where relevant;
-- invalidation, review, and reopening conditions.
+`enough to form a hypothesis ≠ enough to decide`
 
-"Enough" is not one global boolean shared by all transitions.
+`enough to decide ≠ enough to execute a high-impact real effect`
 
-`enough to answer != enough to authorize action`
+`enough to observe an effect ≠ enough to declare purpose complete`
 
-`enough to execute != enough to confirm effect`
+Finer engineering transition admission is in [`../engineering/action-chain.md`](../engineering/action-chain.md).
 
-`enough to confirm effect != enough to declare all goals complete`
+## 8. Provisional closure and reopening
 
-## 4. Sufficiently grounded contraction
+Reality feedback, scope change, dependency change, failed causal assumptions, value revision, or new candidates may invalidate prior sufficiency.
 
-When a system excludes candidates, stops search, freezes standards, or turns a provisional arrangement into commitment, it narrows possibility space.
+`open → converge → provisional closure → act → feedback → retain / reopen`
 
-Only when it actually claims "there are sufficient grounds to exclude or freeze" is this a sufficiency contraction:
+`provisional closure ≠ permanent truth`
 
-`open space → sufficiently grounded contraction → provisional closure`
+## 9. Sufficiency is not authority
 
-`fewer options != automatically sufficient`
+In a multi-actor environment:
 
-"Not generated," "currently invisible," or "not found under current resources" cannot silently become "impossible."
+`adequate grounds ≠ decision or execution authority`
 
-## 5. Definition, judgment, and decision power
-
-At minimum distinguish:
-
-1. **definition power**: defining problem boundary, candidate space, evidence, criteria, thresholds, verification standards, and completion conditions;
-2. **judgment power**: deciding whether current grounds meet the conditions or are sufficient;
-3. **decision power**: deciding whether that judgment becomes commitment, resource allocation, rule adoption, action, continuation, pause, or termination.
-
-`definition power != judgment power != decision power`
-
-The same participant may occupy several positions in low-risk activity, but increasing scope, irreversibility, dependency, or power asymmetry increases the need for independent evidence, constrained rule-change authority, review, appeal, veto, or stopping paths.
-
-A failure pattern to prevent is:
-
-`define rule → judge own compliance → decide consequence → change rule when inconvenient`
-
-Sufficiency itself does not create authority.
-
-## 6. Responsibility and sufficiency are orthogonal
-
-Responsibility asks "who is responsible?" Sufficiency asks "are the grounds enough?"
-
-`responsible role exists != grounds are sufficient`
-
-`grounds sufficient != authority automatically granted`
-
-A role cannot manufacture missing evidence, conditions, or authority.
-
-## 7. No silent shortcut
-
-If moving from (X) to (Y) materially depends on an intermediate responsibility or evidentiary position (R), it cannot be silently omitted:
-
-`X → R → Y`, not `X → Y`.
-
-A missing position should be established explicitly, handed off, kept open, or stopped rather than replaced by an adjacent state.
-
-## 8. Composition does not automatically hold
-
-`S(C1) + S(C2) + ... != S(C1 ∘ C2 ∘ ...)`
-
-Local components being sufficient does not establish joint compatibility. A composition-level sufficiency basis is needed when composition introduces new scope, assumptions, authority, dependencies, side effects, feedback, or failure propagation.
-
-## 9. Handoff completeness
-
-A consequential handoff should preserve enough context to prevent downstream overclaiming:
-
-- current conclusion and scope;
-- purpose and time scale;
-- supporting grounds;
-- key assumptions;
-- residual unknowns;
-- important alternatives;
-- invalidation, review, and reopening conditions;
-- authority boundary.
-
-`handoff complete != downstream automatically has stronger sufficiency`
-
-A handoff does not create broader scope, stronger evidence, new authority, or permanent validity.
-
-## 10. Provisional closure and reopening
-
-A finite system needs:
-
-`open → converge → provisional closure → act → reality-side feedback → retain / reopen`
-
-Closure is local to the current object, scope, purpose, time scale, and grounds. It is not permanent truth.
-
-Material changes in facts, scope, relations, causal assumptions, dependencies, authority, value, cost, risk, or environment can trigger reevaluation.
-
-`provisional closure != absolute foundation`
-
-`revisable != requires infinite meta-review`
-
-## 11. State and transition
-
-A result state can be acceptable while the path that produced it was invalid.
-
-Sufficiency can therefore apply both to a target state and to the transition itself.
-
-`valid endpoint != valid path`
-
-## 12. Cross-domain transfer
-
-Cross-domain reuse should distinguish:
-
-- common problem;
-- formal similarity;
-- mechanism similarity.
-
-`formal similarity != mechanism-level sufficiency`
-
-Success in domain A does not automatically establish sufficiency in domain B. Transfer itself requires proportionate grounds.
+Sufficiency concerns epistemic and transition grounds. Permission, governance, and legitimate execution require additional structure; engineering Authorization belongs in `engineering/`.
