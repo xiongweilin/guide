@@ -17,6 +17,9 @@ Reality (external boundary)
 Finite system
     │
     ▼
+Reaction chain
+    │
+    ▼
 Current activity / current purpose
     │
     ▼
@@ -49,6 +52,7 @@ Each position has a different responsibility:
 
 - **Reality** is the external boundary. A representation, model, schema, ontology, classification, or knowledge graph is not reality itself.
 - **Finite system** is the user of the framework. A person, team, organization, institution, Agent, or technical system may be analyzed as a finite system; all are limited by sensing, language, time, computation, resources, authority, and control.
+- **Reaction chain** is the starting chain while the finite system's internal model is empty: reality conditions trigger a system response, and the completed reaction leaves the minimal internal state that can affect later transitions. Only after the first reaction chain is completed does the system have the conditions for a minimal action chain and a current model; the meaning of the action chain below remains unchanged.
 - **Six dimensions** describe the current activity boundary: distinction, relation, causality, temporality, possibility, and value.
 - **Sufficiency** is an operator, not a seventh dimension. It asks whether the current boundary is enough for the next transition under the current purpose.
 - **Exploration and decision** are activities, not dimensions. Explore when the boundary is insufficient; decide when it is provisionally sufficient.
