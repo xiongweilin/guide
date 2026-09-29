@@ -17,19 +17,25 @@ Assume external reality R and multiple purposeful finite actors A1, A2, …, An.
 
 “External reality” requires only that reality can provide constraints, effects, and feedback not determined solely by the actor's current representation. It does not first specify the ultimate composition of reality.
 
-## 2. Finitude implies non-identity of representation and reality
+## 2. Finite representation, non-identity, and epistemic underdetermination
 
-Under finitude, qi is generally non-injective over relevant real histories. There can be `h1 ≠ h2` with `qi(h1) = qi(h2)`.
-
-The same current actor state can therefore remain compatible with different real histories. Hence:
+Finitude alone does not prove that qi must be non-injective. guide's external-reality premise already requires that the actor's current representation does not exhaust reality:
 
 `current representation ≠ reality`
+
+If relevant real histories contain distinctions beyond the actor's current representational capacity—for example, if `|HR_relevant| > |Mi|`—then qi cannot be injective. More generally, whenever there are:
+
+`h1 ≠ h2` and `qi(h1) = qi(h2)`
+
+the same current actor state remains compatible with multiple different real histories.
 
 Define the current indistinguishability class:
 
 `[h]i = { h' | qi(h') = qi(h) }`
 
-The actor works from this local equivalence class, not from a complete copy of reality.
+Under this condition, representation compression yields epistemic underdetermination: the actor works from a local equivalence class rather than from a complete copy of reality.
+
+`finite representation + excess relevant distinctions → possible non-injectivity → unresolved epistemic remainder`
 
 ## 3. Distinction and unresolved remainder
 
@@ -41,7 +47,7 @@ An actor that does not disguise insufficient evidence as knowledge therefore nee
 
 `unresolved / unknown remainder`
 
-This does not require an engineering object named `Unknown`; first it is a structural consequence of finite representation.
+This does not require an engineering object named `Unknown`; under representational underdetermination, it is first a structural consequence of the actor's current finite representation.
 
 ## 4. Lifecycle implies order and change
 

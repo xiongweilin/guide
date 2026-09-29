@@ -100,3 +100,27 @@ In a multi-actor environment:
 `adequate grounds ≠ decision or execution authority`
 
 Sufficiency concerns epistemic and transition grounds. Permission, governance, and legitimate execution require additional structure; engineering Authorization belongs in `engineering/`.
+
+## 10. Compositional sufficiency
+
+Local sufficiency does not automatically compose into sufficiency of a coupled system.
+
+For a set of materially interacting transitions `{Ti}`, conditional compositional sufficiency requires at least:
+
+- each participating transition has locally adequate grounds for its own boundary, purpose, and transition;
+- material couplings are compatible across shared resources, state, timing, authority, constraints, and effects;
+- material failure still leaves a controlled path to a viable state.
+
+Compactly:
+
+`local sufficiency + compatibility + minimum recoverability → conditional compositional sufficiency`
+
+Minimum recoverability does not require exact rollback to the prior state. It requires some controlled path such as stop, isolation, compensation, rerouting, reopening, reauthorization, or recovery to a state from which relevant action and correction can continue.
+
+`compositional sufficiency ≠ global optimality`
+
+`compositional sufficiency ≠ complete shared representation`
+
+`minimum recoverability ≠ exact restoration`
+
+As recoverability weakens and irreversibility rises, proportionally stronger grounds are required before commitment.

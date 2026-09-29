@@ -67,3 +67,11 @@ But the collective boundary is not automatically the sum of member boundaries:
 `Bcollective ≠ Σ Bi`
 
 Internal information, incentives, roles, permissions, and conflict can change collective behavior.
+
+## 8. Local sufficiency does not automatically compose
+
+When locally sufficient transitions interact through shared reality, their combination needs separate grounds. Complete representational agreement is not required; what matters is that material couplings remain compatible and that significant failure preserves minimum recoverability.
+
+`local sufficiency + compatibility + minimum recoverability → conditional compositional sufficiency`
+
+This does not establish global optimality, and minimum recoverability does not require exact restoration of the previous state. See [Sufficiency](./sufficiency.md#10-compositional-sufficiency).
