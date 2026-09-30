@@ -158,6 +158,12 @@ interpretation != reality
 
 A stable semantic distinction does not automatically require a universal payload, durable entity, table, or service.
 
+Long-running autonomous improvement also needs several progress distinctions:
+more historical records or evidence does not imply greater capability; a new
+version is not automatically a stronger version; an improved internal score is
+not automatically improvement in the external objective; and external-objective
+improvement is not by itself evidence of a novel capability.
+
 ## 7. personal-world: personal continuity
 
 personal-world owns a person's durable, evolving, provenance-bearing context accepted through owner-local qualification / admission that realizes the framework's sufficiency requirement. The name does not imply that it contains the person's whole distinguishable world, and absence of a record does not imply absence in reality.
@@ -289,6 +295,12 @@ Reality
 
 Evidence must remain traceable to sources. World Runtime may record or reference domain-owned Outcomes, but it does not reinterpret their domain meaning. Changes in current qualification do not rewrite historical evidence. Material basis changes trigger review / revalidation.
 
+Current qualification is dependency-aware: if a conclusion depends on a premise
+that is no longer current, the conclusion cannot remain current merely because
+its historical record still exists. Independent reality-grounded evidence may
+survive. Evaluator, policy, or model migration also needs an explicit semantic
+preservation basis; parse compatibility is not enough to inherit old judgments.
+
 ## 12. control-plane
 
 ```text
@@ -391,6 +403,19 @@ autonomous-development trigger / admitted request
 The configured engineering executor performs bounded implementation work; autonomous-development retains specialist lifecycle and release authority, while world-runtime retains generic responsibility, authorization, durable effect identity, and effect admission.
 
 personal-world inputs bind revisions. Personal context changes do not rewrite historical analysis, but can invalidate the current sufficiency of old analysis.
+
+Autonomous development must distinguish “more system change” from actual
+progress. Commit count, version count, archive growth, test score, internal
+evaluation score, and frontier replacement establish only their own facts; none
+alone proves product-goal improvement or novel capability. Promotion should,
+wherever possible, return to a fixed external objective, reality-side readback,
+and domain-owned outcome semantics.
+
+If the development process allows checkers, evaluators, or promotion rules to
+modify their own successors, acceptance by the current version is not enough to
+establish successor soundness. The trust path needs either a non-circular
+grounded root or independently checkable preservation evidence showing that the
+relevant judgments, goals, and constraints survive migration.
 
 ## 15. Reality return path
 

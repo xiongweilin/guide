@@ -2,7 +2,7 @@
 
 [English](./minimal-derivation.md) | [简体中文](./minimal-derivation.zh-CN.md)
 
-> Goal: identify the smallest sufficient self-referential structure, then add one materially necessary condition at a time. The order below is a dependency order, not a chronological development story and not a substitute for proof.
+> Goal: state a deliberately economical working dependency spine, adding one condition at a time when it materially changes the later capability boundary. “Minimal” here is relative first to the explicit dependency structure adopted by guide; it is not a theorem that every possible theory of actors must contain exactly these conditions. The order below is a dependency order, not a chronological development story.
 
 ## 1. Starting point: minimal self-reference
 
@@ -173,7 +173,7 @@ external constraint
 = multi-actor structure
 \`\`\`
 
-These equal signs are compact labels for "the preceding structure plus the stated added condition is sufficient for the named working framework". They are not claims of mathematical identity or formal proof.
+These equal signs are compact labels for “the preceding structure plus the newly added condition is sufficient for the named working framework.” They are not mathematical identities, and they do not establish that these conditions are absolutely necessary across every possible formalization of actors.
 
 ## 13. What has not been proved
 
