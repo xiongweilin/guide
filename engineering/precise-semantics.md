@@ -92,6 +92,12 @@ Model extraction, user input, cache, search index, and synchronized copies are n
 
 `high model confidence != source authority`
 
+Current qualification should not be a permanently frozen historical field either.
+When a conclusion depends on premises, loss of current qualification in those
+premises should propagate through the dependency chain. Independent evidence
+with a still-current reality-side basis may remain current. History is retained;
+current qualification is recomputed from dependencies.
+
 ## 4. Sufficiency mechanism must be preserved
 
 A final "sufficient" state cannot be separated from how it was established.
@@ -301,7 +307,12 @@ Therefore:
 
 `record is recent != dependencies remain valid`
 
-Freshness should check dependencies rather than timestamps alone.
+Freshness should check source, dependencies, and the current task rather than
+timestamps alone. Staleness is not a universal unusability bit for every fact:
+older evidence can remain adequate for a task whose relevant distinctions have
+not changed, while recent evidence can still be inadequate if it omits a
+task-relevant distinction. Explicit policy, authorization, and deadline expiry
+remain strict validity constraints.
 
 ## 12. Review, revalidation, reopening, and reauthorization
 
@@ -313,6 +324,13 @@ Freshness should check dependencies rather than timestamps alone.
 Dependency change usually creates review first. It should not rewrite history or manufacture a new decision.
 
 `reopen != automatically authorized`
+
+Cross-version migration requires a separate semantic check. A new version being
+able to parse old records establishes data compatibility, not preservation of
+the old judgment. Old conclusions remain currently qualified only when an
+explicit preservation basis shows that the relevant judgment, external goal, or
+constraint is preserved. Otherwise history remains intact while the conclusion
+returns to review or revalidation.
 
 ## 13. Idempotency and external effects
 
@@ -445,6 +463,13 @@ A positive transition that expands authority, clears a blocker, or creates real-
 
 Stopping means only "cannot proceed now." It must not fabricate the opposite fact.
 
+When a checker, evaluator, or policy system can modify and approve its own
+successor, self-approval alone does not establish semantic soundness of that
+successor. The engineering trust boundary needs either a non-circular grounded
+root or independently checkable preservation evidence showing why the new
+version still satisfies the semantic obligations on which current decisions
+depend.
+
 ## 22. Responsibility roles and failure independence
 
 Distinguish where relevant:
@@ -481,7 +506,11 @@ Consider independently at least:
 
 `old JSON still parses != semantic compatibility`
 
-Upgrades must inspect changed defaults, authority, scope, historical interpretation, and reopening requirements.
+Upgrades must inspect changed defaults, authority, scope, historical
+interpretation, evaluation criteria, and reopening requirements. If a version
+change can alter what counts as a valid judgment, improvement, or usable
+evidence, semantic preservation must be explicit rather than inherited by
+default.
 
 ## 24. Minimum deployable contract
 
@@ -531,6 +560,10 @@ These need not each be independent durable entities.
 20. Role separation does not automatically create failure independence.
 21. Local sufficiency does not automatically establish composition-level sufficiency.
 22. A competing framing need not translate into current vocabulary before it can challenge the framework.
+23. Retained history does not imply current qualification; invalid premises invalidate dependent conclusions.
+24. Data-format compatibility does not imply preservation of old judgments across semantic versions.
+25. Evidence freshness is task- and dependency-relative, while explicit policy and authorization expiry remains strict.
+26. Self-approval, internal score improvement, or successor acceptance does not by itself establish semantic soundness.
 
 ## 26. Minimum conformance tests
 
@@ -546,8 +579,10 @@ At minimum test that:
 - changes in tools, authority, relations, or interfaces can reopen the boundary;
 - high-confidence model claims cannot directly become authoritative facts;
 - reviewers sharing common failure sources are not counted as independent redundancy;
+- evaluator, policy, or model version changes do not silently preserve old conclusions without a semantic preservation basis;
+- a checker approving its own successor is not accepted as sufficient evidence of successor semantic soundness;
 - components separately sufficient but composition introducing new assumptions / authority / feedback requires composition-level grounds;
-- stale facts, policies, decisions, and permissions are rejected;
+- expired policies, decisions, and permissions are rejected; older facts or evidence remain usable only when they are still adequate for the current task and their critical dependencies remain current;
 - operations cannot exceed authorization scope;
 - illegal transitions are rejected even when the endpoint is legal;
 - expected self-change does not incorrectly invalidate its own governance basis;
