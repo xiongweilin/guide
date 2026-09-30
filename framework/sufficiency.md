@@ -42,6 +42,19 @@ When conditions are sufficiently explicit, use predicates, thresholds, tests, co
 
 A rule passing does not by itself prove that the rule applies, remains current, or has adequate normative authority.
 
+### One formalized prescriptive special case
+
+For prescriptive problems where a current observation and the commitment
+required for the next transition are explicit, sufficiency has an exact
+criterion: an observation is insufficient if two worlds that are
+indistinguishable under that observation require different commitments.
+Conversely, when no such ambiguity exists, the required commitment factors
+through the observation.
+
+The Lean repository proves this equivalence. It is a precise special case of
+guide's broader sufficiency concept, not a definition of every interpretive
+judgment.
+
 ## 4. The sufficiency boundary
 
 Any actor that sometimes continues exploration and sometimes stops exploring and acts already induces a boundary:
@@ -105,11 +118,14 @@ Sufficiency concerns epistemic and transition grounds. Permission, governance, a
 
 Local sufficiency does not automatically compose into sufficiency of a coupled system.
 
-For a set of materially interacting transitions `{Ti}`, conditional compositional sufficiency requires at least:
+For materially interacting transitions, conditional compositional sufficiency requires at least:
 
 - each participating transition has locally adequate grounds for its own boundary, purpose, and transition;
+- the local requirements collectively cover the target being composed rather than omitting a material part;
 - material couplings are compatible across shared resources, state, timing, authority, constraints, and effects;
 - material failure still leaves a controlled path to a viable state.
+
+In the Lean formalization, coverage is a technical premise bundled with local-sufficiency evidence. It is not promoted into a new foundational primitive of guide.
 
 Compactly:
 
