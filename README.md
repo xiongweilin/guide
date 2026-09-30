@@ -79,6 +79,43 @@ The order above is a dependency order for the framework, not a claim that every 
 - **Working decomposition**: distinction, relation, causality, temporality, possibility, and value are six lenses on a current boundary, not irreducible ontological primitives;
 - **Engineering necessities**: Decision / Authorization / Effect / Outcome, idempotency, read-back, and recovery become correctness-critical only under additional engineering conditions and remain in \`engineering/\`.
 
+## Three-layer documentation architecture
+
+guide is organized into three layers that answer different questions and should
+not substitute for one another:
+
+1. **Foundation layer** (`framework/foundations/`): states the minimal starting
+   conditions, the working dependency spine adopted here, and the theoretical
+   sources and scope limits behind those claims.
+2. **Framework layer** (`framework/`): describes reality, purposeful finite
+   actors, lifecycle, sufficiency, multi-actor interaction, the six working
+   lenses, and exploration / decision as analysis concepts. It does not directly
+   prescribe databases, services, or state machines.
+3. **Engineering and application layer** (`engineering/`): promotes only those
+   distinctions whose collapse creates concrete correctness failures into
+   implementable semantics, action-chain boundaries, and the AIOS application.
+
+The foundation explains why particular premises and dependencies are adopted;
+the framework explains how finite action is analyzed; engineering explains
+which distinctions an implementation must preserve. Higher layers may depend on
+lower ones, but implementation structure is not evidence for foundational
+ontology.
+
+## Formalization status
+
+A mathematically explicit subset of guide is formalized in
+[distinction-self-reference-lean](https://github.com/xiongweilin/distinction-self-reference-lean).
+The formal layer includes the separation of effective finitude from finite state
+spaces, an exact no-ambiguity criterion for local sufficiency, constructive
+conditions for conditional composition, dependency-aware evidence validity and
+version migration, evaluator grounding, and structure-preserving framework
+translations.
+
+Those Lean results prove claims inside explicit models. They do **not** turn the
+whole philosophical framework into a theorem, and they do not prove that guide
+is the unique or absolutely minimal theory of actors. The formal dependency
+spine corresponding to guide is isolated in `GuideCore.lean`.
+
 ## Documentation map
 
 | Document | Role |
