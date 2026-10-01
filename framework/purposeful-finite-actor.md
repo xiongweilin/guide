@@ -32,13 +32,13 @@ Complete knowledge therefore cannot be a general precondition for action.
 
 ## 3. Lifecycle
 
-For actor Ai, write \`Li = [bi, di)\` as a convenient description of its working lifetime, not as a derivation of time from notation.
+For actor Ai, write `Li = [bi, di)` as a convenient description of its working lifetime, not as a derivation of time from notation.
 
 Before bi it does not yet continue this actor process; after di it no longer produces new self-transitions.
 
 During its lifetime it repeatedly participates in:
 
-\`Reality → Actor → Reality\`
+`Reality → Actor → Reality`
 
 and may learn, degrade, lock in, change, or remain stable.
 
@@ -67,7 +67,7 @@ At minimum distinguish:
 - **controllable**: the actor can sufficiently influence critical processes;
 - **callable**: the required tools, interfaces, resources, collaborators, and permissions are currently obtainable.
 
-\`Possible ≠ Reachable ≠ Controllable ≠ Callable\`
+`Possible ≠ Reachable ≠ Controllable ≠ Callable`
 
 Capability may be distributed across tools, infrastructure, organizations, and other actors rather than located only inside the actor.
 
@@ -75,9 +75,9 @@ Capability may be distributed across tools, infrastructure, organizations, and o
 
 The actor's model of its own capability, resources, permissions, recovery conditions, and failure modes is itself part of a current boundary.
 
-\`believing it can act ≠ currently reachable\`
+`believing it can act ≠ currently reachable`
 
-\`previously callable ≠ still callable\`
+`previously callable ≠ still callable`
 
 Reality feedback can therefore revise the self-model while the actor remains the same continuing process for current purposes.
 
@@ -87,4 +87,4 @@ When an actor terminates, its own continuing process stops, but previously creat
 
 A person, organization, agent, or service can terminate while its records, code, institutions, assets, commitments, damage, deployments, and changes to other actors remain in reality.
 
-\`actor termination ≠ effect erasure\`
+`actor termination ≠ effect erasure`

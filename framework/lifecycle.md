@@ -8,7 +8,7 @@ The dependency order in the [minimal derivation](./foundations/minimal-derivatio
 
 ## 1. Overall process
 
-\`\`\`text
+```text
 emergence / birth
     ↓
 reality acts on actor
@@ -32,7 +32,7 @@ sufficiency for next transition S(B, P, T)
     …
     ↓
 termination / death
-\`\`\`
+```
 
 An actor can contain many nested loops. The framework does not require every activity to follow one strict linear pipeline.
 
@@ -42,7 +42,7 @@ The first observed actor state need not expose a complete model or replay the fo
 
 At minimum, prior reality exposure must be able to leave state relevant to later self-reference and transition:
 
-\`Reality → retained state → later transition\`
+`Reality → retained state → later transition`
 
 For guide's working actor, this retained history sits on top of the minimal self-referential structure already defined in the foundation.
 
@@ -78,7 +78,7 @@ An internally formed choice does not mean reality has already changed.
 
 At framework level keep at least:
 
-\`choice / action ≠ real effect ≠ later feedback\`
+`choice / action ≠ real effect ≠ later feedback`
 
 Finer Decision / Authorization / Execution / Effect / Observation / Outcome engineering semantics belong in [the engineering action chain](../engineering/action-chain.md).
 
@@ -90,7 +90,7 @@ After feedback, at least three outcomes are possible:
 - **revise**: update values, relations, scope, grounds, or self-model within the current framing;
 - **reopen**: prior provisional closure itself loses sufficiency and candidates, framing, or working lenses must be reopened.
 
-\`reopening ≠ erasing all prior history\`
+`reopening ≠ erasing all prior history`
 
 ## 7. Termination
 
