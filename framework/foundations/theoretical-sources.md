@@ -2,7 +2,7 @@
 
 [English](./theoretical-sources.md) | [简体中文](./theoretical-sources.zh-CN.md)
 
-> This document records major sources, affinities, and boundaries for guide. It is not an authoritative genealogy, and guide is not claimed to follow deductively from any single tradition.
+guide draws on several major traditions while preserving explicit boundaries between them. It does not claim an authoritative genealogy or a deduction from any single tradition.
 
 ## 1. Bounded rationality
 
@@ -20,7 +20,12 @@ guide extends sufficiency beyond candidate choice to framing, evidence, transiti
 
 Pragmatist and fallibilist traditions associated with Peirce, James, Dewey, and others emphasize inquiry through practice, revisability by consequences, and action without requiring absolute certainty.
 
-guide is close in holding that current representation is not reality itself, provisional closure can support action, real consequences can reopen old boundaries, and exploration should increase discrimination rather than merely accumulate description.
+guide is close to these traditions in holding that:
+
+- current representation is not reality itself;
+- provisional closure can support action;
+- real consequences can reopen old boundaries;
+- exploration should increase discrimination rather than merely accumulate description.
 
 guide does not require any one pragmatist theory of truth.
 
