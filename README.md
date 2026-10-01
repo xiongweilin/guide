@@ -20,7 +20,7 @@ Together these conditions are sufficient only for the weakest **minimal self-ref
 
 Minimal self-reference:
 
-\`\`\`text
+```text
 external reality
       │
       │ constraint
@@ -34,7 +34,7 @@ distinction process
       │              │
       └──────────────┘
              re-entry
-\`\`\`
+```
 
 The working subject is obtained along the main dependency spine by adding further conditions:
 
@@ -49,7 +49,7 @@ A corrigible self-model is a separate strengthening: reality-side mismatch must 
 
 For actors that can continue acquiring distinctions or enter commitment-bearing action, a local sufficiency problem appears:
 
-\`\`\`text
+```text
 Reality ↔ purposeful finite actor
                  │
           current boundary B
@@ -68,7 +68,7 @@ Reality ↔ purposeful finite actor
                        │
                  retain / revise /
                      reopen
-\`\`\`
+```
 
 The order above is a dependency order for the framework, not a claim that every real system develops through these stages chronologically.
 
