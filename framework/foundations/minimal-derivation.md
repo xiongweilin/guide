@@ -69,7 +69,7 @@ Finitude does not require treating the set of all possible internal states as ma
 
 When relevant real distinctions exceed current representational capacity, different real conditions may remain compatible with the same current representation. An unresolved epistemic remainder then exists.
 
-\`current representation ≠ reality\` is only shorthand for the stronger premise that reality contains constraints not exhausted or determined by that representation.
+`current representation ≠ reality` is only shorthand for the stronger premise that reality contains constraints not exhausted or determined by that representation.
 
 A finite actor eventually terminates. If it has already changed reality, termination of the actor does not erase effects already left in reality.
 
@@ -97,7 +97,7 @@ Then its policy must separate, in practice, cases where it continues inquiry fro
 
 guide calls the grounds for that boundary **local sufficiency**.
 
-\`operational trigger ≠ warranted sufficiency\`
+`operational trigger ≠ warranted sufficiency`
 
 A transition occurring only proves that its trigger occurred. If the actor claims that proceeding is warranted, the relevant grounds, unknowns, invalidation conditions, risk, and reversibility become part of the sufficiency question.
 
@@ -142,7 +142,7 @@ The derivation above does not require treating them as six irreducible pieces of
 
 The dependency structure can be summarized as:
 
-\`\`\`text
+```text
 external constraint
 + reflexive distinction
 + retained re-entry
@@ -171,7 +171,7 @@ external constraint
 
 + additional actors
 = multi-actor structure
-\`\`\`
+```
 
 These equal signs are compact labels for “the preceding structure plus the newly added condition is sufficient for the named working framework.” They are not mathematical identities, and they do not establish that these conditions are absolutely necessary across every possible formalization of actors.
 
