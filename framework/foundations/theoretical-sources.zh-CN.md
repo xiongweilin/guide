@@ -2,7 +2,7 @@
 
 [English](./theoretical-sources.md) | [简体中文](./theoretical-sources.zh-CN.md)
 
-> 本文记录 guide 的主要理论来源、亲缘关系和边界。它不是权威谱系，也不表示 guide 能由任何单一传统直接推出。
+guide 吸收若干主要理论传统，同时明确保留它们之间的边界。guide 不主张存在一个权威谱系，也不主张自身可由任何单一传统直接推出。
 
 ## 1. 有限理性
 
