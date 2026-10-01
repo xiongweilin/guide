@@ -133,4 +133,3 @@ spine corresponding to guide is isolated in `GuideCore.lean`.
 | [Precise semantics](./engineering/precise-semantics.md) | Implementable, verifiable engineering semantics that forbid silent substitution |
 | [AIOS architecture](./engineering/aios-architecture.md) | A concrete expression in a long-running autonomous AI runtime |
 
-English and Simplified Chinese are equal views. Semantic changes should update both languages with corresponding claim strength, formulas, tables, code blocks, and links.
