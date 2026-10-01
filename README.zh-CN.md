@@ -111,4 +111,3 @@ guide 的一部分可精确定义边界已经在 [distinction-self-reference-lea
 | [精确语义](./engineering/precise-semantics.zh-CN.md) | 把框架转成可实现、可验证且不能静默替代的工程语义 |
 | [AIOS 架构](./engineering/aios-architecture.zh-CN.md) | 一个长期自主 AI runtime 中的具体表达 |
 
-英文与简体中文是等权视图。语义修改应同步更新两种语言；主张强度、公式、表格、代码块和链接应对应。

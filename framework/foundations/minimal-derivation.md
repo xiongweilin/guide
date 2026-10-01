@@ -2,7 +2,7 @@
 
 [English](./minimal-derivation.md) | [简体中文](./minimal-derivation.zh-CN.md)
 
-> Goal: state a deliberately economical working dependency spine, adding one condition at a time when it materially changes the later capability boundary. “Minimal” here is relative first to the explicit dependency structure adopted by guide; it is not a theorem that every possible theory of actors must contain exactly these conditions. The order below is a dependency order, not a chronological development story.
+guide uses a deliberately economical working dependency spine, adding one condition at a time when it materially changes the later capability boundary. “Minimal” is relative to this explicit dependency structure; it is not a theorem that every possible theory of actors must contain exactly these conditions. The order is a dependency order, not a chronological development story.
 
 ## 1. Starting point: minimal self-reference
 
@@ -12,7 +12,7 @@ guide starts from three conditions only:
 2. **Reflexive distinction**: the process making distinctions distinguishes itself from non-self reality.
 3. **Retained re-entry**: the resulting self / non-self difference enters and remains in the current representation and can again become an object of the distinction process that produced it.
 
-Together these conditions are sufficient for the weakest self-reference used here: a distinction process retains a difference that includes itself and can operate on that retained difference again.
+Together these conditions are sufficient for the weakest self-reference used by guide: a distinction process retains a difference that includes itself and can operate on that retained difference again.
 
 “Self” at this level means only the side of the distinction referring to the distinction-maintaining process. It does not yet mean a person, conscious subject, autonomous agent, moral patient, or stable identity.
 
