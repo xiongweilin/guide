@@ -54,7 +54,15 @@ Unknowns do not create an unlimited duty to explore. Consider at least:
 
 These considerations need not collapse into one numerical objective.
 
-Possible dispositions include retaining the boundary, local probing, reopening a particular assumption or dimension, expanding candidate space, reframing the problem, deferring exploration while retaining unknowns and triggers, or stopping because current exploration lacks grounds, authority, or safety.
+Possible dispositions include:
+
+- retaining the boundary;
+- local probing;
+- reopening a particular distinction, relation, causal, temporal, possibility, or value assumption;
+- expanding candidate space;
+- reframing the problem;
+- deferring exploration while retaining unknowns and triggers;
+- stopping because current exploration lacks grounds, authority, or safety.
 
 ## 4. Candidate generation without circular admission
 
@@ -114,7 +122,14 @@ Provisional closure can be justified when:
 - a recoverable path is available and preserves correction capability;
 - unresolved parts can be carried explicitly as unknown.
 
-At closure preserve what was explored, what was excluded and why, what remains unknown, which boundary is provisionally accepted, what triggers review, and what new tool, permission, evidence, or event would make exploration worthwhile again.
+At closure preserve:
+
+- what was explored;
+- what was excluded and why;
+- what remains unknown;
+- which boundary is provisionally accepted;
+- what triggers review;
+- what new tool, permission, evidence, or event would make exploration worthwhile again.
 
 `stop exploring != no unknowns`
 
