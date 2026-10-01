@@ -77,7 +77,7 @@ The order above is a dependency order for the framework, not a claim that every 
 - **Foundation**: minimal self-reference, continuity, agency, finitude, and purpose form the main dependency spine; corrigible self-modeling remains an additional branch rather than a hidden actor requirement;
 - **Conditional derivations**: sufficiency, exploration / decision, and reopening require additional capabilities such as an explore / commit alternative or corrigibility;
 - **Working decomposition**: distinction, relation, causality, temporality, possibility, and value are six lenses on a current boundary, not irreducible ontological primitives;
-- **Engineering necessities**: Decision / Authorization / Effect / Outcome, idempotency, read-back, and recovery become correctness-critical only under additional engineering conditions and remain in \`engineering/\`.
+- **Engineering necessities**: Decision / Authorization / Effect / Outcome, idempotency, read-back, and recovery become correctness-critical only under additional engineering conditions and remain in `engineering/`.
 
 ## Three-layer documentation architecture
 
