@@ -126,6 +126,8 @@ spine corresponding to guide is isolated in `GuideCore.lean`.
 | [Purposeful finite actor](./framework/purposeful-finite-actor.md) | Derived working subject: self-reference, continuity, finitude, purpose, capability, lifecycle, and termination |
 | [Lifecycle](./framework/lifecycle.md) | General process from emergence to termination and epistemic / commitment transitions |
 | [Sufficiency](./framework/sufficiency.md) | When a current boundary is adequate for a next transition |
+| [Judgment and prediction validation](./framework/judgment-validation.md) | Checkable grounds, formal claims, empirical forecasts, causal validation, and error attribution |
+| [Ten multi-actor cases](./framework/examples/judgment-prediction-cases.md) | Reproducible formal-model fixtures and changed-condition checks |
 | [Multi-actor](./framework/multi-actor.md) | Multiple local boundaries, shared reality, interaction, coordination, and conflict |
 | [Six working lenses](./framework/dimensions/README.md) | Distinction, relation, causality, temporality, possibility, and value |
 | [Activities](./framework/activities/README.md) | Exploration and decision as derived activity types |
