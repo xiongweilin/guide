@@ -2,7 +2,7 @@
 
 [English](./judgment-validation.md) | [简体中文](./judgment-validation.zh-CN.md)
 
-> Scope: A cross-domain **validation method**, not a seventh working lens, a foundational axiom, a universal evaluator, or a mandatory persistent entity. It complements [sufficiency](./sufficiency.md), [decision](./activities/decision.md), and [precise engineering semantics](../engineering/precise-semantics.md), without replacing domain methods.
+> Scope: A cross-domain **validation method**, not a seventh working lens, a foundational axiom, a universal evaluator, or a mandatory persistent entity. It complements [sufficiency](./sufficiency.md), [decision](./activities/decision.md), and [precise engineering semantics](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/precise-semantics.md), without replacing domain methods.
 
 ## 1. Separate four questions
 
@@ -89,7 +89,7 @@ See [ten multi-actor validation cases](./examples/judgment-prediction-cases.md).
 
 - **Formal cases**: Reproduce the result, identify counterexamples, distinguish no solution from no solution found, and re-evaluate when key conditions change.
 - **Empirical forecasts**: Require ex ante records, independent observations, fixed baselines, and repeatable errors. Do not claim measured improvement without actual outcomes.
-- **Deployment**: Keep validation separate from authority, effect verification, and recovery in the [action chain](../engineering/action-chain.md).
+- **Deployment**: Keep validation separate from authority, effect verification, and recovery in the [action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
 - **Proportionality**: Match verification effort to risk and irreversibility, rather than requiring complex persistence for every minor transition.
 
 This protocol can make errors more detectable and improvements more falsifiable. It does not prove high accuracy or a unique universal judgment theory.

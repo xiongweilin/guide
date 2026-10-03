@@ -4,7 +4,7 @@
 
 Lifecycle describes the general process of a purposeful finite actor from emergence to termination. It is a framework-level process, not an engineering state machine.
 
-The dependency order in the [minimal derivation](./foundations/minimal-derivation.md) is not a lifecycle timeline. Minimal self-reference and the added conditions define what counts as the working subject; lifecycle begins once that subject exists and tracks how it continues through reality.
+The dependency order in the [minimal derivation](../minimal-derivation.md) is not a lifecycle timeline. Minimal self-reference and the added conditions define what counts as the working subject; lifecycle begins once that subject exists and tracks how it continues through reality.
 
 ## 1. Overall process
 
@@ -80,7 +80,7 @@ At framework level keep at least:
 
 `choice / action ≠ real effect ≠ later feedback`
 
-Finer Decision / Authorization / Execution / Effect / Observation / Outcome engineering semantics belong in [the engineering action chain](../engineering/action-chain.md).
+Finer Decision / Authorization / Execution / Effect / Observation / Outcome engineering semantics belong in [the engineering action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
 
 ## 6. Retain, revise, and reopen
 

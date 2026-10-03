@@ -2,7 +2,7 @@
 
 [English](./temporality.md) | [简体中文](./temporality.zh-CN.md)
 
-> 定位：本维度是目的性有限行动者描述当前边界时的一个**工作性视角**，不是不可约本体原语。六维共同用于防止重要语义被静默替代；最小推导见 [`../foundations/minimal-derivation.zh-CN.md`](../foundations/minimal-derivation.zh-CN.md)。
+> 定位：本维度是目的性有限行动者描述当前边界时的一个**工作性视角**，不是不可约本体原语。六维共同用于防止重要语义被静默替代；最小推导见 [`../../minimal-derivation.zh-CN.md`](../../minimal-derivation.zh-CN.md)。
 
 时序回答：**什么先后发生、持续多久、以什么速度变化，结构何时有效、过渡或失效？**
 

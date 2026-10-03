@@ -2,7 +2,7 @@
 
 [English](./judgment-validation.md) | [简体中文](./judgment-validation.zh-CN.md)
 
-> 定位：这是跨领域的**验证方法**，不是第七个工作视角、新的基础公理、统一的评价器或所有系统都必须持久化的对象。它补充[充分性](./sufficiency.zh-CN.md)、[决策](./activities/decision.zh-CN.md)及[工程精确语义](../engineering/precise-semantics.zh-CN.md)，不替代领域方法。
+> 定位：这是跨领域的**验证方法**，不是第七个工作视角、新的基础公理、统一的评价器或所有系统都必须持久化的对象。它补充[充分性](./sufficiency.zh-CN.md)、[决策](./activities/decision.zh-CN.md)及[工程精确语义](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/precise-semantics.zh-CN.md)，不替代领域方法。
 
 ## 1. 先区分四个问题
 
@@ -89,7 +89,7 @@ error_or_counterexample / disposition / reopen_conditions
 
 - **形式案例**：能重算预期结果、识别明确反例、区分无解与未找到解，并在关键条件变化时重新判断。
 - **经验预测**：存在事前记录、独立结果、固定基线和可重复的误差统计；没有真实结果就不能宣称预测准确性提升。
-- **部署与行动**：与[行动链](../engineering/action-chain.zh-CN.md)中的授权、效果验证和恢复保持分离。
+- **部署与行动**：与[行动链](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md)中的授权、效果验证和恢复保持分离。
 - **效率**：按风险和不可逆程度选择验证深度，避免所有低风险动作都引入复杂持久化。
 
 本协议只能使错误更可发现、改进更可证伪；它本身不是高准确率或唯一判断理论的证明。
