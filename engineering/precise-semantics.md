@@ -595,3 +595,18 @@ At minimum test that:
 - shared storage for several semantic positions still rejects illegal substitution.
 
 If a theoretical distinction cannot change contracts, transitions, failure paths, or tests, it should not occupy the engineering semantics layer.
+
+## 27. Engineering quality evaluation
+
+Semantic invariants and conformance tests constrain correctness, but passing them alone does not establish the quality of a framework's practical use or of a system implementing it. Concrete use can be evaluated through six task-relevant indicators:
+
+| Indicator | Evaluation question |
+| --- | --- |
+| **Correctness** | Do distinctions, judgments, actions, and resulting claims remain consistent with available reality-side evidence, intended semantics, and observed outcomes? |
+| **Usability** | Can people and systems understand, apply, maintain, and revise the framework without disproportionate friction? |
+| **Reliability** | Under repeated use, changing conditions, exceptions, and failures, does the framework continue to provide dependable guidance and support correction or recovery? |
+| **Performance** | Does use of the framework produce decisions, coordination, or engineering results with latency, responsiveness, and throughput acceptable for the current task? |
+| **Capacity / scalability** | As users, data, tasks, domains, dependencies, and interaction complexity grow, does the framework remain usable without unacceptable degradation? |
+| **Efficiency** | Are useful results obtained with proportionate costs in time, computation, money, attention, coordination, maintenance, and foregone opportunities? |
+
+These are indicators of quality in use, not additional theoretical lenses, foundational axioms, or a universal proof of adequacy. Their relevance, measures, acceptance thresholds, and relative weights depend on the task and operating conditions. A good result on one indicator does not establish overall sufficiency; materially deteriorating reality-side results call for reviewing the current grounds and revising the applicable boundaries or contracts.
