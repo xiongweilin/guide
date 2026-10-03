@@ -1,8 +1,8 @@
-# 判断与预测的验证协议
+# 评估
 
 [English](./judgment-validation.md) | [简体中文](./judgment-validation.zh-CN.md)
 
-> 定位：这是跨领域的**验证方法**，不是第七个工作视角、新的基础公理、统一的评价器或所有系统都必须持久化的对象。它补充[充分性](./sufficiency.zh-CN.md)、[决策](./activities/decision.zh-CN.md)及[工程精确语义](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/precise-semantics.zh-CN.md)，不替代领域方法。
+> 定位：跨领域**判断、预测与现实效果的评估方法**；不是第七个工作视角、基础公理、统一评分器，也不取代领域验证或治理程序。
 
 ## 1. 先区分四个问题
 
@@ -83,7 +83,7 @@ error_or_counterexample / disposition / reopen_conditions
 
 有条件的数学预测必须写清博弈次数、信息结构、行动顺序、偏好 / 效用和改变这些条件的反例。
 
-参见[十个多行动者判断案例](./examples/judgment-prediction-cases.zh-CN.md)。
+参见[预测](prediction.zh-CN.md)和[借势](leverage.zh-CN.md)中的形式案例。
 
 ## 7. 完成标准与边界
 

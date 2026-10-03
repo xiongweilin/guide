@@ -145,4 +145,4 @@ As recoverability weakens and irreversibility rises, proportionally stronger gro
 
 Adequate grounds for a next transition do not guarantee a true conclusion, a successful forecast, or authority to act. When a transition materially depends on formal derivation, empirical prediction, or causal expectation, record the relevant model conditions, validation method, and reopening triggers. A prediction miss calls first for checking outcome observability, stochastic variation, evidence, model applicability, and environmental changes—not automatic rejection of the entire boundary.
 
-See the [judgment and prediction validation protocol](./judgment-validation.md) for verification types, ex ante records, and error attribution. This adds neither a new definition of sufficiency nor a requirement to statistically test every decision.
+See the [judgment and prediction validation protocol](../use/evaluation.md) for verification types, ex ante records, and error attribution. This adds neither a new definition of sufficiency nor a requirement to statistically test every decision.
