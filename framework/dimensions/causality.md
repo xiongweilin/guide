@@ -130,3 +130,9 @@ Causality describes what changes what. It does not answer whether the change sho
 `accurate prediction != permission to act`
 
 Interventions affecting people, rights, privacy, safety, or irreversible state still require independent value, relation, possibility, temporality, and sufficiency judgments.
+
+## 9. Causal prediction versus a successful forecast
+
+When reasoning about the future, distinguish conditional predictions within formal models, empirical forecasts under a data-generating distribution, and predictions about the effect of interventions. An observed forecast hit supports neither causal attribution nor an untested claim about another setting. Suitable comparators or identification grounds remain necessary.
+
+For material transitions, preserve ex ante targets, horizons, model/data versions, applicability conditions, and proportionate uncertainty; compare against appropriate independent observations when outcomes become available. Keep unavailable outcomes unknown. When discrepancies arise, check identification assumptions, transport, strategic adaptation, and measurement change. See the [judgment and prediction validation protocol](../judgment-validation.md).
