@@ -11,25 +11,11 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = (
-    "README.md",
-    "README.zh-CN.md",
-    "minimal-derivation.md",
-    "minimal-derivation.zh-CN.md",
-    "framework/README.md",
-    "framework/README.zh-CN.md",
-    "framework/lifecycle.md",
-    "framework/lifecycle.zh-CN.md",
-    "framework/purposeful-finite-actor.md",
-    "framework/purposeful-finite-actor.zh-CN.md",
-    "framework/sufficiency.md",
-    "framework/sufficiency.zh-CN.md",
-    "use/prediction.md",
-    "use/prediction.zh-CN.md",
-    "use/leverage.md",
-    "use/leverage.zh-CN.md",
-    "use/evaluation.md",
-    "use/evaluation.zh-CN.md",
+DOCS = tuple(sorted(str(path.relative_to(ROOT)) for path in ROOT.rglob("*.md")))
+USE_STEMS = ("prediction", "leverage", "evaluation")
+USE_DOCS = tuple(
+    "use/" + stem + suffix for stem in USE_STEMS
+    for suffix in (".md", ".zh-CN.md")
 )
 
 
@@ -225,6 +211,71 @@ class FormalCases(unittest.TestCase):
         self.assertEqual(sum(allocation), 150)
         for pair in combinations(range(3), 2):
             self.assertGreaterEqual(sum(allocation[i] for i in pair), 100)
+
+    def test_use_six_bilingual_documents(self):
+        actual = {path.name for path in (ROOT / "use").glob("*.md")}
+        expected = {Path(path).name for path in USE_DOCS}
+        self.assertEqual(actual, expected)
+
+    def test_use_case_fields(self):
+        for stem in ("prediction", "leverage"):
+            for suffix in (".md", ".zh-CN.md"):
+                content = (ROOT / ("use/" + stem + suffix)).read_text(encoding="utf-8")
+                cases = re.findall(
+                    r"(?ms)^## C[0-9]{2} [^\n]+\n(.*?)(?=^## C[0-9]{2} |\Z)",
+                    content,
+                )
+                expected_count = 4 if stem == "prediction" else 6
+                self.assertEqual(len(cases), expected_count)
+                fields = (
+                    ("- 前提：", "- 预期", "- 条件变化：", "- 禁止外推：")
+                    if suffix == ".zh-CN.md" else
+                    ("- Assumptions:", "- Expectation", "- Change:", "- Do not infer:")
+                )
+                for case in cases:
+                    for field in fields:
+                        self.assertIn(field, case)
+
+    def test_use_no_meta_or_free_prose(self):
+        forbidden = (
+            "Prediction asks:", "Leverage asks:", "These are finite mathematical",
+            "The examples exhibit", "Run python -m unittest",
+            "This protocol can", "semantic responsibilities",
+            "预测研究：", "借势研究：", "以下为有限实例",
+            "这些例子展示", "运行仓库测试", "本协议只能",
+        )
+        allowed = re.compile(r"^(?:#{1,6} |[-*] |\d+\. |\||\[English\])")
+        for relative in USE_DOCS:
+            content = (ROOT / relative).read_text(encoding="utf-8")
+            inside_fence = False
+            for line_no, line in enumerate(content.splitlines(), 1):
+                if line.startswith(chr(96) * 3):
+                    inside_fence = not inside_fence
+                    continue
+                if inside_fence or not line.strip():
+                    continue
+                self.assertRegex(
+                    line, allowed,
+                    f"Standalone explanatory prose: {relative}:{line_no}: {line}",
+                )
+                self.assertFalse(
+                    any(phrase.casefold() in line.casefold() for phrase in forbidden),
+                    f"Meta commentary: {relative}:{line_no}: {line}",
+                )
+
+    def test_readme_three_layers(self):
+        for suffix in (".md", ".zh-CN.md"):
+            readme = (ROOT / ("README" + suffix)).read_text(encoding="utf-8")
+            self.assertIn("minimal-derivation" + suffix, readme)
+            self.assertIn("framework/README" + suffix, readme)
+            for stem in USE_STEMS:
+                self.assertIn("use/" + stem + suffix, readme)
+
+    def test_evaluation_verification_elements(self):
+        for suffix in (".md", ".zh-CN.md"):
+            content = (ROOT / ("use/evaluation" + suffix)).read_text(encoding="utf-8")
+            for marker in ("claim_id", "claim_type:", "Brier", "MAE", "baseline" if suffix == ".md" else "基线"):
+                self.assertIn(marker, content)
 
     def test_use_case_coverage(self):
         expected_prediction = {"01", "02", "04", "05"}
