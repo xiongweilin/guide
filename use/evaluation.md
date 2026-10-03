@@ -1,8 +1,8 @@
-# Judgment and prediction validation protocol
+# Evaluation
 
-[English](./judgment-validation.md) | [简体中文](./judgment-validation.zh-CN.md)
+[English](evaluation.md) | [简体中文](evaluation.zh-CN.md)
 
-> Scope: A cross-domain **validation method**, not a seventh working lens, a foundational axiom, a universal evaluator, or a mandatory persistent entity. It complements [sufficiency](./sufficiency.md), [decision](./activities/decision.md), and [precise engineering semantics](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/precise-semantics.md), without replacing domain methods.
+> Scope: A cross-domain **evaluation method for judgments, forecasts, and observed effects**, not a seventh working lens, foundational axiom, universal scoring rule, or substitute for domain validation and governance.
 
 ## 1. Separate four questions
 
@@ -83,7 +83,7 @@ Reported bids and observable behavior do not directly reveal internal preference
 
 Conditional game-theoretic predictions must specify repetition horizon, information, move order, preferences/utilities, and meaningful counterfactual changes.
 
-See [ten multi-actor validation cases](./examples/judgment-prediction-cases.md).
+See formal cases in [prediction](prediction.md) and [leverage](leverage.md).
 
 ## 7. Completion criteria and limits
 

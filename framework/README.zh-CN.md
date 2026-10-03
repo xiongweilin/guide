@@ -8,9 +8,11 @@
 | --- | --- |
 | 理论来源与边界 | [理论来源](foundations/theoretical-sources.zh-CN.md) |
 | 现实与行动者 | [现实](reality.zh-CN.md)、[目的性有限行动者](purposeful-finite-actor.zh-CN.md)、[生命周期](lifecycle.zh-CN.md) |
-| 充分性与验证 | [充分性](sufficiency.zh-CN.md)、[判断与预测验证](judgment-validation.zh-CN.md) |
-| 多行动者 | [多行动者](multi-actor.zh-CN.md)、[十个形式模型案例](examples/judgment-prediction-cases.zh-CN.md) |
+| 充分性 | [充分性](sufficiency.zh-CN.md) |
+| 多行动者 | [多行动者](multi-actor.zh-CN.md) |
 | 六个工作视角 | [区分、关系、因果、时序、可能性、价值](dimensions/README.zh-CN.md) |
 | 派生活动 | [探索与决策](activities/README.zh-CN.md) |
 
 六个视角只是描述当前边界的工作工具，不是不可约本体原语。充分性针对具体目的与下一转换成立，不自动推出结论真实、执行权限或全局最优。案例验证特定形式模型，不是现实行为预测。
+
+预测、借势和评估的应用方法见[使用层](../README.zh-CN.md#三层架构)：[预测](../use/prediction.zh-CN.md)、[借势](../use/leverage.zh-CN.md)、[评估](../use/evaluation.zh-CN.md)。

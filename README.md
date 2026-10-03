@@ -34,9 +34,10 @@ Further conditional additions:
 
 These arrows express **working dependency conditions**, not chronological stages, universal necessities, or mathematical identities. Local sufficiency is not complete knowledge; adding multiple actors does not by itself imply governance rights or an optimal social outcome.
 
-## Documents and boundaries
+## Three layers
 
-- [Full minimal derivation](minimal-derivation.md) — each added condition, conclusion, and non-conclusion.
-- [Working framework](framework/README.md) — reality, actors, sufficiency, exploration/decision, feedback, multi-actor systems and six working lenses.
-- [Lean formalization](https://github.com/xiongweilin/distinction-self-reference-lean) — separately maintained proofs of explicitly defined model claims, not a proof of guide as a whole.
-- [AIOS engineering](https://github.com/xiongweilin/aios) — separately maintained implementation, contracts and engineering design references.
+- **Minimal derivation:** [conditions and non-conclusions](minimal-derivation.md).
+- **Framework:** [reality, actors, sufficiency, exploration/decision, and six working lenses](framework/README.md).
+- **Use:** [prediction](use/prediction.md), [leverage](use/leverage.md), and [evaluation](use/evaluation.md).
+
+Formal proofs are maintained in [Lean](https://github.com/xiongweilin/distinction-self-reference-lean); engineering implementation and contracts in [AIOS](https://github.com/xiongweilin/aios).

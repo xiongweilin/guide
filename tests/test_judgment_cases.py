@@ -24,10 +24,12 @@ DOCS = (
     "framework/purposeful-finite-actor.zh-CN.md",
     "framework/sufficiency.md",
     "framework/sufficiency.zh-CN.md",
-    "framework/judgment-validation.md",
-    "framework/judgment-validation.zh-CN.md",
-    "framework/examples/judgment-prediction-cases.md",
-    "framework/examples/judgment-prediction-cases.zh-CN.md",
+    "use/prediction.md",
+    "use/prediction.zh-CN.md",
+    "use/leverage.md",
+    "use/leverage.zh-CN.md",
+    "use/evaluation.md",
+    "use/evaluation.zh-CN.md",
 )
 
 
@@ -223,6 +225,19 @@ class FormalCases(unittest.TestCase):
         self.assertEqual(sum(allocation), 150)
         for pair in combinations(range(3), 2):
             self.assertGreaterEqual(sum(allocation[i] for i in pair), 100)
+
+    def test_use_case_coverage(self):
+        expected_prediction = {"01", "02", "04", "05"}
+        expected_leverage = {"03", "06", "07", "08", "09", "10"}
+        for suffix in (".md", ".zh-CN.md"):
+            prediction = (ROOT / ("use/prediction" + suffix)).read_text(encoding="utf-8")
+            leverage = (ROOT / ("use/leverage" + suffix)).read_text(encoding="utf-8")
+            found_prediction = re.findall(r"^## C([0-9][0-9]) ", prediction, re.MULTILINE)
+            found_leverage = re.findall(r"^## C([0-9][0-9]) ", leverage, re.MULTILINE)
+            self.assertEqual(set(found_prediction), expected_prediction)
+            self.assertEqual(set(found_leverage), expected_leverage)
+            self.assertEqual(len(found_prediction), 4)
+            self.assertEqual(len(found_leverage), 6)
 
     def test_markdown_fences_and_local_links(self):
         fence = chr(96) * 3
