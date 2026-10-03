@@ -208,3 +208,9 @@ The original sufficiency basis can fail when:
 - unnecessarily irreversible commitment.
 
 The goal is neither maximum optimization nor maximum arbitrariness, but **bounded, attributable, revisable choice**.
+
+## 11. Keep evaluation, prediction, and choice distinct
+
+Evaluation assesses an object under a specified criterion; prediction concerns an outcome under stated conditions and a time horizon; choice also depends on admissible options, values, risks, responsibility, and decision authority. A unique mathematical solution need not imply a unique warranted real-world action. Predictive performance cannot silently override rights, consent, or authorization.
+
+When evaluations or forecasts materially shape a decision, retain the criterion, model version, significant unknowns, proportionate verification grounds, and reopening triggers. Evaluate external outcomes when they become observable. See the [judgment and prediction validation protocol](../judgment-validation.md) and [ten multi-actor cases](../examples/judgment-prediction-cases.md).

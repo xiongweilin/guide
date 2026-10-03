@@ -1,0 +1,33 @@
+name: Judgment and prediction cases
+
+on:
+  pull_request:
+    paths:
+      - "framework/judgment-validation*"
+      - "framework/examples/judgment-prediction-cases*"
+      - "framework/sufficiency*"
+      - "framework/dimensions/causality*"
+      - "framework/activities/decision*"
+      - "engineering/precise-semantics*"
+      - "tests/test_judgment_cases.py"
+      - ".github/workflows/judgment-validation.yml"
+  push:
+    paths:
+      - "framework/judgment-validation*"
+      - "framework/examples/judgment-prediction-cases*"
+      - "tests/test_judgment_cases.py"
+      - ".github/workflows/judgment-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run formal case and Markdown checks
+        run: python -m unittest discover -s tests -p "test_judgment_cases.py" -v

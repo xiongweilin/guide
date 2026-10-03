@@ -104,6 +104,8 @@ guide 的一部分可精确定义边界已经在 [distinction-self-reference-lea
 | [目的性有限行动者](./framework/purposeful-finite-actor.zh-CN.md) | 派生的工作主体：自指、连续性、有限性、目的、能力、生命周期与终止 |
 | [生命周期](./framework/lifecycle.zh-CN.md) | 从出现到终止的一般过程，以及认识性 / 承诺性转换 |
 | [充分性](./framework/sufficiency.zh-CN.md) | 当前边界何时足以支持下一转换 |
+| [判断与预测验证](./framework/judgment-validation.zh-CN.md) | 区分充分性、形式证明、经验预测和因果验证；保存可检查的前提与误差 |
+| [十个多行动者案例](./framework/examples/judgment-prediction-cases.zh-CN.md) | 带条件变化的形式模型回归案例与运行方法 |
 | [多行动者](./framework/multi-actor.zh-CN.md) | 多个局部边界、共享现实、互相影响、协调与冲突 |
 | [六个工作视角](./framework/dimensions/README.zh-CN.md) | 区分、关系、因果、时序、可能性、价值 |
 | [活动](./framework/activities/README.zh-CN.md) | 探索与决策作为两类派生活动 |
