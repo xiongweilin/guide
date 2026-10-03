@@ -2,8 +2,6 @@
 
 [English](evaluation.md) | [简体中文](evaluation.zh-CN.md)
 
-> Scope: A cross-domain **evaluation method for judgments, forecasts, and observed effects**, not a seventh working lens, foundational axiom, universal scoring rule, or substitute for domain validation and governance.
-
 ## 1. Separate four questions
 
 - **Transition sufficiency**: Is the current boundary adequately supported for a particular purpose and next transition? Sufficiency does not guarantee future correctness.
@@ -28,11 +26,9 @@ higher evaluation score != improvement in external objectives
 | Empirical forecast | Target population, issuance time, horizon, outcome definition, baseline | Freeze predictions, then obtain independent outcomes; evaluate errors and calibration | Causation or action authority |
 | Intervention / causal prediction | Intervention, comparator, outcome, identification assumptions, interference, setting | Suitable experiments, quasi-experiments, causal identification and transport checks | Causal effects from correlation alone |
 
-Normative questions need not have a single numerical ground truth. Assess factual premises, logical consistency, applicable norms, and procedure separately; do not promote a score into legitimacy.
+- **Normative claims**: Check factual premises, logical consistency, applicable norms, and procedure independently. A score alone does not establish legitimacy.
 
 ## 3. Minimal testable claim
-
-Where judgments or forecasts materially affect action, retain enough to reconstruct the following. These are **semantic responsibilities**, not requirements for one global database entity.
 
 ```text
 claim_id
@@ -55,9 +51,9 @@ error_or_counterexample / disposition / reopen_conditions
 
 ## 4. Comparing accuracy
 
-Check formal claims using proofs, counterexamples, or reproducible computations within their models. When applicability conditions change, requalify the claim before reusing it. Failure to find a counterexample is not a proof.
+- **Formal claims**: Verify with proofs, counterexamples, or reproducible computations. Recheck applicability when assumptions change; failure to find a counterexample is not a proof.
 
-For empirical forecasts, specify a baseline, loss, evaluation population, and split strategy beforehand. For a binary outcome y in {0,1} with forecast probability p, one option is the Brier loss (p-y)², lower being better. For continuous targets, MAE may be appropriate. When applicable, also report calibration, subgroup behavior, interval coverage, and uncertainty. Do not silently double-count events.
+- **Empirical forecasts**: Fix baseline, loss, evaluation population, and split strategy in advance. For binary outcomes, use Brier loss `(p-y)²` when appropriate; for continuous targets, consider MAE. Report calibration, subgroup behavior, coverage, and uncertainty as applicable. Do not double-count events.
 
 - Separate training, tuning, and evaluation chronologically when time matters; prevent future information leakage.
 - Compare against simple baselines and earlier versions on the same population, metric, and independently observed outcomes.
@@ -67,9 +63,7 @@ For empirical forecasts, specify a baseline, loss, evaluation population, and sp
 
 ## 5. Error attribution and reopening
 
-Distinguish errors in facts/evidence, subject/framing, derivation, model/identification assumptions, time/population transport, objectives/scoring rules, measurements, stochastic variation, other actors' adaptation, and changing environments.
-
-Procedure:
+- **Error categories**: Evidence, framing, derivation, model assumptions, transport, objectives, measurement, stochastic variation, strategic adaptation, and environment change.
 
 1. Check whether the outcome is due and independently observable; otherwise retain unknown status.
 2. Reconstruct the ex ante claim, boundary, scope, sources, and model version.
@@ -79,11 +73,9 @@ Procedure:
 
 ## 6. Multi-actor checks
 
-Reported bids and observable behavior do not directly reveal internal preferences; rules and proposing rights can alter outcomes; individual optimality does not imply collective optimality; equilibrium need not be unique or fair; publishing a model may change actors' strategies.
+- **Strategic behavior**: Observed bids do not establish internal preferences; proposing rights affect matching, individual and collective objectives differ, equilibria need not be unique or fair, and published models can alter strategies.
 
-Conditional game-theoretic predictions must specify repetition horizon, information, move order, preferences/utilities, and meaningful counterfactual changes.
-
-See formal cases in [prediction](prediction.md) and [leverage](leverage.md).
+- **Game assumptions**: Specify horizon, information, move order, preferences, payoffs, and material counterfactual changes.
 
 ## 7. Completion criteria and limits
 
@@ -91,5 +83,3 @@ See formal cases in [prediction](prediction.md) and [leverage](leverage.md).
 - **Empirical forecasts**: Require ex ante records, independent observations, fixed baselines, and repeatable errors. Do not claim measured improvement without actual outcomes.
 - **Deployment**: Keep validation separate from authority, effect verification, and recovery in the [action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
 - **Proportionality**: Match verification effort to risk and irreversibility, rather than requiring complex persistence for every minor transition.
-
-This protocol can make errors more detectable and improvements more falsifiable. It does not prove high accuracy or a unique universal judgment theory.

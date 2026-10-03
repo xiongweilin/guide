@@ -2,8 +2,6 @@
 
 [English](prediction.md) | [简体中文](prediction.zh-CN.md)
 
-Prediction asks: **What may follow under explicitly stated models, evidence, scope, and conditions?** It is conditional inference, not guaranteed outcomes or an automatic choice of action. A formal game equilibrium is not an empirical forecast of human behavior.
-
 ## Method
 
 1. Specify the target, outcome, time horizon, and applicability conditions; distinguish formal inference, empirical forecasts, and intervention/causal forecasts.
@@ -12,11 +10,7 @@ Prediction asks: **What may follow under explicitly stated models, evidence, sco
 4. Change material assumptions to test counterfactuals and sensitivity; actors may adapt to rules, published predictions, or others' actions.
 5. Freeze empirical forecasts, baselines and metrics ex ante; verify independent outcomes using [evaluation](evaluation.md).
 
-Foundations: [sufficiency](../framework/sufficiency.md), [causality](../framework/dimensions/causality.md), [possibility](../framework/dimensions/possibility.md), and [multi-actor systems](../framework/multi-actor.md).
-
 ## Formal-model cases
-
-These are finite mathematical fixtures, **not observational evidence about human behavior**. Each preserves assumptions, reproducible expectations, changes of conditions, and prohibited extrapolations.
 
 ## C01 One-shot prisoner's dilemma: individual versus collective optimum
 
@@ -46,7 +40,3 @@ These are finite mathematical fixtures, **not observational evidence about human
 - Expectation: Pure Nash equilibria are (S,S) and (H,H). With belief p that the other hunts stag, utility of S is 4p and utility of H is 3, equal at p=0.75.
 - Change: p=0.5 favors H; p=0.8 favors S.
 - Do not infer: Calculating a best response accurately estimates an actual opponent's probability.
-
-## Validation boundary
-
-Run `python -m unittest discover -s tests -p "test_judgment_cases.py" -v` from the repository root. These tests check finite instances, not general theorems or empirical predictive accuracy. For mechanism cases see [leverage](leverage.md); for validation methods see [evaluation](evaluation.md).

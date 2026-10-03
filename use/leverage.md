@@ -2,8 +2,6 @@
 
 [English](leverage.md) | [简体中文](leverage.zh-CN.md)
 
-Leverage asks: **Which feasible and authorized paths can use existing reality-side structures, other actors' independent actions, resources, institutions, and timing to advance a stated purpose?** It does not mean manufacturing control, manipulating others, or assuming one universally optimal strategy.
-
 ## Method
 
 1. Specify the purpose, acceptable outcomes, hard constraints, and affected actors; do not equate individual gains with collective welfare.
@@ -13,11 +11,7 @@ Leverage asks: **Which feasible and authorized paths can use existing reality-si
 5. Compare feasible paths for cost, fragility, lock-in, recoverability, and future options; form commitments only with proportionate grounds and authority.
 6. Verify real effects through [evaluation](evaluation.md) and revise on mismatch; do not confuse formal equilibrium with observed outcomes.
 
-Definitions: [relation](../framework/dimensions/relation.md), [temporality](../framework/dimensions/temporality.md), [possibility](../framework/dimensions/possibility.md), [multi-actor systems](../framework/multi-actor.md), and [decision](../framework/activities/decision.md). Strategic advantage does not confer authority or legitimacy.
-
 ## Formal mechanism cases
-
-The examples exhibit mechanisms, incentives, coordination and stability in **specified formal models**, not guarantees of real participants' behavior. Assumptions, outcomes, variations, and limitations are preserved.
 
 ## C03 Gale–Shapley: proposing side changes the stable allocation
 
@@ -58,9 +52,5 @@ The examples exhibit mechanisms, incentives, coordination and stability in **spe
 
 - Assumptions: Actors A/B/C each yield 0 alone; any pair yields 100; grand coalition yields 120. Transferable utilities, full allocation of coalition value.
 - Expectation A: Core empty; pair constraints summed require 2×120≥300, which is false.
-- Expectation B: Grand-coalition value 150 instead yields a nonempty core with unique allocation (50,50,50).
+- Change: Raising grand-coalition value from 120 to 150 gives a nonempty core with unique allocation (50,50,50).
 - Do not infer: Feasible pairwise cooperation guarantees a stable grand coalition.
-
-## Validation boundary
-
-Run `python -m unittest discover -s tests -p "test_judgment_cases.py" -v` from the repository root. Model fixtures do not establish empirical forecasts or normative permission; changed preferences, costs, institutions or participants require recalculation. See [prediction](prediction.md) for other conditional-inference cases.
