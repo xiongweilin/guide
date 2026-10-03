@@ -89,7 +89,7 @@ Lean 仓库已经证明了这个等价关系。它只是 guide 充分性概念�
 
 `足够观察到效果 ≠ 足够宣布目的完成`
 
-工程上更细的转换准入见 [`../engineering/action-chain.zh-CN.md`](../engineering/action-chain.zh-CN.md)。
+工程上更细的转换准入见 [`https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md`](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md)。
 
 ## 8. 暂定闭合与重开
 

@@ -8,13 +8,18 @@ on:
       - "framework/sufficiency*"
       - "framework/dimensions/causality*"
       - "framework/activities/decision*"
-      - "engineering/precise-semantics*"
+      - "minimal-derivation*"
+      - "framework/README*"
+      - "README*"
       - "tests/test_judgment_cases.py"
       - ".github/workflows/judgment-validation.yml"
   push:
     paths:
       - "framework/judgment-validation*"
       - "framework/examples/judgment-prediction-cases*"
+      - "minimal-derivation*"
+      - "framework/README*"
+      - "README*"
       - "tests/test_judgment_cases.py"
       - ".github/workflows/judgment-validation.yml"
 

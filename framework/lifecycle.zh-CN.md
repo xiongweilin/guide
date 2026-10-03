@@ -4,7 +4,7 @@
 
 生命周期描述一个目的性有限行动者从出现到终止的一般过程。它是框架层的过程结构，不是工程状态机。
 
-[最小推导](./foundations/minimal-derivation.zh-CN.md)中的条件依赖顺序不是生命周期时间线。最小自指及其后续新增条件规定什么结构足以成为工作主体；生命周期从该主体成立后开始，描述它如何持续经历现实。
+[最小推导](../minimal-derivation.zh-CN.md)中的条件依赖顺序不是生命周期时间线。最小自指及其后续新增条件规定什么结构足以成为工作主体；生命周期从该主体成立后开始，描述它如何持续经历现实。
 
 ## 1. 总体过程
 
@@ -80,7 +80,7 @@ guide 把暂定充分后形成选择的活动称为**决策**。
 
 `选择 / 行动 ≠ 现实效果 ≠ 后续反馈`
 
-更细的 Decision / Authorization / Execution / Effect / Observation / Outcome 等工程语义位于[工程行动链](../engineering/action-chain.zh-CN.md)。
+更细的 Decision / Authorization / Execution / Effect / Observation / Outcome 等工程语义位于[工程行动链](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md)。
 
 ## 6. 保持、修订与重新打开
 

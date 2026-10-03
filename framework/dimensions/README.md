@@ -29,4 +29,4 @@ Typical non-substitution:
 
 These mean “must not be silently substituted without qualification”, not that no mapping or derivation can exist.
 
-See [`../foundations/minimal-derivation.md`](../foundations/minimal-derivation.md).
+See [`../../minimal-derivation.md`](../../minimal-derivation.md).

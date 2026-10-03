@@ -12,6 +12,12 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = (
+    "README.md",
+    "README.zh-CN.md",
+    "minimal-derivation.md",
+    "minimal-derivation.zh-CN.md",
+    "framework/README.md",
+    "framework/README.zh-CN.md",
     "framework/judgment-validation.md",
     "framework/judgment-validation.zh-CN.md",
     "framework/examples/judgment-prediction-cases.md",

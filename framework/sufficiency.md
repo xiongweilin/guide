@@ -96,7 +96,7 @@ For example:
 
 `enough to observe an effect ≠ enough to declare purpose complete`
 
-Finer engineering transition admission is in [`../engineering/action-chain.md`](../engineering/action-chain.md).
+Finer engineering transition admission is in [`https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md`](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
 
 ## 8. Provisional closure and reopening
 

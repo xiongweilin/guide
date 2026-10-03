@@ -29,4 +29,4 @@
 
 这些不等式表示“不能未经资格判断静默替代”，不表示两者之间不能建立映射或推导。
 
-最小推导见 [`../foundations/minimal-derivation.zh-CN.md`](../foundations/minimal-derivation.zh-CN.md)。
+最小推导见 [`../../minimal-derivation.zh-CN.md`](../../minimal-derivation.zh-CN.md)。
