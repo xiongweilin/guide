@@ -9,17 +9,16 @@ on:
       - "framework/dimensions/causality*"
       - "framework/activities/decision*"
       - "minimal-derivation*"
-      - "framework/README*"
       - "README*"
+      - "framework/README*"
+      - "framework/lifecycle*"
+      - "framework/purposeful-finite-actor*"
       - "tests/test_judgment_cases.py"
       - ".github/workflows/judgment-validation.yml"
   push:
     paths:
       - "framework/judgment-validation*"
       - "framework/examples/judgment-prediction-cases*"
-      - "minimal-derivation*"
-      - "framework/README*"
-      - "README*"
       - "tests/test_judgment_cases.py"
       - ".github/workflows/judgment-validation.yml"
 
