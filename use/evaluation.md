@@ -1,6 +1,6 @@
 # Evaluation
 
-[English](./judgment-validation.md) | [简体中文](./judgment-validation.zh-CN.md)
+[English](evaluation.md) | [简体中文](evaluation.zh-CN.md)
 
 > Scope: A cross-domain **evaluation method for judgments, forecasts, and observed effects**, not a seventh working lens, foundational axiom, universal scoring rule, or substitute for domain validation and governance.
 

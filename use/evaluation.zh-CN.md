@@ -1,6 +1,6 @@
 # 评估
 
-[English](./judgment-validation.md) | [简体中文](./judgment-validation.zh-CN.md)
+[English](evaluation.md) | [简体中文](evaluation.zh-CN.md)
 
 > 定位：跨领域**判断、预测与现实效果的评估方法**；不是第七个工作视角、基础公理、统一评分器，也不取代领域验证或治理程序。
 
