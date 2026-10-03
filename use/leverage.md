@@ -52,5 +52,5 @@
 
 - Assumptions: Actors A/B/C each yield 0 alone; any pair yields 100; grand coalition yields 120. Transferable utilities, full allocation of coalition value.
 - Expectation A: Core empty; pair constraints summed require 2×120≥300, which is false.
-- Expectation B: Grand-coalition value 150 instead yields a nonempty core with unique allocation (50,50,50).
+- Change: Raising grand-coalition value from 120 to 150 gives a nonempty core with unique allocation (50,50,50).
 - Do not infer: Feasible pairwise cooperation guarantees a stable grand coalition.
