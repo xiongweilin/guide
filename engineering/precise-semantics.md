@@ -610,3 +610,19 @@ Semantic invariants and conformance tests constrain correctness, but passing the
 | **Efficiency** | Are useful results obtained with proportionate costs in time, computation, money, attention, coordination, maintenance, and foregone opportunities? |
 
 These are indicators of quality in use, not additional theoretical lenses, foundational axioms, or a universal proof of adequacy. Their relevance, measures, acceptance thresholds, and relative weights depend on the task and operating conditions. A good result on one indicator does not establish overall sufficiency; materially deteriorating reality-side results call for reviewing the current grounds and revising the applicable boundaries or contracts.
+
+## 28. Conditional integration of judgment and prediction validation
+
+Where a domain materially relies on forecasts, formal proofs, or evaluations for decision / authorization / execution admission, preserve **applicability conditions, sources and model versions, verification method, and current qualification**. Claims of improved empirical forecast quality require ex ante frozen predictions, independently obtained subsequent outcomes, a fixed baseline, and suitable error/calibration comparisons. Unavailable outcomes remain unknown, not fabricated hits.
+
+Existing domain records, evidence references, and audit lineage may carry these responsibilities. Do not introduce a universal Prediction table, global scorer, or mandatory cross-domain probability metric. Formal-model fixtures cannot substitute for reality-side readback; better internal scores do not prove external objective improvement; accurate predictions do not grant decision or execution authority.
+
+Conditional conformance checks:
+
+- Recompute applicable mathematical examples; neither manufacture solutions when nonexistence is proven nor mistake a failed search for a proof.
+- Requalify claims after material changes in assumptions, inputs, rules, evaluators, or versions.
+- Do not derive empirical forecast verification from an executor's success message; preserve unknown outcomes.
+- Do not silently change the baseline, horizon, evaluation population, or loss function when comparing forecast versions.
+- Observed outcomes alone do not identify causal effects or modify the authorization chain.
+
+See the [judgment and prediction validation protocol](../framework/judgment-validation.md) and [ten multi-actor cases](../framework/examples/judgment-prediction-cases.md) for methods and finite regression fixtures.
