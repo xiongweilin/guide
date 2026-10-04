@@ -290,6 +290,29 @@ class FormalCases(unittest.TestCase):
             self.assertEqual(len(found_prediction), 4)
             self.assertEqual(len(found_leverage), 6)
 
+    def test_leverage_interaction_examples(self):
+        expected = {
+            ".zh-CN.md": (
+                ("## 人与人的交互", "## 人与 AI 的交互", "## 交互记录与重新打开"),
+                ("- **情境：**", "- **交互：**", "- **承诺：**", "- **验收：**", "- **失败处理：**", "- **边界：**"),
+            ),
+            ".md": (
+                ("## Human-to-human interaction", "## Human-to-AI interaction", "## Interaction record and reopening"),
+                ("- **Situation:**", "- **Interaction:**", "- **Commitment:**", "- **Acceptance:**", "- **Failure path:**", "- **Boundary:**"),
+            ),
+        }
+        for suffix, (headings, fields) in expected.items():
+            content = (ROOT / ("use/leverage" + suffix)).read_text(encoding="utf-8")
+            self.assertTrue(all(heading in content for heading in headings))
+            self.assertLess(content.index(headings[0]), content.index(headings[1]))
+            self.assertLess(content.index(headings[1]), content.index(headings[2]))
+            self.assertLess(content.index(headings[2]), content.index("## C03 "))
+            for marker in ("### P1 ", "### A1 "):
+                self.assertEqual(content.count(marker), 1)
+                case = content.split(marker, 1)[1].split("\\n## ", 1)[0]
+                for field in fields:
+                    self.assertIn(field, case)
+
     def test_markdown_fences_and_local_links(self):
         fence = chr(96) * 3
         link = re.compile(r"\[[^\]]+\]\(([^)\s]+)\)")
