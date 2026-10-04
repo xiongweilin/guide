@@ -15,4 +15,4 @@
 
 六个视角只是描述当前边界的工作工具，不是不可约本体原语。充分性针对具体目的与下一转换成立，不自动推出结论真实、执行权限或全局最优。案例验证特定形式模型，不是现实行为预测。
 
-预测、借势和评估的应用方法见[使用层](../README.zh-CN.md#三层架构)：[预测](../use/prediction.zh-CN.md)、[借势](../use/leverage.zh-CN.md)、[评估](../use/evaluation.zh-CN.md)。
+预测、交互和评估的应用方法见[使用层](../README.zh-CN.md#三层架构)：[预测](../use/prediction.zh-CN.md)、[交互](../use/interaction.zh-CN.md)、[评估](../use/evaluation.zh-CN.md)。

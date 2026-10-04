@@ -15,4 +15,4 @@ This directory develops the working concepts built **conditionally** from the [r
 
 The six lenses are practical ways to describe a current boundary, not irreducible primitives. Sufficiency depends on a particular purpose and next transition; it does not establish truth, permission, or global optimality. The numbered examples test specific formal instances, not empirical predictions.
 
-Prediction, leverage, and evaluation methods live in the [use layer](../README.md#three-layers): [prediction](../use/prediction.md), [leverage](../use/leverage.md), [evaluation](../use/evaluation.md).
+Prediction, interaction, and evaluation methods live in the [use layer](../README.md#three-layers): [prediction](../use/prediction.md), [interaction](../use/interaction.md), [evaluation](../use/evaluation.md).
