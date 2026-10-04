@@ -309,7 +309,7 @@ class FormalCases(unittest.TestCase):
             self.assertLess(content.index(headings[2]), content.index("## C03 "))
             for marker in ("### P1 ", "### A1 "):
                 self.assertEqual(content.count(marker), 1)
-                case = content.split(marker, 1)[1].split("\\n## ", 1)[0]
+                case = content.split(marker, 1)[1].split("\n## ", 1)[0]
                 for field in fields:
                     self.assertIn(field, case)
 
