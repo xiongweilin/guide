@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "use/**"
+      - "basic-problems*"
       - "framework/sufficiency*"
       - "framework/dimensions/causality*"
       - "framework/activities/decision*"
@@ -17,6 +18,7 @@ on:
   push:
     paths:
       - "use/**"
+      - "basic-problems*"
       - "tests/test_judgment_cases.py"
       - ".github/workflows/judgment-validation.yml"
 

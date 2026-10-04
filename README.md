@@ -34,10 +34,12 @@ Further conditional additions:
 
 These arrows express **working dependency conditions**, not chronological stages, universal necessities, or mathematical identities. Local sufficiency is not complete knowledge; adding multiple actors does not by itself imply governance rights or an optimal social outcome.
 
+For the two bounded-execution questions, see [basic problems](basic-problems.md).
+
 ## Three layers
 
 - **Minimal derivation:** [conditions and non-conclusions](minimal-derivation.md).
 - **Framework:** [reality, actors, sufficiency, exploration/decision, and six working lenses](framework/README.md).
-- **Use:** [prediction](use/prediction.md), [leverage](use/leverage.md), and [evaluation](use/evaluation.md).
+- **Use:** [prediction](use/prediction.md), [interaction](use/interaction.md), and [evaluation](use/evaluation.md).
 
 Formal proofs are maintained in [Lean](https://github.com/xiongweilin/distinction-self-reference-lean); engineering implementation and contracts in [AIOS](https://github.com/xiongweilin/aios).

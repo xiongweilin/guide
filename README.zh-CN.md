@@ -34,10 +34,12 @@
 
 以上箭头表示**工作性的条件依赖**，不是现实中的时间演化顺序、普遍必要条件或数学同一。局部充分性不等于完整知识；多个行动者的存在也不自动产生治理权利或集体最优结果。
 
+有限自主执行的两个工作性问题见[基本问题](basic-problems.zh-CN.md)。
+
 ## 三层架构
 
 - **最小推导**：[成立条件与不能推出的结论](minimal-derivation.zh-CN.md)。
 - **工作框架**：[现实、行动者、充分性、探索／决策与六个工作视角](framework/README.zh-CN.md)。
-- **使用层**：[预测](use/prediction.zh-CN.md)、[借势](use/leverage.zh-CN.md)、[评估](use/evaluation.zh-CN.md)。
+- **使用层**：[预测](use/prediction.zh-CN.md)、[交互](use/interaction.zh-CN.md)、[评估](use/evaluation.zh-CN.md)。
 
 形式化证明见 [Lean 仓库](https://github.com/xiongweilin/distinction-self-reference-lean)，工程实现和契约见 [AIOS 仓库](https://github.com/xiongweilin/aios)。
