@@ -12,7 +12,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = tuple(sorted(str(path.relative_to(ROOT)) for path in ROOT.rglob("*.md")))
-USE_STEMS = ("prediction", "leverage", "evaluation")
+USE_STEMS = ("prediction", "interaction", "evaluation")
 USE_DOCS = tuple(
     "use/" + stem + suffix for stem in USE_STEMS
     for suffix in (".md", ".zh-CN.md")
@@ -218,7 +218,7 @@ class FormalCases(unittest.TestCase):
         self.assertEqual(actual, expected)
 
     def test_use_case_fields(self):
-        for stem in ("prediction", "leverage"):
+        for stem in ("prediction", "interaction"):
             for suffix in (".md", ".zh-CN.md"):
                 content = (ROOT / ("use/" + stem + suffix)).read_text(encoding="utf-8")
                 cases = re.findall(
@@ -271,6 +271,26 @@ class FormalCases(unittest.TestCase):
             for stem in USE_STEMS:
                 self.assertIn("use/" + stem + suffix, readme)
 
+    def test_basic_problems_bilingual(self):
+        for suffix, headings in (
+            (".md", ("## 1. Local sufficiency for the next transition", "## 2. The interaction–meaning gap")),
+            (".zh-CN.md", ("## 一、下一转换的局部充分性问题", "## 二、交互与含义的断层问题")),
+        ):
+            content = (ROOT / ("basic-problems" + suffix)).read_text(encoding="utf-8")
+            readme = (ROOT / ("README" + suffix)).read_text(encoding="utf-8")
+            self.assertIn("basic-problems" + suffix, readme)
+            for heading in headings:
+                self.assertIn(heading, content)
+
+    def test_interaction_types_bilingual(self):
+        for suffix, headings in (
+            (".md", ("## Human–human interaction", "## Human–AI interaction", "## AI–AI interaction")),
+            (".zh-CN.md", ("## 人与人交互", "## 人与 AI 交互", "## AI 与 AI 交互")),
+        ):
+            content = (ROOT / ("use/interaction" + suffix)).read_text(encoding="utf-8")
+            for heading in headings:
+                self.assertIn(heading, content)
+
     def test_evaluation_verification_elements(self):
         for suffix in (".md", ".zh-CN.md"):
             content = (ROOT / ("use/evaluation" + suffix)).read_text(encoding="utf-8")
@@ -279,16 +299,16 @@ class FormalCases(unittest.TestCase):
 
     def test_use_case_coverage(self):
         expected_prediction = {"01", "02", "04", "05"}
-        expected_leverage = {"03", "06", "07", "08", "09", "10"}
+        expected_interaction = {"03", "06", "07", "08", "09", "10"}
         for suffix in (".md", ".zh-CN.md"):
             prediction = (ROOT / ("use/prediction" + suffix)).read_text(encoding="utf-8")
-            leverage = (ROOT / ("use/leverage" + suffix)).read_text(encoding="utf-8")
+            interaction = (ROOT / ("use/interaction" + suffix)).read_text(encoding="utf-8")
             found_prediction = re.findall(r"^## C([0-9][0-9]) ", prediction, re.MULTILINE)
-            found_leverage = re.findall(r"^## C([0-9][0-9]) ", leverage, re.MULTILINE)
+            found_interaction = re.findall(r"^## C([0-9][0-9]) ", interaction, re.MULTILINE)
             self.assertEqual(set(found_prediction), expected_prediction)
-            self.assertEqual(set(found_leverage), expected_leverage)
+            self.assertEqual(set(found_interaction), expected_interaction)
             self.assertEqual(len(found_prediction), 4)
-            self.assertEqual(len(found_leverage), 6)
+            self.assertEqual(len(found_interaction), 6)
 
     def test_markdown_fences_and_local_links(self):
         fence = chr(96) * 3
