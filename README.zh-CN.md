@@ -42,4 +42,10 @@
 - **工作框架**：[现实、行动者、充分性、探索／决策与六个工作视角](framework/README.zh-CN.md)。
 - **使用层**：[预测](use/prediction.zh-CN.md)、[交互](use/interaction.zh-CN.md)、[评估](use/evaluation.zh-CN.md)。
 
-形式化证明见 [Lean 仓库](https://github.com/xiongweilin/distinction-self-reference-lean)，工程实现和契约见 [AIOS 仓库](https://github.com/xiongweilin/aios)。
+## 相关项目与证据边界
+
+- [distinction-self-reference-lean](https://github.com/xiongweilin/distinction-self-reference-lean) 在明确假设下形式化特定数学模型和定理，不由此证明普遍本体或经验保证。
+- [AIOS](https://github.com/xiongweilin/aios) 维护具体任务域的契约、授权、执行、验证和恢复接口；这些接口的现行实现与测试以 AIOS 为准。
+- [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) 研究特定执行接口上的有界行动准入。[主张与证据索引](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.zh-CN.md) 分开记录有限结构检查、隔离集成和正负并存的前瞻委托实验。
+
+这些项目之间是**有条件的解释与实现关系**，不表示 guide 的解释型充分性已经通过独立评分者一致性验证，不表示 BAA 准入等同于认识充分，也不表示已经证实部署会改善普遍判断质量、社会总劳动负担或生活质量。
