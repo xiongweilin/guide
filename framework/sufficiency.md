@@ -112,7 +112,7 @@ In a multi-actor environment:
 
 `adequate grounds ≠ decision or execution authority`
 
-Sufficiency concerns epistemic and transition grounds. Permission, governance, and legitimate execution require additional structure; engineering Authorization belongs in `engineering/`.
+Sufficiency concerns epistemic and transition grounds. Permission, governance, and legitimate execution require additional structure. Concrete authorization and execution contracts live in [AIOS World Runtime](https://github.com/xiongweilin/aios/blob/main/docs/kernel/world_runtime/contracts/runtime-contracts.md), not in this conceptual sufficiency classification.
 
 ## 10. Compositional sufficiency
 
@@ -146,3 +146,9 @@ As recoverability weakens and irreversibility rises, proportionally stronger gro
 Adequate grounds for a next transition do not guarantee a true conclusion, a successful forecast, or authority to act. When a transition materially depends on formal derivation, empirical prediction, or causal expectation, record the relevant model conditions, validation method, and reopening triggers. A prediction miss calls first for checking outcome observability, stochastic variation, evidence, model applicability, and environmental changes—not automatic rejection of the entire boundary.
 
 See the [judgment and prediction validation protocol](../use/evaluation.md) for verification types, ex ante records, and error attribution. This adds neither a new definition of sufficiency nor a requirement to statistically test every decision.
+
+## 12. BAA admission is a different three-way decision
+
+[BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol/blob/main/spec/state-machine.md) uses `deny / hold / admit` for a **prescriptive, interface-bounded enforcement decision**. A denied request may have sufficient epistemic support but lack authority or violate a hard constraint; a held request may lack a current observation, safe fallback, or bounded composition; admission authorizes only an exact-scope capability under explicit assumptions.
+
+These operational results are **not** a relabeling or validation of guide's `insufficient / materially uncertain / sufficient` judgments. BAA's [claim/evidence index](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.md) reports limited implementation and delegation evidence, not inter-rater reproducibility for interpretive sufficiency or general improvement in human decisions.
