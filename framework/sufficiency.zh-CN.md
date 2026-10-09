@@ -105,7 +105,7 @@ Lean 仓库已经证明了这个等价关系。它只是 guide 充分性概念�
 
 `充分依据 ≠ 决定或执行权限`
 
-充分性解决的是认识与转换依据；权限、治理和合法执行需要额外结构。工程上的授权边界放在 `engineering/`。
+充分性解决的是认识与转换依据；权限、治理和合法执行需要额外结构。具体授权与执行契约由 [AIOS World Runtime](https://github.com/xiongweilin/aios/blob/main/docs/kernel/world_runtime/contracts/runtime-contracts.zh-CN.md) 维护，不属于本概念分类。
 
 ## 10. 组合充分性
 
@@ -139,3 +139,9 @@ Lean 仓库已经证明了这个等价关系。它只是 guide 充分性概念�
 当前依据足以支持下一转换，不等于结论必然真实、预测必然命中，或已有权限执行。若下一转换依赖重要的形式推导、经验预测或因果预期，还要说明对应主张的模型条件、验证方式与错误后的重新打开条件。预测失败应先区分结果是否可验证、随机偏差、证据错误、模型失效及环境变化，不能由一次偏差直接推翻整个边界。
 
 可操作的验证类型、事前记录与误差归因见[判断与预测验证协议](../use/evaluation.zh-CN.md)；这不构成新的充分性定义或所有决策必须进行统计检验的要求。
+
+## 12. BAA 的准入三态不同于充分性三态
+
+[BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol/blob/main/spec/state-machine.zh-CN.md) 的 `deny / hold / admit` 是**规定型、接口有界的执行准入决定**。请求即使有充分认识依据，也可能因为无权限或违反硬约束而被拒绝；缺少当前回读、安全恢复条件或可界定的组合风险时可能暂缓；准入也只在明确假设下授予精确范围的能力。
+
+这些操作结果**不是** guide 的 `依据不足 / 实质不确定 / 足够` 的改名或验证。BAA 的[主张与证据索引](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.zh-CN.md)提供有限实现和委托实验依据，不证明解释型充分性的评分者一致性或普遍判断质量改善。
