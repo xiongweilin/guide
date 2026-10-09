@@ -42,4 +42,10 @@ For the two bounded-execution questions, see [basic problems](basic-problems.md)
 - **Framework:** [reality, actors, sufficiency, exploration/decision, and six working lenses](framework/README.md).
 - **Use:** [prediction](use/prediction.md), [interaction](use/interaction.md), and [evaluation](use/evaluation.md).
 
-Formal proofs are maintained in [Lean](https://github.com/xiongweilin/distinction-self-reference-lean); engineering implementation and contracts in [AIOS](https://github.com/xiongweilin/aios).
+## Related projects and evidence boundaries
+
+- [distinction-self-reference-lean](https://github.com/xiongweilin/distinction-self-reference-lean) formalizes particular mathematical models and theorems under stated assumptions; it does not establish a universal ontology or empirical guarantees.
+- [AIOS](https://github.com/xiongweilin/aios) maintains executable domain contracts, authorization, execution, verification, and recovery surfaces. Its current implementation and tests, not guide, govern these interfaces.
+- [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) studies bounded action admission over specified execution interfaces. Its [claim/evidence index](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.md) distinguishes finite structural checks, isolated integrations, and mixed prospective delegation results.
+
+These projects are connected by conditional interpretations, **not** by a proof that guide's interpretive sufficiency judgments are reproducible across raters, that BAA's admission decisions establish epistemic sufficiency, or that deployment improves human judgment, total labor, or quality of life.
