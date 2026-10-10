@@ -21,3 +21,11 @@ This is separate from the rater reproducibility study. Agreement between reviewe
 ## Interpretation and reversal
 
 A gain under unequal time, information, or training does not identify a guide-specific effect. If the checklist performs equivalently under equal inputs, remove the claim that guide adds measurable benefit for this task; that result does not invalidate the conceptual framework as a whole. No benefit claim is currently supported because the study has not been run.
+
+## Reproducible analysis gate (no study data yet)
+
+`python use/studies/analyze_judgment_benefit.py locked-review-records.csv` checks for exactly one guide and one checklist row per case, matched case version, evidence cutoff, source reference, training and allowed review time, separately recorded actual seconds, and independent adjudication status. Its exact two-sided sign calculation uses only adjudicated discordant pairs; unknown outcomes remain unknown and enter a conservative full-sample bound rather than being scored as success or failure.
+
+The input columns are `case_id, arm, case_version, information_cutoff, source_ref, training_seconds, budget_seconds, elapsed_seconds, outcome_status, adjudicated_correct, assessor_blinded`. Allowed values are `arm=guide|checklist`, `outcome_status=known|unknown`, and `adjudicated_correct=0|1` only when known; otherwise blank or `NA`. `assessor_blinded=yes` is an attestation, **not a machine proof of independence**. Each case's provenance and true cutoff still require external audit. Synthetic unit fixtures are never study observations.
+
+The analysis tool deliberately does not infer causal benefit, a sampling population, protocol preregistration, or cross-domain generalization. Before use with real data, freeze the independent outcome rubric and recruitment/allocation protocol separately and publish failure and missingness counts.
