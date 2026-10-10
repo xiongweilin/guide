@@ -40,7 +40,7 @@
 
 - **最小推导**：[成立条件与不能推出的结论](minimal-derivation.zh-CN.md)。
 - **工作框架**：[现实、行动者、充分性、探索／决策与六个工作视角](framework/README.zh-CN.md)。
-- **使用层**：[预测](use/prediction.zh-CN.md)、[交互](use/interaction.zh-CN.md)、[评估](use/evaluation.zh-CN.md)。
+- **使用层**：[预测](use/prediction.zh-CN.md)、[交互](use/interaction.zh-CN.md)、[评估](use/evaluation.zh-CN.md)，以及[研究与影响路径说明](use/studies/README.zh-CN.md)。
 
 ## 相关项目与证据边界
 

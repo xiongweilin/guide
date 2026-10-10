@@ -83,3 +83,9 @@ error_or_counterexample / disposition / reopen_conditions
 - **Empirical forecasts**: Require ex ante records, independent observations, fixed baselines, and repeatable errors. Do not claim measured improvement without actual outcomes.
 - **Deployment**: Keep validation separate from authority, effect verification, and recovery in the [action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
 - **Proportionality**: Match verification effort to risk and irreversibility, rather than requiring complex persistence for every minor transition.
+
+## 8. Research proposals
+
+- [Sufficiency rater study](studies/sufficiency-raters-v1.md) is a draft for testing reproducibility of interpretive classifications. It has no collected ratings and is not preregistered.
+- [Judgment benefit study](studies/judgment-benefit-v1.md) is a draft comparison with an equal-input checklist baseline. It has no outcome data and establishes no guide-specific benefit.
+- The [impact pathway](studies/impact-pathway.md) separates bounded execution evidence from unmeasured claims about total labor and human benefit.
