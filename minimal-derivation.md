@@ -33,7 +33,7 @@ Bounded control plus feedback supports action and revision without a retained se
 
 ## 5. Limits
 
-A finite set of possible worlds, authorized steps and qualified observations never proves that the model captures all real hazards. The formal common-action result in [Lean RobustAction](https://github.com/xiongweilin/distinction-self-reference-lean/blob/research/contingent-safe-execution-v1/DistinctionSelfReference/RobustAction.lean) is conditional; the [BAA policy compiler](https://github.com/xiongweilin/BAA-Protocol/blob/research/contingent-safe-execution-v1/baa_protocol/contingent_policy.py) is a finite constructive implementation with independent validation, not a production guarantee.
+A finite set of possible worlds, authorized steps and qualified observations never proves that the model captures all real hazards. The formal common-action result in [Lean RobustAction](https://github.com/xiongweilin/distinction-self-reference-lean/blob/main/DistinctionSelfReference/RobustAction.lean) is conditional; the [BAA policy compiler](https://github.com/xiongweilin/BAA-Protocol/blob/main/baa_protocol/contingent_policy.py) is a finite constructive implementation with independent validation, not a production guarantee.
 
 Compare against equally equipped conditional-planning baselines and measure all C0/C1/C2 delivery, cost, unknown and unsafe outcomes; a positive result is not assumed.
 
