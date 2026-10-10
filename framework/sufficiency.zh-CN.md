@@ -145,3 +145,7 @@ Lean 仓库已经证明了这个等价关系。它只是 guide 充分性概念�
 [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol/blob/main/spec/state-machine.zh-CN.md) 的 `deny / hold / admit` 是**规定型、接口有界的执行准入决定**。请求即使有充分认识依据，也可能因为无权限或违反硬约束而被拒绝；缺少当前回读、安全恢复条件或可界定的组合风险时可能暂缓；准入也只在明确假设下授予精确范围的能力。
 
 这些操作结果**不是** guide 的 `依据不足 / 实质不确定 / 足够` 的改名或验证。BAA 的[主张与证据索引](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.zh-CN.md)提供有限实现和委托实验依据，不证明解释型充分性的评分者一致性或普遍判断质量改善。
+
+## 结构性特殊情形：共同安全行动
+
+在给定的可能世界集合 W(H) 与外部授权的安全行动集合 A(w) 下，若所有 A(w) 的交集非空，则无需先确定唯一真实世界即可选择共同安全行动。交集为空仍可能借助可信观测与完整条件策略完成任务。该算法条件不等价于解释性充分性，且要求世界模型可靠覆盖实际危险；策略本身不产生执行权限。见 [行动优先的最小推导](../minimal-derivation.zh-CN.md)。
