@@ -26,3 +26,7 @@
 - [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) 研究特定执行接口上的有界行动准入。[主张与证据索引](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.zh-CN.md) 分开记录有限结构检查、隔离集成和正负并存的前瞻委托实验。
 
 这些项目之间是**有条件的解释与实现关系**，不表示 guide 的解释型充分性已经通过独立评分者一致性验证，不表示 BAA 准入等同于认识充分，也不表示已经证实部署会改善普遍判断质量、社会总劳动负担或生活质量。
+
+## 有界执行的基本问题
+
+原有两个问题的完整定义见 [基本问题](basic-problems.zh-CN.md)。
