@@ -1,101 +1,22 @@
-# Lifecycle: from emergence to termination
+# Action lifecycle: observe, compile, qualify, execute, verify
 
-[English](./lifecycle.md) | [简体中文](./lifecycle.zh-CN.md)
+[English](lifecycle.md) | [简体中文](lifecycle.zh-CN.md)
 
-Lifecycle describes the general process of a purposeful finite actor from emergence to termination. It is a framework-level process, not an engineering state machine.
+A bounded action system need not reenact self-reference as a chronological developmental stage. A minimal useful cycle is:
 
-The dependency order in the [minimal derivation](../minimal-derivation.md) is not a lifecycle timeline. Minimal self-reference and the added conditions define what counts as the working subject; lifecycle begins once that subject exists and tracks how it continues through reality.
+1. **Acquire** a versioned, fallible world observation and an independent authority record.
+2. **Compile** the next common-safe action, or a finite conditional policy with every observation branch covered.
+3. **Qualify** the concrete step under present time, authority, interface scope, reachable fallback and budget.
+4. **Attempt** through a mediated executor, keeping its durable effect identity and uncertainty.
+5. **Observe independently** and reconcile unknown outcomes before any further conflicting action.
+6. **Retain, revise or reopen** the belief, goal, constraints, policy or recovery path when new evidence changes what is qualified.
 
-## 1. Overall process
+This cycle can stop, hold or terminate without a claim of success. Its planning phase may prepare future conditional branches, but does not grant permission for their later execution.
 
-```text
-emergence / birth
-    ↓
-reality acts on actor
-    ↓
-retained history / current self-related state
-    ↓
-form current boundary B
-    ↓
-sufficiency for next transition S(B, P, T)
-    ├─ insufficient / material uncertain → epistemic transition: explore / revise ─┐
-    └─ sufficient                       → commitment transition: choose / act     │
-                                                                                │
-                                                                                ▼
-                                                                              reality
-                                                                                │
-                                                                          effect / feedback
-                                                                                │
-                                                             retain / revise / reopen
-                                                                                │
-                                                                                └──► next loop
-    …
-    ↓
-termination / death
-```
+**Crucial distinctions:** plan ≠ capability; capability ≠ attempted effect; attempted effect ≠ verified real effect; verified effect ≠ completed purpose. Unknown outcomes are not a reason to blindly retry.
 
-An actor can contain many nested loops. The framework does not require every activity to follow one strict linear pipeline.
+### Reflexive life histories
 
-## 2. Initial stage
+When a controller also has retained self-reference and identity continuity, the above action cycles can be analyzed as one actor's history, including its changing self-model and eventual termination. Such a structure is optional and adds no rights or governance legitimacy by itself. Termination does not erase residual effects.
 
-The first observed actor state need not expose a complete model or replay the foundation as chronological stages.
-
-At minimum, prior reality exposure must be able to leave state relevant to later self-reference and transition:
-
-`Reality → retained state → later transition`
-
-For guide's working actor, this retained history sits on top of the minimal self-referential structure already defined in the foundation.
-
-Stable objects, relations, causal hypotheses, temporal structure, candidates, purposes, and commitments can be articulated later or remain partly implicit.
-
-## 3. Current boundary
-
-Current boundary B is the local representation and epistemic state actually callable by the actor for the current activity.
-
-It can be incomplete, wrong, stale, differently granular across activities, and changed by new tools, permissions, relations, and experience.
-
-Where the actor has a richer self-model, that model is also part of this boundary and may be revised without requiring loss of identity continuity.
-
-The current six working lenses are only one decomposition of B.
-
-## 4. Two major transition classes
-
-### Epistemic transitions
-
-Primarily change what the actor knows, distinguishes, or frames, including observation, probing, comparison, supporting or defeating claims, candidate generation, reframing, and revision of the current boundary.
-
-guide calls purposeful epistemic transition under insufficient boundary **exploration**.
-
-### Commitment transitions
-
-Primarily form a choice, commitment, or direction of influence on reality, including selecting a candidate, allocating one's own resources, entering an action path, and forming commitments that alter later reality.
-
-guide calls choice after provisional sufficiency **decision**.
-
-## 5. Influence on reality is not an internal state transition
-
-An internally formed choice does not mean reality has already changed.
-
-At framework level keep at least:
-
-`choice / action ≠ real effect ≠ later feedback`
-
-Finer Decision / Authorization / Execution / Effect / Observation / Outcome engineering semantics belong in [the engineering action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
-
-## 6. Retain, revise, and reopen
-
-After feedback, at least three outcomes are possible:
-
-- **retain**: the current boundary remains adequate;
-- **revise**: update values, relations, scope, grounds, or self-model within the current framing;
-- **reopen**: prior provisional closure itself loses sufficiency and candidates, framing, or working lenses must be reopened.
-
-`reopening ≠ erasing all prior history`
-
-## 7. Termination
-
-At termination the actor no longer produces new self-transitions. Termination may come from natural lifetime, external shutdown, dissolution, resource exhaustion, unrecoverable failure, or retirement after purpose completion.
-
-guide does not assume that every termination is reversible or that continued existence is always the highest value.
-
-Prior real effects may continue into the lifecycles of other actors.
+See [the action-first derivation](../minimal-derivation.md) and the governed [AIOS action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
