@@ -16,9 +16,14 @@ on:
       - "tests/**"
       - ".github/workflows/judgment-validation.yml"
   push:
+    branches: [main, 'research/**']
     paths:
       - "use/**"
       - "basic-problems*"
+      - "framework/**"
+      - "minimal-derivation*"
+      - "README*"
+      - "research/**"
       - "tests/**"
       - ".github/workflows/judgment-validation.yml"
 
