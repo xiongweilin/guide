@@ -27,6 +27,10 @@ def freeze(cases: list[dict[str, str]], *, seed: int) -> tuple[list[dict[str, st
             raise ValueError("case descriptor must be an object")
         if PROHIBITED & {str(k).lower() for k in case}:
             raise ValueError("case descriptors must not contain outcomes or ratings")
+        # Fail closed on other fields too; a benign-looking 'truth_label'
+        # can otherwise leak an answer through allocation inputs.
+        if set(case) != set(REQUIRED):
+            raise ValueError("case descriptors must contain exactly the provenance fields")
         if not all(isinstance(case.get(key), str) and case[key].strip() for key in REQUIRED):
             raise ValueError("case descriptor must have nonempty provenance fields")
         if case["case_id"] in seen:
