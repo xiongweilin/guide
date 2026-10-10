@@ -40,7 +40,7 @@ For the two bounded-execution questions, see [basic problems](basic-problems.md)
 
 - **Minimal derivation:** [conditions and non-conclusions](minimal-derivation.md).
 - **Framework:** [reality, actors, sufficiency, exploration/decision, and six working lenses](framework/README.md).
-- **Use:** [prediction](use/prediction.md), [interaction](use/interaction.md), and [evaluation](use/evaluation.md).
+- **Use:** [prediction](use/prediction.md), [interaction](use/interaction.md), and [evaluation](use/evaluation.md), with the [study and impact-pathway notes](use/studies/README.md).
 
 ## Related projects and evidence boundaries
 

@@ -83,3 +83,9 @@ error_or_counterexample / disposition / reopen_conditions
 - **经验预测**：存在事前记录、独立结果、固定基线和可重复的误差统计；没有真实结果就不能宣称预测准确性提升。
 - **部署与行动**：与[行动链](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md)中的授权、效果验证和恢复保持分离。
 - **效率**：按风险和不可逆程度选择验证深度，避免所有低风险动作都引入复杂持久化。
+
+## 8. 研究提案
+
+- [充分性评分者研究](studies/sufficiency-raters-v1.zh-CN.md)是检验解释型分类可重复性的草案；尚无评分数据，也未预注册。
+- [判断收益研究](studies/judgment-benefit-v1.zh-CN.md)拟与等投入的简单清单比较；尚无结果数据，不能据此声称 guide 有独立增益。
+- [影响路径](studies/impact-pathway.zh-CN.md)将有界执行证据与尚未测量的总劳动及人的收益主张分开。
