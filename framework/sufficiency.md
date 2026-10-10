@@ -2,7 +2,7 @@
 
 [English](./sufficiency.md) | [简体中文](./sufficiency.zh-CN.md)
 
-Sufficiency is the key relation that lets a purposeful finite actor continue acting without a complete representation of reality.
+Sufficiency is a transition-relative relation that lets a bounded controller continue acting without a complete representation of reality.
 
 It asks:
 
@@ -11,6 +11,10 @@ It asks:
 Abstractly: `S(B, P, T) → {insufficient, materially uncertain, sufficient}`.
 
 B is the current boundary and epistemic state, P the current purpose / constraint / acceptability condition, and T the proposed next transition.
+
+## 0. Constructive robust-action special case
+
+For a declared compatible-world set W(H) and externally authorized safe action set A(w), a common action in the intersection of all A(w) can proceed without identifying the real world. If that intersection is empty, a qualified observation and complete contingent policy may still be feasible. This **algorithmic condition** is narrower than interpretive sufficiency; the model must overapproximate reality, and an issued capability is still required for execution. See [action-first derivation](../minimal-derivation.md).
 
 ## 1. Sufficiency is not completeness
 

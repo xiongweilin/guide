@@ -2,43 +2,20 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-A minimal, **conditional** derivation beginning with self-reference under the constraint of external reality. It does not propose an ultimate ontology or assume that a model represents reality completely.
+**Action-first framework for bounded controllers, partial information, safe commitments, feedback, and optional reflexive self-models.** The [minimal derivation](minimal-derivation.md) now starts from the weakest goal-directed action system; retained self-reference is an optional strengthening rather than a prerequisite. The former self-reference-first hierarchy remains an identified specialized model, not a universal ontology.
 
-## Starting conditions
+## Main conceptual changes
 
-1. **External constraint:** reality is not exhausted by a current representation and continues to constrain it.
-2. **Reflexive distinction:** the distinction process distinguishes itself from non-self reality.
-3. **Retained re-entry:** the self / non-self difference is retained in the current representation and can itself be distinguished again.
+- **Robust next action:** identify an action that stays safe and authorized across the compatible-world set, without requiring complete reality identification.
+- **Contingent plan:** if no common action exists, a qualified observation may select among fully covered, precompiled safe branches.
+- **Reality/authority split:** a candidate can be epistemically adequate but unauthorized; neither guide nor a compiled plan issues permissions.
+- **Self-model as extension:** identity, re-entry, corrigibility and multi-actor governance introduce additional constraints only when needed.
 
-Together, these conditions establish only the weakest **minimal self-reference** used by guide. They do **not** establish a continuing self, agency, purpose, consciousness, or normativity.
-
-## Conditional dependency structure
-
-```text
-external constraint + reflexive distinction + retained re-entry
-    → minimal self-reference
-    + identity continuity → continuing self
-    + action changing future reality → actor
-    + bounded lifetime and capacities → finite actor
-    + action-relevant direction → purposeful finite actor
-
-Additional branch from continuing self:
-    + reality-side revisability → corrigible self-model
-    (not a prerequisite for being an actor)
-
-Further conditional additions:
-    + explore / commit alternative → local sufficiency question
-    + correction requirement → revision / reopening
-    + other purposeful finite actors → multi-actor interaction
-```
-
-These arrows express **working dependency conditions**, not chronological stages, universal necessities, or mathematical identities. Local sufficiency is not complete knowledge; adding multiple actors does not by itself imply governance rights or an optimal social outcome.
-
-For the two bounded-execution questions, see [basic problems](basic-problems.md).
+These are testable distinctions, not evidence of human judgment benefit or universal autonomy.
 
 ## Three layers
 
-- **Minimal derivation:** [conditions and non-conclusions](minimal-derivation.md).
+- **Minimal derivation:** [action-first conditions, optional self-reference and limits](minimal-derivation.md).
 - **Framework:** [reality, actors, sufficiency, exploration/decision, and six working lenses](framework/README.md).
 - **Use:** [prediction](use/prediction.md), [interaction](use/interaction.md), and [evaluation](use/evaluation.md), with the [study and impact-pathway notes](use/studies/README.md).
 
@@ -49,3 +26,7 @@ For the two bounded-execution questions, see [basic problems](basic-problems.md)
 - [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) studies bounded action admission over specified execution interfaces. Its [claim/evidence index](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.md) distinguishes finite structural checks, isolated integrations, and mixed prospective delegation results.
 
 These projects are connected by conditional interpretations, **not** by a proof that guide's interpretive sufficiency judgments are reproducible across raters, that BAA's admission decisions establish epistemic sufficiency, or that deployment improves human judgment, total labor, or quality of life.
+
+## Bounded execution problems
+
+The two established questions remain explicit in [basic problems](basic-problems.md).
