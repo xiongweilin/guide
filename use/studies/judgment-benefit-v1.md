@@ -22,6 +22,10 @@ This is separate from the rater reproducibility study. Agreement between reviewe
 
 A gain under unequal time, information, or training does not identify a guide-specific effect. If the checklist performs equivalently under equal inputs, remove the claim that guide adds measurable benefit for this task; that result does not invalidate the conceptual framework as a whole. No benefit claim is currently supported because the study has not been run.
 
+## Allocation freeze tool (no participants or outcomes)
+
+Before recruitment or rating, use `python use/studies/freeze_allocation.py independent-case-descriptors.json frozen-allocation --seed <precommitted-integer>`. The JSON must contain a list of records with `case_id`, `case_version`, `information_cutoff`, and `source_ref`, sourced independently and fixed before assignment. The script produces a two-arm A/B allocation CSV and a manifest with SHA-256 fingerprints and balanced arm order; it refuses to overwrite an existing freeze. Assignment *slots* are not reviewers, blinding evidence or human outcomes. Two distinct actual reviewers must later be assigned per paired case, with true assessor independence verified externally. Record the seed and complete case pool in the external preregistration before collecting outcomes; the tool alone is not preregistration.
+
 ## Reproducible analysis gate (no study data yet)
 
 `python use/studies/analyze_judgment_benefit.py locked-review-records.csv` checks for exactly one guide and one checklist row per case, matched case version, evidence cutoff, source reference, training and allowed review time, separately recorded actual seconds, and independent adjudication status. Its exact two-sided sign calculation uses only adjudicated discordant pairs; unknown outcomes remain unknown and enter a conservative full-sample bound rather than being scored as success or failure.
