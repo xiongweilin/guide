@@ -26,3 +26,7 @@ These are testable distinctions, not evidence of human judgment benefit or unive
 - [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) studies bounded action admission over specified execution interfaces. Its [claim/evidence index](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.md) distinguishes finite structural checks, isolated integrations, and mixed prospective delegation results.
 
 These projects are connected by conditional interpretations, **not** by a proof that guide's interpretive sufficiency judgments are reproducible across raters, that BAA's admission decisions establish epistemic sufficiency, or that deployment improves human judgment, total labor, or quality of life.
+
+## Bounded execution problems
+
+The two established questions remain explicit in [basic problems](basic-problems.md).
