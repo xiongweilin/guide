@@ -51,6 +51,8 @@ class FreezeAllocationTests(unittest.TestCase):
             script.freeze(self.cases(1) * 2, seed=1)
         with self.assertRaisesRegex(ValueError, "provenance"):
             script.freeze([{**self.cases(1)[0], "source_ref": ""}], seed=1)
+        with self.assertRaisesRegex(ValueError, "provenance fields"):
+            script.freeze([{**self.cases(1)[0], "truth_label": "1"}], seed=1)
         with self.assertRaisesRegex(ValueError, "empty"):
             script.freeze([], seed=1)
 
