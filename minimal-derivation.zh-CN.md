@@ -33,7 +33,7 @@
 
 ## 五、证明与现实边界
 
-有限的世界模型、操作集和可信观测不保证覆盖所有真实危险。对应的 [Lean 共同安全行动证明](https://github.com/xiongweilin/distinction-self-reference-lean/blob/research/contingent-safe-execution-v1/DistinctionSelfReference/RobustAction.lean) 是条件性的；[BAA 有界策略编译器](https://github.com/xiongweilin/BAA-Protocol/blob/research/contingent-safe-execution-v1/baa_protocol/contingent_policy.py) 提供有限模型内的构造与独立校验，不能替代生产安全证据。
+有限的世界模型、操作集和可信观测不保证覆盖所有真实危险。对应的 [Lean 共同安全行动证明](https://github.com/xiongweilin/distinction-self-reference-lean/blob/main/DistinctionSelfReference/RobustAction.lean) 是条件性的；[BAA 有界策略编译器](https://github.com/xiongweilin/BAA-Protocol/blob/main/baa_protocol/contingent_policy.py) 提供有限模型内的构造与独立校验，不能替代生产安全证据。
 
 必须在等量权限、观测、成本和时间预算下，与也具备条件规划能力的强基线对照，完整报告 C0/C1/C2 的交付、风险、未知与资源成本，不能预设全面正结果。
 
