@@ -21,3 +21,11 @@
 ## 解释与反转条件
 
 若时间、信息或训练投入不同，收益不能识别为 guide 的独立效果。若等投入下清单效果相当，应删除“guide 对该任务有可测增益”的主张；这不否定整个概念框架。目前研究尚未运行，因此没有收益主张得到支持。
+
+## 可复算的分析门槛（目前仍无研究数据）
+
+使用 `python use/studies/analyze_judgment_benefit.py locked-review-records.csv` 分析已经冻结的配对记录。程序要求每个案例恰有一条 guide 和一条 checklist 记录，且案例版本、信息截止点、来源、培训时长和允许审查时间一致；实际用时另行统计。已裁决的配对才进入精确双侧符号检验；结果未知不填零、不算成功，而进入全样本保守上下界。
+
+CSV 列为 `case_id, arm, case_version, information_cutoff, source_ref, training_seconds, budget_seconds, elapsed_seconds, outcome_status, adjudicated_correct, assessor_blinded`。`arm` 仅允许 `guide|checklist`，`outcome_status` 仅允许 `known|unknown`；已知结果的 `adjudicated_correct` 取 `0|1`，未知结果留空或为 `NA`。`assessor_blinded=yes` 只是记录的证明声明，**程序不能据此验证真实的独立性**。案例来源和截止点必须单独审计，单元测试里的合成样例不属于实证数据。
+
+该工具不能替代事前注册、真实随机分配、独立裁决或跨域推广证据。实施真实研究前仍须冻结裁决标准、抽样与分配方案，并完整公布缺失与失败记录。

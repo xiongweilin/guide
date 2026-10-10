@@ -13,13 +13,13 @@ on:
       - "framework/README*"
       - "framework/lifecycle*"
       - "framework/purposeful-finite-actor*"
-      - "tests/test_judgment_cases.py"
+      - "tests/**"
       - ".github/workflows/judgment-validation.yml"
   push:
     paths:
       - "use/**"
       - "basic-problems*"
-      - "tests/test_judgment_cases.py"
+      - "tests/**"
       - ".github/workflows/judgment-validation.yml"
 
 permissions:
@@ -34,4 +34,4 @@ jobs:
         with:
           python-version: "3.11"
       - name: Run formal case and Markdown checks
-        run: python -m unittest discover -s tests -p "test_judgment_cases.py" -v
+        run: python -m unittest discover -s tests -p "test_*.py" -v
