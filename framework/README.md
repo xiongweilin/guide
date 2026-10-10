@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-This directory develops the working concepts built **conditionally** from the [root minimal derivation](../minimal-derivation.md). It is not a separate foundation, a fixed six-part ontology, a universal solution algorithm, or an implementation contract.
+This directory develops the working concepts built **conditionally** from the [action-first minimal derivation](../minimal-derivation.md). The core no longer requires retained self-reference for every bounded controller. Reflexive identity and the purposeful finite actor are *specialized extensions*. This framework is not a six-part ontology, universal solver, or execution authorization contract.
 
 | Area | Documents |
 | --- | --- |
