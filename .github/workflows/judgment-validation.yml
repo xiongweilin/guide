@@ -19,6 +19,10 @@ on:
     paths:
       - "use/**"
       - "basic-problems*"
+      - "framework/**"
+      - "minimal-derivation*"
+      - "README*"
+      - "research/**"
       - "tests/**"
       - ".github/workflows/judgment-validation.yml"
 
