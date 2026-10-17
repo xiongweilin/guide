@@ -8,7 +8,7 @@
 2. State the model, payoffs, preferences, move order, information, sources, ungenerated alternatives, and residual unknowns.
 3. Derive conditional results. Report multiple equilibria, proven nonexistence, or identification limits without presenting one answer as uniquely determined.
 4. Change material assumptions to test counterfactuals and sensitivity; actors may adapt to rules, published predictions, or others' actions.
-5. Freeze empirical forecasts, baselines and metrics ex ante; verify independent outcomes using [evaluation](evaluation.md).
+5. Freeze empirical forecasts, baselines and metrics ex ante; verify independent outcomes using [evaluation](../../framework/methods/evaluation.md).
 
 ## Formal-model cases
 

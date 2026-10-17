@@ -1,6 +1,8 @@
 # Theoretical sources and neighboring traditions
 
-[English](./theoretical-sources.md) | [简体中文](./theoretical-sources.zh-CN.md)
+**General-layer addition:** conceptual analysis, logic and argumentation, epistemology, and general systems inquiry inform distinctions among objects, claim standards, levels, and revisability. They do not prove that nine distinctions or six system perspectives are irreducible or complete. The following bounded-rationality and control traditions particularly support the specialized bounded-action branch.
+
+[English](theoretical-sources.md) | [简体中文](theoretical-sources.zh-CN.md)
 
 guide draws on several major traditions while preserving explicit boundaries between them. It does not claim an authoritative genealogy or a deduction from any single tradition.
 

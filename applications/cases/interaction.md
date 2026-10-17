@@ -7,9 +7,9 @@
 1. Identify actors, affected parties, purposes, local boundaries, resources, and authority; shared reality does not imply shared representations or goals.
 2. Bind messages and actions to referents, versions, scope, time, evidence, intended results, and the relevant meaning of request, report, decision, and commitment.
 3. Keep definition, sufficiency judgment, decision, consent, authorization, execution, verification, and completion distinguishable when their differences matter.
-4. Check [local sufficiency](../framework/sufficiency.md) for each material next transition. Where actions are coupled, also check compatibility, shared dependencies, and minimum recoverability.
+4. Check [local sufficiency](../../framework/methods/sufficiency.md) for each material next transition. Where actions are coupled, also check compatibility, shared dependencies, and minimum recoverability.
 5. Establish explicit handoffs, acceptance criteria, obligations, acknowledgement or refusal, expiration, escalation, and controlled correction or exit.
-6. Validate independent real-world effects through [evaluation](evaluation.md); revise or reopen when meaning, authority, constraints, or outcomes diverge.
+6. Validate independent real-world effects through [evaluation](../../framework/methods/evaluation.md); revise or reopen when meaning, authority, constraints, or outcomes diverge.
 
 ## Human–human interaction
 
