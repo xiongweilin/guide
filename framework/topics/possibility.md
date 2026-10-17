@@ -2,7 +2,7 @@
 
 [English](possibility.md) | [简体中文](possibility.zh-CN.md)
 
-> Position: this topic is an optional analytical lens, not an ontological dimension required for every problem. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
+> Position: this topic provides problem-dependent analysis, not a general system perspective or an ontological primitive. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Possibility asks: **what else may occur, which candidates, futures, and paths remain open, which have been excluded, and on what grounds?**
 
