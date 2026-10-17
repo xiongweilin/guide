@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "use/studies/analyze_judgment_benefit.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "research/studies/analyze_judgment_benefit.py"
 SPEC = importlib.util.spec_from_file_location("judgment_benefit_analysis", SCRIPT)
 assert SPEC and SPEC.loader
 analysis = importlib.util.module_from_spec(SPEC)

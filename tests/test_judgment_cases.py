@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = tuple(sorted(str(path.relative_to(ROOT)) for path in ROOT.rglob("*.md")))
 USE_STEMS = ("prediction", "interaction", "evaluation")
 USE_DOCS = tuple(
-    "use/" + stem + suffix for stem in USE_STEMS
+    (("applications/cases/" if stem in ("prediction", "interaction") else "framework/methods/") + stem + suffix) for stem in USE_STEMS
     for suffix in (".md", ".zh-CN.md")
 )
 
@@ -213,14 +213,14 @@ class FormalCases(unittest.TestCase):
             self.assertGreaterEqual(sum(allocation[i] for i in pair), 100)
 
     def test_use_six_bilingual_documents(self):
-        actual = {path.name for path in (ROOT / "use").glob("*.md")}
+        actual = {path.name for directory in ("applications/cases", "framework/methods") for path in (ROOT / directory).glob("*.md") if path.name.startswith(("prediction", "interaction", "evaluation"))}
         expected = {Path(path).name for path in USE_DOCS}
         self.assertEqual(actual, expected)
 
     def test_use_case_fields(self):
         for stem in ("prediction", "interaction"):
             for suffix in (".md", ".zh-CN.md"):
-                content = (ROOT / ("use/" + stem + suffix)).read_text(encoding="utf-8")
+                content = (ROOT / ("applications/cases/" + stem + suffix)).read_text(encoding="utf-8")
                 cases = re.findall(
                     r"(?ms)^## C[0-9]{2} [^\n]+\n(.*?)(?=^## C[0-9]{2} |\Z)",
                     content,
@@ -266,19 +266,19 @@ class FormalCases(unittest.TestCase):
     def test_readme_three_layers(self):
         for suffix in (".md", ".zh-CN.md"):
             readme = (ROOT / ("README" + suffix)).read_text(encoding="utf-8")
-            self.assertIn("minimal-derivation" + suffix, readme)
+            self.assertIn("applications/bounded-action/minimal-derivation" + suffix, readme)
             self.assertIn("framework/README" + suffix, readme)
             for stem in USE_STEMS:
-                self.assertIn("use/" + stem + suffix, readme)
+                self.assertIn((("applications/cases/" if stem in ("prediction", "interaction") else "framework/methods/") + stem + suffix), readme)
 
     def test_basic_problems_bilingual(self):
         for suffix, headings in (
             (".md", ("## 1. Local sufficiency for the next transition", "## 2. The interaction–meaning gap")),
             (".zh-CN.md", ("## 一、下一转换的局部充分性问题", "## 二、交互与含义的断层问题")),
         ):
-            content = (ROOT / ("basic-problems" + suffix)).read_text(encoding="utf-8")
+            content = (ROOT / ("applications/bounded-action/README" + suffix)).read_text(encoding="utf-8")
             readme = (ROOT / ("README" + suffix)).read_text(encoding="utf-8")
-            self.assertIn("basic-problems" + suffix, readme)
+            self.assertIn("applications/bounded-action/README" + suffix, readme)
             for heading in headings:
                 self.assertIn(heading, content)
 
@@ -287,13 +287,13 @@ class FormalCases(unittest.TestCase):
             (".md", ("## Human–human interaction", "## Human–AI interaction", "## AI–AI interaction")),
             (".zh-CN.md", ("## 人与人交互", "## 人与 AI 交互", "## AI 与 AI 交互")),
         ):
-            content = (ROOT / ("use/interaction" + suffix)).read_text(encoding="utf-8")
+            content = (ROOT / ("applications/cases/interaction" + suffix)).read_text(encoding="utf-8")
             for heading in headings:
                 self.assertIn(heading, content)
 
     def test_evaluation_verification_elements(self):
         for suffix in (".md", ".zh-CN.md"):
-            content = (ROOT / ("use/evaluation" + suffix)).read_text(encoding="utf-8")
+            content = (ROOT / ("framework/methods/evaluation" + suffix)).read_text(encoding="utf-8")
             for marker in ("claim_id", "claim_type:", "Brier", "MAE", "baseline" if suffix == ".md" else "基线"):
                 self.assertIn(marker, content)
 
@@ -301,8 +301,8 @@ class FormalCases(unittest.TestCase):
         expected_prediction = {"01", "02", "04", "05"}
         expected_interaction = {"03", "06", "07", "08", "09", "10"}
         for suffix in (".md", ".zh-CN.md"):
-            prediction = (ROOT / ("use/prediction" + suffix)).read_text(encoding="utf-8")
-            interaction = (ROOT / ("use/interaction" + suffix)).read_text(encoding="utf-8")
+            prediction = (ROOT / ("applications/cases/prediction" + suffix)).read_text(encoding="utf-8")
+            interaction = (ROOT / ("applications/cases/interaction" + suffix)).read_text(encoding="utf-8")
             found_prediction = re.findall(r"^## C([0-9][0-9]) ", prediction, re.MULTILINE)
             found_interaction = re.findall(r"^## C([0-9][0-9]) ", interaction, re.MULTILINE)
             self.assertEqual(set(found_prediction), expected_prediction)

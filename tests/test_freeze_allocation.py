@@ -5,7 +5,7 @@ import importlib.util
 import unittest
 from pathlib import Path
 
-PATH = Path(__file__).resolve().parents[1] / "use/studies/freeze_allocation.py"
+PATH = Path(__file__).resolve().parents[1] / "research/studies/freeze_allocation.py"
 SPEC = importlib.util.spec_from_file_location("freeze_allocation", PATH)
 assert SPEC and SPEC.loader
 script = importlib.util.module_from_spec(SPEC)

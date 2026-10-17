@@ -3,24 +3,16 @@ name: Judgment and prediction cases
 on:
   pull_request:
     paths:
-      - "use/**"
-      - "basic-problems*"
-      - "framework/sufficiency*"
-      - "framework/dimensions/causality*"
-      - "framework/activities/decision*"
-      - "minimal-derivation*"
+      - "applications/**"
+      - "research/**"
       - "README*"
-      - "framework/README*"
-      - "framework/lifecycle*"
-      - "framework/purposeful-finite-actor*"
       - "tests/**"
       - ".github/workflows/judgment-validation.yml"
   push:
     paths:
-      - "use/**"
-      - "basic-problems*"
+      - "applications/**"
+      - "research/**"
       - "framework/**"
-      - "minimal-derivation*"
       - "README*"
       - "research/**"
       - "tests/**"

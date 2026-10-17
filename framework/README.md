@@ -1,18 +1,19 @@
-# guide — working framework
+# guide — Working Framework
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+English | [简体中文](README.zh-CN.md)
 
-This directory develops the working concepts built **conditionally** from the [action-first minimal derivation](../minimal-derivation.md). The core no longer requires retained self-reference for every bounded controller. Reflexive identity and the purposeful finite actor are *specialized extensions*. This framework is not a six-part ontology, universal solver, or execution authorization contract.
+This directory separates **general foundations, conditional methods, and topic-specific analyses**. Practical cases and model-relative derivations live under `applications/`; study protocols and historical records live under `research/`. These are not stages of a mandatory pipeline or a proven complete ontology.
 
-| Area | Documents |
+| Location | Function |
 | --- | --- |
-| Foundations and scope | [Theoretical sources](foundations/theoretical-sources.md) |
-| Reality and actors | [Reality](reality.md), [Purposeful finite actor](purposeful-finite-actor.md), [Lifecycle](lifecycle.md) |
-| Sufficiency | [Sufficiency](sufficiency.md) |
-| Multiple actors | [Multi-actor](multi-actor.md) |
-| Working lenses | [Distinction, relation, causality, temporality, possibility, value](dimensions/README.md) |
-| Derived activities | [Exploration and decision](activities/README.md) |
+| [Operating principles](foundations/principles.md) | Specify the problem, matching standards, relevance, and revision |
+| [Nine distinctions](foundations/distinctions.md) | Prevent silent substitutions among representation, inference, causality, value, and action |
+| [System perspectives](foundations/systems.md) | Examine levels, structure, coupling, feedback, qualified self-reference, and aggregate behavior |
+| [Reality](foundations/reality.md) and [formation of distinctions](foundations/distinction.md) | Epistemic boundaries, missing candidates, and default classifications |
+| [Theoretical sources](foundations/theoretical-sources.md) | Traditions drawn upon and claims not derivable from them |
+| [Sufficiency](methods/sufficiency.md), [exploration](methods/exploration.md), [decision](methods/decision.md), [evaluation](methods/evaluation.md) | Methods used only when the problem calls for them |
+| [Relations](topics/relation.md), [causality](topics/causality.md), [temporality](topics/temporality.md), [possibility](topics/possibility.md), [value](topics/value.md) | Intersecting analytical topics, not five ultimate kinds of entity |
 
-The six lenses are practical ways to describe a current boundary, not irreducible primitives. Sufficiency depends on a particular purpose and next transition; it does not establish truth, permission, or global optimality. The numbered examples test specific formal instances, not empirical predictions.
+Specialized models: [bounded-action problems](../applications/bounded-action/README.md), [minimal derivation](../applications/bounded-action/minimal-derivation.md), [actor](../applications/bounded-action/actor.md), [lifecycle](../applications/bounded-action/lifecycle.md), and [multiple actors](../applications/bounded-action/multi-actor.md). Each carries its own assumptions; none is required for every conceptual, formal, empirical, or normative question.
 
-Prediction, interaction, and evaluation methods live in the [use layer](../README.md#three-layers): [prediction](../use/prediction.md), [interaction](../use/interaction.md), [evaluation](../use/evaluation.md).
+Necessary distinctions and tests depend on the object, problem, claim type, risk, and applicable conditions. Listing more factors is not a substitute for judgment; model proofs and tests are not evidence of general real-world benefit.

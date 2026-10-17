@@ -1,6 +1,8 @@
 # 理论来源与邻近传统
 
-[English](./theoretical-sources.md) | [简体中文](./theoretical-sources.zh-CN.md)
+**通用层补充：**概念分析、逻辑与论证理论、认识论以及一般系统研究，为对象区分、主张判准、层次联系和反例修正提供方法资源；这些来源不证明九组区分或六个系统观察维度不可约或完备。下文关于有限理性、控制论及行动者的传统主要支持专门有界行动分支。
+
+[English](theoretical-sources.md) | [简体中文](theoretical-sources.zh-CN.md)
 
 guide 吸收若干主要理论传统，同时明确保留它们之间的边界。guide 不主张存在一个权威谱系，也不主张自身可由任何单一传统直接推出。
 

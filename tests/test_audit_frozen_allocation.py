@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1] / "use/studies"
+ROOT = Path(__file__).resolve().parents[1] / "research/studies"
 
 def load(file):
     spec = importlib.util.spec_from_file_location(file.removesuffix(".py"), ROOT / file)

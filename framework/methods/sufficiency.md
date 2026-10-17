@@ -1,0 +1,160 @@
+# Sufficiency: when the next transition has adequate grounds
+
+[English](sufficiency.md) | [简体中文](sufficiency.zh-CN.md)
+
+**Scope:** This method concerns a specified purpose and next transition. General conceptual analysis, proof, or open inquiry need not use the three-way sufficiency classification. Explanatory sufficiency and its specified formal cases have distinct standards.
+
+Sufficiency is a transition-relative relation that lets a bounded controller continue acting without a complete representation of reality.
+
+It asks:
+
+> For the current purpose and proposed next transition, is the current boundary adequate?
+
+Abstractly: `S(B, P, T) → {insufficient, materially uncertain, sufficient}`.
+
+B is the current boundary and epistemic state, P the current purpose / constraint / acceptability condition, and T the proposed next transition.
+
+## 0. Constructive robust-action special case
+
+For a declared compatible-world set W(H) and externally authorized safe action set A(w), a common action in the intersection of all A(w) can proceed without identifying the real world. If that intersection is empty, a qualified observation and complete contingent policy may still be feasible. This **algorithmic condition** is narrower than interpretive sufficiency; the model must overapproximate reality, and an issued capability is still required for execution. See [action-first derivation](../../applications/bounded-action/minimal-derivation.md).
+
+## 1. Sufficiency is not completeness
+
+A finite actor cannot make complete knowledge of reality a general precondition for action.
+
+`sufficient for next transition ≠ complete boundary`
+
+Sufficiency is local to object, scope, purpose, timescale, and transition.
+
+## 2. Operational trigger versus warranted sufficiency
+
+The fact that a transition occurred shows only that its operational trigger fired.
+
+`operational trigger ≠ warranted sufficiency`
+
+A fixed automaton may transition when conditions match without making any epistemic judgment about its grounds.
+
+guide mainly concerns the second notion: if an actor claims that it now has enough reason to enter a transition, the relevant grounds, unknowns, and invalidation conditions should be expressible at proportional strength.
+
+## 3. Two basic mechanisms
+
+### Interpretive sufficiency
+
+When criteria cannot be exhaustively specified in advance, the actor forms accountable provisional closure from context, scope, evidence, counterevidence, competing explanations, residual unknowns, risk, cost, irreversibility, and current purpose.
+
+### Prescriptive sufficiency
+
+When conditions are sufficiently explicit, use predicates, thresholds, tests, contracts, state guards, or explicit rules.
+
+A rule passing does not by itself prove that the rule applies, remains current, or has adequate normative authority.
+
+### One formalized prescriptive special case
+
+For prescriptive problems where a current observation and the commitment
+required for the next transition are explicit, sufficiency has an exact
+criterion: an observation is insufficient if two worlds that are
+indistinguishable under that observation require different commitments.
+Conversely, when no such ambiguity exists, the required commitment factors
+through the observation.
+
+The Lean repository proves this equivalence. It is a precise special case of
+guide's broader sufficiency concept, not a definition of every interpretive
+judgment.
+
+## 4. The sufficiency boundary
+
+Any actor that sometimes continues exploration and sometimes stops exploring and acts already induces a boundary:
+
+`Explore | Commit`
+
+Explicit `S(B, P, T)` makes this otherwise implicit policy boundary inspectable.
+
+## 5. When exploration can stop
+
+Stopping does not require unknowns to disappear. Provisional closure may be supported when:
+
+- residual unknowns are unlikely to change the current transition;
+- currently obtainable high-discrimination evidence is adequate;
+- delay risk exceeds expected exploration value;
+- the next step remains recoverable;
+- further exploration lacks permission, is too dangerous, or has disproportionate cost;
+- unresolved material can be carried explicitly as unknown.
+
+`stop exploring ≠ complete knowledge of reality`
+
+## 6. Shrinking possibility needs grounds
+
+Excluding candidates, freezing criteria, stopping search, or committing all shrink later possibility.
+
+`open space → warranted contraction → provisional closure`
+
+“not found”, “not generated”, and “not currently visible” do not automatically become “impossible”.
+
+## 7. Different transitions need different sufficiency
+
+`S(B, P, T1) does not automatically imply S(B, P, T2)`.
+
+For example:
+
+`enough to form a hypothesis ≠ enough to decide`
+
+`enough to decide ≠ enough to execute a high-impact real effect`
+
+`enough to observe an effect ≠ enough to declare purpose complete`
+
+Finer engineering transition admission is in [`https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md`](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
+
+## 8. Provisional closure and reopening
+
+Reality feedback, scope change, dependency change, failed causal assumptions, value revision, or new candidates may invalidate prior sufficiency.
+
+`open → converge → provisional closure → act → feedback → retain / reopen`
+
+`provisional closure ≠ permanent truth`
+
+## 9. Sufficiency is not authority
+
+In a multi-actor environment:
+
+`adequate grounds ≠ decision or execution authority`
+
+Sufficiency concerns epistemic and transition grounds. Permission, governance, and legitimate execution require additional structure. Concrete authorization and execution contracts live in [AIOS World Runtime](https://github.com/xiongweilin/aios/blob/main/docs/kernel/world_runtime/contracts/runtime-contracts.md), not in this conceptual sufficiency classification.
+
+## 10. Compositional sufficiency
+
+Local sufficiency does not automatically compose into sufficiency of a coupled system.
+
+For materially interacting transitions, conditional compositional sufficiency requires at least:
+
+- each participating transition has locally adequate grounds for its own boundary, purpose, and transition;
+- the local requirements collectively cover the target being composed rather than omitting a material part;
+- material couplings are compatible across shared resources, state, timing, authority, constraints, and effects;
+- material failure still leaves a controlled path to a viable state.
+
+In the Lean formalization, coverage is a technical premise bundled with local-sufficiency evidence. It is not promoted into a new foundational primitive of guide.
+
+Compactly:
+
+`local sufficiency + compatibility + minimum recoverability → conditional compositional sufficiency`
+
+Minimum recoverability does not require exact rollback to the prior state. It requires some controlled path such as stop, isolation, compensation, rerouting, reopening, reauthorization, or recovery to a state from which relevant action and correction can continue.
+
+`compositional sufficiency ≠ global optimality`
+
+`compositional sufficiency ≠ complete shared representation`
+
+`minimum recoverability ≠ exact restoration`
+
+As recoverability weakens and irreversibility rises, proportionally stronger grounds are required before commitment.
+
+## 11. Sufficiency versus judgment accuracy
+
+Adequate grounds for a next transition do not guarantee a true conclusion, a successful forecast, or authority to act. When a transition materially depends on formal derivation, empirical prediction, or causal expectation, record the relevant model conditions, validation method, and reopening triggers. A prediction miss calls first for checking outcome observability, stochastic variation, evidence, model applicability, and environmental changes—not automatic rejection of the entire boundary.
+
+See the [judgment and prediction validation protocol](evaluation.md) for verification types, ex ante records, and error attribution. This adds neither a new definition of sufficiency nor a requirement to statistically test every decision.
+
+## 12. BAA admission is a different three-way decision
+
+[BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol/blob/main/spec/state-machine.md) uses `deny / hold / admit` for a **prescriptive, interface-bounded enforcement decision**. A denied request may have sufficient epistemic support but lack authority or violate a hard constraint; a held request may lack a current observation, safe fallback, or bounded composition; admission authorizes only an exact-scope capability under explicit assumptions.
+
+These operational results are **not** a relabeling or validation of guide's `insufficient / materially uncertain / sufficient` judgments. BAA's [claim/evidence index](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.md) reports limited implementation and delegation evidence, not inter-rater reproducibility for interpretive sufficiency or general improvement in human decisions.
