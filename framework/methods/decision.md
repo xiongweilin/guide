@@ -2,7 +2,7 @@
 
 [English](decision.md) | [简体中文](decision.zh-CN.md)
 
-**适用范围：**这里讨论形成实际选择与承诺时的判断，不把普通描述、解释或形式推导都定义为决策，也不要求所有决定采用同一形式化的充分性判准。
+**Scope:** This method concerns choices and commitments; not every description, explanation, or formal inference is a decision, and not every choice requires the same formal sufficiency test.
 
 Decision is the activity of choosing when the current boundary is **provisionally sufficient** for the current purpose. It is not a dimension and does not assert a metaphysical theory of free will.
 

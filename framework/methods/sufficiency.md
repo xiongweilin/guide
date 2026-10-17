@@ -2,7 +2,7 @@
 
 [English](sufficiency.md) | [简体中文](sufficiency.zh-CN.md)
 
-**适用范围：**本方法针对指定目的和下一转换；一般概念辨析、形式证明或探索未必需要三态充分性分类。解释型充分性与规定型特例的成立标准必须分开。
+**Scope:** This method concerns a specified purpose and next transition. General conceptual analysis, proof, or open inquiry need not use the three-way sufficiency classification. Explanatory sufficiency and its specified formal cases have distinct standards.
 
 Sufficiency is a transition-relative relation that lets a bounded controller continue acting without a complete representation of reality.
 

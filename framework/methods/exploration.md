@@ -2,7 +2,7 @@
 
 [English](exploration.md) | [简体中文](exploration.zh-CN.md)
 
-**通用范围：**探索也可以为了理解、理论发展或发现候选而展开，不必预设近期决策。以下以服务于下一转换的有界探索为重点；充分性在此是可用工具，不是所有探索的必要条件。
+**General scope:** Exploration can seek understanding, theory development, or new candidates without any imminent decision. The following focuses on bounded exploration for a next transition; sufficiency is a tool here, not a prerequisite for all inquiry.
 
 Exploration is the activity used when the current boundary is **insufficient or materially uncertain**. It is not a dimension.
 

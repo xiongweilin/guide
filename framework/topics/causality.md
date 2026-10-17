@@ -2,7 +2,7 @@
 
 [English](causality.md) | [简体中文](causality.zh-CN.md)
 
-因果研究可以处理尚不能操纵的原因；因果识别、实际干预接口与执行授权是不同问题。
+Causal inquiry may concern causes not currently manipulable; causal identification, an available intervention interface, and execution authority are distinct issues.
 
 > Position: this topic develops a problem-dependent analytical lens, neither a universal prerequisite nor an irreducible ontology. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 

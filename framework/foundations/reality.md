@@ -2,7 +2,7 @@
 
 [English](reality.md) | [简体中文](reality.zh-CN.md)
 
-对经验对象和现实行动，外部现实限制当前表示并产生反馈；形式命题的成立或规范正当性仍须采用其各自判准。
+For empirical objects and real-world action, external reality constrains representation and yields feedback; formal validity and normative legitimacy still require their own standards.
 
 Reality is guide's external boundary, not a total object waiting to be completely serialized.
 
