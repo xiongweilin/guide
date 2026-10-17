@@ -21,8 +21,8 @@ Central question: where an object actually has system structure, how does it for
 - Local behavior does not automatically entail aggregate behavior, but neither must the whole exhibit properties absent from the local view.
 - Recheck a system model and its transport assumptions when environment, scale, or mechanism changes.
 
-## Relation to key distinctions and existing topics
+## Relation to key distinctions and topic analyses
 
-The [nine distinctions](distinctions.md) clarify objects, relationships, and standards. Systems analysis checks whether those distinctions fragment important couplings, levels, or dynamics. The two correct each other; they need not match one-to-one.
+The [nine distinctions](distinctions.md) clarify objects, relationships, and standards. Systems analysis checks whether those distinctions fragment important couplings, levels, or dynamics. The two correct each other; they need not match one-to-one. Deeper topics are problem-specific analyses, not a parallel set of system perspectives.
 
 As needed, use the deeper discussions of [relations](../topics/relation.md), [causality](../topics/causality.md), [temporality](../topics/temporality.md), [possibility](../topics/possibility.md), and [value](../topics/value.md). Real, constrained execution may call for [bounded-action theory](../../applications/bounded-action/README.md); its optional self-reference results do not require all systems studies to model controllers.

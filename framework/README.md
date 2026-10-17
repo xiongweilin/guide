@@ -14,6 +14,8 @@ This directory separates **general foundations, conditional methods, and topic-s
 | [Sufficiency](methods/sufficiency.md), [exploration](methods/exploration.md), [decision](methods/decision.md), [evaluation](methods/evaluation.md) | Methods used only when the problem calls for them |
 | [Relations](topics/relation.md), [causality](topics/causality.md), [temporality](topics/temporality.md), [possibility](topics/possibility.md), [value](topics/value.md) | Intersecting analytical topics, not five ultimate kinds of entity |
 
+The nine distinctions clarify claims and the six system perspectives examine relevant system structures. Formation of distinctions studies epistemic boundaries; five topics deepen analysis as needed, and four methods serve situated inquiry and action. These topics do not form a second set of system perspectives.
+
 Specialized models: [bounded-action problems](../applications/bounded-action/README.md), [minimal derivation](../applications/bounded-action/minimal-derivation.md), [actor](../applications/bounded-action/actor.md), [lifecycle](../applications/bounded-action/lifecycle.md), and [multiple actors](../applications/bounded-action/multi-actor.md). Each carries its own assumptions; none is required for every conceptual, formal, empirical, or normative question.
 
 Necessary distinctions and tests depend on the object, problem, claim type, risk, and applicable conditions. Listing more factors is not a substitute for judgment; model proofs and tests are not evidence of general real-world benefit.
