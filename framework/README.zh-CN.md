@@ -14,6 +14,8 @@
 | [充分性](methods/sufficiency.zh-CN.md)、[探索](methods/exploration.zh-CN.md)、[决策](methods/decision.zh-CN.md)、[评估](methods/evaluation.zh-CN.md) | 仅在问题需要时调用的工作方法 |
 | [关系](topics/relation.zh-CN.md)、[因果](topics/causality.zh-CN.md)、[时序](topics/temporality.zh-CN.md)、[可能性](topics/possibility.zh-CN.md)、[价值](topics/value.zh-CN.md) | 可交叉使用的深入专题，不是五种终极实体 |
 
+九组关键区分用于澄清判断，六个系统观察维度用于分析相关系统结构；区分形成研究认识边界，五个专题提供按需深入分析，四种方法服务于具体判断和行动。专题不构成另一套并列的系统观察维度。
+
 专门模型：[有界行动问题](../applications/bounded-action/README.zh-CN.md)、[最小推导](../applications/bounded-action/minimal-derivation.zh-CN.md)、[行动者](../applications/bounded-action/actor.zh-CN.md)、[生命周期](../applications/bounded-action/lifecycle.zh-CN.md)和[多行动者](../applications/bounded-action/multi-actor.zh-CN.md)。这些模型有各自前提，不构成所有概念、形式、经验和规范问题的共同前提。
 
 原则上，必要的区分与检验取决于对象、问题、主张类型、风险及适用条件；不以列出更多因素替代判断，也不把模型证明或测试当成现实普遍收益的证据。

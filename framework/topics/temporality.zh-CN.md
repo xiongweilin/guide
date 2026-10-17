@@ -2,7 +2,7 @@
 
 [English](temporality.md) | [简体中文](temporality.zh-CN.md)
 
-> 定位：本专题是按问题选用的深入工作视角，不是所有问题都必须调用的本体维度。参见[九组关键区分](../foundations/distinctions.zh-CN.md)和[系统视角](../foundations/systems.zh-CN.md)。
+> 定位：本专题按问题深入分析，不是通用系统观察维度，也不预设一种终极本体。参见[九组关键区分](../foundations/distinctions.zh-CN.md)和[系统视角](../foundations/systems.zh-CN.md)。
 
 时序回答：**什么先后发生、持续多久、以什么速度变化，结构何时有效、过渡或失效？**
 

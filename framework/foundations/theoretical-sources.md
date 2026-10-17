@@ -87,6 +87,6 @@ A rough source map is:
 
 This map is not a proof.
 
-guide's distinctive compression is to ask one shared question across these traditions:
+At the general level, guide combines problem-anchored distinctions, systems analysis, and proportionate validation for understanding, inquiry, evaluation, and action. Not every problem presupposes a purposeful actor or next transition.
 
-> How does a purposeful finite actor in external reality form a working boundary that is provisionally sufficient for a current purpose and next transition, while remaining reopenable by reality?
+Its bounded-action branch asks a narrower question: **How can a finite actor form working boundaries proportionate to a purpose and next transition under real constraints, while remaining responsive to feedback?** This specialized question does not replace the general framework.

@@ -4,7 +4,7 @@
 
 [English](minimal-derivation.md) | [简体中文](minimal-derivation.zh-CN.md)
 
-**Status:** proposed core revision, not empirical validation.
+**Evidence boundary:** the following claims are conditional on the stated model and authorization assumptions, not empirical proof of deployment safety.
 
 ## 1. Minimal goal-directed controller
 
@@ -21,7 +21,7 @@ Three outcomes are different:
 - **Needs discrimination:** no common action has been found, but a trusted observation may separate the worlds and enable a bounded conditional policy.
 - **No qualified policy:** within the *enumerated model and resource horizon* there is no complete safe policy; hold, stop or escalate. This is not metaphysical impossibility.
 
-These are algorithmic classifications, not substitutes for the prior interpretive labels insufficient/materially uncertain/sufficient.
+These are algorithmic classifications of conditional policies, distinct from [interpretive sufficiency](../../framework/methods/sufficiency.md); the objects and validity standards differ.
 
 ## 3. Contingent sufficiency and value of evidence
 
@@ -31,7 +31,7 @@ Prefer policies minimizing declared worst-case or expected costs **subject to** 
 
 ## 4. Optional reflexive branch
 
-Bounded control plus feedback supports action and revision without a retained self-reference prerequisite. A separate branch adds retained reflexive distinction, identity continuity, corrigible self-models and multi-actor governance. Self-reference may enable new capacities but is **not logically necessary for all controllers**. The earlier self-reference-first ladder is retained as a specialized model, not a universal foundation.
+Bounded control plus feedback supports action and revision without a retained self-reference prerequisite. A separate branch adds retained reflexive distinction, identity continuity, corrigible self-models and multi-actor governance. Self-reference may enable new capacities but is **not logically necessary for all controllers**. Self-reference analysis applies only when additional reflexive-representation conditions hold; it is not a foundation for every action problem.
 
 ## 5. Limits
 
@@ -39,4 +39,4 @@ A finite set of possible worlds, authorized steps and qualified observations nev
 
 Compare against equally equipped conditional-planning baselines and measure all C0/C1/C2 delivery, cost, unknown and unsafe outcomes; a positive result is not assumed.
 
-Other working lenses remain at [dimensions](../../framework/README.md), interpretive judgment at [sufficiency](../../framework/methods/sufficiency.md), and empirical measurement at [evaluation](../../framework/methods/evaluation.md).
+General analytical foundations are in the [working framework](../../framework/README.md); interpretive judgment is in [sufficiency](../../framework/methods/sufficiency.md), and empirical validation in [evaluation](../../framework/methods/evaluation.md).

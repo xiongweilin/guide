@@ -66,6 +66,6 @@ Such a source can still be delayed, partial, stale, unavailable, or wrong.
 
 ## 6. guide is also exposed to reality
 
-guide's minimal derivation, six working lenses, sufficiency structure, and engineering expressions are not unrevisable truths.
+guide's nine key distinctions, six system perspectives, conditional methods, and specialized models are all open to revision.
 
 If competing frameworks persistently produce better prediction, action, coordination, correction, or explanation, guide itself should be narrowed, revised, or replaced.

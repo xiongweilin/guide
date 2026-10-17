@@ -4,7 +4,7 @@
 
 Causal inquiry may concern causes not currently manipulable; causal identification, an available intervention interface, and execution authority are distinct issues.
 
-> Position: this topic develops a problem-dependent analytical lens, neither a universal prerequisite nor an irreducible ontology. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
+> Position: this topic provides problem-dependent analysis, not a general system perspective or an ontological primitive. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Causality asks: **what changes cause what other changes, and what interventions can change which outcomes?**
 
@@ -69,7 +69,7 @@ For a causal path to become current callable capability, it additionally needs:
 - necessary authority;
 - recovery or exit path.
 
-This is why capability is not a separate dimension here: it is a callable structure jointly formed by causality, possibility, relation, temporality, and purposeful-actor interfaces.
+For bounded action, callable capability depends on causality, possibility, relations, timing, and the actor's interfaces; an identified causal effect alone does not establish it.
 
 ## 4. Dependencies, failure, and recovery
 

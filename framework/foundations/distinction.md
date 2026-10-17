@@ -2,7 +2,7 @@
 
 [English](distinction.md) | [简体中文](distinction.zh-CN.md)
 
-> Position: this file studies the formation and limits of distinctions under bounded observation; the [nine distinctions](distinctions.md) are general analytical resources. The former six lenses are not ontological primitives; the [bounded-action derivation](../../applications/bounded-action/minimal-derivation.md) is specialized.
+> Position: this file studies the formation and limits of distinctions under bounded observation; the [nine distinctions](distinctions.md) are general analytical resources. This file studies how differences enter a working representation; the nine key distinctions instead check whether different concepts and claim types are being conflated.
 
 Distinction asks: **under current conditions, what can become distinguishable, what has been distinguished, and what remains outside the current representation?**
 
@@ -107,9 +107,9 @@ Different purposeful finite actors can face the same reality while having differ
 
 Thus "we see the same thing" cannot be established only by using the same words. Coordination may require exchanging facts, forming shared distinctions, or retaining different distinctions while still coordinating action.
 
-## 7. Relation to the other dimensions
+## 7. Scope relative to topics and methods
 
-Distinction answers only "what differences have been formed." It does not automatically establish:
+The formation of distinctions addresses which differences enter a representation. It does not automatically establish:
 
 - [Relation](../topics/relation.md): how the differences connect;
 - [Causality](../topics/causality.md): what changes what;

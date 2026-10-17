@@ -2,7 +2,7 @@
 
 [English](value.md) | [简体中文](value.zh-CN.md)
 
-> Position: this topic is an optional analytical lens, not an ontological dimension required for every problem. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
+> Position: this topic provides problem-dependent analysis, not a general system perspective or an ontological primitive. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Value asks: **what is worth pursuing, avoiding, maintaining, committing to, or refusing?**
 
@@ -154,7 +154,7 @@ Reopening can be supported when:
 
 Reopening does not imply a hidden "true value" waiting to be found. It means the old grounds are no longer sufficient to continue automatically.
 
-## 8. Relation to the other dimensions
+## 8. Relation to other analyses
 
 Value depends on distinguished objects, relations, consequences, and participants but cannot be replaced by facts, capability, causal influence, or majority preference.
 
@@ -166,4 +166,4 @@ Value depends on distinguished objects, relations, consequences, and participant
 
 `reflective commitment != authority over others`
 
-Moving value into action still requires sufficiency, decision, and the action chain.
+When value informs consequential commitments or actions, grounds must be proportionate to the proposed transition; use [sufficiency](../methods/sufficiency.md) where needed and keep decision, authorization, and execution distinct.

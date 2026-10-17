@@ -4,6 +4,8 @@ English | [简体中文](distinctions.zh-CN.md)
 
 These groups are **working resources**, not nine mutually exclusive entities, irreducible axioms, or an exhaustive classification. Apply the [operating principles](principles.md) according to the problem. Terms may overlap, contain one another, or be mutually exclusive in a specified sense.
 
+These groups clarify concepts and claims; [formation of distinctions](distinction.md) studies how epistemic boundaries arise and change. Neither reduces to the other, and forming a distinction does not validate it.
+
 ## A. Understanding the world: what are we talking about?
 
 | Group | Distinction | Confusion prevented |
