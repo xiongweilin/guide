@@ -1,8 +1,8 @@
 # Temporality
 
-[English](./temporality.md) | [简体中文](./temporality.zh-CN.md)
+[English](temporality.md) | [简体中文](temporality.zh-CN.md)
 
-> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../../minimal-derivation.md`](../../minimal-derivation.md) for the minimal derivation.
+> Position: this topic is an optional analytical lens, not an ontological dimension required for every problem. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Temporality asks: **what happens before or after what, for how long and at what rate, and when does a structure remain valid, transition, or fail?**
 

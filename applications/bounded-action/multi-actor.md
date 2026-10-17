@@ -1,6 +1,6 @@
 # Multiple purposeful finite actors
 
-[English](./multi-actor.md) | [简体中文](./multi-actor.zh-CN.md)
+[English](multi-actor.md) | [简体中文](multi-actor.zh-CN.md)
 
 Multiple purposeful finite actors can coexist in external reality. Shared reality does not imply shared representation, purpose, or authority.
 
@@ -74,4 +74,4 @@ When locally sufficient transitions interact through shared reality, their combi
 
 `local sufficiency + compatibility + minimum recoverability → conditional compositional sufficiency`
 
-This does not establish global optimality, and minimum recoverability does not require exact restoration of the previous state. See [Sufficiency](./sufficiency.md#10-compositional-sufficiency).
+This does not establish global optimality, and minimum recoverability does not require exact restoration of the previous state. See [Sufficiency](../../framework/methods/sufficiency.md#10-compositional-sufficiency).

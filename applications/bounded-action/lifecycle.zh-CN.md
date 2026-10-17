@@ -19,4 +19,4 @@
 
 对于额外具有自我区分、身份连续性和自我模型的行动者，可以把这些循环视为同一持续行动者的历史。该结构是额外条件，不自动推出合法性或治理权。行动者终止并不擦除既有现实效果。
 
-见 [行动优先推导](../minimal-derivation.zh-CN.md)和 [AIOS 工程行动链](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md)。
+见 [行动优先推导](minimal-derivation.zh-CN.md)和 [AIOS 工程行动链](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.zh-CN.md)。

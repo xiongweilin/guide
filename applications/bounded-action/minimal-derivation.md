@@ -1,5 +1,7 @@
 # Minimal derivation — action first, self-reference optional
 
+> **Scope:** This is a conditional derivation for bounded action control, not an axiom of general distinctions or systems analysis. Safety below is model- and authorization-relative.
+
 [English](minimal-derivation.md) | [简体中文](minimal-derivation.zh-CN.md)
 
 **Status:** proposed core revision, not empirical validation.
@@ -37,4 +39,4 @@ A finite set of possible worlds, authorized steps and qualified observations nev
 
 Compare against equally equipped conditional-planning baselines and measure all C0/C1/C2 delivery, cost, unknown and unsafe outcomes; a positive result is not assumed.
 
-Other working lenses remain at [dimensions](framework/dimensions/README.md), interpretive judgment at [sufficiency](framework/sufficiency.md), and empirical measurement at [evaluation](use/evaluation.md).
+Other working lenses remain at [dimensions](../../framework/README.md), interpretive judgment at [sufficiency](../../framework/methods/sufficiency.md), and empirical measurement at [evaluation](../../framework/methods/evaluation.md).

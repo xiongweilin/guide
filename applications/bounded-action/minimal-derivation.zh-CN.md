@@ -1,5 +1,7 @@
 # 最小推导——行动优先，自指为可选增强
 
+> **适用范围：**这是有界行动控制的条件性推导，并非通用区分与系统分析的基础公理。下述安全性仅在明确模型与授权假设下成立。
+
 [English](minimal-derivation.md) | [简体中文](minimal-derivation.zh-CN.md)
 
 **状态：**提出新的概念主干，不代表已经取得经验验证。
@@ -37,4 +39,4 @@
 
 必须在等量权限、观测、成本和时间预算下，与也具备条件规划能力的强基线对照，完整报告 C0/C1/C2 的交付、风险、未知与资源成本，不能预设全面正结果。
 
-工作透镜见 [dimensions](framework/dimensions/README.zh-CN.md)，解释性判断见 [sufficiency](framework/sufficiency.zh-CN.md)，实证检验见 [evaluation](use/evaluation.zh-CN.md)。
+工作透镜见 [dimensions](../../framework/README.zh-CN.md)，解释性判断见 [sufficiency](../../framework/methods/sufficiency.zh-CN.md)，实证检验见 [evaluation](../../framework/methods/evaluation.zh-CN.md)。

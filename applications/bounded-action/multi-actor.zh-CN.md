@@ -1,6 +1,6 @@
 # 多个目的性有限行动者
 
-[English](./multi-actor.md) | [简体中文](./multi-actor.zh-CN.md)
+[English](multi-actor.md) | [简体中文](multi-actor.zh-CN.md)
 
 外部现实中可以同时存在多个目的性有限行动者。共享现实不意味着共享表示、目的或权限。
 
@@ -74,4 +74,4 @@
 
 `局部充分 + 相容性 + 最低可恢复性 → 条件性的组合充分`
 
-这不建立全局最优；最低可恢复性也不要求精确恢复到之前状态。见[充分性](./sufficiency.zh-CN.md#10-组合充分性)。
+这不建立全局最优；最低可恢复性也不要求精确恢复到之前状态。见[充分性](../../framework/methods/sufficiency.zh-CN.md#10-组合充分性)。

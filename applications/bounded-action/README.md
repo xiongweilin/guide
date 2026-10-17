@@ -1,6 +1,8 @@
 # Basic problems for bounded AI autonomy
 
-[English](basic-problems.md) | [简体中文](basic-problems.zh-CN.md)
+> **Position:** The two questions below concern autonomous AI execution in bounded systems, not the only basic questions of guide's general framework.
+
+[English](README.md) | [简体中文](README.zh-CN.md)
 
 ## Scope
 
@@ -23,7 +25,7 @@ For the current purpose and a **specific next transition**, does the actor have 
 
 A particular rule-derived case admits a precise observational criterion: if states indistinguishable under the current observation require different commitments, that observation is insufficient for this commitment. This is **not** a theorem for every context-dependent judgment.
 
-See [sufficiency](framework/sufficiency.md) and [exploration/decision](framework/activities/README.md).
+See [sufficiency](../../framework/methods/sufficiency.md) and [exploration/decision](../../framework/README.md).
 
 ## 2. The interaction–meaning gap
 
@@ -35,13 +37,13 @@ Successful transmission, shared wording, a valid tool call, or a successful stat
 - **Working bridge:** identify referents, scope, versions, sources, expected commitment and effect, responsible actor, authorization, postconditions, independent read-back, divergence handling, and conditions for revision.
 - **Residual mismatch:** only alignment relevant to the next joint transition is required. A complete shared worldview or exhaustive representation of reality cannot be presumed.
 
-See [reality](framework/reality.md), [multiple actors](framework/multi-actor.md), and [interaction](use/interaction.md).
+See [reality](../../framework/foundations/reality.md), [multiple actors](multi-actor.md), and [interaction](../cases/interaction.md).
 
 ## 3. The joint execution loop
 
 - Interpret interactions as revisable claims about goals, state, capability, authority, and effects; do not silently promote a signal into a verified fact.
 - Use local sufficiency to choose inquiry, commitment, authorized action, verification, revision, or a controlled stop.
-- Compare independently observed real effects with declared postconditions using [evaluation](use/evaluation.md). Mismatches can reopen both the meaning mapping and the sufficiency judgment.
+- Compare independently observed real effects with declared postconditions using [evaluation](../../framework/methods/evaluation.md). Mismatches can reopen both the meaning mapping and the sufficiency judgment.
 - Coupled actions also require coverage of the joint purpose, compatibility of shared states and constraints, and minimum recoverability. **Locally sufficient transitions are not automatically sufficient in combination.**
 
 ## 4. Acceptance questions for a bounded system

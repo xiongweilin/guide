@@ -1,6 +1,8 @@
 # Bounded actor: controller first, reflexive identity optional
 
-[English](purposeful-finite-actor.md) | [简体中文](purposeful-finite-actor.zh-CN.md)
+> **Position:** This file models a specialized bounded actor. Purposefulness or a self-model is not assumed for every object of inquiry.
+
+[English](actor.md) | [简体中文](actor.zh-CN.md)
 
 The working subject of guide's **core action theory** is a controller with an external world, bounded actionable information, available action, feedback and externally supplied purposes or constraints. It may be a person, service, institution or a simple control loop; it need not describe itself as a self.
 
@@ -20,4 +22,4 @@ An enriched actor can additionally retain a self/non-self distinction, model its
 
 Even with reflexivity, subjective experience, personhood, legitimacy, rights and complete self-knowledge remain unproved. An actor's termination does not erase effects already committed to reality.
 
-For common safe decisions and branching evidence policies, use [the action-first derivation](../minimal-derivation.md). For temporal continuation, use [lifecycle](lifecycle.md).
+For common safe decisions and branching evidence policies, use [the action-first derivation](minimal-derivation.md). For temporal continuation, use [lifecycle](lifecycle.md).

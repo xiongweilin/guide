@@ -1,8 +1,8 @@
 # Possibility
 
-[English](./possibility.md) | [简体中文](./possibility.zh-CN.md)
+[English](possibility.md) | [简体中文](possibility.zh-CN.md)
 
-> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../../minimal-derivation.md`](../../minimal-derivation.md) for the minimal derivation.
+> Position: this topic is an optional analytical lens, not an ontological dimension required for every problem. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Possibility asks: **what else may occur, which candidates, futures, and paths remain open, which have been excluded, and on what grounds?**
 

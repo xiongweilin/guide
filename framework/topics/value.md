@@ -1,8 +1,8 @@
 # Value
 
-[English](./value.md) | [简体中文](./value.zh-CN.md)
+[English](value.md) | [简体中文](value.zh-CN.md)
 
-> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../../minimal-derivation.md`](../../minimal-derivation.md) for the minimal derivation.
+> Position: this topic is an optional analytical lens, not an ontological dimension required for every problem. See [nine key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Value asks: **what is worth pursuing, avoiding, maintaining, committing to, or refusing?**
 

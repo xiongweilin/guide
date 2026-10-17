@@ -19,4 +19,4 @@ This cycle can stop, hold or terminate without a claim of success. Its planning 
 
 When a controller also has retained self-reference and identity continuity, the above action cycles can be analyzed as one actor's history, including its changing self-model and eventual termination. Such a structure is optional and adds no rights or governance legitimacy by itself. Termination does not erase residual effects.
 
-See [the action-first derivation](../minimal-derivation.md) and the governed [AIOS action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).
+See [the action-first derivation](minimal-derivation.md) and the governed [AIOS action chain](https://github.com/xiongweilin/aios/blob/main/docs/reference/guide/action-chain.md).

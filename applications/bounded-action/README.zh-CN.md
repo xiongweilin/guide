@@ -1,6 +1,8 @@
 # 基本问题：有限系统内的 AI 自主执行
 
-[English](basic-problems.md) | [简体中文](basic-problems.zh-CN.md)
+> **定位：**以下两个问题限定于有限系统中的 AI 自主执行，并非 guide 通用框架的唯一基本问题。
+
+[English](README.md) | [简体中文](README.zh-CN.md)
 
 ## 适用范围
 
@@ -23,7 +25,7 @@
 
 一类规定型问题存在精确的观察判据：若当前观察无法区分的现实状态要求不同承诺，那么观察对该承诺就不足。但这**不是**覆盖全部解释型判断的通用定理。
 
-见[充分性](framework/sufficiency.zh-CN.md)及[探索与决策](framework/activities/README.zh-CN.md)。
+见[充分性](../../framework/methods/sufficiency.zh-CN.md)及[探索与决策](../../framework/README.zh-CN.md)。
 
 ## 二、交互与含义的断层问题
 
@@ -35,13 +37,13 @@
 - **操作性衔接：** 明确指代、范围、版本、来源、预期承诺与效果、责任主体、授权、后置条件、独立回读、偏差处置和重开条件。
 - **剩余失配：** 只需对下一次共同转换必需的含义形成相称的一致，不能预设各方具有完整相同的世界观，或某个表示已穷尽现实。
 
-见[现实](framework/reality.zh-CN.md)、[多行动者](framework/multi-actor.zh-CN.md)和[交互](use/interaction.zh-CN.md)。
+见[现实](../../framework/foundations/reality.zh-CN.md)、[多行动者](multi-actor.zh-CN.md)和[交互](../cases/interaction.zh-CN.md)。
 
 ## 三、两个问题的共同执行闭环
 
 - 将交互信息看成关于目标、状态、能力、权限和效果的可修订主张，不能将信号静默升级为已验证事实。
 - 根据局部充分性选择探索、承诺、已授权行动、验证、修订或受控停止。
-- 根据[评估](use/evaluation.zh-CN.md)，将独立观察到的现实效果与已声明的后置条件比较。失配可以同时重新打开含义映射和充分性判断。
+- 根据[评估](../../framework/methods/evaluation.zh-CN.md)，将独立观察到的现实效果与已声明的后置条件比较。失配可以同时重新打开含义映射和充分性判断。
 - 耦合行动还须覆盖组合目的，满足共享状态及约束的相容性，并保留最低可恢复性。**多个局部充分转换不自动构成组合充分。**
 
 ## 四、有限系统的验收问题
