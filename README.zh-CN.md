@@ -1,32 +1,29 @@
-# guide
+# guide — 通用区分、系统分析与相称检验框架
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+[English](README.md) | 简体中文
 
-**以行动为核心的有界控制理论**：从部分观测、现实约束、安全行动和反馈出发；反身自我模型成为可选的增强，而不再是所有控制器的先决条件。新的 [最小推导](minimal-derivation.zh-CN.md) 分开了共同安全行动、需要观测的条件策略和当前无合格策略。预编译策略不产生执行权限。
+guide 是面向**理解、认识、评价、选择与行动**的问题导向方法论框架。它帮助识别会实质影响判断的概念混淆、证据缺口、系统联系和行动限制，而不是把所有问题强制纳入一套固定流程。
 
-## 概念主干变化
+**通用**指可跨问题类型使用；**必要**指当遗漏某项差异会实质影响结论时必须处理，并非九组区分和六个系统维度已被证明不可约、唯一或完备。任何问题都不要求逐项使用全部工具。
 
-- **共同安全行动**：在全部仍可能世界中都安全且有授权时，不必先辨别唯一现实状态。
-- **条件策略**：在可信观测后选择已经通过完整安全覆盖检查的后续分支。
-- **授权与知识分离**：判断理由充足不代表具有执行权限。
-- **自指独立增强**：身份连续性、自我模型、可修正性、多行动者治理是另加条件。
+## 基础与导航
 
-这不是已取得现实收益的声明。
+- [工作框架总览](framework/README.zh-CN.md)
+- [四条使用原则与判准匹配](framework/foundations/principles.zh-CN.md)
+- [九组关键区分](framework/foundations/distinctions.zh-CN.md)
+- [六个系统观察维度](framework/foundations/systems.zh-CN.md)
+- [现实与表示边界](framework/foundations/reality.zh-CN.md)、[理论来源](framework/foundations/theoretical-sources.zh-CN.md)
 
-## 三层架构
+## 条件性方法与专题
 
-- **最小推导**：[成立条件与不能推出的结论](minimal-derivation.zh-CN.md)。
-- **工作框架**：[现实、行动者、充分性、探索／决策与六个工作视角](framework/README.zh-CN.md)。
-- **使用层**：[预测](use/prediction.zh-CN.md)、[交互](use/interaction.zh-CN.md)、[评估](use/evaluation.zh-CN.md)，以及[研究与影响路径说明](use/studies/README.zh-CN.md)。
+- [充分性](framework/methods/sufficiency.zh-CN.md)：针对当前目的与下一转换，判断何种依据相称；不作为所有理解活动的前提。
+- [探索](framework/methods/exploration.zh-CN.md)、[决策](framework/methods/decision.zh-CN.md)、[评估](framework/methods/evaluation.zh-CN.md)。
+- [关系](framework/topics/relation.zh-CN.md)、[因果](framework/topics/causality.zh-CN.md)、[时序](framework/topics/temporality.zh-CN.md)、[可能性](framework/topics/possibility.zh-CN.md)、[价值](framework/topics/value.zh-CN.md)。
 
-## 相关项目与证据边界
+## 专门应用与研究
 
-- [distinction-self-reference-lean](https://github.com/xiongweilin/distinction-self-reference-lean) 在明确假设下形式化特定数学模型和定理，不由此证明普遍本体或经验保证。
-- [AIOS](https://github.com/xiongweilin/aios) 维护具体任务域的契约、授权、执行、验证和恢复接口；这些接口的现行实现与测试以 AIOS 为准。
-- [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) 研究特定执行接口上的有界行动准入。[主张与证据索引](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.zh-CN.md) 分开记录有限结构检查、隔离集成和正负并存的前瞻委托实验。
+- [有界行动的基本问题](applications/bounded-action/README.zh-CN.md)、[行动优先最小推导](applications/bounded-action/minimal-derivation.zh-CN.md)：在明确世界覆盖、执行接口、安全与授权假设下的控制理论；自指是可选增强，并非通用基础前提。
+- [预测案例](applications/cases/prediction.zh-CN.md)、[交互案例](applications/cases/interaction.zh-CN.md)。
+- [研究协议及影响路径](research/studies/README.zh-CN.md)与[历史验收记录](research/acceptance-2026-10-10.md)。
 
-这些项目之间是**有条件的解释与实现关系**，不表示 guide 的解释型充分性已经通过独立评分者一致性验证，不表示 BAA 准入等同于认识充分，也不表示已经证实部署会改善普遍判断质量、社会总劳动负担或生活质量。
-
-## 有界执行的基本问题
-
-原有两个问题的完整定义见 [基本问题](basic-problems.zh-CN.md)。
+**证据边界：** 概念一致性不等于形式证明；模型内的证明、单元测试及指定接口验证不等于现实普遍安全、判断收益或社会效果。guide 的解释型充分性尚无独立评分者数据，判断收益比较研究亦尚无结果。相关实现与研究另见 [AIOS](https://github.com/xiongweilin/aios)、[BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) 及 [Lean 研究](https://github.com/xiongweilin/distinction-self-reference-lean)；这些项目不自动验证通用框架。

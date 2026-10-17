@@ -1,32 +1,29 @@
-# guide
+# guide — General Framework for Distinctions, Systems, and Proportionate Validation
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+English | [简体中文](README.zh-CN.md)
 
-**Action-first framework for bounded controllers, partial information, safe commitments, feedback, and optional reflexive self-models.** The [minimal derivation](minimal-derivation.md) now starts from the weakest goal-directed action system; retained self-reference is an optional strengthening rather than a prerequisite. The former self-reference-first hierarchy remains an identified specialized model, not a universal ontology.
+guide is a **problem-oriented methodological framework** for understanding, knowing, evaluating, choosing, and acting. It helps identify conceptual confusions, evidence gaps, system relations, and action constraints that materially affect a judgment; it does not impose a fixed procedure on every problem.
 
-## Main conceptual changes
+**General** means applicable across problem types. **Necessary** means that a distinction must be addressed when omitting it could materially change the conclusion—not that the nine groups of distinctions or six system perspectives have been proved irreducible, unique, or exhaustive. No problem requires every tool.
 
-- **Robust next action:** identify an action that stays safe and authorized across the compatible-world set, without requiring complete reality identification.
-- **Contingent plan:** if no common action exists, a qualified observation may select among fully covered, precompiled safe branches.
-- **Reality/authority split:** a candidate can be epistemically adequate but unauthorized; neither guide nor a compiled plan issues permissions.
-- **Self-model as extension:** identity, re-entry, corrigibility and multi-actor governance introduce additional constraints only when needed.
+## Foundations and navigation
 
-These are testable distinctions, not evidence of human judgment benefit or universal autonomy.
+- [Framework overview](framework/README.md)
+- [Four operating principles and matching standards](framework/foundations/principles.md)
+- [Nine groups of key distinctions](framework/foundations/distinctions.md)
+- [Six system-analysis perspectives](framework/foundations/systems.md)
+- [Reality and representation boundaries](framework/foundations/reality.md), [theoretical sources](framework/foundations/theoretical-sources.md)
 
-## Three layers
+## Conditional methods and topics
 
-- **Minimal derivation:** [action-first conditions, optional self-reference and limits](minimal-derivation.md).
-- **Framework:** [reality, actors, sufficiency, exploration/decision, and six working lenses](framework/README.md).
-- **Use:** [prediction](use/prediction.md), [interaction](use/interaction.md), and [evaluation](use/evaluation.md), with the [study and impact-pathway notes](use/studies/README.md).
+- [Sufficiency](framework/methods/sufficiency.md): proportionate warrant for a specified purpose and next transition, not a prerequisite for every act of understanding.
+- [Exploration](framework/methods/exploration.md), [decision](framework/methods/decision.md), and [evaluation](framework/methods/evaluation.md).
+- [Relations](framework/topics/relation.md), [causality](framework/topics/causality.md), [temporality](framework/topics/temporality.md), [possibility](framework/topics/possibility.md), and [value](framework/topics/value.md).
 
-## Related projects and evidence boundaries
+## Specialized applications and research
 
-- [distinction-self-reference-lean](https://github.com/xiongweilin/distinction-self-reference-lean) formalizes particular mathematical models and theorems under stated assumptions; it does not establish a universal ontology or empirical guarantees.
-- [AIOS](https://github.com/xiongweilin/aios) maintains executable domain contracts, authorization, execution, verification, and recovery surfaces. Its current implementation and tests, not guide, govern these interfaces.
-- [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol) studies bounded action admission over specified execution interfaces. Its [claim/evidence index](https://github.com/xiongweilin/BAA-Protocol/blob/main/experiments/claim-evidence-index.md) distinguishes finite structural checks, isolated integrations, and mixed prospective delegation results.
+- [Basic problems of bounded action](applications/bounded-action/README.md) and [action-first minimal derivation](applications/bounded-action/minimal-derivation.md): control theory under explicit world-coverage, execution-interface, safety, and authorization assumptions. Self-reference is an optional enhancement, not a general foundational prerequisite.
+- [Prediction cases](applications/cases/prediction.md) and [interaction cases](applications/cases/interaction.md).
+- [Study protocols and impact pathway](research/studies/README.md) and [historical acceptance record](research/acceptance-2026-10-10.md).
 
-These projects are connected by conditional interpretations, **not** by a proof that guide's interpretive sufficiency judgments are reproducible across raters, that BAA's admission decisions establish epistemic sufficiency, or that deployment improves human judgment, total labor, or quality of life.
-
-## Bounded execution problems
-
-The two established questions remain explicit in [basic problems](basic-problems.md).
+**Evidence boundary:** conceptual coherence is not formal proof; model-relative proofs, unit tests, and validation at specified interfaces do not establish general real-world safety, judgment improvement, or societal benefit. Explanatory sufficiency has no independent rater data yet, and the comparative judgment-benefit study has no outcome data. Related implementations and research appear in [AIOS](https://github.com/xiongweilin/aios), [BAA-Protocol](https://github.com/xiongweilin/BAA-Protocol), and the [Lean project](https://github.com/xiongweilin/distinction-self-reference-lean); they do not automatically validate the general framework.

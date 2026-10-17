@@ -1,20 +1,19 @@
 # guide — 工作框架
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+[English](README.md) | 简体中文
 
-本目录在[根目录的最小推导](../minimal-derivation.zh-CN.md)之上**有条件地展开**工作概念。它不是另一套基础公理、固定的六部分本体、通用最优算法，也不是工程实施契约。
+本目录区分**通用基础、条件性方法与专题分析**；实践案例和特定形式推导置于 `applications/`，研究协议与历史记录置于 `research/`。各层并非固定流水线，也不表示一套已证实完备的本体分类。
 
-| 内容 | 文档 |
+| 位置 | 用途 |
 | --- | --- |
-| 理论来源与边界 | [理论来源](foundations/theoretical-sources.zh-CN.md) |
-| 现实与行动者 | [现实](reality.zh-CN.md)、[目的性有限行动者](purposeful-finite-actor.zh-CN.md)、[生命周期](lifecycle.zh-CN.md) |
-| 充分性 | [充分性](sufficiency.zh-CN.md) |
-| 多行动者 | [多行动者](multi-actor.zh-CN.md) |
-| 六个工作视角 | [区分、关系、因果、时序、可能性、价值](dimensions/README.zh-CN.md) |
-| 派生活动 | [探索与决策](activities/README.zh-CN.md) |
+| [使用原则](foundations/principles.zh-CN.md) | 明确问题、判准、相关性与修订要求 |
+| [九组区分](foundations/distinctions.zh-CN.md) | 防止表征、推理、因果、价值与行动等概念被静默替代 |
+| [系统视角](foundations/systems.zh-CN.md) | 依据问题分析层级、结构、耦合、反馈、自指条件和整体行为 |
+| [现实](foundations/reality.zh-CN.md)与[区分形成](foundations/distinction.zh-CN.md) | 认识边界、候选缺失和默认分类 |
+| [理论来源](foundations/theoretical-sources.zh-CN.md) | 说明借鉴的传统和不可直接推导的主张 |
+| [充分性](methods/sufficiency.zh-CN.md)、[探索](methods/exploration.zh-CN.md)、[决策](methods/decision.zh-CN.md)、[评估](methods/evaluation.zh-CN.md) | 仅在问题需要时调用的工作方法 |
+| [关系](topics/relation.zh-CN.md)、[因果](topics/causality.zh-CN.md)、[时序](topics/temporality.zh-CN.md)、[可能性](topics/possibility.zh-CN.md)、[价值](topics/value.zh-CN.md) | 可交叉使用的深入专题，不是五种终极实体 |
 
-六个视角只是描述当前边界的工作工具，不是不可约本体原语。充分性针对具体目的与下一转换成立，不自动推出结论真实、执行权限或全局最优。案例验证特定形式模型，不是现实行为预测。
+专门模型：[有界行动问题](../applications/bounded-action/README.zh-CN.md)、[最小推导](../applications/bounded-action/minimal-derivation.zh-CN.md)、[行动者](../applications/bounded-action/actor.zh-CN.md)、[生命周期](../applications/bounded-action/lifecycle.zh-CN.md)和[多行动者](../applications/bounded-action/multi-actor.zh-CN.md)。这些模型有各自前提，不构成所有概念、形式、经验和规范问题的共同前提。
 
-预测、交互和评估的应用方法见[使用层](../README.zh-CN.md#三层架构)：[预测](../use/prediction.zh-CN.md)、[交互](../use/interaction.zh-CN.md)、[评估](../use/evaluation.zh-CN.md)。
-
-基础理论现以部分可观测的有界行动为起点；自指、持续身份和自我模型属于可选增强。原有六维只是工作透镜，不是自指或价值的不可约本体，也不授予执行权限。
+原则上，必要的区分与检验取决于对象、问题、主张类型、风险及适用条件；不以列出更多因素替代判断，也不把模型证明或测试当成现实普遍收益的证据。
