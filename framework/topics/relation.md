@@ -2,7 +2,7 @@
 
 [English](relation.md) | [简体中文](relation.zh-CN.md)
 
-> Position: this topic develops a problem-dependent analytical lens, neither a universal prerequisite nor an irreducible ontology. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
+> Position: this topic provides problem-dependent analysis, not a general system perspective or an ontological primitive. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Relation asks: **how are already distinguished contents connected, composed, dependent, constrained, and mutually affected?**
 

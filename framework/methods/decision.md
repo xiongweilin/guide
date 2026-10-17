@@ -4,13 +4,13 @@
 
 **Scope:** This method concerns choices and commitments; not every description, explanation, or formal inference is a decision, and not every choice requires the same formal sufficiency test.
 
-Decision is the activity of choosing when the current boundary is **provisionally sufficient** for the current purpose. It is not a dimension and does not assert a metaphysical theory of free will.
+Decision forms choices or commitments based on a purpose, reasons, and constraints; it makes no metaphysical claim about free will. Consequential decisions require grounds proportionate to the proposed commitment, not a prior universal three-state sufficiency classification.
 
 Decision asks:
 
 > When current facts, rules, constraints, possibilities, and values do not uniquely force one action, how can a purposeful finite actor form a choice that has reasons, is attributable, remains revisable, and carries proportionate responsibility for consequences?
 
-## 1. Preconditions: boundary provisionally sufficient
+## 1. Grounds proportionate to the proposed commitment
 
 Before a consequential decision, check at least:
 

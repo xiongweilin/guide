@@ -4,7 +4,7 @@
 
 **General scope:** Exploration can seek understanding, theory development, or new candidates without any imminent decision. The following focuses on bounded exploration for a next transition; sufficiency is a tool here, not a prerequisite for all inquiry.
 
-Exploration is the activity used when the current boundary is **insufficient or materially uncertain**. It is not a dimension.
+Exploration discovers, tests, and revises understandings or candidates not yet adequately formed. For bounded tasks with a next transition, insufficient or materially uncertain grounds are common triggers; general inquiry need not anticipate a decision.
 
 Exploration asks:
 
@@ -150,17 +150,17 @@ At closure preserve:
 
 The goal is not maximum openness but **proportionate reopenability**.
 
-## 9. Relation to dimensions and sufficiency
+## 9. Relation to foundations, topics, and sufficiency
 
-Exploration uses all six dimensions:
+Exploration follows the [operating principles](../foundations/principles.md) and uses the [nine distinctions](../foundations/distinctions.md), [system perspectives](../foundations/systems.md), and these deeper analyses as relevant, not as a mandatory checklist:
 
-- distinction: what boundary should reopen?
+- [formation of distinctions](../foundations/distinction.md): what boundary should reopen?
 - relation: which participants, dependencies, powers, or structures were omitted?
 - causality: which competing mechanisms need discrimination?
 - temporality: did failure come from transition, delay, or stale grounds?
 - possibility: is candidate space incomplete?
 - value: which unknowns justify cost or risk?
 
-[Sufficiency](sufficiency.md) controls when exploration starts, continues, and stops.
+When inquiry supports a specified next transition, [sufficiency](sufficiency.md) helps judge when to continue, provisionally close, or reopen. Open-ended inquiry needs no planned action transition.
 
-When exploration produces a new provisional boundary, activity can move to [Decision](decision.md); reality-side feedback after action may start exploration again.
+When inquiry supports a practical choice and the grounds are proportionate to the proposed commitment, it can move to [decision](decision.md); reality-side feedback after action may start exploration again.
