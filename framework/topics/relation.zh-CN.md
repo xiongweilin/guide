@@ -1,8 +1,8 @@
 # 关系
 
-[English](./relation.md) | [简体中文](./relation.zh-CN.md)
+[English](relation.md) | [简体中文](relation.zh-CN.md)
 
-> 定位：本维度是目的性有限行动者描述当前边界时的一个**工作性视角**，不是不可约本体原语。六维共同用于防止重要语义被静默替代；最小推导见 [`../../minimal-derivation.zh-CN.md`](../../minimal-derivation.zh-CN.md)。
+> 定位：本专题深化一个按问题选用的工作视角，不是所有问题的基础前提或不可约本体。参见[九组区分](../foundations/distinctions.zh-CN.md)与[系统视角](../foundations/systems.zh-CN.md)。
 
 关系回答：**已经区分出的内容怎样连接、组成、依赖、约束和相互影响？**
 

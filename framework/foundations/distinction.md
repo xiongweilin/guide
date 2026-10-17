@@ -1,8 +1,8 @@
 # Distinction
 
-[English](./distinction.md) | [简体中文](./distinction.zh-CN.md)
+[English](distinction.md) | [简体中文](distinction.zh-CN.md)
 
-> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../../minimal-derivation.md`](../../minimal-derivation.md) for the minimal derivation.
+> Position: this file studies the formation and limits of distinctions under bounded observation; the [nine distinctions](distinctions.md) are general analytical resources. The former six lenses are not ontological primitives; the [bounded-action derivation](../../applications/bounded-action/minimal-derivation.md) is specialized.
 
 Distinction asks: **under current conditions, what can become distinguishable, what has been distinguished, and what remains outside the current representation?**
 
@@ -111,11 +111,11 @@ Thus "we see the same thing" cannot be established only by using the same words.
 
 Distinction answers only "what differences have been formed." It does not automatically establish:
 
-- [Relation](./relation.md): how the differences connect;
-- [Causality](./causality.md): what changes what;
-- [Temporality](./temporality.md): order, duration, and change scale;
-- [Possibility](./possibility.md): what else may happen;
-- [Value](./value.md): what is worth pursuing.
+- [Relation](../topics/relation.md): how the differences connect;
+- [Causality](../topics/causality.md): what changes what;
+- [Temporality](../topics/temporality.md): order, duration, and change scale;
+- [Possibility](../topics/possibility.md): what else may happen;
+- [Value](../topics/value.md): what is worth pursuing.
 
 `candidate distinguished != candidate sufficient`
 

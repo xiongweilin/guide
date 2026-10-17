@@ -1,6 +1,8 @@
 # Decision
 
-[English](./decision.md) | [简体中文](./decision.zh-CN.md)
+[English](decision.md) | [简体中文](decision.zh-CN.md)
+
+**适用范围：**这里讨论形成实际选择与承诺时的判断，不把普通描述、解释或形式推导都定义为决策，也不要求所有决定采用同一形式化的充分性判准。
 
 Decision is the activity of choosing when the current boundary is **provisionally sufficient** for the current purpose. It is not a dimension and does not assert a metaphysical theory of free will.
 
@@ -21,7 +23,7 @@ Before a consequential decision, check at least:
 - reachability, controllability, and recovery paths are clear enough;
 - hard constraints, obligations, rights, and value conflicts are represented.
 
-If missing content could materially change the decision and has a reasonable acquisition path, return to [Exploration](./exploration.md).
+If missing content could materially change the decision and has a reasonable acquisition path, return to [Exploration](exploration.md).
 
 `incomplete in principle != unable to decide`
 
@@ -132,7 +134,7 @@ A consequential decision should preserve where practical:
 - review, reversal, and reopening conditions;
 - decision time.
 
-Then it enters the [Action chain](../lifecycle.md) for authorization, execution, and reality-side verification.
+Then it enters the [Action chain](../../applications/bounded-action/lifecycle.md) for authorization, execution, and reality-side verification.
 
 ## 7. Responsibility under uncertainty
 
@@ -213,4 +215,4 @@ The goal is neither maximum optimization nor maximum arbitrariness, but **bounde
 
 Evaluation assesses an object under a specified criterion; prediction concerns an outcome under stated conditions and a time horizon; choice also depends on admissible options, values, risks, responsibility, and decision authority. A unique mathematical solution need not imply a unique warranted real-world action. Predictive performance cannot silently override rights, consent, or authorization.
 
-When evaluations or forecasts materially shape a decision, retain the criterion, model version, significant unknowns, proportionate verification grounds, and reopening triggers. Evaluate external outcomes when they become observable. See the [judgment and prediction validation protocol](../../use/evaluation.md) and [prediction cases](../../use/prediction.md) and [mechanism cases](../../use/interaction.md).
+When evaluations or forecasts materially shape a decision, retain the criterion, model version, significant unknowns, proportionate verification grounds, and reopening triggers. Evaluate external outcomes when they become observable. See the [judgment and prediction validation protocol](evaluation.md) and [prediction cases](../../applications/cases/prediction.md) and [mechanism cases](../../applications/cases/interaction.md).

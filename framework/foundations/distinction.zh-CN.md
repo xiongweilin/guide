@@ -1,8 +1,8 @@
 # 区分
 
-[English](./distinction.md) | [简体中文](./distinction.zh-CN.md)
+[English](distinction.md) | [简体中文](distinction.zh-CN.md)
 
-> 定位：本维度是目的性有限行动者描述当前边界时的一个**工作性视角**，不是不可约本体原语。六维共同用于防止重要语义被静默替代；最小推导见 [`../../minimal-derivation.zh-CN.md`](../../minimal-derivation.zh-CN.md)。
+> 定位：本文件讨论有限观察下区分的形成及其边界；[九组关键区分](distinctions.zh-CN.md)属于通用辨析资源。原六工作视角不是不可约本体；有界行动的[最小推导](../../applications/bounded-action/minimal-derivation.zh-CN.md)属于专门分支。
 
 区分回答：**当前条件下什么能够成为可区分内容，什么已经被区分，什么仍在当前表示之外？**
 
@@ -111,11 +111,11 @@
 
 区分只负责“什么被形成成可识别差异”。它不自动建立：
 
-- [关系](./relation.zh-CN.md)：差异之间怎样连接；
-- [因果](./causality.zh-CN.md)：什么改变什么；
-- [时序](./temporality.zh-CN.md)：先后、持续与变化尺度；
-- [可能性](./possibility.zh-CN.md)：还可能怎样；
-- [价值](./value.zh-CN.md)：什么值得。
+- [关系](../topics/relation.zh-CN.md)：差异之间怎样连接；
+- [因果](../topics/causality.zh-CN.md)：什么改变什么；
+- [时序](../topics/temporality.zh-CN.md)：先后、持续与变化尺度；
+- [可能性](../topics/possibility.zh-CN.md)：还可能怎样；
+- [价值](../topics/value.zh-CN.md)：什么值得。
 
 `区分出候选 ≠ 候选已经充分`
 

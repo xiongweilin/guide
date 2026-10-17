@@ -1,8 +1,10 @@
 # Causality
 
-[English](./causality.md) | [简体中文](./causality.zh-CN.md)
+[English](causality.md) | [简体中文](causality.zh-CN.md)
 
-> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../../minimal-derivation.md`](../../minimal-derivation.md) for the minimal derivation.
+因果研究可以处理尚不能操纵的原因；因果识别、实际干预接口与执行授权是不同问题。
+
+> Position: this topic develops a problem-dependent analytical lens, neither a universal prerequisite nor an irreducible ontology. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Causality asks: **what changes cause what other changes, and what interventions can change which outcomes?**
 
@@ -135,4 +137,4 @@ Interventions affecting people, rights, privacy, safety, or irreversible state s
 
 When reasoning about the future, distinguish conditional predictions within formal models, empirical forecasts under a data-generating distribution, and predictions about the effect of interventions. An observed forecast hit supports neither causal attribution nor an untested claim about another setting. Suitable comparators or identification grounds remain necessary.
 
-For material transitions, preserve ex ante targets, horizons, model/data versions, applicability conditions, and proportionate uncertainty; compare against appropriate independent observations when outcomes become available. Keep unavailable outcomes unknown. When discrepancies arise, check identification assumptions, transport, strategic adaptation, and measurement change. See the [judgment and prediction validation protocol](../../use/evaluation.md).
+For material transitions, preserve ex ante targets, horizons, model/data versions, applicability conditions, and proportionate uncertainty; compare against appropriate independent observations when outcomes become available. Keep unavailable outcomes unknown. When discrepancies arise, check identification assumptions, transport, strategic adaptation, and measurement change. See the [judgment and prediction validation protocol](../methods/evaluation.md).

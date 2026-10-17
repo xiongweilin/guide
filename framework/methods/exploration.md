@@ -1,6 +1,8 @@
 # Exploration
 
-[English](./exploration.md) | [简体中文](./exploration.zh-CN.md)
+[English](exploration.md) | [简体中文](exploration.zh-CN.md)
+
+**通用范围：**探索也可以为了理解、理论发展或发现候选而展开，不必预设近期决策。以下以服务于下一转换的有界探索为重点；充分性在此是可用工具，不是所有探索的必要条件。
 
 Exploration is the activity used when the current boundary is **insufficient or materially uncertain**. It is not a dimension.
 
@@ -159,6 +161,6 @@ Exploration uses all six dimensions:
 - possibility: is candidate space incomplete?
 - value: which unknowns justify cost or risk?
 
-[Sufficiency](../sufficiency.md) controls when exploration starts, continues, and stops.
+[Sufficiency](sufficiency.md) controls when exploration starts, continues, and stops.
 
-When exploration produces a new provisional boundary, activity can move to [Decision](./decision.md); reality-side feedback after action may start exploration again.
+When exploration produces a new provisional boundary, activity can move to [Decision](decision.md); reality-side feedback after action may start exploration again.

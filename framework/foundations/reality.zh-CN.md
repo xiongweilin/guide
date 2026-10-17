@@ -1,6 +1,8 @@
 # 现实：外部边界
 
-[English](./reality.md) | [简体中文](./reality.zh-CN.md)
+[English](reality.md) | [简体中文](reality.zh-CN.md)
+
+对经验对象和现实行动，外部现实限制当前表示并产生反馈；形式命题的成立或规范正当性仍须采用其各自判准。
 
 现实是 guide 的外部边界，而不是等待被完整序列化的总对象。
 

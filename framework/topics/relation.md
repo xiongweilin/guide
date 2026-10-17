@@ -1,8 +1,8 @@
 # Relation
 
-[English](./relation.md) | [简体中文](./relation.zh-CN.md)
+[English](relation.md) | [简体中文](relation.zh-CN.md)
 
-> Position: this dimension is a **working lens** for describing a purposeful finite actor's current boundary, not an irreducible ontological primitive. The six lenses prevent material semantic substitution; see [`../../minimal-derivation.md`](../../minimal-derivation.md) for the minimal derivation.
+> Position: this topic develops a problem-dependent analytical lens, neither a universal prerequisite nor an irreducible ontology. See [key distinctions](../foundations/distinctions.md) and [system perspectives](../foundations/systems.md).
 
 Relation asks: **how are already distinguished contents connected, composed, dependent, constrained, and mutually affected?**
 

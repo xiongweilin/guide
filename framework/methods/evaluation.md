@@ -2,6 +2,14 @@
 
 [English](evaluation.md) | [简体中文](evaluation.zh-CN.md)
 
+## 0. General evaluation boundaries
+
+- **Conceptual claims:** check definitions, referents, discriminative purpose, and counterexamples; predictive scores alone cannot validate a concept.
+- **Forms of knowledge:** propositional knowledge, practical skill, lived experience, and understanding may overlap but call for different tests.
+- **Normative evaluations:** examine factual premises, value reasons, rights, and procedural legitimacy separately; empirical scores do not replace normative argument.
+- Match tests to claims and risks: proof, independent replication, and long-term outcomes cannot substitute for one another.
+
+
 ## 1. Separate four questions
 
 - **Transition sufficiency**: Is the current boundary adequately supported for a particular purpose and next transition? Sufficiency does not guarantee future correctness.
@@ -86,6 +94,6 @@ error_or_counterexample / disposition / reopen_conditions
 
 ## 8. Research proposals
 
-- [Sufficiency rater study](studies/sufficiency-raters-v1.md) is a draft for testing reproducibility of interpretive classifications. It has no collected ratings and is not preregistered.
-- [Judgment benefit study](studies/judgment-benefit-v1.md) is a draft comparison with an equal-input checklist baseline. It has no outcome data and establishes no guide-specific benefit.
-- The [impact pathway](studies/impact-pathway.md) separates bounded execution evidence from unmeasured claims about total labor and human benefit.
+- [Sufficiency rater study](../../research/studies/sufficiency-raters-v1.md) is a draft for testing reproducibility of interpretive classifications. It has no collected ratings and is not preregistered.
+- [Judgment benefit study](../../research/studies/judgment-benefit-v1.md) is a draft comparison with an equal-input checklist baseline. It has no outcome data and establishes no guide-specific benefit.
+- The [impact pathway](../../research/studies/impact-pathway.md) separates bounded execution evidence from unmeasured claims about total labor and human benefit.

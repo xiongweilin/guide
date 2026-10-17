@@ -2,6 +2,14 @@
 
 [English](evaluation.md) | [简体中文](evaluation.zh-CN.md)
 
+## 0. 通用评价边界
+
+- **概念主张：**核对定义、指称、区别与反例，不能仅用预测得分检验概念有效性。
+- **知识形式：**知道事实、熟练操作、亲身体验与理解可交叉，但验证对象与标准不同。
+- **规范性评价：**分别检验事实前提、价值理由、权利与程序正当性；经验评分不能代替规范论证。
+- 根据风险与主张选择相称检验，形式证明、独立复现和现实长期效果不可相互替代。
+
+
 ## 1. 先区分四个问题
 
 - **转换充分性**：当前边界对某目的与下一转换是否已有相称依据；充分不保证未来结论必然正确。
@@ -86,6 +94,6 @@ error_or_counterexample / disposition / reopen_conditions
 
 ## 8. 研究提案
 
-- [充分性评分者研究](studies/sufficiency-raters-v1.zh-CN.md)是检验解释型分类可重复性的草案；尚无评分数据，也未预注册。
-- [判断收益研究](studies/judgment-benefit-v1.zh-CN.md)拟与等投入的简单清单比较；尚无结果数据，不能据此声称 guide 有独立增益。
-- [影响路径](studies/impact-pathway.zh-CN.md)将有界执行证据与尚未测量的总劳动及人的收益主张分开。
+- [充分性评分者研究](../../research/studies/sufficiency-raters-v1.zh-CN.md)是检验解释型分类可重复性的草案；尚无评分数据，也未预注册。
+- [判断收益研究](../../research/studies/judgment-benefit-v1.zh-CN.md)拟与等投入的简单清单比较；尚无结果数据，不能据此声称 guide 有独立增益。
+- [影响路径](../../research/studies/impact-pathway.zh-CN.md)将有界执行证据与尚未测量的总劳动及人的收益主张分开。

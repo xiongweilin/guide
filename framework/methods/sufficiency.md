@@ -1,6 +1,8 @@
 # Sufficiency: when the next transition has adequate grounds
 
-[English](./sufficiency.md) | [简体中文](./sufficiency.zh-CN.md)
+[English](sufficiency.md) | [简体中文](sufficiency.zh-CN.md)
+
+**适用范围：**本方法针对指定目的和下一转换；一般概念辨析、形式证明或探索未必需要三态充分性分类。解释型充分性与规定型特例的成立标准必须分开。
 
 Sufficiency is a transition-relative relation that lets a bounded controller continue acting without a complete representation of reality.
 
@@ -14,7 +16,7 @@ B is the current boundary and epistemic state, P the current purpose / constrain
 
 ## 0. Constructive robust-action special case
 
-For a declared compatible-world set W(H) and externally authorized safe action set A(w), a common action in the intersection of all A(w) can proceed without identifying the real world. If that intersection is empty, a qualified observation and complete contingent policy may still be feasible. This **algorithmic condition** is narrower than interpretive sufficiency; the model must overapproximate reality, and an issued capability is still required for execution. See [action-first derivation](../minimal-derivation.md).
+For a declared compatible-world set W(H) and externally authorized safe action set A(w), a common action in the intersection of all A(w) can proceed without identifying the real world. If that intersection is empty, a qualified observation and complete contingent policy may still be feasible. This **algorithmic condition** is narrower than interpretive sufficiency; the model must overapproximate reality, and an issued capability is still required for execution. See [action-first derivation](../../applications/bounded-action/minimal-derivation.md).
 
 ## 1. Sufficiency is not completeness
 
@@ -149,7 +151,7 @@ As recoverability weakens and irreversibility rises, proportionally stronger gro
 
 Adequate grounds for a next transition do not guarantee a true conclusion, a successful forecast, or authority to act. When a transition materially depends on formal derivation, empirical prediction, or causal expectation, record the relevant model conditions, validation method, and reopening triggers. A prediction miss calls first for checking outcome observability, stochastic variation, evidence, model applicability, and environmental changes—not automatic rejection of the entire boundary.
 
-See the [judgment and prediction validation protocol](../use/evaluation.md) for verification types, ex ante records, and error attribution. This adds neither a new definition of sufficiency nor a requirement to statistically test every decision.
+See the [judgment and prediction validation protocol](evaluation.md) for verification types, ex ante records, and error attribution. This adds neither a new definition of sufficiency nor a requirement to statistically test every decision.
 
 ## 12. BAA admission is a different three-way decision
 
