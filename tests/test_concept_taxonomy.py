@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ACTIVE_DOCS = [*ROOT.glob("README*.md"), *ROOT.glob("framework/**/*.md"), *ROOT.glob("applications/**/*.md")]
 RETIRED = (
     "原六工作视角", "与六维和充分性的关系", "旧框架的", "旧的自指推导",
-    "former six lenses", "all six dimensions:", "former self-reference-first",
+    "former six lenses", "six working lenses", "六个工作视角", "all six dimensions:", "former self-reference-first",
     "the prior interpretive labels", "Other working lenses remain",
     "关系维度", "因果维度", "它不是维度", "It is not a dimension.",
 )

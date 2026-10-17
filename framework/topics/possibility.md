@@ -125,4 +125,4 @@ Risk is a crossing of possibility and value: whether an outcome may occur and ho
 
 `may cause severe loss != proven certain to occur`
 
-How low-probability, high-impact, or hard-to-quantify events enter decision requires value, temporality, causality, and sufficiency together rather than allowing one dimension to own the conclusion.
+How low-probability, high-impact, or hard-to-quantify events enter decision requires value, temporality, causality, and sufficiency together rather than treating a single topic as decisive.

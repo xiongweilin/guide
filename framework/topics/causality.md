@@ -69,7 +69,7 @@ For a causal path to become current callable capability, it additionally needs:
 - necessary authority;
 - recovery or exit path.
 
-This is why capability is not a separate dimension here: it is a callable structure jointly formed by causality, possibility, relation, temporality, and purposeful-actor interfaces.
+For bounded action, callable capability depends on causality, possibility, relations, timing, and the actor's interfaces; an identified causal effect alone does not establish it.
 
 ## 4. Dependencies, failure, and recovery
 
